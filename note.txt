@@ -3,3 +3,11 @@ Note 25.Oct.2023:
 I moved the directory in the gcloud vm serving this through nginx to /docs to use github pages. "llab" is included in there. (Commit b2a9339).
 
 - Arjun
+
+Update 26.Oct.2023:
+
+- github pages doesn't work because it puts it in "/apcsa-book/<path>" and it uses imports
+- cloudflare pages doesn't work for unknown reasons
+- the git repo broke because I put the repo .git inside itself because it was like that on the vm, then it did some submodule thing and got confused
+- made a new repo, using vercel for deployment
+- made /index.html redirect to syllabus
