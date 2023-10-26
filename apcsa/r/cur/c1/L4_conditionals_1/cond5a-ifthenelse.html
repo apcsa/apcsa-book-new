@@ -1,0 +1,26 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>An example of the <tt>if...else</tt> statement</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+
+      <p audio="cond5a_1">Here's an example of an  <tt>if...else</tt> statement
+      , again from the <tt>Refillable</tt> class.
+         As in the previous example,
+         it makes sure that no more is used from the <tt>Refillable</tt> object
+         than the object contains.</p>
+      <pre class="width70">
+void useUp (int amount) {
+   if (myAmount &lt; amount) {
+      System.out.println ("not enough left");
+   } else {
+      myAmount = myAmount - amount;
+   }
+}
+</pre>
+   </body>
+</html>

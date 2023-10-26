@@ -1,0 +1,41 @@
+<html> <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top100";
+		</script>
+       <title>Click state</title></head>
+<body>
+<p audio="2">
+A mouse click early in the program must be handled quite differently from a click later in the program&mdash;the first click selects from three doors, while the second click represents switching or staying with the choice already made.
+</p>
+<p audio="3">
+This difference is represented with the <span class="vocab">state variable</span> 
+named (appropriately) <tt>state</tt>.
+A state-based process moves from one situation,
+or <span class="vocab">state</span> to another,
+with the state variable keeping track of what state the process is in.
+An example is a three-state traffic light: it's either red, or yellow, or green.
+Mouse click handling in this program is also a state-based process whose states are
+</p>
+<ul>
+<li audio="4">waiting for an initial door selection;</li>
+<li audio="5">waiting for a switch-or-stay click;</li>
+<li audio="6">resolving the outcome.
+</ul>
+<p audio="7">
+The corresponding code has the following form.
+</p>
+<pre class="width60">
+   if (state == INITIAL_STATE) {
+         ...
+      state = SWITCHSTAY_STATE;
+         ...
+   } else if (state == SWITCHSTAY_STATE) {
+         ...
+      state = DONE_STATE;
+         ...
+   }
+</pre>
+</body>
+</html>

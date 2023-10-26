@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      	  <script>
+         vocabClass = "top25";
+         helpClass = "top25";
+      </script>
+      <title>Merge sort (2)</title>
+   </head>
+   <body>
+   	
+	<p audio="2">
+Applied to an array that we'll assume holds <tt>ints</tt> 
+and which we'll call <tt>values</tt>, 
+it sorts the array values in increasing order as follows.
+</p>
+<pre class="width70">
+public static void mergeSort (int [ ] values) {
+   if (values.length &lt;= 1) {
+      // A list of 0 or 1 element is already sorted.
+      return;
+   } else {
+      // Split the array into two equal halves.
+      int [ ] leftHalf = new int [values.length/2];
+      int [ ] rightHalf = new int [values.length - values.length/2];
+      int k;
+      for (k=0; k&lt;leftHalf.length; k++) {
+         leftHalf[k] = values[k];
+      }
+      for (int j=0; j&lt;rightHalf.length; j++) {
+         rightHalf[j] = values[k];
+         k++;
+      }
+      // Sort each half.
+      mergeSort (leftHalf);
+      mergeSort (rightHalf);
+      // Combine the two sorted halves into a single sorted whole.
+      merge (leftHalf, rightHalf, values);
+   }
+}
+</pre>
+</body>
+</html>

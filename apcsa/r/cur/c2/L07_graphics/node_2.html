@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <script type="text/javascript">
+         vocabClass = "top25";
+         helpClass = "top25";
+      </script>
+      <title>Importing prewritten classes</title>
+   </head>
+   <body>
+     
+      <div class="talkBubble" align="left" color="red" char="raster2" >
+         <p audio="2.m1">Java comes with lots of class 
+         <span class= "vocab" term="Java library">libraries</span>.  You can think
+         of these like normal libraries, but instead of containing books
+         they contain already written Java <b>classes</b>.</p>
+      </div>
+         
+        <div class="talkBubble" align="right" color="green" char="constance4">
+        <p audio="2b.f1">To write a program 
+         that draws on the screen, we will use the classes from two of these  
+         libraries: <tt>java.awt</tt> (short for Abstract Windowing 
+         Toolkit) and <tt>javax.swing</tt> (an extension of <tt>java.awt</tt>).</p>
+         </div>
+         
+         <p audio="4">The <tt>import</tt> keyword is used to
+         access particular libraries, and needs to be at the top of the 
+         program.  Our greeting program used the statement</p>
+      
+      	<pre class="width30">import javax.swing.*;</pre>
+      
+      	<p audio="5">which gives you access to all the classes in the 
+      <tt>javax.swing</tt> library.  The <tt>*</tt> (an asterisk) 
+      tells the compiler to provide access to <i>every</i> class in the library.
+      You could, instead of using an asterisk, name the classes 
+      individually with multiple <tt>import</tt> statements.</p>
+
+
+   </body>
+</html>

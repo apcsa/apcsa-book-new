@@ -1,0 +1,34 @@
+title: Lesson 22: Introduction to Arrays
+
+{
+h2: Faster collections: an introduction to Java arrays
+
+
+heading: Introduction to arrays
+    resource: Arrays [/apcsa/r/cur/c4/L22_arrays/arrays0.html]
+
+heading: Details of arrays
+    resource: Declaration of an array [/apcsa/r/cur/c4/L22_arrays/arrays1.html]
+    resource: Array initialization, method 1 [/apcsa/r/cur/c4/L22_arrays/arrays2.html]
+    resource: Array initialization, method 2 [/apcsa/r/cur/c4/L22_arrays/arrays3.html]
+    resource: Array use [/apcsa/r/cur/c4/L22_arrays/arrays4.html]
+    resource: Comparing initialization code [/apcsa/r/cur/c4/L22_arrays/arrays5.html]
+    resource: Comparison with ArrayLists [/apcsa/r/cur/c4/L22_arrays/arrays6.html]
+    resource: The length of an array [/apcsa/r/cur/c4/L22_arrays/arrays7.html]
+    resource: A LineSegment class [/apcsa/r/cur/c4/L22_arrays/arrays8.html]
+    quiz: Playing with references in arrays of objects [/apcsa/r/cur/c4/L22_arrays/arrays10.html]
+
+heading: Array processing
+    resource: Common array-processing patterns [/apcsa/r/cur/c4/L22_arrays/arrayproc0.html]
+    resource: A treasure hunt [/apcsa/r/cur/c4/L22_arrays/arrayproc1.html]
+    resource: Binary search [/apcsa/r/cur/c4/L22_arrays/arrayproc2.html]
+
+heading: Using arrays to build ArrayLists
+    resource: ArrayList internals revealed [/apcsa/r/cur/c4/L22_arrays/arraylist_impl0.html]
+    resource: ArrayList instance variables [/apcsa/r/cur/c4/L22_arrays/arraylist_impl1.html]
+    resource: The contains method [/apcsa/r/cur/c4/L22_arrays/arraylist_impl2.html]
+    resource: Implementing the two-argument add method [/apcsa/r/cur/c4/L22_arrays/arraylist_impl3.html]
+    brainstorm: Shifting direction interchangeable? [/apcsa/r/cur/c4/L22_arrays/arraylist_impl4.html]
+    resource: The remove method [/apcsa/r/cur/c4/L22_arrays/arraylist_impl5.html]
+    resource: Auto-expanding [/apcsa/r/cur/c4/L22_arrays/arraylist_impl6.html]
+    resource: Running Java programs without BlueJ, revisited [/apcsa/r/cur/c4/L22_arrays/psvm0.html]

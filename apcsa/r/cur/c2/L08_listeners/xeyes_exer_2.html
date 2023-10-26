@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Exercise: Centering the pupil when clicking in the eye</title>
+   </head>
+   <body>
+
+      <p audio="2">
+         Try and see what happens when you click right inside an eyeball.
+         Really, this looks terrible.  The problem is that the <tt>movePupil</tt>
+ method only draws the pupils along the outside rim of the eye.  
+      </p>
+      <p audio="3" class="quoteBlue">
+         When clicking inside the eyeball, we should draw the pupil
+         directly on the click.  Save your work in a BlueJ project titled
+         <tt>XEyes_center</tt>.
+      </p>
+      <p audio="4">
+         To do this exercise, we'll only need to modify the <tt>Eye</tt> class.
+         Specifically, we'll only need to change the <tt>movePupil</tt>
+         method, which takes in the coordinates of the mouse click and 
+         sets the <tt>pupilX</tt> and <tt>pupilY</tt> instance variables,
+         which hold the pupil's current position.
+         
+      </p>
+      <p audio="5">
+         All you need to do is add an <tt>else if(...)</tt> case to the <tt>if-else</tt> chain in <tt>movePupil</tt> 
+         that tests if the mouse click was inside the eye and if so, sets pupilX and pupilY appropriately.
+      </p>
+      <p audio="6">Use the following method to test if a point is inside 
+      the eye (derived from the formula of an ellipse):</p>
+      <pre class="width70">public boolean inEye () {
+        double dist = square(mouseX - eyeCenterX) / square(eyeWidth/2-pupilRadius) 
+                 + square(mouseY - eyeCenterY) / square(eyeHeight/2-pupilRadius);
+        return (dist <= 1);    
+}</pre>
+      <p audio="7">
+         We'll leave you to write the method <tt>square</tt>, which returns 
+         a number times itself.  Make sure you have <tt>square</tt> return 
+         a double, because the <tt>inEye</tt> method won't work with 
+         integer arithmetic!
+      </p>
+   </body>
+</html>

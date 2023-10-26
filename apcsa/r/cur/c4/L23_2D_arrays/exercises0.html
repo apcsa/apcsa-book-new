@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Game board perspective</title>
+   </head>
+   <body>
+<p audio="2">
+In a game like chess or checkers, the game board is normally placed 
+between the players, and they sit on opposite sides. 
+Thus, the two players see the board from different perspectives. 
+Opposite views of a 3-by-3 Tic-Tac-Toe board, for instance, might be as follows:
+</p>
+<pre class="width40">
+xox        oxo
+ox          xo
+oxo        xox
+</pre>
+<p audio="3">
+Implement and test a class representing a 19-by-19 game board. 
+Your representation should be a two-dimensional array of one-character strings,
+all initially set to a period ("."). 
+Your class should include three public member functions:
+</p>
+<ul>
+<li audio="4">
+A constructor, which initializes all the cells to a period.
+</li>
+
+<li>
+<span audio="5"><tt>void setCell (int player, int row, int col, String c)</tt><br />
+stores the given <tt>String</tt> argument at board position <tt>[row][col]</tt>, 
+computed from the given player's perspective. 
+For example, on the 3-by-3 board that, 
+viewed from player 0's perspective, contains</span>
+
+<pre class="width40">
+xox
+ox.
+oxo
+</pre>
+<br />
+<span audio="6">
+changing board cell [0][2] to <tt>"M"</tt> from player 0's perspective 
+would result in the board</span>
+<br />
+<pre class="width40">
+xoM
+ox.
+oxo
+</pre>
+<span audio="7">
+while changing board cell [0][2] to <tt>"M"</tt> 
+from player 1's perspective would result in the board
+</span>
+<br />
+<pre class="width40">
+xox
+ox.
+Mxo
+</pre>
+</li>
+<li audio="8">
+<tt>void print (int player)</tt></br>
+prints the board from the given player's perspective.
+The players are numbered 0 and 1, 
+and the rows and columns of the board are numbered from 0 to 18. 
+</li>
+</ul>
+<div class="talkBubble medium_right" align="left" color="orange" char="octal2">
+<p audio="9.f3">
+You need not error-check the arguments to <tt>setCell</tt> and <tt>print</tt>.
+</p></div>
+   </body>
+</html>

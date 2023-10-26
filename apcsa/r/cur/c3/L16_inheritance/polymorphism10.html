@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What happens at run time</title>
+   </head>
+   <body>
+<p audio="1">
+Once the compiler is satisfied that a <tt>move</tt> method is available for an object, 
+the runtime system then selects the <em>most specialized</em> <tt>move</tt> method to call.
+For a <tt>Point</tt>, it uses the <tt>Point move</tt> method.  
+For a <tt>TracedPoint</tt>, it uses the <tt>TracedPoint move</tt> method.
+</p>
+<p audio="2">
+We just considered the code
+</p>
+<pre class="width60">
+    ArrayList&lt;Object&gt; a = new ArrayList&lt;Object&gt; ( );
+    a.add (new Point (10, 11));
+    a.add ("abcd"); // a String object
+    a.add (new Player ( ));
+    for (int k=0; k&lt;a.size( ); k++) {
+        System.out.println (a.get (k));
+    }
+</pre>
+<p audio-="3">
+Why did it work?
+Because the compiler noted that a <tt>toString</tt> method is defined 
+in the <tt>Object</tt> class, and was satisfied.
+</p>
+<p class="quoteOrange" audio="4">
+A mantra to help understand this:
+<em>an object always remembers how it was constructed,
+and chooses a method from the class of which it is an instance.</em>
+</p>
+</body>
+</html>

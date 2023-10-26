@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Analyzing temperature classification code</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+    </head>
+    <body>
+        <p audio="cond37analyze_1" class="quoteBlue">
+            Using BlueJ, instantiate a copy of the Temperature class. The two program segments below are separated 
+            into the methods tempRead1 and tempRead2. Both methods take an int argument "temp".  Start giving inputs to the two methods.  
+            For what values of <tt>temp</tt>
+            do the two program segments below behave differently 
+            (i.e. set <tt>tempStr</tt>
+            to a different value)?
+        </p>
+        <table id="tableClear">
+            <tr>
+                <td>
+                    <pre> 
+if (temp &gt;= 65 &amp;&amp; temp &lt;= 75) {
+	tempStr = "comfortable";
+} else {
+	tempStr = "uncomfortable";
+}
+</pre>
+                </td>
+                <td>
+                    <pre> 
+if (temp &gt;= 65 || temp &lt;= 75) {
+	tempStr = "comfortable";
+} else {
+	tempStr = "uncomfortable";
+}
+</pre>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

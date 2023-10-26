@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The wrong answer</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">The wrong answer</div>
+
+    <div class="prompt">
+    
+<p audio="1">
+
+Give a nonempty string <tt>str</tt> for which
+
+<tt>withBlanksRemoved(str)</tt> returns the wrong answer. Explain
+
+how you found it.
+</p>
+
+
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="joe">I read the code carefully. It crashes when the string ends in a blank.
+        </div>
+        
+        <div name="sherry">The code doesn't work when there are more than one consecutive blank.  For example, "  a" starts with pos = 0, then turns the string into " a", then it sets pos to 1, which is the position of the "a".
+I found it by trying the case that has a "typical" (more than 1) consecutive blanks.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>Running Java programs without BlueJ, revisited</title>
+</head>
+<body>
+<p audio="2">When we discussed static methods, we briefly mentioned the special static method named <tt>main</tt> that is
+executed when a Java program is run without BlueJ. Its header is</p>
+
+<pre>
+public static void main (String [ ] args)
+</pre>
+
+<p audio="3">The last thing to learn about <tt>main</tt> is its argument, an array of <tt>Strings</tt>. In a system with
+a command-line user interface, one would run a compiled Java program with the command <tt>java</tt> followed by the name of
+the class whose <tt>main</tt> method is to be executed first. It is also possible in this command to provide text information
+to the program about to be run, by adding extra arguments to the command. These extra arguments are passed to <tt>main</tt>
+in the <tt>args</tt> array.</p>
+<p audio="4">Here's an example. Suppose the main method for the Name class is run with the command</p>
+
+<pre>
+java Name jesse colin young
+</pre>
+
+<p audio="5">Then <tt>args[0]</tt> would contain <tt>"jesse"</tt>, <tt>args[1] "colin"</tt>, and <tt>args[2] "young"</tt>
+when <tt>main</tt> is entered.</p>
+</body>
+
+</html>

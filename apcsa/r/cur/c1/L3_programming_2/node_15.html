@@ -1,0 +1,48 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Initializing the values of reference variables</title>
+      
+</head>
+<body>
+<p>
+There are three steps to initializing a reference variable from scratch:
+</p>
+<ol>
+	<li>declaring the reference variable;</li>
+	<li>using the <tt>new</tt> operator to build an object 
+	    and create a reference to the object; and</li>
+	<li>storing the reference in the variable.</li>
+</ol>
+<p>
+Here's an example. The statement
+</p>
+<pre>
+   Refillable rtest = new Refillable (100);
+</pre>
+<p>
+first declares the variable <tt>rtest</tt> as something 
+that can contain a reference to a <tt>Refillable</tt> object. 
+Then the <tt>new</tt> operator builds&mdash;allocates memory for&mdash;a 
+<tt>Refillable</tt> object, and calls the <tt>Refillable</tt> constructor 
+to initialize the instance variables. 
+The <tt>new</tt> operator returns a reference to the new object, 
+which is then stored in the <tt>rtest</tt> variable.
+</p>
+<p>
+The variable declaration (step 1) and the initialization (steps 2 and 3) 
+may be done separately, for example,
+</p>
+<pre>
+   Refillable rtest;
+   rtest = new Refillable (100);
+</pre>
+<p>
+The use of the <tt>new</tt> operator is handled automatically
+by the BlueJ system when we control-click on the class.
+Explicit use of <tt>new</tt> is required when we initialize
+an object in program code.
+</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Tracing through the example</title>
+   </head>
+   <body>
+<p audio="2">
+Here again is the code for <tt>charCount</tt>.
+</p>
+<pre class="width60">
+public static int charCount (String s) {
+   if (s.equals("")) {
+      return 0;
+   } else {
+      return 1 + charCount (s.substring(1));
+   }
+}
+</pre>
+<p audio="3">
+Suppose we call <tt>charCount</tt> with the argument <tt>"abc"</tt>.
+</p>
+<ul><li><span audio="4"><tt>"abc"</tt> isn't equal to <tt>""</tt>, so call <tt>charCount ("bc")</tt></span>
+	<ul><li><span audio="5"><tt>"bc"</tt> isn't equal to <tt>""</tt>, so call <tt>charCount ("c")</tt></span>
+		<ul><li><span audio="6"><tt>"c"</tt> isn't equal to <tt>""</tt>, so call <tt>charCount ("")</tt></span>
+			<ul><li><span audio="7"><tt>""</tt> is equal to <tt>""</tt>, so return 0</span>
+			</li></ul>
+			<span audio="8">return 1 + what the call to <tt>charCount</tt> returned, which is 1 + (0)</span>
+		</li></ul>
+		<span audio="9">return 1 + what the call to <tt>charCount</tt> returned, which is 1 + (1 + 0)</span>
+	</li></ul>
+	<span audio="10">return 1 + what the call to <tt>charCount</tt> returned, which is 1 + (1 + 1 + 0)</span>
+</li></ul>
+	
+   </body>
+</html>

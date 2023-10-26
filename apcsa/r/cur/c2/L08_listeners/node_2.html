@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <script>
+         vocabClass = "top275";
+      </script>
+      <title>Setting up a mouse event handler</title>
+   </head>
+   <body>
+   <br/>
+   <div class="talkBubble" char="constance4" color="red" align="left">
+      <p audio="2.f1">The first step is to write the relevant mouse 
+      interaction (e.g., <tt>mouseClicked</tt>) 
+      method.</p>
+      <p audio="3.f1">However, it is not enough to just include 
+      the method in your class.  You have to tell Java that your  
+      class is both set up to deal with events <i>and</i>
+      wants to receive those events.</p>
+   </div>
+   <br/>
+   <p audio="4" class="quoteBlue">How do you tell Java that your class can deal with events?</p>
+   <p audio="5">In a similar way to how we used graphics classes such as <tt>JPanel</tt>,
+      we need to tell Java that our class can act like another class.  We are going to use another special keyword 
+      in this case: the <tt>implements</tt> keyword.  This is used in the 
+      <span class="vocab">class header</span>, like <tt>extends</tt>.
+     
+      The thing that we will implementing, in this case, is a <tt>MouseListener</tt>.  So, if we were writing a class called <tt>SimpleClicker</tt> that needed to deal with mouse events, we 
+      would write:</p>
+   <pre class="width80">public class SimpleClicker implements MouseListener {
+   ... 
+}</pre>
+   <p audio="6">What is <tt>MouseListener</tt>?  It is capitalized like 
+      a class, but it is actually an <span class="vocab">interface</span>, something somewhat 
+      different.  You can think of an interface as a <i>contract</i>.  That is,
+      if you say a class "implements" an interface, that means you have to include 
+      certain specific methods in your class.  For the <tt>MouseListener</tt> interface, 
+      that means the five methods in the previous page: <tt>mousePressed</tt>, <tt>mouseReleased</tt>, <tt>mouseClicked</tt>, <tt>mouseEntered</tt>, 
+      and <tt>mouseExited</tt>.  Easy!
+(Incidentally, you can look in the online Java documentation to find which methods you have to provide when using an interface
+in the Java class library.)</p>
+    <p audio="7" class="quoteBrown">We'll learn more about interfaces when we get to the 
+    unit on <span class="vocab">inheritance</span>.</p>
+ 
+
+</body>
+</html>

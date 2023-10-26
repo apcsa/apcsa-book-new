@@ -1,0 +1,47 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>Loops and processing patterns</title>
+</head>
+<body>
+<p>
+We also worked with another looping construct, the <tt>for</tt> statement.
+There are two kinds of <tt>for</tt> statement:
+</p>
+<pre>
+for ( <i>initialization</i>,
+      <i>continuation test</i>,
+      <i>update</i> ) {
+   <i>statements to repeat</i>
+}
+
+for ( <i>iteration variable</i> : <i>ArrayList</i> ) {
+   <i>statements to repeat</i>
+}
+</pre>
+<p>
+The statements to repeat comprise the <i>loop body</i>.
+In the first form of <tt>for</tt> loop,
+we specify initializations necessary to start the loop,
+a boolean expression that says whether to execute the body
+one more time, 
+and statements that update loop variables.  (These often involve
+incrementing using the <tt>++</tt> operator or decrementing using the <tt>--</tt> operator.)
+The second form assumes that a collection is involved,
+and executes the body for each element of the collection.
+</p>
+<p>
+We also encountered several <i>patterns</i> for collection processing:
+</p>
+<ul>
+<li>processing every element of the collection;</li>
+<li>searching for a collection element that satisfies a given condition; and</li>
+<li>processing every pair of <i>consecutive</i> sequence elements.</li>
+</ul>
+<p>
+Instances of these patterns will appear over and over in subsequent lessons.
+</p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Reasons the bug might be undetected</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p> 
+Here's the code again.
+</p>
+<table><tr><td>
+<pre>    leapDayCount = 0;
+    if (year % 4 == 0) {
+        leapDayCount = 1;
+    }
+    if (year % 100 == 0) {
+        leapDayCount = 0;
+    }
+    if (year % 400 == 0) {
+        leapDayCount = 1;
+    }
+</pre>
+</td></tr><table> 
+<p> 
+Explain why a single test value that exercises every statement in this code is insufficient 
+to reveal all bugs in the code.
+</p> 
+</body>
+</html>

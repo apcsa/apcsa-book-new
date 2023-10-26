@@ -1,0 +1,33 @@
+
+
+TODO===========================
+Make charcount not static -- steps 2-7
+ - basically, we don't want them to associate recursion with 'static'
+ - could leave it this way, but have an direct explanation about recursive funcs don't need to be static
+
+turn steps 5-7 to multiple choice
+or, keep #7 as a bs but add a "and how did you figure it out" to the question
+
+
+step 8 is confusing... "can't always call itself"... 
+
+step 9 -- 'stack' isn't totally clear (the picture shows 'nested' robots)
+
+step 10 -- video!!
+
+steps 21/22 -- The contains1MoreThan problem does have a bug but the bug appears 
+unrelated to recursion -- it seems to be that you are comparing strings with == instead of .equals 
+in the final else clause of the algorithm.
+
+-----------
+
+Turn intro4 into multiple choice?
+Or, maybe, just fix the title.
+
+intro5 as well.
+
+Anywhere: use nestbot3.png (from art/scenes) as a char in a talkbubble.
+
+
+
+

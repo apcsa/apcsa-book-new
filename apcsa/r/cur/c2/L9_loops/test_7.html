@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top325";
+		</script>
+        <title>A number guessing game</title>
+</head>
+<body>
+	<div class="imageLeft">
+		<img src="/apcsa/r/static/art/scenes/binsearch_guessing.png" alt="Guessing the number" />
+	</div>
+<p audio="2">
+Now consider a guessing game.
+You pick an integer between 1 and 15,
+and the computer tries to guess it with the minimum number of guesses.
+You answer each of the computer's guesses by indicating "too high", "too low", or "you got it".
+</p>
+<br /><br /><br />
+
+<p audio="3">
+The computer's procedure for minimizing the number of guesses is as follows.
+It keeps track of the range of integers in which your number might be;
+for example, when the game starts, it knows only that your number is between 1 and 15.
+It then guesses the <i>middle</i> of that range&mdash;here, 8.
+If you say that 8 is too big, it can rule out half the range;
+the number now most be between 1 and 7.  
+Again the computer guesses the middle of the range&mdash;4.
+If this time you say "too small", it rules out values between 1 and 4,
+knowing now that your number is between 5 and 7.
+And so on.
+</p>
+<p audio="4">
+This technique is called <span class="vocab">binary search</span>.
+We'll revisit it later in the course.
+</p>
+</body>
+</html>

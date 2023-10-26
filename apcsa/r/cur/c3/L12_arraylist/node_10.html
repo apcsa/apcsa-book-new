@@ -1,0 +1,51 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>What we've done</title>
+</head>
+<body>
+<p>
+Some of the classes we studied earlier made use of several instance variables
+to represent a <i>collection</i> of information.
+Examples include
+</p>
+<ul>
+<li> 
+<tt>myFirst</tt>, <tt>myMiddle</tt>, and <tt>myLast</tt> in the <tt>Name</tt> class;
+</li>
+<li>
+<tt>racer0</tt>, <tt>racer1</tt>, and <tt>racer2</tt> in the <tt>DotRacing</tt> class; and
+</li>
+<li>
+<tt>door1isClosed</tt>, <tt>door2isClosed</tt>, and <tt>door3isClosed</tt>
+in the <tt>Stage</tt> class in the Monty Hall program.
+</li>
+</ul>
+<p>
+Code to process these collections is somewhat clumsy.
+For instance, consider the <tt>DotRacing whoMoves</tt> method:
+</p>
+<pre>
+public Dot whoMoves ( ) {
+   int moverChoice = randGen.nextInt (2);
+   if (moverChoice == 0) {
+      return racer0;
+   } else if (moverChoice == 1) {
+      return racer1;
+   } else if (moverChoice == 2) {	
+      return racer2;
+   }
+}
+</pre>
+<p>
+With more doors, the code would be even more awkward.
+Ideally, there would be a way to use a single statement, something like
+</p>
+<blockquote>
+Use <tt>moverChoice</tt> to access the <tt>racer___</tt> variable,
+and return its contents.
+</blockquote>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+title: Lesson 8: Getting Input Through Listeners
+
+{
+h2: Getting Input Through Listeners
+
+
+heading: Mouse event handling
+    resource: Events [/apcsa/r/cur/c2/L08_listeners/node_0.html]
+    reading: Callbacks, revisited [/apcsa/r/cur/c2/L08_listeners/node_1.html]
+    reading: Mouse event handlers [/apcsa/r/cur/c2/L08_listeners/node_2.html]
+    reading: Mouse events [/apcsa/r/cur/c2/L08_listeners/node_2b.html]
+    reading: addMouseListener(1) [/apcsa/r/cur/c2/L08_listeners/node_2b2.html]
+    reading: addMouseListener(2) [/apcsa/r/cur/c2/L08_listeners/node_2b3.html]
+    resource: extends and implements [/apcsa/r/cur/c2/L08_listeners/node_2c.html]
+    codeit: SimpleClicker code [/apcsa/r/cur/c2/L08_listeners/node_2d.html]
+    matchsequence: What happens if... [/apcsa/r/cur/c2/L08_listeners/node_2e_match.html]
+
+heading: Events and drawing
+    codeit: Mouse events with drawing [/apcsa/r/cur/c2/L08_listeners/node_3.html]
+    matchsequence: Names [/apcsa/r/cur/c2/L08_listeners/node_4.html]
+    brainstorm: Bugs [/apcsa/r/cur/c2/L08_listeners/node_5.html]
+    codeit: Mouse click location [/apcsa/r/cur/c2/L08_listeners/node_6.html]
+    codeit: Clicking information [/apcsa/r/cur/c2/L08_listeners/node_7.html]
+
+heading: The mouse as a pointer
+    codeit: Simulating drawRect [/apcsa/r/cur/c2/L08_listeners/ptr_1.html]
+    codeit: Stamp pad for images [/apcsa/r/cur/c2/L08_listeners/ptr_2.html]
+    codeit: In or out of bounds [/apcsa/r/cur/c2/L08_listeners/ptr_3.html]
+    codeit: Phone dialing [/apcsa/r/cur/c2/L08_listeners/ptr_5.html]
+
+heading: The mouse as a controller
+    codeit: Traffic light [/apcsa/r/cur/c2/L08_listeners/ctl_1.html]
+    codeit: Turtle controller [/apcsa/r/cur/c2/L08_listeners/ctl_2.html]
+    codeit: A two-digit counter [/apcsa/r/cur/c2/L08_listeners/ctl_3.html]
+
+heading: Review
+    summary: A framework for handling mouse clicks [/apcsa/r/cur/c2/L08_listeners/node_8.html]
+    summary: Explanation of the framework [/apcsa/r/cur/c2/L08_listeners/node_9.html]
+    summary: Roles of the mouse [/apcsa/r/cur/c2/L08_listeners/node_10.html]
+
+heading: Case Study: XEyes
+    resource: Shifting eyes [/apcsa/r/cur/c2/L08_listeners/xeyes_1.html]
+    resource: Let's explore [/apcsa/r/cur/c2/L08_listeners/xeyes_2.html]
+    resource: The XEyes class [/apcsa/r/cur/c2/L08_listeners/xeyes_3a.html]
+    resource: The Eye class [/apcsa/r/cur/c2/L08_listeners/xeyes_3b.html]
+    resource: Drawing an eye [/apcsa/r/cur/c2/L08_listeners/xeyes_3c.html]
+    resource: Using math [/apcsa/r/cur/c2/L08_listeners/xeyes_4.html]
+    codeit: Exercise: Laser vision [/apcsa/r/cur/c2/L08_listeners/xeyes_exer_1.html]
+    codeit: Exercise: Lookin' at you [/apcsa/r/cur/c2/L08_listeners/xeyes_exer_2.html]
+    codeit: Exercise: Motion events [/apcsa/r/cur/c2/L08_listeners/xeyes_exer_4.html]
+    codeit: Exercise: More eyes! [/apcsa/r/cur/c2/L08_listeners/xeyes_exer_3.html]

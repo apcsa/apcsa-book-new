@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Extending the Refillable class (2)</title>
+   </head>
+   <body>
+<p audio="2">
+It doesn't make much sense to set up a <tt>CokeCooler</tt> class that provides <i>exactly</i>
+the functionality of <tt>Refillable</tt>&mdash;in that case, 
+we should just use <tt>Refillable</tt> as is.
+But suppose we want to provide some <tt>CokeCooler</tt>-specific output,
+by printing the amount of drinks in the cooler during each <tt>refill</tt> or <tt>useUp</tt> call.
+We do this by providing our own <tt>refill</tt> 
+and <tt>useUp</tt> methods&mdash;<span class="vocab">overriding</span>
+those of <tt>Refillable</tt>.
+We can call the corresponding superclasses overridden method using the <tt>super</tt> keyword;  for example, <tt>super.refill(amount)</tt> and <tt>super.useUp(amount)</tt>
+access the overridden methods passing <tt>amount</tt> as the argument. Here is the code.
+</p>
+<pre class="width80">
+public class CokeCooler extends Refillable {
+
+   public CokeCooler (int initialAmount) {
+      super (initialAmount);
+   }
+
+   public void useUp (int amount) {
+      super.useUp (amount);
+      System.out.println ("There are now " +
+	    currentAmount ( ) + " Cokes in the cooler.");
+   }
+
+   public void refill (int amount) {
+      super.refill (amount);
+      System.out.println ("There are now " +
+	    currentAmount ( ) + " Cokes in the cooler.");
+   }
+}   
+</pre>
+<p audio="3">
+<tt>CokeCooler</tt> inherits <tt>Refillable</tt>'s currentAmount method, 
+so it can use it without needing an explicit object reference of type <tt>Refillable</tt>.
+Each of the methods listed above first calls its <tt>Refillable</tt> counterpart,
+then (in <tt>useUp</tt> and <tt>refill</tt>) prints out the CokeCooler specific function of printing the current amount to the console.
+</p>
+<p audio="4">
+In fact, the first thing every subclass constructor must do is call the superclass constructor;
+if the <tt>super</tt> call is omitted, Java substitutes a call to the 0-argument
+superclass constructor to try to ensure that all the object's instance variables
+are properly initialized.
+</p>
+   </body>
+</html>

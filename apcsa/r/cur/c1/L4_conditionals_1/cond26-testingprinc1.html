@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Testing principle 1</title>
+
+<!--  TODO unused though... -->
+   </head>
+<body>
+<p> 
+The most obvious principle of program testing is that test values 
+must "exercise" every statement in the program,
+since any statement that's not tested may contain a bug.
+Our tests of the <tt>Refillable</tt> class basically did that, 
+covering the cases in <tt>useUp</tt> and the cases in <tt>refill</tt>.
+As in the testing of <tt>Refillable</tt>, 
+exercising all statements may require more than one run of a program.
+<!--  make sure we actually tested refillable like this!  -->
+
+</p> 
+<p> 
+Recall the leap year tester from an earlier exercise:</p>
+<pre>    if (year % 400 == 0) {
+        leapDay = 1;
+    } else if (year % 100 == 0) {
+        leapDay = 0;
+    } else if (year % 4 == 0) {
+        leapDay = 1;
+    } else {
+        leapDay = 0;
+    }
+</pre> 
+<p> 
+The code contains four cases, exactly one of which is executed for any particular value 
+of <tt>year</tt>.
+Thus we must test this code with at least one <tt>year</tt> value per case, 
+so at least four values of <tt>year</tt> are needed for testing:
+</p> 
+<ul> 
+<li>a year that's divisible by 400;</li> 
+<li>a year that's divisible by 100 but not by 400;</li> 
+<li>a year that's divisible by 4 but not by 100;</li> 
+<li>a year that's not divisible by 4.</li> 
+</ul> 
+<p> 
+Principle 1 by itself is insufficient, however.
+Here's an example;
+</p> 
+<pre>    leapDay = 0;
+    if (year % 4 == 0) {
+        leapDay = 1;
+    }
+    if (year % 100 == 0) {
+        leapDay = 0;
+    }
+    if (year % 400 == 0) {
+        leapDay = 1;
+    }
+</pre> 
+<p> 
+A <tt>year</tt> value of 2000 causes all the statements in this program segment to be executed. 
+</p> 
+
+</body>
+</html>

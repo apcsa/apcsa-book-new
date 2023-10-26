@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Zooming</title>
+</head>
+<body>
+<p>
+(This problem is adapted from a free-response question on the 1988 AP CS exam.)
+</p>
+ 
+<p>
+Consider a class named <tt>Image</tt> that represents an black-and-white image.
+Its instance variable is a rectangular two-dimensional array of nonnegative integers,
+which we'll call <tt>myImage</tt>.
+each integer representing one of the pixels in the image. (The darker the pixel,
+the bigger the corresponding array element, and vice versa.)
+</p>
+<p>
+Provide a <tt>public void</tt> method named <tt>zoomOut</tt> that expands <tt>myImage</tt>
+by an amount specified by its positive integer argument, which we'll call <tt>factor</tt>.
+In particular, if <tt>myImage</tt> starts with <tt>r</tt> rows and <tt>c</tt>
+columns and if the value of <tt>factor</tt> is <tt>k</tt>, then
+<tt>myImage</tt> is replaced by a two-dimensional array with <tt>k*r</tt> rows and <tt>k*c</tt>
+columns, where each element <tt>e</tt> of <tt>myImage</tt> is
+replaced by a <tt>k</tt>-by-<tt>k</tt> array, all of whose elements are
+<tt>e</tt>.
+</p>
+<p>
+The effect of the call <tt>zoomOut(3)</tt> is shown in the diagram below.
+</p>
+<table>
+<tr><td>Value of <tt>myImage</tt> at the time of the call</td><td>Value of <tt>myImage</tt> 
+upon return from the call</td></tr>
+<tr>
+<td>
+<pre>
+7 2 3
+4 8 6
+</pre>
+</td>
+<td>
+<pre>
+7 7 7 2 2 2 3 3 3
+7 7 7 2 2 2 3 3 3
+7 7 7 2 2 2 3 3 3
+4 4 4 8 8 8 6 6 6
+4 4 4 8 8 8 6 6 6
+4 4 4 8 8 8 6 6 6
+</pre></td></tr></table>
+<p>
+Because each <tt>Image</tt> takes up a significant amount
+of memory, you cannot assume that a second <tt>Image</tt> object
+would fit in memory. Thus, <b>you will receive no credit if you make use of any
+array variable other than the one passed into the procedure</b>.
+</p>
+<p>
+You may find it helpful to write and call an auxiliary procedure that assigns a value 
+to every element of a rectangular portion of a two-dimensional array.
+</p>
+</body>
+</html>

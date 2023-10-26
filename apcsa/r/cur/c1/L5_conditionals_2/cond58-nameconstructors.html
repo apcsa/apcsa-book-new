@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>New constructors for the <tt>Name</tt> class</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+  
+<p audio="cond58_1"> 
+We will add two more constructors, one for a one-word name, the other for a two-word name.
+</p> 
+<pre class="width50">public Name (String first, String last) {
+   myFirst = caseFixed (first);
+   myMiddle = "";
+   myLast = caseFixed (last);
+}
+
+public Name (String first) {
+   myFirst = caseFixed (first);
+   myMiddle = "";
+   myLast = "";
+}
+</pre>
+<br/>
+<div class="talkBubble" align="right" color="blue" char="constance1"> 
+<p audio="cond58_2.f1"> 
+Why not just retain the three-argument constructor and have the client object
+pass empty strings as arguments?  Because we want to present an <i>abstraction</i>
+to the client by <i>hiding</i> the details of how names are actually implemented.
+</p> 
+</div>
+</body>
+</html>

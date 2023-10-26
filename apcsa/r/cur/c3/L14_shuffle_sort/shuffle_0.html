@@ -1,0 +1,44 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Initialization of a deck</title>
+   </head>
+   <body>
+      <p audio="2">
+         We will be using a <tt>Deck</tt>
+         class whose instance variables include <tt>myCards</tt>, 
+         an <tt>ArrayList&lt;Card&gt;</tt>.
+         We start by initializing this deck.
+      </p>
+      <p audio="3">
+         The <tt>Deck</tt>
+         constructor calls the method <tt>reset()</tt>. The method <tt>reset()</tt> should initialize the deck to
+          be in perfect order:
+      </p>
+      <ul>
+         <li audio="4">
+           Initialize the <tt>myCards</tt> arraylist: <tt>myCards = new ArrayList<Card>();</tt>
+         </li>
+      
+         <li audio="5">
+            The top thirteen cards are the clubs, arranged from ace to king.
+         </li>
+         <li audio="6">
+            The next thirteen cards are the diamonds, arranged in the same way.
+         </li>
+         <li audio="7">
+            Next come the hearts, and finally the spades, arranged from ace to king.
+         </li>
+      </ul><br />
+    <p audio="8">
+         Note: Look at the <tt>toString()</tt> method in the <tt>Card</tt> class. It shows what integer values are mapped to what suits and ranks. It is zero-based as you might imagine. For ranks, 0 to 12 maps from Ace to King; for suits 0 to 3 maps to clubs, diamonds, hearts, and spades. 
+      </p>
+	  <div class="openbluejproj" project="lesson14\cards">
+         <p audio="1">Open the current project in BlueJ 
+            (<b>lesson14\cards</b>).</p>
+        </div>
+   </body>
+</html>
+

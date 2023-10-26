@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            vocabClass = "top200";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.min.js">
+        </script>
+        <script type="text/javascript">
+            var WinRef;
+            function openChild(url){
+                WinRef = window.open(url, "WindName", "width=800,height=660,resizable=yes,scrollbars=yes");
+                return false;
+            }
+        </script>
+        <title>Calling a method for an object</title>
+    </head>
+    <body>
+        <p audio="calling1_1">
+            Now that we have an object, we can call its methods. 
+            Right-click on the <tt>gameBoar1</tt> object on the object bench, and select <tt>void showBoard()</tt> from the list of options. 
+            A new board will be drawn in another window. <a class="slideshowLink" href="slideshow4.html" onClick="return openChild(this.href);">1</a>
+        </p>
+        <p audio="calling1_2">
+            The list of options that shows up when you right-clicked on the <tt>gameBoar1</tt> object 
+            are the methods of the <tt>GameBoard</tt> class 
+            (and, therefore, of objects built from that class).
+        </p>
+        <p audio="calling1_3">
+            The name of the method is <strong><tt>showBoard</tt></strong>.  You'll notice that BlueJ adds more information than just the name, 
+            however.
+        </p>
+        <ul>
+            <li audio="calling1_4">The word <tt><span class="vocab">void</span></tt> at the front indicates what type of thing the method will 
+                return after it has been run.  This method returns nothing, which in Java is described as <tt>void</tt>.</li>
+            <li audio="calling1_5">The two parentheses at the end are indicating what parameters 
+                the method needs to receive. There is nothing between
+the parentheses, so this method takes no parameters. </li>
+        </ul>
+        <p audio="calling1_6">
+            Selecting a method calls the method on the object. Try selecting <tt>void hideBoard()</tt>. 
+            Does it do what you expect?
+        </p>
+        <div class="clearFloats"> </div>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Comparison with ArrayLists</title>
+   </head>
+   <body>
+<p audio="1">
+The table below gives examples comparing arrays with <tt>ArrayLists</tt>.
+</p>
+<table id="tableBlue">
+	<tr>
+		<td></td> <td><i><tt>ArrayList</tt> operations</i></td> <td><i>array operations</i></td>
+	</tr>
+	<tr>
+		<td>declaration</td>
+		<td><tt>ArrayList&lt;String&gt; suitNames;</tt></td> 
+		<td><tt>String [ ] suitNames;</tt></td>
+	</tr>
+	<tr>
+		<td>initialization</td>
+		<td><tt>suitNames = new ArrayList&lt;String&gt; ( );</tt></td> 
+		<td><tt>suitNames = new String[4];</tt></td>
+	</tr>
+	<tr>
+		<td>declaration combined with initialization</td> 
+		<td>&mdash;</td> 
+		<td><tt>String [ ] suitNames = {"club", "diamond", "heart", "spade"};</tt></td>
+	</tr>
+	<tr>
+		<td>access</td> 
+		<td><tt>suitNames.get (0)</tt></td>
+		<td><tt>suitNames[0]</tt></td>
+	</tr>
+	<tr>
+		<td>assignment</td> 
+		<td><tt>suitNames.set (0, "club");</tt></td> 
+		<td><tt>suitNames[0] = "club";</tt></td>
+	</tr>
+</table>
+<p audio="2">
+The argument to <tt>get</tt> and the first argument to <tt>set</tt> must be at least 0
+and less than the number of elements added to the <tt>ArrayList</tt> 
+minus the number of elements removed. 
+For arrays, any index must be at least 0 and less than the number of elements
+set up at initialization.
+</p>
+</body>
+</html>

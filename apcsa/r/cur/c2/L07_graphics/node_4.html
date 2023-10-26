@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title><tt>Greetings</tt> methods </title>
+   </head>
+   <body>
+      <p audio="2">The <tt>Greetings</tt> constructor starts by 
+         instantiating a new <tt>JFrame</tt> as the instance variable <tt>easel</tt>. </p>
+      <pre class="width80">
+public Greetings() {
+   JFrame easel = new JFrame();		
+   easel.setSize (myWindowWidth, myWindowHeight);
+   easel.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+   easel.add (this);
+   easel.setVisible (true);
+}
+</pre>
+      <p audio="3">Remember, the <tt>JFrame</tt> is the window, or easel, that will hold 
+         our canvas (the <tt>Greetings</tt> class, acting like a <tt>JPanel</tt>). 
+         Once we have the <tt>JFrame</tt> object, we need to 
+         set its size.  The <tt>setSize</tt> method to say how big a canvas we can 
+         support. 
+         </p>
+         <p>In the <tt>setDefaultCloseOperation</tt> call, we say what happens
+         when we click on the "close" box of the window being prepared.
+         </p>
+      <p audio="4">Next, we then connect the <tt>Greetings</tt> object (acting like a <tt>JPanel</tt> object)
+         with the <tt>JFrame</tt> object.  We put the canvas onto 
+         the easel. 
+         The  
+         keyword <tt>this</tt> refers to the <tt>Greetings</tt> object currently
+         being constructed.</p>
+      <p audio="5">Finally, we make the frame and its panel show up on the screen by
+      calling the <tt>setVisible</tt> method.</p>
+      <p class="quoteBrown" audio="6">So, we've just seen four methods in the <tt>JFrame</tt> class: 
+      </p>
+         <ol audio="7">
+            <li>
+               <tt>setSize</tt>, which takes two <tt>int</tt> values as arguments;
+            </li>
+            <li>
+               <tt>setDefaultCloseOperation</tt>, which takes one argument (whose type we'll out later);
+            </li>
+            <li>
+               <tt>add</tt>, which takes a <tt>JPanel</tt>; and
+            </li>
+            <li>
+               <tt>setVisible</tt>, which takes a boolean.
+            </li>
+         </ol>
+         <p class="quoteBrown" audio="8">
+         Because the <tt>JFrame</tt> class is already written for you, 
+         you can use its methods just like any class in your program.  
+         While the <tt>JFrame</tt> class has many, many methods, these are 
+         some of the important ones. 
+         <br/>
+         <br/>
+         We'll look later at how to find out about what methods are inside
+         of the Java libraries.
+      </p>
+   </body>
+</html>

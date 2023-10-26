@@ -1,0 +1,63 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+<nodes>
+<HtmlNode identifier="critter0" title="Critters" class="intro">
+	<ref filename="critter0.html"/>
+</HtmlNode>
+<HtmlNode identifier="critter1" title="Critter processing" class="intro">
+	<ref filename="critter1.html"/>
+</HtmlNode>
+<BrainstormNode identifier="critter10" title="Critterly love" class="brainstorm">
+	<ref filename="critter10.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="critter11" title="Tracing an act call" class="brainstorm">
+	<ref filename="critter11.bs"/>
+</BrainstormNode>
+<HtmlNode identifier="critter12" title="Critter extension" class="intro">
+	<ref filename="critter12.html"/>
+</HtmlNode>
+<BrainstormNode identifier="critter2" title="Override getActors?" class="brainstorm">
+	<ref filename="critter2.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="critter3" title="Processing actors?" class="brainstorm">
+	<ref filename="critter3.bs"/>
+</BrainstormNode>
+<HtmlNode identifier="critter4" title="Extending Critter" class="intro">
+	<ref filename="critter4.html"/>
+</HtmlNode>
+<BrainstormNode identifier="critter6" title="ChameleonCritter makeMove method" class="brainstorm">
+	<ref filename="critter6.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="critter7" title="ChameleonCritter flower scatterer" class="brainstorm">
+	<ref filename="critter7.bs"/>
+</BrainstormNode>
+<MatchSequenceNode identifier="node_0.ms" title="ChameleonCritter overrides" class="matchsequence">
+	<ref filename="node_0.ms"/>
+</MatchSequenceNode>
+<MultipleChoiceNode identifier="node_1.mc" title="Actor locations" class="multiplechoice">
+	<ref filename="node_1.mc"/>
+</MultipleChoiceNode>
+</nodes>
+<sequences>
+<sequence identifier="master"  title="master" view="">
+<sequence-ref ref="seq_0"/>
+</sequence>
+<sequence identifier="seq_0"  title="Interacting classes" view="">
+<node-ref ref="critter0"/>
+<node-ref ref="critter1"/>
+<node-ref ref="critter2"/>
+<node-ref ref="critter3"/>
+<node-ref ref="critter4"/>
+<node-ref ref="node_0.ms"/>
+<node-ref ref="critter6"/>
+<node-ref ref="critter7"/>
+<node-ref ref="node_1.mc"/>
+<node-ref ref="critter10"/>
+<node-ref ref="critter11"/>
+<node-ref ref="critter12"/>
+</sequence>
+</sequences>
+<method>
+<startpoint><sequence-ref ref="master"/>
+</startpoint>
+</method>
+</project>

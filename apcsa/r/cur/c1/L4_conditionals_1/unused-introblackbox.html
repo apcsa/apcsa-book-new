@@ -1,0 +1,64 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Black-box testing</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body> 
+              
+
+
+<table id="tableClear">
+<tr><td>
+ <img class="imageLeft" src="/apcsa/r/static/art/scenes/testing_clearbox.png" width="120px" alt= "Clear Box graphic">
+ </td>
+ <td>
+ 	<p> 
+Both the test principles discussed so far focused on testing features of the code. 
+Since they assume that we can see into the program, 
+these techniques are collectively referred to as <i>glass-box</i> testing VOCAB.
+</td>
+</tr>
+</table>
+	
+<table id="tableClear">
+<tr><td>
+<p> 
+Another testing approach is called <i>black-box</i> testing VOCAB. 
+It involves generating test cases based only on the problem <i>specification</i>, 
+not on the code itself.
+There are several big advantages of this approach:</p>
+</td>
+<td><img class="imageRight" src="/apcsa/r/static/art/scenes/testing_blackbox.png" width="120px"  alt= "Black Box graphic"></td></tr>
+</table>
+			
+  
+<ul> 
+<li><p> 
+The test generation is not <i>biased</i> by knowledge of the code.  
+For instance, a program author might mistakenly conclude that a given situation 
+is logically impossible and fail to include tests for that situation; 
+a black-box tester would be less likely to fall into this trap.
+</p> 
+</li> 
+<li><p> 
+Since black-box tests are generated from the problem specification, 
+they can be used without change when the program <i>implementation</i> is modified.
+</p> 
+</li> 
+<li><p> 
+The results of a black-box test should make sense to someone unfamiliar with the code.
+</p> 
+</li> 
+<li><p> 
+Black-box tests can be easily designed before the program is written.
+</p> 
+</i></li> 
+</ul> 
+<p> 
+Black-box testing goes hand in hand with test-driven development.
+</p> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Now let's look at the <tt>Eye</tt> class</title>
+   </head>
+   <body>
+      <p audio="2">
+         The <tt>Eye</tt>
+         class is quite a bit more complicated than, well, perhaps 
+         anything you've seen so far.  Let's look at the big picture first.
+      </p>
+      <p audio="3" class="quoteBrown">
+         The <tt>Eye</tt>
+         object handles the drawing of one eyeball. 
+      </p>
+      <p audio="4">
+      </p>
+      <ul>
+            <li audio="6">
+            
+                  In order to keep track of what an eye looks like, objects 
+                  from the <tt>Eye</tt>
+                  class 
+                  have quite a few instance variables.  The statement
+         
+<pre class="tightText">int eyeX, eyeY, eyeWidth, eyeHeight, eyeCenterX,
+ 				eyeCenterY, pupilX, pupilY;</pre>
+         
+                  is a shortcut for creating several instance variables of the same type. 
+                  It defines 8 variables. 
+      
+         </li>
+ <li audio = "7">
+            An eye knows how to draw itself, based on values of those instance
+            variables, and does so through the <tt>draw</tt>
+            method.  Basically, an "eye" is three <tt>fillOval</tt> 
+            methods.  Pay some attention to how the various instance variables
+            define the dimensions that make up an eye.
+         </li>
+      </ul>
+   </body>
+</html>

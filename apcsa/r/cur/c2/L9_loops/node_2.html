@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Statement orders</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title"></div>
+
+    <div class="prompt">
+    
+<p audio="1">
+
+Here's the original code:
+
+</p>
+
+<table><tr><td>
+
+<pre class="width100">
+count = 0;
+while (count &lt; 80) {
+    count = count + 1;
+    System.out.println ("I like Java!");
+}
+</pre></td></tr></table><br/>
+
+<p audio="2">
+
+Suppose the statements in the body are switched as shown below.
+
+</p>
+
+<table><tr><td>
+
+<pre>
+count = 0;
+while (count &lt; 80) {
+    System.out.println ("I like Java!");
+    count = count + 1;
+}
+</pre></td></tr></table><br/>
+
+<p audio="3">
+
+Does the output remain the same?
+
+Explain why or why not.
+
+</p>
+
+
+
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">The second version prints an extra "I love Java!" line, since count isn't increased until after the line is printed rather than vice versa.
+        </div>
+        
+        <div name="Maria">The two versions print the same thing.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

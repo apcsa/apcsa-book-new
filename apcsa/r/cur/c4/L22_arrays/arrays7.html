@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The length of an array</title>
+   </head>
+   <body>
+<p audio="1">
+<tt>ArrayLists</tt> have a <tt>size</tt> method.
+Arrays, on the other hand, have a public instance variable named <tt>length</tt>. 
+The value in this variable cannot be changed.
+The program segments below both print the suits in <tt>suitNames</tt>.
+</p>
+<table>
+<tr>
+<td>
+<pre>
+ArrayList&lt;String&gt; suitNames = new ArrayList&lt;String&gt; ( );
+suitNames.add ("club");
+suitNames.add ("diamond");
+suitNames.add ("heart");
+suitNames.add ("spade");
+for (int k=0; k&lt;suitNames.size(); k++) {
+   System.out.println (suitNames.get (k));
+}
+</pre>
+</td>
+</tr>
+<tr><td>
+</td>
+</tr>
+<tr><td>
+<pre>
+String [ ] suitNames = {"club", "diamond", "heart", "spade"};
+for (int k=0; k&lt;suitNames.length; k++) {
+   System.out.println (suitNames[k]);
+}
+</pre>
+</td>
+</tr>
+</table>
+
+</body>
+</html>

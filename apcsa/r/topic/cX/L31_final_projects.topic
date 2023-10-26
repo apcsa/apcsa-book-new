@@ -1,0 +1,26 @@
+title: Lesson 31: Final Projects
+
+{
+h2: A few larger, final projects
+
+
+heading: Introduction
+    resource: Congratulations [/apcsa/r/cur/cX/L31_final_projects/intro_0.html]
+    resource: And now... [/apcsa/r/cur/cX/L31_final_projects/intro_0a.html]
+    reading: The projects [/apcsa/r/cur/cX/L31_final_projects/intro_1.html]
+    homework: Project writeup [/apcsa/r/cur/cX/L31_final_projects/intro_2.html]
+
+heading: Adventure
+    resource: Introduction [/apcsa/r/cur/cX/L31_final_projects/adv_1.html]
+    reading: Requirements [/apcsa/r/cur/cX/L31_final_projects/adv_2.html]
+    codeit: Load the project [/apcsa/r/cur/cX/L31_final_projects/adv_load.html]
+
+heading: Connect 4
+    resource: Introduction [/apcsa/r/cur/cX/L31_final_projects/c4_1.html]
+    reading: Requirements [/apcsa/r/cur/cX/L31_final_projects/c4_2.html]
+    codeit: Load the Connect Four project [/apcsa/r/cur/cX/L31_final_projects/c4_load.html]
+
+heading: Aces Up
+    resource: Introduction [/apcsa/r/cur/cX/L31_final_projects/acesup_1.html]
+    reading: Requirements [/apcsa/r/cur/cX/L31_final_projects/acesup_2.html]
+    codeit: Load the Aces Up project [/apcsa/r/cur/cX/L31_final_projects/acesup_load.html]

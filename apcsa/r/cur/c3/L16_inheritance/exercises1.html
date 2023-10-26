@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Using inheritance to trace assignments to objects</title>
+   </head>
+   <body>
+<p audio="2">
+Some classes provide "setter" methods.
+A useful debugging aid is to override a setter method to produce informative output 
+at each time that the object's state changes.
+</p>
+<p audio="3">
+We've already worked with the <tt>Point</tt> class in the <tt>java.awt</tt> library.
+Its setter method is named <tt>move</tt>;
+the call
+</p>
+<pre class="width40">
+   p.move (27, 13);
+</pre>
+<p audio="4">
+changes the <tt>x</tt> coordinate to 27 and the <tt>y</tt> coordinate to 13 
+in the <tt>Point</tt> referenced by <tt>p</tt>.
+It also provides <tt>getX</tt> and <tt>getY</tt> access methods.
+</p>
+<p audio="5">
+Given below is the framework for a <tt>TracedPoint</tt> class 
+intended to intercept calls to <tt>move</tt> and print information 
+about the pre- and post-change state of the <tt>Point</tt> along with doing the move.
+If the <tt>TracedPoint</tt> object named <tt>p</tt> currently represents the point (3,5),
+then the call
+</p>
+<pre class="width40">
+   p.move (9,8)
+</pre>
+<p audio="6">
+should print a message like
+</p>
+<pre class="width50">
+   Point change: was (3,5), is now (9,8)
+</pre>
+<p audio="7">
+as well as changing the point's value.</p>
+
+<p><b audio="8">Now you should complete and test the following framework:</b></p>
+
+<pre class="width50">
+import java.awt.*;
+
+public class TracedPoint extends Point {
+
+    public TracedPoint (int x, int y) {
+        super (x, y);
+    }
+
+    // Your move method goes here.
+}
+</pre>
+<p audio="9">
+Take advantage of the superclass's methods and variables as much as possible 
+rather than reinventing the wheel.
+In particular, your solution shouldn't have any instance variables.
+</p>
+</body>
+</html>

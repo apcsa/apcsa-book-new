@@ -1,0 +1,41 @@
+<html>
+
+<head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org <http://www.w3.org/>">
+        <script type="text/javascript" src= "/apcsa/llab/loader.js">
+        </script>
+        <title>Code to analyze</title>
+
+        <!-- Layout reference  pact.eecs.berkeley.edu?Layout_style <http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style>
+        Note: base location gets put in via php, sigh. -->
+    </head>
+
+<body>
+<p>
+Let's examine another variation of the temperature code:
+</p>
+<ul>
+<li>a temperature less than 40 degrees (Fahrenheit) is "cold";</li>
+<li>a temperature between 40 and 59 is "cool";</li>
+<li>a temperature between 60 and 79 is "warm";</li>
+<li>any higher temperature is "hot".</li>
+</ul>
+<p>
+Here is code that implements the specification.
+</p>
+<pre>
+   if (temp &lt; 40) {
+      tempStr = "cold";
+   } else if (temp &gt;= 40 &amp;&amp; temp &lt; 60) {
+      tempStr = "cool";
+   } else if (temp &gt;= 60 &amp;&amp; temp &lt; 80) {
+      tempStr = "warm";
+   } else if (temp &gt;= 80) {
+      tempStr = "hot";
+   }
+</pre>
+<p>
+In the next few steps, we analyze the efficiency of this code in terms of the number of <i>comparisons</i> needed to produce an answer.
+</p>
+</body>
+</html>

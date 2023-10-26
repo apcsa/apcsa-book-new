@@ -1,0 +1,28 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Experimenting with the capacity of a <tt>Refillable</tt></title>
+
+</head>
+<body>
+<p>
+You may be wondering how much a <tt>Refillable</tt> object can hold.
+Some experimentation produced the following results:
+</p>
+<ol>
+<li>
+Call the <tt>Refillable</tt> constructor with argument 2000000000,
+then call <tt>currentAmount</tt>. The object holds at least 2000000000.
+</li>
+<li>
+Now call <tt>refill</tt> with argument 1000000000, and call <tt>currentAmount</tt>
+again. It says -1294967296.
+</li>
+</ol>
+<p>
+How can adding two positive values produce a negative value?  Something is wrong.
+</p>
+
+</body>
+</html>

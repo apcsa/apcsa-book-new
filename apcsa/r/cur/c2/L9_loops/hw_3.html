@@ -1,0 +1,120 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Print a calendar month</title>
+</head>
+<body>
+<p audio="2">
+Complete the <tt>day1</tt> and <tt>printMonth</tt> methods 
+in the <tt>Calendar</tt> class below 
+so that a call to <tt>printMonth</tt>
+with an argument between 1 and 12 will print a calendar entry for the given month
+(1 means January, 2 means February, etc.).
+Here is the desired output for December 2009. 
+</p>
+<pre class="width30">
+December
+ S  M  T  W  T  F  S
+       1  2  3  4  5 
+ 6  7  8  9 10 11 12 
+13 14 15 16 17 18 19 
+20 21 22 23 24 25 26 
+27 28 29 30 31 
+</pre>
+<p>
+Here is the code.
+</p>
+<pre>
+public class Calendar {
+
+    private int myLeapDayCount;
+    private int myJan1day;
+
+    public Calendar (int year) {
+        if (isLeapYear (year)) {
+            myLeapDayCount = 1;
+        } else {
+            myLeapDayCount = 0;
+        }
+        int y = year - 1;
+        myJan1day = (36 + y + y/4 - y/100 + y/400) % 7;
+    }
+    
+    private boolean isLeapYear (int year) {
+        if (year % 400 == 0) {
+            return true;
+        } else if (year % 100 == 0) {
+            return false;
+        } else if (year % 4 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    // Months range from 1 to 12.
+    // Return the day of the week (0 = Sunday, 1 = Monday, etc.)
+    // of the start of the given month.
+    private int day1 (int month) {
+    	// You fill this in.
+    }
+    
+    // Months range from 1 to 12.
+    // Return the number of days in the given month.
+    private int dayCount (int month) {
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8
+                       || month == 10 || month == 12) {
+            return 31;
+        } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+            return 30;
+        } else {
+            return 28 + myLeapDayCount;
+        }
+    }
+    
+    // Months range from 1 to 12.
+    // Return the name of the given month.
+    private String name (int month) {
+        if (month == 1) {
+            return "January";
+        } else if (month == 2) {
+            return "February";
+        } else if (month == 3) {
+            return "March";
+        } else if (month == 4) {
+            return "April";
+        } else if (month == 5) {
+            return "May";
+        } else if (month == 6) {
+            return "June";
+        } else if (month == 7) {
+            return "July";
+        } else if (month == 8) {
+            return "August";
+        } else if (month == 9) {
+            return "September";
+        } else if (month == 10) {
+            return "October";
+        } else if (month == 11) {
+            return "November";
+        } else if (month == 12) {
+            return "December";
+        }
+        return "";
+    }
+    
+    private void printHeading (int month) {
+        System.out.println (name(month));
+        System.out.println (" S  M  T  W  T  F  S");
+    }
+    
+    // Months range from 1 to 12.
+    // Print the given month.
+    public void printMonth (int month) {
+        // You fill this in.
+    }     
+}
+</pre>
+</body>
+</html>

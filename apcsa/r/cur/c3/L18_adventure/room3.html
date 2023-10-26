@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Basic rooms come from the parent class</title>
+   </head>
+   <body>
+      <p audio="2">
+         The current Adventure program has several rooms in the world. 
+         These are created in the <tt>World</tt>
+         class with the 
+         base class <tt>Room</tt>.  For instance, the code
+      </p>
+      <pre class="veryTightText">Room corridor = new Room(
+  "The corridor", 
+  "You're in a corridor connecting to the kitchen and the bedroom. The carpets are \n" +
+  "stained, the light fixture in the ceiling is a bare bulb, and there are several \n" +
+  "locked doors along its length.");
+addRoom(corridor);
+corridor.addExit(bedroom, "north");
+corridor.addExit(kitchen, "south");</pre>
+<p audio="2b">
+   adds the room <i>Corridor</i> to the game.  Note that the description is
+   very long, and to make it fit into the editor window it is constructed
+   from several strings.  The <tt>\n</tt> at the end of each string
+   forces <tt>System.out.println</tt> to start a new line (think "<b>n</b>
+   for <b>n</b>ewline").
+</p>
+      <p audio="3">
+      Objects made from the <tt>Room</tt>
+      class will all have the same functionality, and only differ
+      in their name and descriptions.  Lets see what we can do by 
+      extending the <tt>Room</tt> class.
+      </p>
+      <p audio="4" class="quoteBrown">
+         In the next step, you'll work on ending the game 
+        (and telling the player that they've won or lost).
+      </p>
+      
+     <div class="center"><img src="/apcsa/r/static/art/scenes/adventure_rooms_1.png" width="150px" alt= "Adventure Room graphic"/></div>
+      
+   </body>
+</html>

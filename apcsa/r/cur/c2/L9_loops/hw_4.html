@@ -1,0 +1,154 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>When in Rome ...</title>
+   </head>
+   <body>
+      <h3 audio="2a">Background</h3>
+      <p audio="2b">
+         The Roman numeral system has been used since ancient times.
+         It survives today in cornerstones of official buildings, copyright dates of movies and television programs, and Super Bowl designations.
+      </p>
+      <p audio="3">
+         Values less than 3999 in the Roman numeral system are written using seven "digits" whose decimal equivalents are given in the table below. (There are additional conventions for writing values larger than 3999, which we will not discuss here.) 
+      </p>
+      <table id="tableBlue">
+         <tr>
+            <td>
+               Roman digit
+            </td>
+            <td>
+               decimal equivalent
+            </td>
+         </tr>
+         <tr>
+            <td>
+               M
+            </td>
+            <td>
+               1000
+            </td>
+         </tr>
+         <tr>
+            <td>
+               D
+            </td>
+            <td>
+               500
+            </td>
+         </tr>
+         <tr>
+            <td>
+               C
+            </td>
+            <td>
+               100
+            </td>
+         </tr>
+         <tr>
+            <td>
+               L
+            </td>
+            <td>
+               50
+            </td>
+         </tr>
+         <tr>
+            <td>
+               X
+            </td>
+            <td>
+               10
+            </td>
+         </tr>
+         <tr>
+            <td>
+               V
+            </td>
+            <td>
+               5
+            </td>
+         </tr>
+         <tr>
+            <td>
+               I
+            </td>
+            <td>
+               1
+            </td>
+         </tr>
+      </table>
+      <p  audio="4">
+         Roman numerals are composed using the following rules.
+      </p>
+      <ul>
+         <li  audio="5">
+            Digit order: Roman digits are written in nonascending order, and digit values are added to produce the represented value, except for prefixes as mentioned below.
+         </li>
+         <li audio="6">
+            Number of occurrences: No more than three occurrences of M, C, X, or I may appear consecutively, and no more than one D, L, or V may appear at all.
+         </li>
+         <li audio="7">
+            Prefixes: The digits C, X, and I can be used as prefixes, and their value is then subtracted from rather than added to the value being accumulated, as follows:
+          </li> 
+           <ul>
+               <li  audio="8">
+                  One C may prefix an M or a D to represent 900 or 400; the prefixed M is written after the other Ms, as in MMMCM. The digits following the M or D represent a value no more than 99.
+               </li>
+               <li  audio="9">
+                  One X may prefix a C or an L to represent 90 or 40; the prefixed C is written after the other Cs. The digits following the C or L represent a value no more than 9.
+               </li>
+               <li  audio="10">
+                  One I may prefix an X or a V to represent 9 or 4. The prefixed digit must appear at the end of the numeral.
+               </li>
+            </ul>
+        
+      </ul>
+      <p audio="11">
+         Some examples:
+      </p>
+      <table id="tableBlue"  audio="12">
+         <tr>
+            <td>
+               decimal value
+            </td>
+            <td>
+               Roman numeral representation
+            </td>
+         </tr>
+         <tr>
+            <td>
+               1987
+            </td>
+            <td>
+               MCMLXXXVII
+            </td>
+         </tr>
+         <tr>
+            <td>
+               1999
+            </td>
+            <td>
+               MCMXCIX
+            </td>
+         </tr>
+         <tr>
+            <td>
+               339
+            </td>
+            <td>
+               CCCXXXIX
+            </td>
+         </tr>
+      </table>
+      <h3  audio="13">Problem</h3>
+      <p  audio="14">
+         Write an <tt>int</tt>
+         method named <tt>decimalValue</tt>
+         that,
+         given as argument a string containing a Roman numeral,
+         returns the corresponding decimal value.
+      </p>
+   </body>
+</html>

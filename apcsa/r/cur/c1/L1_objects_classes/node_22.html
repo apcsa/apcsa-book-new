@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interaction?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_22.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">Which behavior directly activates the "add 1 day to the calendar date" behavior?
+    </div>
+
+    
+    <div class="choice" identifier="EhCBVBrxO1">
+        <div class="text">set the calendar date
+        </div>
+        <div class="feedback">You have it backward. If those two behaviors interact, it would be from
+"add 1 day to the calendar date" activating the "set the calendar date
+to _____" with the blank filled by the current date plus one day.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="l7waxefdez">
+        <div class="text">set the clock time
+        </div>
+        <div class="feedback">No, setting the clock time is unrelated to setting the calendar date.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="7w3PNVkKLU">
+        <div class="text">compare the alarm date and the calendar date
+        </div>
+        <div class="feedback">No, comparing the two dates is unrelated to setting the calendar date.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="mBk1XAR8Tf">
+        <div class="text">tick
+        </div>
+        <div class="feedback">Activating the tick behavior may indirectly activate the "add 1 to the
+calendar date", but there has to be an intermediate behavior.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="z13Iy3A8re">
+        <div class="text">compare the clock time with midnight
+        </div>
+        <div class="feedback">That's correct. The calendar date should be incremented when the clock
+time reaches midnight, so we need a behavior that checks for midnight.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="z13Iy3A8re"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

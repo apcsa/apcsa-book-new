@@ -1,0 +1,70 @@
+title: Lesson 09: Loops
+
+{
+h2: Loops
+
+
+heading: Introduction
+    resource: Repetition of code [/apcsa/r/cur/c2/L9_loops/node_0.html]
+
+heading: Introduction to while loops
+    reading: The while statement [/apcsa/r/cur/c2/L9_loops/while_stmt_1.html]
+    resource: Eighty lines to five lines [/apcsa/r/cur/c2/L9_loops/while_stmt_2.html]
+    simulation: Looping simulation [/apcsa/r/cur/c2/L9_loops/while_stmt_3.html]
+    brainstorm: The count variable [/apcsa/r/cur/c2/L9_loops/node_1.html]
+    brainstorm: Statement orders [/apcsa/r/cur/c2/L9_loops/node_2.html]
+    codeit: Add line numbers [/apcsa/r/cur/c2/L9_loops/while_stmt_6.html]
+    quiz: Mystery behavior [/apcsa/r/cur/c2/L9_loops/node_11.html]
+    reading: Infinite loops [/apcsa/r/cur/c2/L9_loops/while_stmt_8.html]
+    reading: The ! operator, revisited [/apcsa/r/cur/c2/L9_loops/while_stmt_9.html]
+
+heading: While loops with strings
+    resource: String lengths [/apcsa/r/cur/c2/L9_loops/string_1.html]
+    reading: Using loops on strings [/apcsa/r/cur/c2/L9_loops/string_2.html]
+    codeit: Modifying the length method [/apcsa/r/cur/c2/L9_loops/string_3.html]
+    codeit: Copying strings [/apcsa/r/cur/c2/L9_loops/string_4.html]
+    codeit: Merge strings [/apcsa/r/cur/c2/L9_loops/string_5.html]
+
+heading: Exercises that use while loops
+    codeit: Programming lyrics [/apcsa/r/cur/c2/L9_loops/exercises_1.html]
+    codeit: Fixing a small detail [/apcsa/r/cur/c2/L9_loops/exercises_2.html]
+    codeit: Calculating the next leap year [/apcsa/r/cur/c2/L9_loops/exercises_3.html]
+    codeit: Adding some digits [/apcsa/r/cur/c2/L9_loops/exercises_4.html]
+    codeit: Reversing a number [/apcsa/r/cur/c2/L9_loops/exercises_5.html]
+    codeit: A special counter [/apcsa/r/cur/c2/L9_loops/exercises_6.html]
+    brainstorm: A flawed implementation [/apcsa/r/cur/c2/L9_loops/node_12.html]
+    codeit: Date conversion [/apcsa/r/cur/c2/L9_loops/exercises_8.html]
+
+heading: Testing
+    reading: Testing [/apcsa/r/cur/c2/L9_loops/test_1.html]
+    brainstorm: Introduce a bug [/apcsa/r/cur/c2/L9_loops/node_4.html]
+    resource: Glass-box and black-box testing [/apcsa/r/cur/c2/L9_loops/test_3.html]
+    reading: Black-box testing(1) [/apcsa/r/cur/c2/L9_loops/test_4.html]
+    reading: Black-box testing(2) [/apcsa/r/cur/c2/L9_loops/test_4b.html]
+    brainstorm: Run-counting [/apcsa/r/cur/c2/L9_loops/node_5.html]
+    reading: A number guessing game [/apcsa/r/cur/c2/L9_loops/test_7.html]
+    brainstorm: Guess the number [/apcsa/r/cur/c2/L9_loops/node_6.html]
+    quiz: Toughest numbers to guess [/apcsa/r/cur/c2/L9_loops/node_13.html]
+    codeit: Number Guesser [/apcsa/r/cur/c2/L9_loops/test_11.html]
+    resource: Debuggers [/apcsa/r/cur/c2/L9_loops/test_12.html]
+    reading: The BlueJ debugger [/apcsa/r/cur/c2/L9_loops/test_13.html]
+    reading: The BlueJ debugger--the debugger window [/apcsa/r/cur/c2/L9_loops/test_13b.html]
+    reading: The BlueJ debugger--more interaction [/apcsa/r/cur/c2/L9_loops/test_13c.html]
+    brainstorm: The bug(1) [/apcsa/r/cur/c2/L9_loops/node_7.html]
+    brainstorm: The bug(2) [/apcsa/r/cur/c2/L9_loops/node_8.html]
+
+heading: Debugging
+    reading: Removing all blank characters from a string [/apcsa/r/cur/c2/L9_loops/debug_1.html]
+    brainstorm: The wrong answer [/apcsa/r/cur/c2/L9_loops/node_9.html]
+    brainstorm: Incorrect results [/apcsa/r/cur/c2/L9_loops/node_10.html]
+    codeit: fix blanksRemoved [/apcsa/r/cur/c2/L9_loops/debug_4.html]
+    codeit: Another buggy method [/apcsa/r/cur/c2/L9_loops/debug_5.html]
+
+heading: Summary
+    summary: What we've done [/apcsa/r/cur/c2/L9_loops/node_14.html]
+
+heading: Exercises
+    homework: Singing Bingo [/apcsa/r/cur/c2/L9_loops/hw_1.html]
+    homework: Printing a month [/apcsa/r/cur/c2/L9_loops/hw_3.html]
+    homework: Play Hangman [/apcsa/r/cur/c2/L9_loops/hw_5.html]
+    homework: Roman Numerals [/apcsa/r/cur/c2/L9_loops/hw_4.html]

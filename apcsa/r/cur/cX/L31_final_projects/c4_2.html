@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+   <head>
+      <meta name="generator" content="HTML Tidy, see www.w3.org">
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>Connect 4 Project</title>
+   </head>
+   <body>
+      <br>
+      <p audio="2">
+         In this project, you will finish a program that
+         plays the game Connect Four. You will need to understand the
+         framework code we provide, which is rather complex; 
+         fix some small "bugs" in the code; 
+         write some smarts for the computer player, and
+         implement a bomb piece.
+      </p>
+      <h4 audio="3a">Background</h4>
+      <p audio="3b">
+         The game Connect Four involves dropping pieces into a board that is 
+         seven spaces wide by six spaces high (making 7 columns by 6 rows). 
+         Two players alternate turns and the first to place four  
+         pieces in a row (either horizontally, vertically, or diagonally) wins. 
+         The board is held vertically, and a player only chooses which 
+         column to place a piece; the piece 
+         will fall to the lowest unoccupied row. 
+      </p>
+      <p audio="3c">
+         Connect 4 is a very old game.  The name "Connect Four" 
+         comes from a board 
+         game released by Milton Bradley and is copyrighted, so we will use "Connect 4" instead. 
+         There are many on-line versions of Connect Four available, and it will be
+         especially valuable for you to familiarize yourself with it through playing games. 
+         As it turns out, the game has recently been "solved", and a computer can 
+         be programmed to play perfectly (you are not being asked to program a
+         perfect solution, however!).  Search the internet with the term "Connect Four",
+         and you should find several playable versions.
+      </p>
+      <p audio="3d">
+         While the standard version of Connect Four involves two players on a 7x6
+         board, the program you write will be able to handle any number of players
+         and any (reasonably) sized board.
+      </p>
+      <h4 audio="4a">Framework code </h4>
+      <p audio="4b">
+         There are four main areas of the code, represented by single or groups of classes:
+      </p>
+      <ul>
+         <li audio="4b1">
+            The <tt>Connect4</tt>
+            class sets up the graphics, handles the main loop
+            of the game, and handles mouse clicks.  As with other graphics programs
+            you are familiar with, it extends<tt>JPanel</tt>
+            and implements <tt>MouseListener</tt>. 
+            <br>
+            <Br>
+            The most important 
+            area, from your standpoint, is in the <tt>play()</tt>
+            and <tt>takeTurn()</tt>
+            methods, which call eachother recursively.  This is 
+            called "mutual recursion", and is used in this case to let control switch 
+            between listeners, used by human players, and <tt>getMove</tt>
+            method
+            that need to be called,
+            as performed by computer players.
+         </li>
+         <li audio="4b2">
+            The <tt>Board</tt>
+            class maintains the two dimensional array that maintains 
+            the state of the board&mdash;that is, which pieces are where.  There are 
+            three important methods that you will write for this class, detailed below.
+         </li>
+         <li audio="4b3">
+            The <tt>Player</tt>
+            class and its subclasses <tt>ComputerPlayer</tt>
+            (which 
+            is abstract) and <tt>StupidComputerPlayer</tt>, which basically guesses
+            randomly. 
+            There is a <tt>Player</tt>
+            instance for each player in the game, which keeps 
+            track of how many bombs the player has left, and so forth.  The <tt>ComputerPlayer</tt>
+            subclasses include a method <tt>getMove</tt>, which analyses a board and returns
+            the best move for that player.  You'll get to make that method smarter!
+         </li>
+         <li audio="4b4">
+            The <tt>Move</tt>
+            class and its subclasses <tt>QuitMove</tt>
+            and <tt>BombMove</tt>. 
+            A <tt>Move</tt>
+            instance is simply way of communicating moves and possible moves 
+            between other classes.  At its simplest, a <tt>Move</tt>
+            instance represents 
+            the number of the column to drop a piece in. 
+         </li>
+      </ul>
+      <p audio="4c">
+         You can get the framework code in the next page.  The version that it provides is 
+         not working fully, although you should play it and see what happens. 
+      </p>
+      <h4 audio="5">Requirements</h4>
+      <p audio="6">
+         There are five requirements in total, although you teacher may require
+         only a subset of these, or even add to them (for instance, how about 
+         a game of <i>Connect5</i>?).  Some of these requirements are decidedly easier
+         than others.
+      </p>
+      <ol>
+         <li audio="7a">
+            Implement the <tt>Board</tt>
+            methods:
+            <ul>
+               <li audio="7a1">
+                  <tt>possibleMove</tt>, which returns <tt>true</tt>
+                  if a given move can take place with a given
+                  board state.  About the only way a move isn't 
+                  possible is if a column is filled already (although this won't 
+                  stop a bomb move).
+               </li>
+               <li audio="7a2">
+                  <tt>addPiece</tt>,which updates the board for a given move.
+               </li>
+               <li audio="7a3">
+                  <tt>winner</tt>, which returns <tt>true</tt>
+                  if a player has 
+                  four of their pieces in a row. 
+               </li>
+            </ul>
+         </li>
+         <li audio="7b">
+            Fix a bug: clicks continue to have an effect after the game has 
+            been won.  Do you <i>need</i>
+            to add an instance variable to the <tt>Connect4</tt>
+            class for this?
+         </li>
+         <li audio="7c">
+            Implement "quit".  The computer should quit when there are no
+            possible moves to make, and the human should have a way to quit
+            if your brilliantly coded computer player out foxes him.
+         </li>
+         <li audio="7d">
+            Implement <tt>SmarterComputerPlayer</tt>, a subclass of <tt>ComputerPlayer</tt>
+            that is smarter than the provided <tt>StupidComputerPlayer</tt>. 
+            This is the task that <i>could</i>
+            be endless, so we will require 
+            only a few things of your smart player (again, check with your 
+            teacher):
+            <ul>
+               <li audio="7d1">
+                  Your player should always block if the other player has 
+                  three in a row.
+               </li>
+               <li audio="7d2">
+                  have a preference for the center position when all else 
+                  is equal.  (The center is the strongest column in the 
+                  seven column wide board).
+               </li>
+            </ul>
+            That said, there are other things you can do for your 
+            smart player:
+            <ul>
+               <li audio="7d3">
+                  Your player shouldn't be fooled when the other player has
+                  two pieces in a row with two open spaces on either end.
+               </li>
+               <li audio="7d4">
+                  Choose things smartly when it doesn't have to block to 
+                  save the game.  A common technique in game programming is 
+                  "looking ahead", which is easy to do when your code has 
+                  a powerful design.  The basic idea is that you engage in a 
+                  series of "what ifs" by making many hypothetical boards, where
+                  those boards are made by systematically proposing "what
+                  if I moved here, and the other player responded by moving 
+                  here, ...".  To do this successfully, you need a way of 
+                  ranking which of the hypothetical boards are best so that 
+                  you can choose a move that leads you to them. 
+                  <br>
+                  <br>
+                  With the <tt>Board</tt>
+                  class methods, making hypothetical 
+                  boards is easy! 
+               </li>
+            </ul>
+         </li>
+         <li audio="7e">
+            Implement bombs.  Each player has a limited number of bomb pieces, 
+            and playing a bomb in a certain column removes the piece it
+            lands on and any of the pieces in the 9 neighboring cells.  If this
+            removes a piece upon which another piece was resting, that piece 
+            should fall into a new position! 
+            <br>
+            <br>
+            You should also include the making of bomb moves in your <tt>SmarterComputerPlayer</tt>
+            class, although this need not be
+            too complex: play one when you are about to lose.
+         </li>
+      </ol>
+      <p audio="8">
+         Furthermore, you need to implement these requirements such that they
+         work for more than two players and for boards of any (reasonable) size.
+      </p>
+      <p audio="9">
+         When you are done with these requirements, you can easily run a game where
+         the computer plays itself, or three computer players play themselves. 
+         You just need to set up <tt>ArrayList</tt>
+         of <tt>Player</tt>s in the <tt>Connect4</tt>
+         class with the right kind of <tt>Player</tt>
+         instances.
+      </p>
+      <p audio="10">
+         Even before you are done with all of task #1 above, you can play human
+         versus human games.  Play with your friends or classmates, as this is a
+         good way to get a feel for how the code works.
+      </p>
+   </body>
+</html>

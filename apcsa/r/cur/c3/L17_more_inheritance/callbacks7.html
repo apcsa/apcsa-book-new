@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>If we don't override these methods ...</title>
+   </head>
+   <body>
+<p audio="1">
+As just noted, the <tt>Object</tt> class contains definitions 
+for <tt>equals</tt> and <tt>toString</tt>.
+Unfortunately, they are not too useful.
+<tt>Object.equals</tt> compares the object's <i>reference</i>&mdash;basically, 
+its location in memory&mdash;to the argument reference, 
+performing the same comparison as does <tt>==</tt>.
+<tt>Object.toString</tt> returns a printable representation of this reference.
+</p>
+<p class="quoteOrange" audio="2">
+Thus it is a Java convention, when defining a class, to provide definitions 
+for <tt>equals</tt> and <tt>toString</tt>.
+The <tt>equals</tt> method should compare two objects for <i>content</i>. 
+It typically starts by casting the argument in order to access relevant instance variables, 
+then does the comparison.
+We just saw a version of <tt>equals</tt> that uses <tt>toString</tt>; 
+this is fine as long as every object in the class has a unique printable representation.
+</p>
+</body>
+</html>

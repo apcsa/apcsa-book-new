@@ -1,0 +1,49 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript">
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <title>What we've done (1)</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+
+</head>
+<body>
+<p>
+We started this lesson by observing a deficiency in the programming done thus far.  Namely, there was no way to <i>selectively</i> evaluate statements in a program.  Here's an example of what we want to do:
+</p>
+<pre>
+public Refillable (int amount) {
+   // check that amount is at least 0
+   // if not, print an error message
+   // otherwise initialize instance variables
+}
+</pre>
+<p>
+Java's conditional statement solves this problem.  Its general format is as follows.
+</p>
+<pre>
+if (<i>yes-or-no question</i>) {
+   <i>sequence of statements to execute if the answer is yes</i>
+} else {
+   <i>sequence of statements to execute if the answer is no</i>
+}
+</pre>
+Exactly one of the statement sequences is executed, depending on the answer to the yes-or-no question; the other sequence is skipped.
+</p>
+<p>
+A special case is when there are <i>no</i> statements to be executed if the answer is no:
+</p>
+<pre>
+if (<i>yes-or-no question</i>) {
+   <i>sequence of statements to execute if the answer is yes</i>
+}
+</pre>
+<p>
+We used conditional statements to make sure that the arguments to the <tt>Refillable</tt> methods all are reasonable.
+</p>
+</body>
+</html>

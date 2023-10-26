@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reasons the bug might be undetected</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Your definition</div>
+
+    <div class="prompt">
+    
+
+<p audio="1"> 
+
+Principle 1 by itself is insufficient, however.
+
+Here's an example;
+
+</p> 
+
+<table>
+
+<tr>
+
+<td>
+
+<pre>
+leapDayCount = 0;
+if (year % 4 == 0) {
+ leapDayCount = 1;
+}
+if (year % 100 == 0) {
+ leapDayCount = 0;
+}
+if (year % 400 == 0) {
+ leapDayCount = 1;
+}
+</pre> 
+
+</td>
+
+</tr>
+
+</table><br />
+
+<p audio="2"> 
+
+Given a value of 2000 in <tt>year</tt>,
+
+the code correctly produces a value of 1 for <tt>leapDayCount</tt>,
+
+A value of 2000 in <tt>year</tt> also causes <i>all</i>
+
+the statements in this program segment to be executed. 
+
+</p> 
+
+<p audio="3"> 
+
+As it happens, this code works correctly. 
+
+But a single test doesn't provide much evidence of that.
+
+Provide a small change that would not affect its behavior for a <tt>year</tt> value of 400 
+
+but would produce incorrect behavior for other <tt>year</tt> values.
+
+</p> 
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">Maybe changing the order of the if statements will produce incorrect behavior. 
+        </div>
+        
+        <div name="mike">Initializing leapDayCount to -1 messes up handling of dates that aren't divisible by 4.
+        </div>
+        
+        <div name="Sondra">If the second comparison was "if (year % 100 == 5)", the code would still work for a year of 2000.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+title: Lesson 25: Introduction to Recursion
+
+{
+h2: An introduction to recursive algorithms
+
+
+heading: Recursion
+    resource: Introduction to recursion [/apcsa/r/cur/c4/L25_intro_recursion/intro0.html]
+
+heading: Details of recursion
+    resource: A method calling itself? [/apcsa/r/cur/c4/L25_intro_recursion/intro1.html]
+    resource: An example [/apcsa/r/cur/c4/L25_intro_recursion/intro2.html]
+    resource: Tracing through the example [/apcsa/r/cur/c4/L25_intro_recursion/intro3.html]
+    brainstorm: Self-check (1) [/apcsa/r/cur/c4/L25_intro_recursion/node_0.html]
+    brainstorm: Self-check (2) [/apcsa/r/cur/c4/L25_intro_recursion/node_1.html]
+    brainstorm: Self-check(3) [/apcsa/r/cur/c4/L25_intro_recursion/node_2.html]
+    resource: Review [/apcsa/r/cur/c4/L25_intro_recursion/intro6.html]
+    resource: How it works [/apcsa/r/cur/c4/L25_intro_recursion/intro7.html]
+    resource: Role playing [/apcsa/r/cur/c4/L25_intro_recursion/intro8.html]
+    resource: Guides to understanding recursion [/apcsa/r/cur/c4/L25_intro_recursion/intro9.html]
+
+heading: Examples of recursion
+    resource: Summing over an interval [/apcsa/r/cur/c4/L25_intro_recursion/examples0.html]
+    brainstorm: Approaching the base case? [/apcsa/r/cur/c4/L25_intro_recursion/examples1.html]
+    resource: An equivalent recursive call [/apcsa/r/cur/c4/L25_intro_recursion/examples2.html]
+    resource: Bug symptoms [/apcsa/r/cur/c4/L25_intro_recursion/examples3.html]
+    brainstorm: Analyzing the buggy method [/apcsa/r/cur/c4/L25_intro_recursion/examples4.html]
+    resource: Another set implementation [/apcsa/r/cur/c4/L25_intro_recursion/examples5.html]
+    resource: A contains method [/apcsa/r/cur/c4/L25_intro_recursion/examples6.html]
+    resource: A remove method [/apcsa/r/cur/c4/L25_intro_recursion/examples7.html]
+    resource: Printing with commas [/apcsa/r/cur/c4/L25_intro_recursion/examples8.html]
+    brainstorm: Recursive vs iterative implementations [/apcsa/r/cur/c4/L25_intro_recursion/node_3.html]
+    resource: contains1MoreThan [/apcsa/r/cur/c4/L25_intro_recursion/examples10.html]
+    resource: When it works, and when it doesn't [/apcsa/r/cur/c4/L25_intro_recursion/examples11.html]
+    brainstorm: Explanation of the bug [/apcsa/r/cur/c4/L25_intro_recursion/examples12.html]

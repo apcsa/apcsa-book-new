@@ -1,0 +1,51 @@
+title: Lesson 12: Working with Collections
+
+{
+h2: Working with Collections
+
+
+heading: Introduction
+    resource: Collections [/apcsa/r/cur/c3/L12_arraylist/collections_0.html]
+
+heading: ArrayLists
+    resource: Ordered collections [/apcsa/r/cur/c3/L12_arraylist/arraylists_0.html]
+    reading: Declaring an ArrayList [/apcsa/r/cur/c3/L12_arraylist/arraylists_1.html]
+    reading: Some ArrayList methods [/apcsa/r/cur/c3/L12_arraylist/arraylists_2.html]
+    reading: ArrayList methods (2) [/apcsa/r/cur/c3/L12_arraylist/node_5.html]
+    reading: ArrayList methods (3) [/apcsa/r/cur/c3/L12_arraylist/node_6.html]
+    quiz: Practice with ArrayList Methods (1) [/apcsa/r/cur/c3/L12_arraylist/node_16.html]
+    quiz: Practice with ArrayList Methods (2) [/apcsa/r/cur/c3/L12_arraylist/node_17.html]
+    quiz: Practice with ArrayList Methods (3) [/apcsa/r/cur/c3/L12_arraylist/node_18.html]
+    codeit: An ArrayList of names [/apcsa/r/cur/c3/L12_arraylist/node_1.html]
+    brainstorm: Type mismatch? [/apcsa/r/cur/c3/L12_arraylist/node_2.html]
+    codeit: Racing with many dots... [/apcsa/r/cur/c3/L12_arraylist/dot_racing.html]
+    codeit: Program to save mouse clicks [/apcsa/r/cur/c3/L12_arraylist/arraylists_3.html]
+    codeit: Checking for clicks seen before [/apcsa/r/cur/c3/L12_arraylist/node_7.html]
+    reading: ArrayList processing patterns [/apcsa/r/cur/c3/L12_arraylist/arraylists_5.html]
+
+heading: The for structure
+    resource: The for loop [/apcsa/r/cur/c3/L12_arraylist/for_0.html]
+    reading: Equivalent loops [/apcsa/r/cur/c3/L12_arraylist/for_1.html]
+    reading: A for variation [/apcsa/r/cur/c3/L12_arraylist/for_2b.html]
+    codeit: Translating While Loops into For Loops [/apcsa/r/cur/c3/L12_arraylist/for_3.html]
+    brainstorm: while vs for loops [/apcsa/r/cur/c3/L12_arraylist/node_0.html]
+    reading: Shortcuts to incrementing and decrementing [/apcsa/r/cur/c3/L12_arraylist/for_6.html]
+
+heading: Card games
+    reading: Poker [/apcsa/r/cur/c3/L12_arraylist/cards_0.html]
+    reading: All the same suit: Two possible methods  [/apcsa/r/cur/c3/L12_arraylist/cards_1.html]
+    codeit: All the same suit: Process Neighbors [/apcsa/r/cur/c3/L12_arraylist/cards_2.html]
+    codeit: All the same suit: Process every element [/apcsa/r/cur/c3/L12_arraylist/cards_3.html]
+    codeit: Finding the most-occurring rank [/apcsa/r/cur/c3/L12_arraylist/cards_4.html]
+    codeit: Insertion into a hand [/apcsa/r/cur/c3/L12_arraylist/cards_7.html]
+
+heading: Review
+    summary: Representing a collection [/apcsa/r/cur/c3/L12_arraylist/node_10.html]
+    summary: ArrayLists [/apcsa/r/cur/c3/L12_arraylist/node_14.html]
+    summary: Loops and processing patterns [/apcsa/r/cur/c3/L12_arraylist/node_15.html]
+
+heading: Exercises
+    codeit: Dot Racing revisited [/apcsa/r/cur/c3/L12_arraylist/exercise_2.html]
+    homework: Classifying a poker hand [/apcsa/r/cur/c3/L12_arraylist/node_9.html]
+    homework: Maintaining a 'top ten' list [/apcsa/r/cur/c3/L12_arraylist/node_11.html]
+    codeit: XEyes with ArrayLists [/apcsa/r/cur/c3/L12_arraylist/exercise_4.html]

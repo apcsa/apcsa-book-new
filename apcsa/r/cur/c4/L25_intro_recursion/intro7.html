@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>How it works</title>
+   </head>
+   <body>
+<br><br>
+         <div class="talkBubble" align="left" color="orange" char="/apcsa/r/static/art/scenes/nestbot_1.png">
+            <p audio="1">
+               A recursive call inside a method essentially creates a "clone" of the method.
+               The clone has copies of the arguments from its original caller.
+               When the clone is executed, it may set up another clone
+               with a copy of its arguments.
+               <br />
+               This is recursion!
+            </p>
+         </div>
+<br />
+<br/>         <div class="talkBubble" align="right" color="orange" char="/apcsa/r/static/art/scenes/nestbot_2.png">
+            <p audio="2">
+               As more calls are made, more clones are created and pile up on a stack.
+               When a clone finishes, it jumps off the stack and disappears, possibly
+               returning a value to the clone that was right underneath it on the stack.
+            </p>
+         </div>
+   
+   </body>
+</html>

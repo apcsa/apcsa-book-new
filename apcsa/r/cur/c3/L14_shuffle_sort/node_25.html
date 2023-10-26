@@ -1,0 +1,34 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>Comparison counting sort</title>
+</head>
+<body>
+<p>
+Another way to sort is by counting, for each element <tt>x</tt> in the collection to be sorted,
+the number of elements in the collection that are less than <tt>x</tt>.
+The element that's less than no other&mdash;the smallest element&mdash;goes into position 0, the element that's less than just one other goes into position 1, 
+and so on.
+</p>
+<p>
+Here is a buggy implementation of this algorithm.
+</p>
+<pre>
+   public void countingSort ( ) {
+      ArrayList&lt;Card&gt; sorted = new ArrayList<Card> ( );
+      for (int k=0; k&lt;myCards.size ( ); k++) {
+         int numLessThan = 0;
+         for (int j=0; j&lt;myCards.size ( ); j++) {
+            if (myCards.get(k).outranks(myCards.get(j))) {
+               numLessThan++;
+            }
+         }
+         sorted.set (numLessThan, myCards.get(k));
+      }
+      myCards = sorted;
+   }
+</pre>
+</body>
+</html>

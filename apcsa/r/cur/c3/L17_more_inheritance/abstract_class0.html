@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Player inheritance reorganization</title>
+   </head>
+   <body>
+<p audio="1">
+Let's return now to the set of classes we wrote for the Prisoner's Dilemma simulation.
+These formed the inheritance hierarchy shown below.
+</p>
+<br/>
+<table id="tableCenter">
+	<tr>
+		<th audio="4">
+			Prisoner's Dilemma
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<img src="/apcsa/r/static/art/scenes/PD_player.png">
+		</td>
+	</tr>
+</table>
+<br/>
+<p audio="2">
+A flaw in this organization, however, is that the <tt>Player</tt> class is a player
+on its own, one that always cooperates.
+Thus the "is-a" relation between the other player classes and <tt>Player</tt> doesn't quite hold.
+What the <tt>Player</tt> class should provide is a sort of placeholder 
+for the <tt>cooperates</tt> method;
+an inheriting class would then provide the details.
+</p>
+</body>
+</html>

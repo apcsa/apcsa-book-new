@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>The ! operator, revisited</title>
+</head>
+<body>
+<p audio="2">
+When discussing boolean expressions, 
+we briefly mentioned the exclamation mark "!" ("not") operator.
+Applied to a boolean expression, it evaluates to true if the expression
+is false, and vice versa.
+For example, the following two program segments are equivalent. 
+(Assume that <tt>isGood</tt> is a boolean method that takes a single integer argument.)
+</p>
+<table id="tableClear">
+<tr><td><pre>
+if (isGood(5)) {
+   System.out.println ("5 is good");
+} else {
+   System.out.println ("5 is bad");
+}
+<td><pre>
+if (!isGood(5)) {
+   System.out.println ("5 is bad");
+} else {
+   System.out.println ("5 is good");
+}
+</pre></td></tr></table>
+<p audio="3">
+The best use of <tt>!</tt> is not with complicated expressions
+that use <tt>&amp;&amp;</tt> or <tt>||</tt>,
+but instead with boolean methods whose details have been isolated.
+For example, the <tt>isLeapYear</tt> method covered in lesson 4
+may be used with <tt>!</tt> to determine whether a given year
+is <i>not</i> a leap year:
+</p>
+<table id="tableBlue">
+<tr><td>expression</td><td>value</td></tr>
+	<tr>
+		<td><tt>!isLeapYear (1999)</tt></td> <td><tt>true</tt></td>
+	</tr>
+	<tr>
+		<td><tt>!isLeapYear (2000)</tt></td> <td><tt>false</tt></td>
+	</tr>
+	<tr>
+		<td><tt>!isLeapYear (2012)</tt></td> <td><tt>false</tt></td>
+	</tr>
+	<tr>
+		<td><tt>!isLeapYear (2100)</tt></td> <td><tt>true</tt></td>
+	</tr>
+</table>
+</body>
+</html>

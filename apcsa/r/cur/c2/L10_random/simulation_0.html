@@ -1,0 +1,41 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Simulation</title>
+</head>
+<body>
+<p audio="2">
+When you use randomly generated numbers in your programs,
+a basic problem arises: how do you test your code?  You can't 
+know exactly what will happen as the program executes because,
+well, it's random!
+</p>
+<p audio="2b">
+One way to verify the correctness of the generator 
+is to run it a lot of times, and to judge the results
+against what you know should be happening on average.
+
+</p>
+<p audio="3">
+For instance, the following method uses a loop to test
+coin flips (or, more exactly, generation of random integers between
+<tt>0</tt> and <tt>1</tt> inclusively).
+</p>
+<pre class="width60">
+   public void tester (int howMany) {
+      int k;
+      int numHeads;
+      k = 0;
+      while (k &lt; howMany) {
+         k = k + 1;
+         if (nextFlip().equals("heads")) {
+            numHeads = numHeads + 1;
+         }
+      }
+      System.out.println ("" + numHeads + " out of "
+	     + howMany + " flips were heads.");
+   }
+</pre>
+</body>
+</html>

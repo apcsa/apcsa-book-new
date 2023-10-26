@@ -1,0 +1,34 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>A fast merge algorithm</title>
+</head>
+<body>
+<p audio="2">Let's give names to the three arrays. The two arrays to be combined we'll call <tt>source1</tt> and <tt>source2</tt>,
+and the array into which they'll be combined will be <tt>destination</tt>. Thus:</p>
+<table id="tableCenter">
+		<tr>
+				<th style="border-right: 1px solid #666;"><tt>source1</tt></th>
+				<th style="border-right: 1px solid #666;"><tt>source2</tt></th>
+				<th><tt>destination</tt></th>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 4 7 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 3 6 8</tt></td>
+				<td><tt>1 2 3 4 6 7 8 9</tt></td>
+		</tr>
+</table>
+<p audio="3">One approach for producing the sorted result is to first search for the smallest element, then the next smallest
+element, and so on. Because the arrays being combined are sorted, however, we can do this more efficiently.</p>
+
+<p audio="4">The algorithm uses three index variables. One, which we'll call <tt>ks1</tt>, is the position of the smallest <tt>source1</tt>
+element not yet copied into <tt>destination</tt>. The second, which we'll call <tt>ks2</tt>, plays a similar role with <tt>source2</tt>.
+The third is the position of the next unfilled spot in <tt>destination</tt>; we'll call that <tt>kd</tt>.</p>
+
+<p audio="5">The main part of the algorithm is a loop that copies the smaller of the two values <tt>source1[ks1]</tt> and <tt>source2[ks2]</tt>
+into <tt>destination[kd]</tt>, and then increments <tt>kd</tt> and either <tt>ks1</tt> or <tt>ks2</tt>.</p>
+
+</body>
+</html>

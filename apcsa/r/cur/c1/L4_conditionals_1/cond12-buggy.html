@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analyzing Buggy Code</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Comparing two program segments</div>
+
+    <div class="prompt">
+    
+
+
+
+<p audio="1"> 
+
+Describe all values of <tt>temp</tt> for which the following code 
+
+produces the wrong initialization for <tt>comfortLevel</tt>.
+
+</p> 
+
+
+
+<table> 
+
+<tr> 
+
+<td> 
+
+<pre>
+if (temp &gt; 80) {
+ comfortLevel = "too hot";
+}
+if (temp &lt; 50) {
+ comfortLevel = "too cold";
+} else {
+ comfortLevel = "comfortable";
+}
+</pre> 
+
+</td> 
+
+</tr> 
+
+</table> 
+
+
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="sondra">For all values above 80, it produces the wrong initialization because after the comfortLevel is set to 'too hot', it continues to the next if statement. Then the comfortLevel gets set to 'comfortable'. 
+        </div>
+        
+        <div name="joe">Every value of temp gets classified as comfortable, so any values of temp that are less than 50 or greater than 80 gives the wrong result.
+        </div>
+        
+        <div name="mike">There are three cases.  If temp is less than 50, the code works.  If temp is between 50 and 80 (inclusive), the code works.  If temp is greater than 80, it doesn't work since comfortLevel gets set to "too hot", but then gets reset to the wrong value.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

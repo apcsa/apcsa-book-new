@@ -1,0 +1,25 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Back to the <tt>CoinFlipGenerator</tt> class (brainstorm)</title>
+</head>
+<body>
+<p audio="2">
+Suppose that the <tt>nextFlip</tt> method were revised as follows.
+</p>
+<pre class="width50">
+   public String nextFlip ( ) {
+      if (randGen.nextInt (2) == 0) {
+      return "heads";
+      } else if (randGen.nextInt (2) == 1) {
+         return "tails";
+      }
+   }
+</pre>
+<p audio="3">
+Does the behavior of this version of <tt>nextFlip</tt> match the behavior of the original? 
+Why or why not?
+</p>
+</body>
+</html>

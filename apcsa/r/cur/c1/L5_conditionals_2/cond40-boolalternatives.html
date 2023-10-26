@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Alternatives to <tt>&amp;&amp;</tt> and <tt>||</tt></title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <p audio="cond40_1">Here is the code from an earlier step, that assigns a value of "comfortable"
+      or "uncomfortable" to a variable <tt>tempStr</tt> depending on the value of <tt>temp</tt>.</p>
+      
+      <table id="tableClear">
+         <tr>
+            <td>
+               <pre>if (temp &gt;= 65 &amp;&amp; temp &lt;= 75) {          
+   tempStr = "comfortable";
+} else {
+   tempStr = "uncomfortable";
+}</pre>
+            </td>
+         </tr>
+      </table>
+      <p audio="cond40_2" class="clearFloats"> Identifying a temperature as "comfortable" or not can be done without <tt>&amp;&amp;</tt> and <tt>||</tt>. 
+         Here is an example that functions exactly like the above code.</p>
+      <table id="tableClear">
+      <tr>
+         <td>
+            <pre>if (temp &lt; 65) {                        
+   tempStr = "uncomfortable";
+} else if (temp &lt;= 75) {
+   tempStr = "comfortable";
+} else {
+   tempStr = "uncomfortable";
+}
+</pre>
+         </td>
+      </tr>
+   </body>
+</html>

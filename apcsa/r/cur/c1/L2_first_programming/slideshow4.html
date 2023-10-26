@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.js">
+        </script>
+        <title>Calling a method for an object SLIDESHOW</title>
+		
+<style type="text/css">
+#nav {margin: 20px 0 10px 0}
+#nav a {margin: 0 5px; padding: 3px 5px; border: 1px solid #ccc; background: #FFE6C6; text-decoration: none }
+#nav a.activeSlide { background: #FF9D1E }
+#nav a:hover {background: #FFFF00; }
+#nav a:focus { outline: none; }
+#output {text-align:center;margin:0 auto;font-weight:bold;margin:20px 0 0 0;}
+</style>
+
+<script type="text/javascript">
+    $.fn.cycle.defaults.timeout = 6000;
+    $(function(){
+        $('#s4').before('<div id="nav">').cycle({
+            fx: 'scrollHorz',
+            speed: 'fast',
+            timeout: 0,
+			after:   onAfter,
+            pager: '#nav'
+        });
+    });
+   
+    function onAfter(){
+        $('#output').html(this.alt);
+    }
+</script>
+
+    </head>
+ <body>
+        <center>
+      <div id="s4" style="position: relative;">
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-1.png" width="548" height="464" alt="You have already created an instance of GameBoard" />
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-2.png" width="548" height="464" alt="Right-click on the instance object" />
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-3.png" width="548" height="464" alt="The instance object menu shows up and lists the methods" />
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-4.png" width="548" height="464" alt="Choose a method to call by clicking on it"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-5.png" width="548" height="464" alt="The method is run"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-6.png" width="548" height="464" alt="Right-click on the instance object again"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-7.png" width="548" height="464" alt="Call another method"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/callmethod-8.png" width="548" height="464" alt="The method is run"/>
+      </div>
+        </center>
+		
+<div id="output">Status area</div>
+
+<div id="buttonClose">
+    <a href="javascript:window.close();">close</a>
+</div>
+
+</body>
+</html>

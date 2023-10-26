@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>How Does Hunger Work?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="10hunger.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1">What would the value of the virtual pet's <tt>hunger</tt> variable 
+ be if, immediately after the pet was created, she invoked the following behaviors in order
+ </p>
+ <ol>
+ <li audio="2">Sleep</li>
+ <li audio="3">Feed</li>
+ <li audio="4">Feed</li>
+ <li audio="5">Exercise</li>
+ <li audio="6">Sleep</li>
+ <li audio="7">Exercise</li>
+ </ol>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">
+ 0
+ 
+        </div>
+        <div class="feedback">
+ The first statement after each method changes the hunger variable.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">
+ 3
+ 
+        </div>
+        <div class="feedback">
+ In the class, the first statement in the exercise and sleep methods
+ changes the hunger variable by adding something to it, not by setting
+ its value directly.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">
+ 7
+ 
+        </div>
+        <div class="feedback">
+ Well done.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text">
+ 8
+ 
+        </div>
+        <div class="feedback">
+ Remember, when the feed behavior is invoked, hunger either gets set to 0
+ or is reduced by 10.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text">
+ We cannot know
+ 
+        </div>
+        <div class="feedback">
+ We really can know this exactly. There is no randomness involved: the
+ methods do specific things to the hunger variable.
+ 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>A framework for handling mouse clicks</title>
+
+</head>
+<body>
+<p>
+This lesson covered techniques for processing mouse clicks.
+A mouse click is an example of an <span class="vocab">event</span>,
+something that interrupts normal processing.
+To handle an event in Java, we supply a callback method that is executed
+when the event happens.
+</p>
+<p>
+Here is a framework for a program that handles mouse input.
+</p>
+<pre>
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class <i>class name</i> extends JPanel implements MouseListener {
+
+   public <i>class name</i> () {
+      JFrame easel = new JFrame();      
+      easel.setSize (<i>window width</i>, <i>window height</i>);
+      easel.add (this);
+      easel.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+      easel.setVisible (true);
+      
+      addMouseListener (this);  // <i>new</i>
+   }
+    
+   public void mouseClicked (MouseEvent e) {
+       // <i>statements that handle a mouse click</i>
+       // <i>e.getX ( ) and e.getY ( ) return the coordinates of the click.</i>
+       repaint ( );  // <i>results in callback to paintComponent</i>
+   }
+    
+   public void paintComponent (Graphics g) {
+      // <i>statements that draw on the window</i>
+   }
+    
+   public void mouseReleased (MouseEvent event) {
+   }
+    
+   public void mousePressed (MouseEvent event) {
+   }
+    
+   public void mouseEntered (MouseEvent event) {
+   }
+    
+   public void mouseExited (MouseEvent event) {
+   }
+}
+</pre>
+
+</body>
+</html>

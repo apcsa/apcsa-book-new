@@ -1,0 +1,47 @@
+<problem>
+	<p></p>
+	<multiplechoiceresponse targeted-feedback="">
+		<!-- in 'choicegroup', can add:
+		   show_correctness="never"
+		  -->
+		<choicegroup type="MultipleChoice" 
+			shuffle="true"
+			label="" 
+			>
+			<choice correct="true" explanation-id="f1">
+				
+			</choice>
+			<choice correct="false" explanation-id="f2">
+				
+			</choice>
+
+		</choicegroup>
+	</multiplechoiceresponse>
+	
+	<targetedfeedbackset>
+		<targetedfeedback explanation-id="f1">
+			<div class="detailed-targeted-feedback">
+				<p>Correct</p>    <!-- heading styled -->
+				<p>
+
+				</p>
+			</div>
+		</targetedfeedback>
+		<targetedfeedback explanation-id="f2">
+			<div class="detailed-targeted-feedback">
+				<p>Wrong</p>   <!-- heading styled -->
+				<p>
+
+				</p>
+			</div>
+		</targetedfeedback>
+	</targetedfeedbackset>
+	
+	<solution>
+		<div class="detailed-solution">
+			<p>Submitted</p>   <!-- heading styled - put 'correct', 'nope', etc -->
+			<p></p>
+		</div>
+	</solution>
+
+</problem>

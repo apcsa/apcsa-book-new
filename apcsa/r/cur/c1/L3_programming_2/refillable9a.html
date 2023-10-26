@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>An alternative name for the Refillable class</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="refillable9a.mc"
+    hasinlinefeedback="true"
+    maxchoices="0"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1">
+ The name <tt>Refillable</tt> isn't a great one, but
+ what name might be better?
+ Consider the name <tt>Quantity</tt>. When
+ we call something a "quantity", we imply
+ that it is <i>unchanging</i>.
+ </p>
+ <p audio="2">
+ Below are the instance variables and methods of the
+ <tt>Refillable</tt> class. Select those that
+ <em><b>do not</em></b>
+ belong in a class that
+ represents an unchanging quantity of something:
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">
+ <tt audio="3">myAmount</tt> (the instance variable)
+ 
+        </div>
+        <div class="feedback">
+ No, a class representing a quantity would need a
+ way to keep track of how large a quantity it is, certainly.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">
+ <tt audio="4">Refillable</tt> (the constructor method) which would now be named Quantity
+ 
+        </div>
+        <div class="feedback">
+ No, a "Quantity" class would need a constructor to initialize
+ its amount.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">
+ <tt audio="5">useUp</tt> (a method)
+ 
+        </div>
+        <div class="feedback">
+ Right: the name "Quantity" doesn't imply an amount that
+ can change, and <tt>useUp</tt> is a method
+ to decrease the amount.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text">
+ <tt audio="6">refill</tt> (a method)
+ 
+        </div>
+        <div class="feedback">
+ Right: the name "Quantity" doesn't imply an amount that
+ can change, and <tt>refill</tt> is a method
+ to increase the amount.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text">
+ <tt audio="7">currentAmount</tt> (a method)
+ 
+        </div>
+        <div class="feedback">
+ No, a "Quantity" class would most likely need a way
+ to tell user, or another class, how big the quantity
+ that it represents is.
+ 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+        <div class="correctResponse" identifier="choice 4"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <script>
+            vocabClass = "top300";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>More on assignment</title>
+    </head>
+    <body>
+        <p>
+            A possibly more confusing assignment is the statement in <tt>refill</tt>
+            that increases <tt>myCandyCount</tt>:
+        </p>
+        <pre>public void refill (int amount) {
+   myCandyCount = myCandyCount + amount;
+}</pre>
+        <p>
+            In algebra, a statement like <tt>myCandyCount =
+                myCandyCount + amount</tt>
+            would make no sense, at least if <tt>amount</tt>
+            weren't zero. But in Java, here's what
+            happens:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    The value in the box named <tt>myCandyCount</tt>
+                    is
+                    added to the value in the box named <tt>amount</tt>.
+                </p>
+            </li>
+            <li>
+                <p>
+                    The result of adding in Step 1 <em>replaces</em>
+                    the value in <tt>myCandyCount</tt>.
+                </p>
+            </li>
+        </ol>
+        <p>
+            The statements in a method are referred to as the 
+             <span class="vocab">method body</span>. The bodies of 
+            the various <tt>CandyJar</tt>
+            methods each consist of only one assignment
+            statement. We will soon, however, see examples of longer
+            methods.
+        </p>
+        <p>
+            To avoid confusion, we usually read the equals sign in an
+            assignment as "gets", for example, "myCandyCount gets myCandyCount plus amount".        </p>
+        <p>Another way you could say this would be &quot;make myCandyCount equal to myCandyCount plus amount&quot;.<br>
+        <br>
+        </p>
+    </body>
+</html>

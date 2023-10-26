@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Making some noise</title>
+   </head>
+   <body>
+      <p audio="2">
+         In sound recording, noise is something to be avoided.  In 
+         some recordings you can hear a background "hiss" that was  
+         introduced by the microphones or other equipment.  In this 
+         exercise, though, let's add some noise to a recording.
+      </p>
+      <p audio="3">
+         Noise is, essentially, randomness.  When a samples in a 
+         sound jump around randomly rather than following a waveform,
+         that means that noise will be heard.  If the random jumping
+         is large, the noise will be louder.
+      </p>
+      <div class="tryit">
+         <p audio="4">
+            Write a method <tt>addNoise</tt> which takes a single numeric
+            argument.  This method will add noise to every 
+            invdividual sample in the sound, with the amount of noise
+            based on the argument.
+         </p>
+      </div>
+      <p audio="5">
+         By including an argument in this method, you can decide how much
+         noise you want to add each time you call it.  What is the best
+         form the argument should take?  That is, should the argument
+         require a <tt>double</tt> or an <tt>int</tt>?  And, 
+         what is the range of the number that the argument expects?
+         Many different values can work.  The 
+         important thing is to think about what the minimum and 
+         maximum noise you
+         might want to add is.
+      </p>
+      <p audio="6">
+         Try adding noise to one of the sounds of voices, and see how much
+         noise you can add and still make out the words.  Be sure to get
+         a sense of what noise looks like in the visualizer. 
+      </p>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A pattern for two-dimensional array processing</title>
+   </head>
+   <body>
+<p audio="2">
+Two-dimensional arrays are most often processed with nested loops.
+The outer loop variable is typically the row index,
+and the inner loop variable is the column index.
+The length of the array is the number of rows.
+The length of one of the elements of the array
+is the number of elements in that row.
+</p>
+<p audio="3">
+The code below prints the values in a two-dimensional array of Strings,
+row by row.
+</p>
+<pre class="width60">
+String [ ] [ ] status;
+   ...
+for (int row=0; row&lt;status.length; row++) {
+   for (int col=0; col&lt;status[row].length; col++) {
+      System.out.print (status[row][col]);
+   }
+   System.out.println (  );
+}
+</pre>
+   </body>
+</html>

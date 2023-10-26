@@ -1,0 +1,113 @@
+lesson 9 todo
+-------------
+
+MJC: I just added brainstorm requests.
+
+NATENATNETNATANANTENATENAET does this, or assigns it.
+
+BlueJ:
+WhileExample_1 - Step 7 --> Change comment "Make one change to one line" --> "Change exactly one line"
+String1 - Step 13 - BlueJExercise needs to be fixed doesn't work
+String2 - Step 14 - BlueJExercise needs to be fixed doesn't work
+String3 - Step 15 - BlueJExercise needs to be fixed doesn't work
+Singer1 - Step 16
+Year1 - Step 18
+Digits1 - Step 19
+Digits2 - Step 20
+Digits3 - Step 21
+Date1 - Step 23
+NumberGuesser - step 33 -- click ignored errors
+GusserBuggy = Step 35 -- won't allow me to set breakpoints?
+BlanksRemoved - Step 43: needs work
+Add another buggy method - step 44:
+
+=========
+Steps: 
+Step 22: Make Brainstorm with bad code
+Step 32: turn into a multiple choice
+Step 33: maybe more descpition about what it should do
+Step 36: picture missing
+Step 37: picture missing
+Step 44: Instruct to open new project and make method work
+
+
+
+=======
+
+DONE SMM 10/2010=====
+
+Step 2: Text Edit: "the statement following the while loop body"
+Step 7: Text Edit : "Make one change to one line"  --> "Change exactly one line"
+		Text Edit : "in the earlier" --> "in WhileExample_1"
+Step 9: In code, actually comment out line a = a + 1
+Step 10: Can we not use a "b" as method name?
+Step 38: Fill out intro a bit "Describe the bug you found in the previous step
+
+
+==== MUST BE DONE
+
+- canned responses for node_(1-10).bs
+
+- string_3 are pitifully short.  How about we get 
+  Ketrina to add some art?  This is probably true for several 
+  of the bluej steps.
+   
+  
+- (NATE) turn debug_5.html into a BlueJ node, link it to a bluej
+  project that mike sends me (with Contains1More method).  Fix up
+  the html to explain what the method is supposed to do.
+
+- (MIKE) deal with hw_2, hw_3, hw_4, and hw_5.html. 
+  Either flesh out or remove.
+
+
+ 
+==== SHOULD BE DONE, IF THERE IS TIME
+
+- break while_stmt_1.html into 2 pages.  introduce code after first ul
+    - no need for flow chart stuff
+    - basically, slow it down
+- infinite loops (while_stmt_8 needs way more time spent)
+
+- put link to earlier step in while_stmt_9.  Never knew how to do that...
+
+- string_2.html needs additional stuff (or better on another page)
+  on roles of variables...
+
+-Adding the div to blueJ exercises 
+
+=== WOULD BE NICE SOMEDAY
+- The ability to talk about pointers in curriculum :)
+
+
+
+
+
+
+
+
+---- OLDER 
+
+s1 - can be broken down into 2 pages (intro should look short and sweet)
+s5 - BS need feedback "The count variable"
+s6 - BS need feedback "Statement orders"
+s12 - Style code to look different from comments (use the comment class tag with span)
+s18 - 22 : boring!!! no graphic or talk bubbles at all.
+s24 - BS need feedback. "Introduce a bug"
+s28 - BS need feedback. "Run-counting"
+s30 - BS need feedback. "Guess the number"
+s31 - Seems like this should be a BS or OR
+s32 - Title needs fixing on html file and proj file. "web java9"
+s36 - First picture doesn't load?
+s37 - BS question has no context. Need feedback. "The bug(1)"
+s38 - BS question has no context. Need feedback. "The bug(2)"
+s40 - BS need feedback. should provide a link to previous step to look at code.
+      "The wrong answer"
+s41 - BS need feedback. should provide a link to previous step to look at code.
+      "Incorrect results"
+s42 - Looks to be a bluej node.
+s43 - Looks to be a bluej node.
+s39 - 43: section Debugging: lack of interesting graphics/ talk bubbles.
+s45 - Lack content. "Playing NIM"
+s47 - Lack content. "Roman Numerals"
+s48 - Lack content. "Playing Hangman"

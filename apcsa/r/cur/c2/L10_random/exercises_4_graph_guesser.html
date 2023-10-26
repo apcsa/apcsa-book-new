@@ -1,0 +1,88 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+   
+</script>
+<title>Guessing distributions from graphs</title>
+</head>
+<body>
+<p audio="1">Let's look back at the bar chart you used to show the
+results from a single die roll, or distributions will six different
+values. In the <tt>GraphGuesser</tt> project there is a bar chart
+class that can show distributions resulting from two six-side dice
+rolls, with twelve different values. We'll show you some graphs made
+from (relatively) simple java expressions involving random numbers;
+your job is to write an expression&mdash;we'll call it a
+generator&mdash;that makes a graph pretty similar to the one shown.
+The graphs were made with 12,000 trials, although you can get the same
+shape with a different count, of course.</p>
+
+<p class="quoteBrown" audio="1b">An aside: the <tt>BarChart12</tt>
+class will become <i>much</i> easier to write when you learn about <span
+   class="vocab" term="collection_class">collections</span>, starting
+in lesson 12. If you look at the source code for the <tt>BarChart12</tt>
+class, you will see thirteen separate instance variables and long,
+albeit regular conditionals. Imagine writing a bar chart that could
+show distributions with 100 different values! Collections will make
+this much, much easier, and even make possible things that are
+impossible now (for instance, bar charts for any number of values).</p>
+
+<div class="openbluejproj">
+<p audio="2">Open the current BlueJ Project <tt>GraphGuesser</tt>
+(in <tt>/lesson10/GraphGuesser)</tt>.</p>
+</div>
+<br />
+<br />
+
+<ol>
+   <li>You've seen this code before: it involves multiple
+   six-sided dice rolls. <br />
+   <br />
+   <img
+      src="/apcsa/r/static/art/programs/GraphGuesser/graph1.jpg"
+      alt="Graph Guesser 1" /></li>
+
+   <li>There are no conditionals in this generator. <br />
+   <br />
+   <img
+      src="/apcsa/r/static/art/programs/GraphGuesser/graph2.jpg"
+      alt="Graph Guesser 2" /></li>
+
+
+   <li>This one is kind of hard. Do it without conditionals, if
+   you can: you'll want to use <tt>Math.sqrt()</tt>, which takes an
+   number (an integer is fine) and returns the square root of that
+   number as a <tt>double</tt>. Remember, you'll then need to convert
+   the <tt>double</tt> into an <tt>int</tt>. <br />
+   <br />
+   <img
+      src="/apcsa/r/static/art/programs/GraphGuesser/graph3.jpg"
+      alt="Graph Guesser 3" /></li>
+
+   <li>This graph is a close approximation of standard bell
+   shaped curve, or <i>normal distribution</i>. It is, actually, a <i>binomial
+   distribution.</i>
+      <br />
+   <br />
+   A hint: think about these two generators, and how the shapes
+   they make are getting closer to the normal distribution:<br />
+   <br />
+   <ul>
+      <li>randGen.nextInt(12)</li>
+      <li>randGen.nextInt(6) + randGen.nextInt(6)</li>
+   </ul>
+   <br />
+   <br />
+   What would be the logical extension of this pattern? <br />
+   <br />
+   <img
+      src="/apcsa/r/static/art/programs/GraphGuesser/graph4.jpg"
+      alt="Graph Guesser 4" /></li>
+</ol>
+
+
+
+
+
+</body>
+</html>

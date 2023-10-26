@@ -1,0 +1,67 @@
+<html>
+   <head>      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Source code for the card class</title>
+   </head>
+   <body>
+      <p audio="node7_1">Most of the code for the <tt>Card</tt> class is below.
+         It has two private instance variables, both integers:</p>
+      <ul>
+         <li audio="node7_2">
+            <tt>mySuit</tt>, either 0 (clubs), 1 (diamonds), 2 (hearts), or 3 (spades);
+         </li>
+         <li audio="node7_3">
+            <tt>myRank</tt>, a value between 2 and 14, inclusive, where 11 represents a jack,
+            12 a queen, 13 a king, and 14 an ace (which is high).
+         </li>
+      </ul>
+
+      <p audio="node7_4">You are to supply the missing code for two methods: <tt>isLegalRank</tt> and <tt>isLegalSuit</tt>.
+         Test the methods on the "boundaries"
+         for ranks and suits: 1, 2, 14, and 15 for ranks, and &ndash;1, 0, 3, and 4 for suits.</p>
+		 <br/>
+		 
+		  <div class="openbluejproj">
+         <p audio="node7_5">Open up BlueJ, and open the project for this step. 
+         </p>
+		 <p audio="node7_6">
+            <span class="projectname">(The project is <tt>lesson5/Card1</tt>)</span>
+         </p>
+      </div>
+      <pre class="width60">public class Card {
+   
+   private int myRank;
+   private int mySuit;
+   
+   public Card (int rank, int suit) {
+      if (isLegalRank (rank)) {
+         myRank = rank;
+      } else {
+         System.out.println ("Illegal rank: " + rank);
+      }
+      if (isLegalSuit (suit)) {
+         mySuit = suit;
+      } else {
+         System.out.println ("Illegal suit: " + suit);
+      }
+   }
+   
+   private boolean isLegalRank (int x) {
+      // you fill this in
+   }
+   
+   private boolean isLegalSuit (int x) {
+      // you fill this in
+   }
+   
+   public int rank ( ) {
+      return myRank;
+   }
+   
+   public int suit ( ) {
+      return mySuit;
+   }
+}</pre>
+   </body>
+</html>
+

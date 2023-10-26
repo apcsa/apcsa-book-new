@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>An example</title>
+      <!-- Layout reference  http://pact.eecs.be rkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p audio="cond2a_1"> 
+Here's a modification to the <tt>useUp</tt> method from the <tt>Refillable</tt> class.
+The first line now checks if the current value of <tt>myAmount</tt> is less than the argument, <tt>amount</tt>, passed to the <tt>useUp</tt> method.
+If <tt>myAmount&nbsp;&lt;&nbsp;amount</tt> evaluates to true&mdash;has the answer "yes"&mdash;the body of the <tt>if</tt> statement is executed, an error message is printed and <tt>amount</tt> is set to zero.
+</p> 
+<pre class="width70">
+   void useUp (int amount) {
+      if (myAmount &lt; amount) {
+         System.out.println ("not enough left");
+         amount = 0;
+      }
+      myAmount = myAmount - amount;
+   }
+</pre> 
+<p audio="cond2a_2"> 
+This is the first place we've seen where statements can be <i>skipped</i>.
+The <tt>if</tt> statement is executed as follows.
+</p> 
+
+<ol> 
+	<li audio="cond2a_3"> 
+The comparison is evaluated: <tt>myAmount</tt> is compared to <tt>amount</tt>, 
+	and the answer will be true if <tt>myAmount</tt> is less than <tt>amount</tt> and false otherwise.
+
+</li> 
+	<li audio="cond2a_4"> 
+If evaluation produces a true result, the statements for a true result are executed.
+
+</li> 
+	<li audio="cond2a_5">
+Otherwise those statements are skipped and execution continues on the line directly following the <tt>if</tt> block.
+
+</li> 
+</ol> 
+</body>
+</html>

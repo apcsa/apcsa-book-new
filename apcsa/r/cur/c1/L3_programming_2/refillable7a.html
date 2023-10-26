@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Refillable: a more general class</title>
+    </head>
+    <body>
+        <img class="imageRight" src="/apcsa/r/static/art/scenes/refillable_device.png" width="100" alt="A device with a plus and minus button, and a display."/>
+        <p audio="refill7_1">
+            Here's a possibility for a more general class.  It's named <tt>Refillable</tt>,
+            and represents objects that we can fill, use some or all of the contents, and then refill.
+        </p>
+        <div class="floatClear"> </div>
+		<pre class="width60">
+public class Refillable {
+
+   private int myAmount;
+	
+   // Initialize a Refillable object 
+   // having initialAmount units.
+   public Refillable (int initialAmount) {
+      myAmount = initialAmount;
+   }
+	
+   // Use amount units.
+   public void useUp (int amount) {
+      myAmount = myAmount - amount;
+   }
+	
+   // Add amount to the current amount.
+   public void refill (int amount) {
+      myAmount = myAmount + amount;
+   }
+	
+   // Return the current amount.
+   public int currentAmount ( ) {
+      return myAmount;
+   }
+}
+</pre>
+    </body>
+</html>

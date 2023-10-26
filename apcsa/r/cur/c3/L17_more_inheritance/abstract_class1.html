@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+  <script>vocabClass="top25";
+  </script>
+      <title>Abstract classes and methods</title>
+   </head>
+   <body>
+<p audio="1">
+In Java, such a placeholder method is called an <span class="vocab">abstract method</span>.
+It is specified with only a header:
+</p>
+<pre class="width70">
+   public abstract boolean cooperates ( );
+</pre>
+<p audio="2">
+A class that contains an abstract method must be declared as 
+an <span class="vocab">abstract class</span>, using the <tt>abstract</tt> keyword.
+</p>
+<pre>
+<span class="codeHighlight1">public abstract class Player {</span>
+
+   private int myScore;
+
+   public Player ( ) {
+      myScore = 0;
+   }
+
+   public void increaseScore (int amt) {
+      myScore += amt;
+   }
+
+   public int score ( ) {
+      return myScore;
+   }
+
+<span class="codeHighlight1">&nbsp;&nbsp;&nbsp;public abstract boolean cooperates ( );</span>
+
+   public void remember (boolean opponentChoice) {
+   }
+}
+</pre>
+<p audio="3">
+Note that the methods dealing with the score are common to <i>all</i> players
+and are coded normally.
+</p>
+<p audio="4">
+We would then have the always-cooperating player using inheritance
+as we did with the other player classes:
+</p>
+<pre class="width70">
+class Cooperator extends Player {
+
+   public boolean cooperates ( ) {
+      return true;
+   }
+}
+</pre>
+</body>
+</html>

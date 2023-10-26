@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A problem</title>
+   </head>
+   <body>
+<p audio="2">
+Unfortunately, elements of an <tt>ArrayList</tt> seem to selectively forget 
+some of their methods.
+Given the following code,
+</p>
+<pre class="width60">
+public void test ( ) {
+    Point p = new Point (3, 4);
+    TracedPoint tp = new TracedPoint (5, 6);
+    ArrayList&lt;Object&gt; a = new ArrayList&lt;Object&gt; ( );
+    a.add (p);
+    a.add (tp);
+    // Move both points to (7, 9).
+    for (int k=0; k&lt;a.size( ); k++) {
+        a.get(k).move (7, 9);
+    }
+}
+</pre>
+<p audio="3">
+the compiler claims that
+</p>
+<pre class="width60">
+    Cannot find symbol - method move (int,int)
+</pre>
+<p audio="4">
+It appears that the Java compiler is looking not at the 
+<tt>Point</tt> and <tt>TracedPoint</tt> classes to find the <tt>move</tt> method, 
+but at the <tt>Object</tt> class.
+</p>
+</body>
+</html>

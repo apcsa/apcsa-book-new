@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Thresholding: making true black and white images</title>
+   </head>
+   <body>
+
+      <p audio="2">
+         Thresholding is a way of converting an image such that it contains only 
+         two possible colors for each of its pixels. 
+         Generally, these are set to be pure white and pure black.  When thresholding, 
+         there is a <span class="vocab" term="threshold value">threshold value</span>, between 0 and 255, that 
+         controls which of the two possible values a pixel is set to. 
+      </p>
+
+      <p audio="3">
+         Thresholding is used to find details in images that might otherwise be lost due
+         to the similarity of values.   With the right threshold value, those details
+         will become much more visible.
+      </p>
+
+      <br />
+      <div class="tryit">
+         <p audio="3">
+            Create a method called <tt>threshold</tt>
+            that takes an integer 
+            threshold value between <tt>0</tt>
+            and <tt>255</tt>, and transforms 
+            the image appropriately. 
+         </p>
+      </div>
+               <p audio="4">
+            Does it make a difference whether you threshold each color channel separately,
+            or take an average of the three (for a pixel) first?   Try it both ways (making
+            two separate methods) and test it.
+         </p>
+   </body>
+</html>

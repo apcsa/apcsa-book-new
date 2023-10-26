@@ -1,0 +1,71 @@
+<html>
+<head>
+<script>
+            vocabClass = "top200";
+    
+        </script>
+<script type="text/javascript" src="/apcsa/llab/loader.js"></script>
+
+<title>What we've done</title>
+
+</head>
+<body>
+<p>
+This lesson involved further work with <i>classes</i>, specifically 
+the <tt>Refillable</tt> and <tt>Name</tt> classes.
+Issues arising from <tt>Refillable</tt> included the following:
+</p>
+<ul>
+<li>Informative naming of methods and instance variables.
+We will use nouns to name typed methods and imperative verbs for <tt>void</tt> methods.</li>
+<li>
+Adding functionality to the class. To compute the average of values given as arguments to <tt>useUp</tt>, we considered first what extra state was needed to provide the new operation, then what changes to the existing methods had to be made. 
+</li>
+<li>
+Testing. Alongside the <tt>Refillable</tt> class, we provided a "tester" class that calls all the <tt>Refillable</tt> method, printing results to the BlueJ console via <tt>System.out.println</tt>. Tester classes help to simplify the somewhat tedious process of producing evidence that the <tt>Refillable</tt> code works as specified.
+</li>
+</ul>
+<p>
+The <tt>Name</tt> class illustrated more features of typical classes:
+local variables that are used to keep track of intermediate results in a computation, private "helper" methods that help other methods do their jobs.  We considered in some detail the design of the helper method, first providing three helpers (one for each piece of the name), then combining them, using a parameter, into a single more general method.
+</p>
+<p>
+The <tt>Name</tt> class also made heavy use of <tt>String</tt> objects.
+The <tt>String</tt> class is supplied in Java; it represents a sequence of characters that you can type at the keyboard.
+<tt>String</tt> constants are surrounded by double-quote characters.
+Characters in a <tt>String</tt> are numbered starting at 0.
+Two <tt>String</tt> objects can be concatenated&mdash;"glued" together&mdash; to form a new <tt>String</tt> using the "+" operator.
+(Thus the "+" operator performs different in different contexts.)
+A <tt>String</tt> can be empty, that is, it can contain 0 characters. Blanks can be part of a <tt>String</tt>; a <tt>String</tt> that contains only one or more blanks and nothing else is <i>not</i> empty,
+since the blanks contribute to its length.
+</p>
+<p>
+There are 60 methods in the <tt>String</tt> class.
+The <tt>Name</tt> class uses four:
+</p>
+<ul>
+<li><tt>substring</tt>, which returns a part of the <tt>String</tt>;</li>
+<li><tt>toLowerCase</tt>, which returns the conversion of lower-case letters in the <tt>String</tt> to upper case;</li>
+<li><tt>toUpperCase</tt>, which returns the conversion of upper-case letters in the <tt>String</tt> to lower case;</li>
+<li><tt>trim</tt>, which returns the result of removing blank characters from the ends of the <tt>String</tt>.</li>
+</ul>
+<p>
+All of these methods return a newly constructed <tt>String</tt> object; the object used to call the methods isn't changed.  Two versions of <tt>substring</tt> are provided in Java, a version with one argument and another with two.  Java knows which one to call because the signature (the list of parameters) is different.
+</p>
+<p>
+The design of the helper method for the <tt>Name</tt> constructor revealed an important property of method calling.
+Namely, a method is given a <i>copy</i> of each of its arguments.
+This preserves the argument values in the calling code.
+For <tt>String</tt> objects, however&mdash;and for that matter, any kind  of object&mdash;a <i>reference</i> to the object is what gets copied.
+We described the call to the <tt>Name</tt> constructor in some detail,
+using boxes and arrows in diagrams to portray reference values.
+</p>
+<p>
+The modification to the <tt>Refillable</tt> class led us to a new data type, named <tt>double</tt>, whose values all have a <i>fractional</i> (digits following the decimal point). Such values are stored in a form similar to <i>scientific notation</i>, that is, as some value times some power of 10.  Since when we move the decimal point 1 place to the left and add 1 to the power of 10, we get the same value, this format is called <span class="vocal">floating point</span>.
+</p>
+<p>
+Finally, we noticed that big enough values cause undetected errors.
+That's because an <tt>int</tt> is represented in a limited amount of memory, namely 32 "bits" (binary digits).  That means we can only represent 2<sup>32</sup> actual values using an <tt>int</tt>.
+</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript">
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <title>Optional curly brackets</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+
+</head>
+<body>
+<p>
+We have been careful to always use curly brackets&mdash;"}" and "{"&mdash;with the bodies of the <tt>if</tt> and <tt>else</tt> statements:
+</p>
+<pre>
+   if (myAmount &lt; amount) <b>{</b>
+      System.out.println ("not enough left");
+   <b>}</b> else <b>{</b>
+      myAmount = myAmount - amount;
+   <b>}</b>
+</pre>
+<p>
+As it happens, the curly brackets are <i>not</i> necessary if the body contains only one statement:
+</p>
+<pre>
+   if (myAmount &lt; amount)
+      System.out.println ("not enough left");
+   else
+      myAmount = myAmount - amount;
+</pre>
+</body>
+</html>

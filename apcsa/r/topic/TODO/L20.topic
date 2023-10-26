@@ -1,0 +1,16 @@
+title: Lesson 20: master
+
+{
+h2: master
+
+
+heading: GridWorld infrastructure
+    resource: GridWorld support classes [/apcsa/r/cur/cTODO/L20_more_gridworld/support0.html]
+    resource: The Location class [/apcsa/r/cur/cTODO/L20_more_gridworld/support1.html]
+    resource: The Grid interface [/apcsa/r/cur/cTODO/L20_more_gridworld/support2.html]
+    resource: The Actor class [/apcsa/r/cur/cTODO/L20_more_gridworld/support3.html]
+    resource: The Bug class revisited [/apcsa/r/cur/cTODO/L20_more_gridworld/support4.html]
+    brainstorm: A disappearing bug [/apcsa/r/cur/cTODO/L20_more_gridworld/support5.html]
+    resource: A Jumper class [/apcsa/r/cur/cTODO/L20_more_gridworld/support6.html]
+    brainstorm: Jumper test cases [/apcsa/r/cur/cTODO/L20_more_gridworld/support7.html]
+    brainstorm: Jumper design [/apcsa/r/cur/cTODO/L20_more_gridworld/support8.html]

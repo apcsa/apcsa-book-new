@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Definition and use of static constants</title>
+   </head>
+   <body>
+<p audio="1">
+To declare a static constant, we use the keyword <tt>static</tt>.
+A constant may be either public or private, depending on whether or not
+it should be accessible from outside the class.
+</p>
+<p>
+To declare a constant, we use the keyword <tt>final</tt> 
+and use an initializer&mdash;an equals sign, followed by an associated value&mdash;to
+provide the constant's value.
+Assignments are not otherwise allowed to an identifier declared as <tt>final</tt>.
+</p>
+<p>
+By convention, names of constants are written in all capital letters.
+</p>
+<p>
+Thus, here's how a constant representing the number of suits would appear
+in a <tt>Card</tt> class:
+</p>
+<pre>
+public static final int NUMSUITS = 4;
+</pre>
+<p>
+Within the class in which it's declared, a static constant may be accessed
+by merely using its name, in the same way as instance variables.
+From outside the class, we attach the class name and a dot to the front of the name,
+for example,
+</p>
+<pre>
+g.setColor (Color.RED);
+for (int k=0; k&lt;Card.NUMSUITS; k++) ...
+</pre>
+</body>
+</html>

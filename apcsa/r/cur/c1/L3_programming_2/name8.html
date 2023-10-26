@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Empty and empty</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="name8.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+<p audio="1">What is the value of </p>
+<pre>
+ "" + ""
+</pre>
+<p audio="2">Try to guess before testing it out.</p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">
+<tt>" "</tt> (Note, there is a 'space' in that string.)
+ 
+        </div>
+        <div class="feedback">
+Nope. A string with a space in it is quite different, to Java at
+least, than a string without anything in it. In the statement above,
+both of the strings that are being concatenated are empty. So, the
+space in this choice won't just appear out of the blue. Remember,
+programming is sometimes like satisfying a finicky teacher.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">
+<tt>""</tt> (There is no space in this one).
+ 
+        </div>
+        <div class="feedback">
+Right. Gluing together two completely empty strings (those without
+<em>anything</em> in them, even spaces) will result in an empty
+string. Remember, a string with a space in it, or anything, is 
+different than an empty string.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">
+<tt>"+"</tt>
+ 
+        </div>
+        <div class="feedback">
+No. The plus is an operator in this statement, 
+and won't show up in the result string.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text">
+<tt>"0"</tt>
+ 
+        </div>
+        <div class="feedback">
+Nope! Where would the zero come from?
+ 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 2"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

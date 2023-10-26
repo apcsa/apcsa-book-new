@@ -1,0 +1,124 @@
+Lesson 6
+
+==== bluej exercises 
+
+ we should add lesson5/cocoa1 to this lesson (unused in lesson 5).
+
+SMM - 10/25/2010
+- I might just quickly teach the Thread.sleep(); this gives them a lot more to do with the project. I had one student -- Clio Heard -- pull it off. It was cool.
+- I might also at least provide some instructions on creating their own image -- it could be on help page even. I had a number of students try but only one able to make it work right.
+
+
+
+---------------------------- OLD -------------------
+
+
+==== MUST BE DONE
+BlueJ and VirtualPet
+ - Can the editor be given line numbers?
+ - VirtualPet not set up as a BlueJ exercise -- no Test and Reset buttons in editor
+ - VirtualPet doesn't not have access specifiers on instance variables
+ - no arrow between classes showing composition in BlueJ
+ - VirtualPet v2 all code for student to write is in file.
+ - It looks like code is correct in the methods the mc for step 10 indicates that hunger is not being set
+ 
+Help Giude: 
+ - Opening blueJ --> Quotes on menu items
+  				  --> refers to extension as if it needs to be downloaded? 
+
+Glossary:
+- argument  - mixing up parameters and arguments in definition -- show example
+
+
+VLE: 
+- Fill-in Problems:  Side bar doesn't extend entire length (reference Lesson 6 02review - Step 2:)
+
+Lessons:
+- Manage Sequence is not in lesson -- out on purpose 0- looks like not complete yet
+- 01intro  - Step 1: - Talk Bubble ul is bold -- couldn't get it off
+- 10hunger - Step 10 : Answer is not right -- at least not for my code -- does the code revert to some buggy version
+- 13hunger2 - Step 13: Do lead them toward writing a checkDead method?
+- write_4 - Step 22: -  Reference http://localhost/~seanmorris/apcsa/view.php?location=3: Step 51 - can we do that?
+- check GLossary constructor change	
+- Glossary - String should be capitalized SVN freaking on me	
+   
+
+=== MUST BE DONE WEBJAVA
+
+
+==== SHOULD BE DONE, IF THERE IS TIME
+
+
+- (NATE) write hte "manage complexity" activities for day 2.  Some are there already
+    (seq3, which is not included right now).
+    - functional abstraction (methods to categorize hunger, rather than
+          tests everywhere).
+    - adding helper methods to check for iniital situations, rather than
+        doing tests on instance variables at the top of each public
+        method.  
+    - including a test class (?)
+  (NATE) include examples of "bad" code (tight coupling, perhaps) and work through
+      fixes.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+=====  WOULD BE NICE SOMEDAY
+
+
+
+===== DONE
+
+- 02review - Step 2: - The fill-in questions type is not parsing html
+- 03pet - Step 3: -  picture missing
+- 04open - Step 4:  - I get two classes in Blue - VirtualPet and VirtualPetFace - add to instructions
+- 07explore3 - Step 7 :- andsleep, theVirtual, theface, methodsset - space
+						- Captial S on string
+						- everything in <tt>
+						-  Add in questions?  Where is the VirtualPetFace instantied?
+-  08explore4 - Step 8: We'll look more closely at how hunger is effected in each method in a bit.
+- 12hunger1 - Step 12: move Try It to Step 13
+- 11fill - Step 11: Fill-in not parsing 
+				 so that the code looks right:
+
+        		public void feed ( ) {
+        			   hunger = hunger - 10;
+        			   if (               ) {
+                			____#1_______
+              			hunger = 0; }
+           				face.setMessage('Yum, thanks');
+          				 face.setImage('normal'); 
+        		} 
+- 16squash - Step 16: - File Menu's itialics
+					  - Two Inspecting an object one on the help and one in the glossary
+					  - You'll need to make sure you check the following:
+					  
+					       
+- 17petbrainstorm - Step 17: - Rewrite - Name two or three moods you would add to VP. Describe the moods and methods we need to add to our class
+										our class.
+										
+- write_1 - Step 18 : state variables to instance variables
+- write_3 - Step 20 : Note -- grammar - comma and period
+
+- write_3b - Step 21: though -> thought
+- write_4 - Step 22:- thuroughly
+
+Glossary:
+- constructor -- no return type instead of type -- they don't return data
+			 -- or the same number of parameters but types in different orders
+			 -- add examples of different constructors
+			 
+- string 	- double quotation mark
+		  	- enclosed in quotation marks
+			- Add Do you see the 10 characters -- make sure to add the space
+			- Should it be capitalized?

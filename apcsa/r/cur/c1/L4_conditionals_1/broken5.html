@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>More bad numbers</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="broken5.mc"
+    hasinlinefeedback="true"
+    maxchoices="2"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt"><p audio="1">
+Bad arguments to methods other than the constructor may also "break" the object. Suppose that a <tt>Refillable</tt> object has been constructed with a value
+of 27 for <tt>myAmount</tt>.
+Check each method call below that would "break" the object. You may pick more than one.
+</p>
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"><tt>useUp (5)</tt> 
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> contains 22.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"><tt>useUp (27)</tt> 
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> contains 0. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"><tt>useUp (28)</tt> 
+        </div>
+        <div class="feedback">Correct; <tt>myAmount</tt> contains -1, which makes no sense since it's
+negative.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"><tt>useUp (52)</tt> 
+        </div>
+        <div class="feedback">Correct; <tt>myAmount</tt> contains -25, which makes no sense since it's
+negative.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text"><tt>refill (4)</tt>
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> contains 31. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 6">
+        <div class="text"><tt>refill (27)</tt> 
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> contains 54. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 7">
+        <div class="text"><tt>refill (52)</tt> 
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> contains 79.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 8">
+        <div class="text"><tt>currentAmount ( ) </tt>
+        </div>
+        <div class="feedback">There's no breakage here; <tt>myAmount</tt> is unchanged.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+        <div class="correctResponse" identifier="choice 4"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

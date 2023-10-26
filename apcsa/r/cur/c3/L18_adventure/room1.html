@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Why is movement between rooms so complicated?</title>
+   </head>
+   <body>
+      <br>
+      <div class="talkBubble" char="/apcsa/r/static/art/scenes/knight_3.png" align="left" color="red">
+      <p audio="2.m2">
+         Whoa, why are there all these different methods checking
+         whether the player can move?  Why not just have a single 
+         method that returns the next room?
+      </p>
+      </div>
+      <br>
+      <div class="talkBubble" char="/apcsa/r/static/art/scenes/dragon_3.png" align="right" 
+      color="green">
+         <p audio="3.f1">
+            In one word, the reason is <span class="vocab">inheritance</span>.  If we want
+            to make special rooms that do complicated things, we'll
+            make new classes that extend <tt>Room</tt>.  
+            <br><Br>
+            By having
+            this parent class go through a specific sequence of 
+            methods, our new <span class="vocab">subclass</span> can change what happens in 
+            specific ways by <span class="vocab">overriding</span> one of those methods.
+         </p>
+      </div>
+      <br>
+    <div class="talkBubble" char="/apcsa/r/static/art/scenes/knight_1.png" align="left" color="red">
+      <p audio="4.m2">
+         Um, I'm going to need some examples...
+      </p>
+      </div>
+   </body>
+</html>

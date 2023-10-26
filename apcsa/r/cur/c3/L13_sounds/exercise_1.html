@@ -1,0 +1,76 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>More complicated scores can make more complicated music!</title>
+   </head>
+   <body>
+      <p audio="2">
+         Implement some of the following additions to the <tt>ReadSound</tt>
+         class specified on the previous page.
+      </p>
+
+      <ol>
+         <li>
+            <span audio="3">
+               Music in which every note is the same duration is ... boring!
+               Devise a new type of string that can encode duration
+               information.  Mimicking regular musical notation (mostly), these 
+               variable length
+               notes can come in six possible durations:</span>
+			   <ul>
+			   	<li audio="4">four times as long as the regular length,</li>
+				<li audio="5">twice as long,</li>
+				<li audio="6">one and a half times as long (that is, 50% longer),</li>
+				<li audio="7">regular length, as defined by the beats per minute value,</li>
+				<li audio="8">half as long, and</li>
+				<li audio="9">one quarter as long.</li>
+			   </ul>
+               <br/>
+            <span audio="10">
+               An easy solution would be to make each note a 
+               <tt>String</tt> of two characters.  But, try to make your 
+               change compatible with scores defined the old way 
+               (that is, scores of single character strings that are 
+               standard duration notes).
+            </span>
+         </li>
+         <li audio="11">
+            Chords are mulitple notes played at the same time.  Leaving
+            musical theory aside, a chord is usually three notes, 
+            and only certain groups of notes will make a nice sounding
+            chord.<br/><br/>
+            
+               Change the type of score that <tt>ReadSound</tt> can read
+               to allow for chords.  You will need to use the methods
+               you wrote earlier that add sounds to one another.  
+               And, 
+               one of the easiest ways to implement this new feature
+               is to make a score an <tt>ArrayList</tt> of <tt>ArrayList</tt>s,
+               where the inner one contains <tt>String</tt>s.  
+               This, however, will make these scores incompatible with 
+               scores defined the old way.
+          
+         </li>
+      
+            <li audio="12">
+               Sounds played on non-electronic instruments (e.g., piano
+               and guitar) are
+               not the same volume throughout their duration.  As you 
+               may have noticed,
+               the note will start in silence, very quickly increase in volume
+               to a maximum, and then slowly get quieter over the 
+               duration of the sound.  <br/><br/>
+			   
+			   Implement this.  Note:
+               in order to increase volume quickly enough, especially for
+               the lowest notes, you won't
+               be able to simply increase the volume <i>between</i>
+               cycles.  Rather, the volume will need to increase <i>within</i>
+               a cycle, from sample to sample.  Remember your earlier work
+               on volume, however: this does not mean <i>adding</i> an
+               ever increasing number to each sample.
+         </li>
+      </ol>
+   </body>
+</html>

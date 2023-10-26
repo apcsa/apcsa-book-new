@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Approaching the base case?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Approaching the base case?</div>
+
+    <div class="prompt">
+     <p>Here is the recursive code from the previous step.
+</p>
+<pre class="width80">
+public class Interval {
+
+ private int myLeft;
+ private int myRight;
+ 
+ ...
+ 
+ // Return the sum of the integers represented by this interval.
+ public int sum ( ) {
+ return sumHelper (myLeft, myRight);
+ }
+ 
+ private int sumHelper (int left, int right) {
+ if (left &gt; right) {
+ return 0;
+ } else {
+ return left + sumHelper (left+1, right);
+ }
+ }
+}
+</pre>
+
+
+<p audio="1">
+
+Describe in your own words how the arguments to the recursive call
+get closer to the base case.
+
+
+</p>
+
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="StudentName1"> 
+
+
+
+        </div>
+        
+        <div name="StudentName2">
+
+
+
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "5",
+         "prompt": " \n<p audio=\"1\">\nThe starting environment contains a bug and a rock.\nSpecify the row/column coordinates where each of these objects\nis placed, and indicate which of the questions in \"Do You Know?\" set 1\nyou are unable to answer using only the bug and the rock with which\nthe environment is initialized.\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [
+      {
+         "name": "StudentName1",
+         "response": " \n"
+      },
+      {
+         "name": "StudentName2",
+         "response": "\n"
+      }
+   ],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Additional experiments needed?",
+   "type": "Brainstorm",
+   "useServer": true
+}

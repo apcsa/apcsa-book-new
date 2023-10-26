@@ -1,0 +1,28 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>ArrayList methods (3)</title>
+</head>
+<body>
+<p>
+We continue by adding two more names to the <tt>ArrayList</tt>:
+</p>
+<pre>
+   friends.add (new Name ("Hannah", "Montana"));
+   friends.add (new Name ("Mickey", "Mouse"));
+   Name n1 = friends.get(1);
+   Name n2 = friends.get(2);
+</pre>
+<p>
+After these statements are executed, we have an <tt>ArrayList</tt>
+whose size is 3, along with two references <tt>n1</tt> and <tt>n2</tt> to <tt>Name</tt> objects.  Also notice that the <tt>get</tt> method does not change
+the <tt>ArrayList</tt>.  It returns the object at the given index without removing it.
+The diagram below shows the resulting box-and-arrow representation of this <tt>ArrayList</tt>.
+</p>
+<div class="imageCenter">
+<img  src="/apcsa/r/static/art/graphics/ArrayList_box+arrow.png">
+</div>
+</body>
+</html>

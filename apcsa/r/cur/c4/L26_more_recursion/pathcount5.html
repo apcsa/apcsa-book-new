@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The code</title>
+   </head>
+   <body>
+<p audio="2">
+Here is the code just designed.
+</p>
+<pre class="width70">
+public static int pathCount (int n, int k) {
+   if (n==0 || k==0) {
+      return 1;
+   } else if (n&lt;0 || k&lt;0) {
+      return 0;
+   } else {
+      return pathCount(n-1,k) + pathCount(n,k-1);
+   }
+}
+</pre>
+<p audio="3">
+Test it with the BlueJ debugger or hand-trace it on points near <tt>(0,0)</tt>
+to convince yourself it works.
+</p>
+   </body>
+</html>

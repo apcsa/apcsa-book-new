@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Binary search</title>
+      <!--  webjava pretty please -->
+   </head>
+   <body>
+<p audio="1">
+Complete and test the implementation of <span class="vocab">binary search</span> in the code below.
+</p>
+<pre>
+public class Searcher {
+
+   int [ ] values = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
+   
+   public Searcher ( ) {
+   }
+   
+   public boolean contains (int x) {
+      return helper (k, 0, values.length-1);
+   }
+   
+   private boolean helper (int x, int low, int high) {
+      while (low &lt; high) {
+         int mid = (low + high) / 2;
+         if (x &gt; values[mid]) {
+            low = ____ ;
+         } else {
+            high = ____ ;
+         }
+      }
+      return values[low] == x;
+   }
+}
+</pre>
+</body>
+</html>

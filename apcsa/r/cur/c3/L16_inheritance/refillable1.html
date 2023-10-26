@@ -1,0 +1,36 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<script>
+	vocabClass = "top125";
+</script>
+<title>Extending the Refillable class (1)</title>
+</head>
+<body>
+<p audio="4">Here's how we say that <tt>CokeCooler</tt> is just like <tt>Refillable</tt>.</p>
+<pre class="width70">
+public class CokeCooler extends Refillable {
+}
+</pre>
+<p audio="5">With that declaration, all the public methods of <tt>Refillable</tt> are also available to <tt>CokeCooler</tt>
+objects without needing a reference to Refillable itself. We refer to <tt>CokeCooler</tt> as a <span class="vocab" term="subclass">subclass</span> or 
+<span class="vocab">child class</span> of <tt>Refillable</tt>, and to <tt>Refillable</tt> as a 
+<span class="vocab" term="superclass">superclass</span> or 
+<span class="vocab" term="parent class">parent class</span> of <tt>CokeCooler</tt>.</p>
+
+<p audio="5b">We also say that <tt>CokeCooler</tt> <span class="vocab" term="inheritance">inherits</span> from <tt>Refillable</tt>.</p>
+
+<br />
+
+<div class="imageRight"><img src="/apcsa/r/static/art/scenes/refillable_oxygen.png" alt="Refillable Oxygen Tank" width="70" /></div>
+<br />
+<br />
+<p class="quoteBrown" style="width: 70%;" audio="6">Similarly, classes like <tt>CandyJar</tt> and. say,  <tt>OxygenTank</tt> could also inherit
+from <tt>Refillable</tt>.</p>
+
+
+<br />
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>Aces Up requirements</title>
+   </head>
+   <body>
+      <h4 audio="1">Background</h4>
+      <p audio="2">
+         You play the solitaire card game called "Aces
+         Up" as follows. Start with a shuffled deck of 52 cards, and
+         space on the table for four stacks of cards. Then repeat the
+         following process:
+      </p>
+      <ol>
+         <li audio="3a">
+            <p>
+               Deal the next four cards from the deck to the four
+               stacks
+            </p>
+         </li>
+         <li audio="3b">
+            <p>
+               Make "plays". There are two kinds of plays:
+            </p>
+            <ol>
+               <li audio="3b1">
+                  <b>Discard</b>: When the top cards in two stacks are the
+                  same suit, the card with lower rank is discarded.
+                  (Ace ranks highest, then king and so on down to 2.)
+               </li>
+               <li audio="3b2">
+                  <b>Fill an empty stack</b>: The top card of any nonempty 
+                  stack may be moved to an empty stack. This play is optional.
+               </li>
+            </ol>
+         </li>
+      </ol>
+      <p audio="4">
+         The game is won when all 52 cards have been dealt, 
+         and only an ace remains in each stack.
+          The example below shows the last few plays of a winning game.
+      </p>
+      <br>
+      <img align="center" src="/apcsa/r/static/art/graphics/acesup_example.png"
+      alt="and example of the end of an Aces Up game">
+      <br><br>
+      <p audio="6">
+         The game seems rather difficult to win. One book, 
+         <u>The Complete Book of Solitaire and Patience Games</u>, 
+         by A.H. Morehead and G. Mott-Smith, 
+         estimates the odds of winning as 1 in 10.
+      </p>
+      
+      <h4 audio="7">Problem</h4>
+      
+      
+      <p audio="8">
+      Write a program that graphically plays Aces Up.  We have provided framework code (available
+      from the next page) that defines <tt>Card</tt> and <tt>Deck</tt> classes.  Each 
+      <tt>Card</tt> instance has an associated picture, and a draw method that knows how
+      to draw the card.  You are to write the rest of the program, and have it use 
+      mouse input to indentify card choices and images to represent what the card
+      value and rank, and which stack it is in.
+      </p>
+      
+   </body>
+</html>

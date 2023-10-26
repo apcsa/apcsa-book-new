@@ -1,0 +1,63 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The Random class</title>
+   </head>
+   <body>
+      <p audio="2">
+        The <tt>Random</tt>
+         class in the <tt>java.util</tt>
+         
+         library provides a way
+         to produce a sequence of values that appear to be randomly chosen. 
+         <tt>Random</tt>
+         has two methods of interest right now (and many more that 
+         can be useful) :
+      </p>
+      <ul>
+         <li audio="3">
+            a zero-argument constructor, and 
+         </li>
+         <li audio="4">
+            a <tt>nextInt</tt>
+            method that takes an argument <tt>n</tt>
+            and returns an integer between 0 and <tt>n-1</tt>, inclusive.
+         </li>
+      </ul>
+
+      <p audio="5">
+         Before you can use the <tt>Random</tt> class to generate a random number you must first instantiate a <tt>Random</tt> object.  For example,<br>
+</p>
+   <pre>
+   Random gen = new Random(); 
+   int x = gen.nextInt(5);  // returns a random number from 0 to 4
+   </pre>
+<p>
+
+         Thus <tt>gen.nextInt(2)</tt>
+         could represent a coin flip (where a 0 means one side of a coin, 
+         and a 1 means the other side).
+Here's a program segment that uses <tt>nextInt</tt>:
+</p>
+<pre>
+private Random coin;
+coin = new Random ( );
+coinFlip = coin.nextInt(2);
+</pre>
+<p>
+Now consider the expression:</p>
+      <pre class="width30">( die.nextInt(6) + 1 )</pre>
+      <p audio="6">
+         This represents the throw of a six-sided die (one of the numbers 1, 2,
+         3, 4, 5, or 6).  Here the <tt>nextInt</tt> method returns a random number from 0 to 5 then 1 is added to this number resulting in a random number from 1 to 6.
+      </p>
+      <br/> 
+      <div class="talkBubble medium_right" align="left" color="orange" char="float3">
+            <p audio="7.m2">I can brush my teeth with either hand, you know.</p>
+        </div>
+        <div class="talkBubble medium_right" align="right" color="blue" char="bolt5">
+            <p audio="8.m3">Thanks, dude.  That was also pretty random information.</p>
+        </div>
+   </body>
+</html>

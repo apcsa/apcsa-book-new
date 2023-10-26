@@ -1,0 +1,143 @@
+lesson 5 todo
+
+- Lesson 5 Exercises - #1 : Grammar -- "sentence needs to be fixed : true if both are odd or both or even; otherwise, it returns false."
+- Lesson 5 Exercises - #6c : Delete (DONE -- MJC)
+- Lesson 5 Exercises -- Review answer key in teacher area
+
+MJC modifications Sept 15 -- *lots* of additions
+When run from the syllabus, clicking "Next" stops working at step 41
+(the start of the Card steps).  The set of steps for the Cards used to be
+unattached, and I moved it into the main sequence; this may have caused
+some problems.
+
+- ?cond41 -> turn into an fi, or two?  Or, bluej exercise?
+   - note, not in the .project file, so ignore?
+ 
+
+ 
+ - add Ketrina new images  (testing ifs, card outranks, boolean 5x, lots of good stuff!!)
+  -- !!
+
+- fix up the exercises page.
+  
+-- remove quizzes from summary
+  -  DELETE?the quizzes were node_12 - 16 plus seq1, seq2 -- I think they can be deleted
+
+
+=============== bluej projects
+
+=== regular projects
+
+- Card1: referenced in step43, step 46
+
+- StringComp2: referenced in step35 "Comparison experiments" cond54-compexperiment.ht
+
+- "Modifying the Name Class" = cond50-comparisonintro.ht -- step30
+    points to lesson5/Names
+    
+    
+=== bluej exercises
+
+- "Classifying by age", cond38-selftest.ht -- step 11 
+     points to lesson5/Age1
+
+
+=== possible
+
+  steps 5, 6 could be (although bluej exercises might be heavyweight...)
+
+  step 18 -- thought this is analysis of source code.  
+     could run it through tests to see if it is has bugs, and do a String comparison 
+     to count how many "if" keywords they have... (better to count < and >)
+
+  step 31 - Have students open Name project in step 37 not 31?
+ 
+  step 46 -- outranks could be automatically tested, for sure, with a Card2 project
+
+- ? add bluejexercise step after cond40.
+  - asks students to do the same logic, shows nested ifs, has them fill in string assignments.
+  
+  - ?cond41 -> turn into an fi, or two?  Or, bluej exercise?
+   - note, not in the .project file, so ignore?  
+  
+=== todo
+
+
+   - what is node7.bluej?  clean this up:
+   it shows the code in the step (too long), doesn't tell them to go to 
+   bluej, etc...
+  
+=== orphans ?  integrate these?
+ - cond41-selftestcocoa.html ,
+      points to Cocoa1, which is fixed up
+
+- "re comparison experiments" cond56-blankequality.html
+     points to StringComp2
+     could fit after step 36
+
+  lesson5/temperature is unused?  needs fixing if it is to be used
+   lesson5/StringComp1 is unused.  not fixed or anything...
+
+ Step 35: BlueJ StringComp2 -- this isn't going to do what we want(s1 != s2 && s1.equals(s2) unless you change the constructor assignments to be 	
+      s1 = new String(string1);
+      s2 = new String(string2);
+
+      -- I don't the students are ready to make that change yet
+ 
+
+  
+ ============= Mike addressed almost everything below. ====== 
+  ======= Sean Morris - Summer 2010 ============
+<<<<<<< .mine
+ -  DELETE?the quizzes were node_12 - 16 plus seq1, seq2 -- I think they can be deleted
+ - fix up the exercises page.
+ - add a summary page !! -- Done
+ - fix up unitquiz page, and add another - removed quizzes - SMM
+
+       - The title bar persists between pages in both Chrome and Safari
+         - Playing Cards as submenu does not look correct --> indent/change color?
+        Step 3: Could break this into two pages
+        Step 3/4: Practice Short-cuiting -- show truth table 
+                  Short-circuiting Exercises at end   
+      Step 6:  - The input box for BlueJ exercise is too tight
+      Step 24: Brainstorm other options -- StringComp2/The source doesn't compile. 
+        I fixed it but I am not doing something correctly.  
+      Step 11: We probably need to show how to test the boundary?
+               - BlueJ exercise on boundary cases
+               - write test cases against buggy code
+      Step 28 and Step 30 : They are modifying and testing the code directly now -- have we introduced? how?
+      --> Summary
+      --> End of Exercise Format 
+      
+      Teacher's Manual Note on Step 27
+============  Sean Morris - DONE to FILE =========
+      --> How about starting More on Booleans and Testing with Step 12 and Step 13
+       --> Then do Testing and boudary cases and show tests? Step 10/Step 11
+       Step 2ish : Short-circuiting and compound boolea ns
+      Step 2: 
+         - DONE The Java operator for "and" is &&  -- combiner (?)
+         - DONE String capital?
+      node_4.bs: Revisiting Name Class
+             -- add line number --> This is not that easy to make it look right
+             -- switch line number  
+      Step 5: The student response is misleading becuase of short-circuiting - intended?
+      Step 10 : DONE == Reworded the test cases number sets at bottom of page
+      Step 10: It seems like the statement needs a context 
+         -- How about putting the isLegalPercentage method as the context for Step 10 
+    Step 10 : Boolean Variables and Methods -> Add variable example
+      Step 13:DONE  Added more despcription to the checkerboard example
+      Step 13: DONE Split into two pages -- one GradeBook and one Checkerboard and added an exmaple
+               of an involation of the method that assigns to a boolean variable -- NOT sure about this part.
+      Step 17 : DONE Code for Card Class -- added picture
+      STEP 18: added optionally and the current object
+      Step 19: Brainstorm : Filled out the example question asking to list test cases and modified the canned response
+      Step 20: Added in instructions for opening up the Name class from lesson2/Names
+      
+      Step 21 : Added a bunch of detail, deleted the reference to refillable and used the Card class to object comparison.
+      Step 24: I made instructions more explicit
+      
+      Step 29: fixed code formatting 
+       Step 29: A little wierd becuase the code as it is would be create a semantic problem return first and middle 
+        if you say the middle can be non-empty but the last empty 
+             -- Add "+" sign
+              -- add the canned responses that discuss possabilities

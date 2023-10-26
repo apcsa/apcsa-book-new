@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analyzing temperature classification code</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Analyzing temperature classification code</div>
+
+    <div class="prompt">
+    
+
+ <p audio="1">
+
+ For what values of <tt>temp</tt>
+
+ do the two program segments below behave differently
+
+ (i.e. set <tt>tempStr</tt>
+
+ to a different value)?
+
+ </p>
+
+ <table id="tableClear">
+
+ <tr>
+
+ <td>
+
+ <pre>
+
+if (temp &gt;= 65 &amp;&amp; temp &lt;= 75) {
+ tempStr = "comfortable";
+} else {
+ tempStr = "uncomfortable";
+}</pre>
+
+ </td>
+
+ <td>
+
+ <pre>
+
+if (temp &gt;= 65 || temp &lt;= 75) {
+ tempStr = "comfortable";
+} else {
+ tempStr = "uncomfortable";
+}</pre>
+
+ </td>
+
+ </tr>
+
+ </table>
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Dora">In the right segment, basically any temp that is <= 75 will be set to 'comfortable', but for the left segment it is restricted to be between 65 and 75. 
+        </div>
+        
+        <div name="Ziyan">I think if Dora is wrong, the right segment will always set tempStr to "comfortable" no matter temp is and the left will only set tempStr to "comfortable" when temp is between or equal to 65 and 75.
+
+
+
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

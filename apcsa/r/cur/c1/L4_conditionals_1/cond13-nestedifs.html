@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Nested <tt>if</tt> statements</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+ 
+<p audio="cond13_1"> 
+The statements for a true or false result may themselves include an <tt>if</tt> statement.
+Consider, for example, another way to write the <tt>comfortLevel</tt> initialization:
+</p> <div class="imageRight">
+	<img src="/apcsa/r/static/art/scenes/testing_ifs.png" alt="Nested ifs VS Cascaded ifs" />
+</div>
+<pre class="width50">
+if (temp &gt;= 50) {
+   if (temp &gt; 80) {
+      comfortLevel = "too hot";
+   } else {
+      comfortLevel = "comfortable";
+   }
+} else {
+   comfortLevel = "too cold";
+}
+</pre> 
+
+
+
+</body>
+</html>

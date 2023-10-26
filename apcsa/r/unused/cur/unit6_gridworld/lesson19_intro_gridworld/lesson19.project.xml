@@ -1,0 +1,81 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+<nodes>
+<HtmlNode identifier="bug0" title="Exploring the Bug class" class="intro">
+	<ref filename="bug0.html"/>
+</HtmlNode>
+<HtmlNode identifier="bug2" title="BoxBugs" class="intro">
+	<ref filename="bug2.html"/>
+</HtmlNode>
+<BrainstormNode identifier="bug3" title="BoxBug overriding" class="brainstorm">
+	<ref filename="bug3.bs"/>
+</BrainstormNode>
+<HtmlNode identifier="bug4" title="Colored BoxBugs" class="intro">
+	<ref filename="bug4.html"/>
+</HtmlNode>
+<HtmlNode identifier="bug5" title="Do You Know, set 2" class="intro">
+	<ref filename="bug5.html"/>
+</HtmlNode>
+<HtmlNode identifier="bug6" title="Exercises" class="intro">
+	<ref filename="bug6.html"/>
+</HtmlNode>
+<HtmlNode identifier="bug7" title="One more exercise" class="intro">
+	<ref filename="bug7.html"/>
+</HtmlNode>
+<HtmlNode identifier="intro0" title="The GridWorld case study" class="intro">
+	<ref filename="intro0.html"/>
+</HtmlNode>
+<HtmlNode identifier="intro0.5" title="Setting up GridWorld" class="intro">
+	<ref filename="intro0.5.html"/>
+</HtmlNode>
+<HtmlNode identifier="intro1" title="Running GridWorld" class="intro">
+	<ref filename="intro1.html"/>
+</HtmlNode>
+<BrainstormNode identifier="intro2" title="Additional experiments needed?" class="brainstorm">
+	<ref filename="intro2.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="intro3" title="Which experiments?" class="brainstorm">
+	<ref filename="intro3.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="intro4" title="Bug heading southwest OLD" class="brainstorm">
+	<ref filename="intro4.bs"/>
+</BrainstormNode>
+<HtmlNode identifier="intro5" title="Exercises" class="intro">
+	<ref filename="intro5.html"/>
+</HtmlNode>
+<MultipleChoiceNode identifier="node_0.mc" title="Call Question" class="multiplechoice">
+	<ref filename="node_0.mc"/>
+</MultipleChoiceNode>
+<BrainstormNode identifier="node_1.bs" title="Bug heading southwest" class="brainstorm">
+	<ref filename="node_1.bs"/>
+</BrainstormNode>
+</nodes>
+<sequences>
+<sequence identifier="master"  title="master" view="">
+<sequence-ref ref="seq_0"/>
+<sequence-ref ref="seq_1"/>
+</sequence>
+<sequence identifier="seq_0"  title="Introduction to GridWorld" view="">
+<node-ref ref="intro0"/>
+<node-ref ref="intro0.5"/>
+<node-ref ref="intro1"/>
+<node-ref ref="intro2"/>
+<node-ref ref="intro3"/>
+<node-ref ref="node_1.bs"/>
+<node-ref ref="intro5"/>
+</sequence>
+<sequence identifier="seq_1"  title="Extending the Bug class" view="">
+<node-ref ref="bug0"/>
+<node-ref ref="node_0.mc"/>
+<node-ref ref="bug2"/>
+<node-ref ref="bug3"/>
+<node-ref ref="bug4"/>
+<node-ref ref="bug5"/>
+<node-ref ref="bug6"/>
+<node-ref ref="bug7"/>
+</sequence>
+</sequences>
+<method>
+<startpoint><sequence-ref ref="master"/>
+</startpoint>
+</method>
+</project>

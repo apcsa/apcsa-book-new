@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Cascaded <tt>if...else</tt> statements</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <img class="imageRight" src="/apcsa/r/static/art/scenes/conditionals_temperature.png" alt="Robots on a staircase, hot at the top and freezing at the bottom." />
+      
+	  <p audio="cond10_1">The <tt>else</tt> in an <tt>if...else</tt> may be followed by another <tt>if</tt> or <tt>if...else</tt>. 
+         An example is the program segment below, which  
+         initializes the variable <tt>comfortLevel</tt> depending on the Fahrenheit temperature 
+         in the variable <tt>temp</tt>.</p>
+      <pre class="width50">   if (temp &gt; 80) {
+      comfortLevel = "too hot";
+   } else if (temp &lt; 50) {
+      comfortLevel = "too cold";
+   } else {
+      comfortLevel = "comfortable";
+   }
+</pre>
+      <div class="talkBubble" color="orange" align="left" char="raster3">
+         <p audio="cond10_2.m1">Note that in the final <tt>else</tt>, 
+            we don't have to <i>retest</i> to make sure that <tt>temp</tt> is between 50 and 80.
+            </p>
+		<p audio="cond10_3.m1">	
+            We know that since the only way to reach the final <tt>else</tt> is for the first two comparisons to evaluate to false.
+         </p>
+      </div>
+   </body>
+</html>

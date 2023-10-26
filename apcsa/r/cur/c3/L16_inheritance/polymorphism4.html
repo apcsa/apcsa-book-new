@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Polymorphic data structures</title>
+   </head>
+   <body>
+<p audio="2">
+We now move on to work with polymorphic collections,
+specifically <tt>ArrayList&lt;Object&gt;</tt>.
+Recall that <tt>ArrayList</tt> methods include the following.
+</p>
+<pre class="width80">
+    // Add an object to the end of the ArrayList.
+    // The return value is always true (and is therefore
+    // usually ignored) since there aren't any circumstances
+    // that the add could fail.
+    boolean add (Object o);
+
+    // Return the object at the given position in the ArrayList.
+    Object get (int index);
+
+    // Return the number of elements that have been added
+    // to the ArrayList; similar to the myCount information in
+    // the IntSequence class.
+    int size ( );
+
+    // Return true if the ArrayList contains the given object,
+    // and return false if not.
+    boolean contains (Object o);
+</pre>
+<p audio="3">
+Since every class inherits from <tt>Object</tt> (at least indirectly)
+these operations provide a data structure that can store objects of any type.
+</p>
+<p audio="4">
+Here's an example:</p>
+<pre class="width70">
+    ArrayList&lt;Object&gt; a = new ArrayList&lt;Object&gt; ( );
+    a.add (new Point (10, 11));
+    a.add ("abcd"); // a String object
+    a.add (new Player ( ));
+    for (int k=0; k&lt;a.size( ); k++) {
+        System.out.println (a.get (k));
+    }
+</pre>
+<p audio="5">
+The output is
+</p>
+<pre class="width60">
+   java.awt.Point[x=10,y=11]
+   abcd
+   Player that always cooperates
+</pre>
+<p audio="6">
+showing that each object's own <tt>toString</tt> method was used 
+to construct the corresponding output line.
+</p>
+</body>
+</html>

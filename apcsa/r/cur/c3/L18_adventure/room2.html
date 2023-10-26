@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What comes next</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="room2.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">When a player is moving between rooms, which method gets called first:
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"><tt>enterRoom()</tt>
+        </div>
+        <div class="feedback">No, this is called last, after the destination room is already
+determined. (This makes sense if you think about it: <tt>enterRoom</tt>
+must be called on the desination <tt>Room</tt> object, not on the source
+object!)
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"><tt>exitRoom()</tt>
+        </div>
+        <div class="feedback">Nope, another answer is called before this (and, in fact, calls
+<tt>exitRoom</tt>
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"><tt>tryToExit()</tt>
+        </div>
+        <div class="feedback">Yes. Looking at the <tt>Player</tt> class' <tt>actionTravel</tt>
+method, this is called early on.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"><tt>travelDestination</tt> (from the associated <tt>Path</tt> object
+        </div>
+        <div class="feedback">Nope. This is called once it's been determined that it is OK to exit
+the room, in order to find out what the destination is. 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

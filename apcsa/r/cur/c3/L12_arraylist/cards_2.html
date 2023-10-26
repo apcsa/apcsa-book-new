@@ -1,0 +1,38 @@
+<!-- webjava please -->
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>All the same suit: Process Neighbors</title>
+</head>
+<body>
+<div class="openbluejproj" project="lesson12\Card1">
+         <p audio="7">Open the Card1 project
+            (<b>lesson12\Card1</b>).</p>
+</div>
+<p audio="1">
+You'll notice the methods:<tt>allSameSuit</tt>, <tt>testAllSameSuit</tt>, <tt>fillHand</tt>, and <tt>cardExistsInHand</tt>.
+The <tt>fillHand</tt> and <tt>cardExistsInHand</tt> methods are called by the <tt>Hand</tt> constructor to create a hand of five unique cards when a <tt>Hand</tt> object is made. 
+<br/><br/>
+Your 1st task is to complete the <tt>allSameSuit</tt> method,
+using the "process neighbors" pattern. A copy of the code supplied is below. 
+</p>
+<pre class="width80">
+public boolean allSameSuit ( ) {  // myCards is accessible here.
+   k = 0;
+   while (k &lt; myCards.size()-1) {
+      _____________
+      _____________
+      k++;
+   }
+   return _____ ;
+}
+</pre>
+
+<p>
+Your 2nd task is to figure out if your method works correctly. Complete the method <tt>testAllSameSuit</tt>. It should first empty the <tt>myCards</tt> list, fill the <tt>myCards</tt> list with Cards of all the same suit, check that <tt>allSameSuit</tt> returns true, empty <tt>myCards</tt> again, fill it with Cards of at least one different suit, and the finally check that <tt>allSameSuit</tt> returns false. 
+</p>
+</body>
+</html>
+
+

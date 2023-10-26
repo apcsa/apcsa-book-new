@@ -1,0 +1,64 @@
+LESSON 16:
+BLUEJ:
+===================
+- Make solutions
+
+TODO
+=============================
+*Note: these step numbers have updated to reflect added steps
+
+Step 15: - canned responses
+Step 17: - Graphic showing Ketrina -- ancestor robot
+Step 19: - canned responses
+Step 21: - Nate check text wrap around image
+Step 22: - bluej div
+Step 23: - canned responses
+Step 24: - bluej div
+Step 25: - canned reponses
+Step 26: - bluej div
+Step 33: - canned responses
+Step 38: - canned responses
+
+Exercises 
+Summary
+
+~~ DONE STUFF ~~
+===========================
+
+DONE (MF)  try to dial back the strength of the <tt> bolding a bit.  Just a bit. < Mac only problem? >  
+DONE ML/ Step1:  NEED GRAPHIC. Intro splash graphic.  Show a family of robots under construction. Mom is generic looking with curly antennnaes.  There are 3 children under her, all with curly antennae.  Each child also has one unique trait (eg., tank treads, grappler arm, special shoes, etc).
+DONE ML/ Step0: NEED GRAPHIC:  Constance, Raster, and Bolt welcome back the User. 
+- Talk bubbles exchange about starting second half of course
+DONE ML/ Survey (sequence of MC steps) --> need to arrange it so that clicking 'next' shows subpages
+
+DONE ML/ Step 2:  Use Refillable ATM graphic as talk bubble with Bolt being pithy
+DONE ML/ Step 3 & 6:  use the other Refillable graphics.
+DONE ML/ Step 5:  Make PP1 its own step with a character talk bubble. 2nd character harkens back to early use of Extends graphics.
+DONE ML/ Step 5:  Make final PP the first PP.
+SOLVED ML/ Step 8:  check authoring.  Correct answers should be Refill, Instance Var, and Constructor.
+            Step 8:  VLE BUG.  MultiAnswer questions are not showing their feedback responses and wrong choices.  ADD TO JIRA.
+DONE ML/ Step 11:  JIRA BUG.  Response box if not rich-text is extending too far right. 
+DONE ML/ Step 12:  Change color quotes into talk bubbles inside a cartoon table.  
+DONE ML/ Step 14:  add some sort of Monty Hall picture.  (in program/projects/lesson11/montyhall)
+DONE ML/ STep 19:  GRAPHIC NEEDED.  Bolt in Jail.  As talk bubble saying "I been framed, I tell ya!"
+DONE ML/ Step 19:  add text foreshadowing the next 4 steps.  "In the next four steps we're going to ask you to code different types of player strategies and have the player duke it out against each other." 
+DONE ML/ Step 20-23: all 4 of these steps should have similar look.  They are TryIts asking the student to write code.
+DONE ML/ Step 24:  NEED GRAPHIC.   Send whole text to Ketrina.
+DONE ML/ Step 28:  widen box to fit all code.
+DONE ML/ Step 29:  widen box to fit all code.
+DONE ML/ Step 31:  NEED GRAPHIC.  Send whole text to Ketrina.  Perhaps reused the robot family, with the kids checking in with Mom before carrying out and action?
+DONE ML/ Step 33:  change code Tabs to codon spaces.  OR widen box to fit all code
+DONE ML/ Step 35:  The Question text needs to show as two separate tables.
+DONE ML/ Step 35:  The Choice text needs to be a larger font size (check VLE CSS code)
+Step 7:  Split this into 2 separate steps. (not too necessary?)
+Step 11:  needs 2-3 student responses.  Tap existing responses from Mike's 61B class.
+Step 10:  Come up with new Style for Example.  Allows used of LI items.
+Step 17:  EDITORIAL. Brainstorm step here was removed from Sequence (needs question).  Bring back to life! 
+Step 31:  add 1 or 2 vocab terms here
+Anywhere: use inherit 1 - 5.png as talk bubble chars.
+Step 12: Do we need? Title?  I don't have any better ideas
+Step 13: old? EDITORIAL.  Decide where to put PP1 and if more details needed.
+Step 21: - Missing Graphic
+- old? reuse the "Counter" graphic  (two rectangles with numbers in them) //I can't find it --ML
+Step 43: - Can we change to not use superclass and subclass?
+		 

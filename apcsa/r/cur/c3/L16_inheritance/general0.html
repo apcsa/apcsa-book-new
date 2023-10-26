@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Inheritance elsewhere in Java</title>
+   </head>
+   <body>
+<p audio="3">
+Inheritance relationships throughout Java form a <span class="vocab">hierarchy</span>,
+with the most general class&mdash;named <tt>Object</tt>&mdash;at the top.
+Every class definition that doesn't explicitly extend some other class
+implicitly extends the <tt>Object</tt> class.
+<br/>
+<br/>
+For example,
+</p>
+<pre>
+public class Refillable { ... }
+</pre>
+
+<p audio="4">
+Since Refillable does not extend anything explicitly it automatically extends <tt>Object</tt>.
+<br/><br/>
+
+Likewise, the <tt>java.util</tt> class library provides a hierarchy of classes
+called the <tt>Collection</tt> hierarchy that is rooted at the <tt>Object</tt> class
+and includes the <tt>ArrayList</tt> class.
+</p>
+</body>
+</html>

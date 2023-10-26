@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Opposite operators</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="opposite_ops.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1"> Sometimes it is useful or easier to think about the <i>opposite</i> of what you want to compare in an <tt>if</tt> statement. Try this out.<br/><br/>
+ 
+ Suppose <tt>x</tt> and <tt>y</tt> are integer variables.
+ Which of the following represents the <i>opposite</i> of the expression
+ <tt> x &lt; y </tt>? That is,
+ which of the following statements will be true whenever
+ <tt> x &lt; y </tt> is false, and false whenever
+ <tt> x &lt; y </tt> is true?
+ 
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> <tt> x == y </tt> (there are two equals signs here) 
+        </div>
+        <div class="feedback"> No, this is the opposite of <tt> x != y </tt>. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> <tt> x &lt;= y </tt> 
+        </div>
+        <div class="feedback"> No, <tt>x &lt;= y</tt> will return false only when 
+ <tt>x</tt> is greater than <tt>y</tt>, and true otherwise. 
+ The only values of <tt>x</tt> and <tt>y</tt> for which
+this will return the opposite of <tt> x < y </tt> is when
+<tt>x</tt> is equal to <tt>y</tt>. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2a">
+        <div class="text"> <tt> x &gt; y </tt> 
+        </div>
+        <div class="feedback"> No, although very close! <tt>x &gt; y </tt> and 
+ <tt>x &lt;= y</tt> will return the same values when
+<tt>x</tt> is equal to <tt>y</tt>. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> <tt> x &gt;= y </tt> 
+        </div>
+        <div class="feedback"> Right! 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"> There is no statement that is the opposite of <tt> x &lt; y
+</tt>. 
+        </div>
+        <div class="feedback"> Actually, one of the above statements is the opposite of
+<tt>x &lt; y</tt> 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Limitations of values of type <tt>int</tt></title>
+
+</head>
+<body>
+<p>
+We just saw in our simple card game that we can represent the values 0, 1, 2, ..., 14, 15 in positional notation in base 2, using powers of two that go from 0 to 3.
+Computer memory presents a similar situation.
+It consists of a large number of 
+<span class="vocab" term="bit">bits</span>&mdash;short for "binary digits",
+that is, 0 or 1.
+Any value used in a program is stored somewhere in memory and is represented
+in a certain number of bits.
+An <tt>int</tt>, as it happens, is stored in 32 bits, and thus can contain
+as many different values (only one at a time, of course) as there are ways
+to assign 0's and 1's to each individual bit of the 32.
+This turns out to be around 4.3 billion, roughly half representing negative numbers,
+half positive numbers, and one for 0.
+</p>
+<p>
+There thus is a biggest <tt>int</tt> value representable in these 32 bits;
+it's around 2.1 billion.  When we try to compute a value that needs more 
+than 32 bits, the computer can't handle it, and produces instead a value
+that needs only 32.  In our experiment, that turned out to be a negative value.
+</p>
+<p>
+There are two things to remember about this phenomenon.
+One is that the number of bits assigned to a variable is limited,
+and can overflow.  The second is that (obnoxiously) overflow
+is <i>not detected by the Java interpreter</i>.
+This can lead to hard-to-find bugs.
+</p>
+
+</body>
+</html>

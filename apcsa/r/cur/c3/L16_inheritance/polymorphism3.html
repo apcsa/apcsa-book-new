@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>toString experiments</title>
+   </head>
+   <body>
+   	<div class="imageCenter">
+   		<img src="/apcsa/r/static/art/scenes/polymorphism_method.png" alt="Calling a method" />
+   	</div>
+<ol>
+	<li audio="2">Modify the <tt>Simulation</tt> constructor (from the Prisoner's Dilemma activities) 
+	    by calling <tt>System.out.println</tt> on each <tt>Player</tt> argument.</li>
+	<li audio="3">Instantiate a <tt>Simulation</tt> and run it to verify that <tt>Object.toString</tt> 
+	    is called on each <tt>Player</tt>. It should print the class name with an "@" sign and some numbers.</li>
+	<li><span audio="4">Now supply the following <tt>toString</tt> method for the <tt>Player</tt> class, 
+	    and rerun the simulation to verify that the new method is called.</span>
+		<br />
+<pre class="width80">
+   public String toString ( ) {
+      return "Player that always cooperates";
+   }
+</pre>
+	    </li>
+</ol>
+</body>
+</html>

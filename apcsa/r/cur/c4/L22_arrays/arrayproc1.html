@@ -1,0 +1,54 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>A treasure hunt</title>
+</head>
+<body>
+<p audio="1">Write and test a method named <tt>huntSucceeds</tt> to play "Treasure Hunt". In this game, you are given an
+initial clue, which leads you to the place of the next clue, which leads you to the next, and so on. Occasionally you will
+reach a dead end, in which case you lose. The "clues", for this problem, are nonnegative index values in an array; the value
+in an array element tells you the position of the next element to examine. A position outside the array means you win. A
+position you've been to before means you lose. In the example array below, starting at position 1 leads you to 3, then 8,
+then 4, then 2, and you win. Starting at 6 leads you to 9, then 5, then 7, then 9 where you've been before, so you lose.</p>
+
+<h3 audio="2">Treasure hunt array</h3>
+
+<img class="imageRight" src="/apcsa/r/static/art/scenes/arrays_treasure.png">
+
+<table id="tableBlue">
+		<tr>
+				<td>0</td>
+				<td>3</td>
+				<td>99</td>
+				<td>8</td>
+				<td>2</td>
+				<td>7</td>
+				<td>9</td>
+				<td>9</td>
+				<td>4</td>
+				<td>5</td>
+		</tr>
+</table>
+<p audio="3">Your <tt>huntSucceeds</tt> method should take a starting position as argument&mdash;a nonnegative integer
+less than the number of elements in the array&mdash;and return a boolean indicating whether or not you win when starting the
+treasure hunt in the given position. It's OK to change the values in the array while you search, for instance by storing
+negative values on top of clues you've seen before. Add your method to the program below.</p>
+<pre>
+public class TreasureHunt {
+
+   int [ ] myClues = {0, 3, 99, 8, 2, 7, 9, 9, 4, 5};
+
+   public TreasureHunt ( ) {
+   }
+   
+   // Plays the Treasure Hunt game, returning true
+   // if we win and false if we lose..
+   public boolean huntSucceeds (int start) {
+      // You fill this in.
+   }
+}
+</pre>
+</body>
+</html>

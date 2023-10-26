@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org">
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Boolean Expressions and short-circuiting</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+    </head>
+    <body>
+        <p audio="cond34bboolean_1">
+           Modern programming languages are pretty smart. You may have noticed that, depending on whether the left side of a boolean expression is true or false, one may not need to evaluate the right side. For example:
+        </p>
+        <p audio="cond34bboolean_2" class="quoteBlue">
+            Recall a previous step, where <tt>tempStr</tt> was set to "comfortable" or "uncomfortable" depending on the value of <tt>temp</tt>.
+        </p>
+               
+         <table id="tableClear">
+            <tr>
+                <td>
+                    <pre>if (temp &gt;= 65 &amp;&amp; temp &lt;= 75) {
+    tempStr = "comfortable";
+} else {
+    tempStr = "uncomfortable";
+}</pre>
+                </td>
+            </tr>
+        </table>
+        <p audio="cond34bboolean_3" class="quoteBrown">
+            What happens when <tt>temp</tt> is assigned the value 55? The left-hand side of the statement evaluates to <tt>false</tt> and the right-hand side is skipped. Why?</p>
+
+            <pre class="width50">if (temp &gt;= 65 &amp;&amp; ... ) {</pre>
+      <p audio="cond34bboolean_4" class="quoteBlue">
+            If <tt>temp</tt> is less than 65, it doesn't matter what the "..." is.
+In order for the <tt>and</tt> (<tt>"&amp;&amp;</tt>") expression to evaluate to <tt>true</tt>, both its subexpressions must be true. In our example, as soon as
+            the left subexpression evaluated to <tt>false</tt>, we knew the entire expression would be false. The process of cutting short the evaluation of a boolean expression is known as <span class="vocab">short-circuiting</span>.
+        </p> 
+       
+        
+
+    </body>
+</html>

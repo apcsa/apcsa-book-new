@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Sorting an ArrayList</title>
+      <!--  webjava makes sense here -->
+   </head>
+   <body>
+<p audio="1">
+Modify the <tt>Measurement</tt> class so that it can be used 
+to sort the elements of an <tt>ArrayList</tt>.
+Do this by
+</p>
+<ul>
+	<li audio="2">implementing the interface <tt>Comparable &lt;Measurement&gt;</tt>, and</li>
+	<li audio="3">supplying a body for the <tt>compareTo (Measurement)</tt> method.</li>
+</ul>
+<p audio="4">
+The <tt>compareTo</tt> method returns a negative value if this <tt>Measurement</tt> is less than
+the argument, a positive value if this <tt>Measurement</tt> is greater than the argument,
+and 0 if they're equal.
+</p>
+<p audio="5">
+The class below can be used to test your revisions.
+</p>
+<pre class="width80">
+import java.util.*;
+
+public class MeasurementTest2 {
+
+   public MeasurementTest2 ( ) {
+      ArrayList&lt;Measurement&gt; a = new ArrayList&lt;Measurement&gt; ( );
+      a.add (new Measurement (3, 5));
+      a.add (new Measurement (10, 9));
+      a.add (new Measurement (6, 3));
+      Measurement m1 = new Measurement (2, 7);
+      a.add (m1);
+      Collections.sort (a);
+      System.out.println (a);
+   }
+}
+</pre>
+</body>
+</html>

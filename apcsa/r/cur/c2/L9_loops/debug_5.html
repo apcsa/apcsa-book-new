@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Another buggy method</title>
+   </head>
+   <body>
+      <p audio="2">
+         Consider the following class.
+      </p>
+      <pre>
+public class TestString {
+    private String myS;
+
+    public TestString(String s)
+    {
+        myS = s;
+    }
+    
+    // Return true when myS is the result of inserting exactly one character
+    // into the argument; return false otherwise. For example, suppose that
+    // myS is "abcd"; contains1moreThan should return true for arguments "acd"
+    // and "bcd" and false for arguments "ab", "xcd", and "abcd".
+    public boolean contains1moreThan (String s) {
+        if (myS.length() != s.length()+1) {
+            return false;
+        } else {
+            int k=0;
+            while (k &lt; myS.length()) {
+                if (!myS.substring(k,k+1).equals(s.substring(k,k+1))) {
+                    break;
+                }
+                k++;
+            }
+            return myS.substring (k+2).equals(s.substring(k+1));
+        }
+    }
+}
+</pre>
+      <p audio="223">
+         The <tt>contains1moreThan</tt>
+         method has a bug.
+         Find and fix it.
+      </p>
+   </body>
+</html>

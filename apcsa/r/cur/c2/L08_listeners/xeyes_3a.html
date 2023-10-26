@@ -1,0 +1,67 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top150";
+	  </script>
+      <title>Let's look at the <tt>XEyes</tt> class</title>
+   </head>
+   <body>
+   <p audio="3">
+      Now, open up the source code for the <tt>XEyes</tt>
+      class, which
+      is the main starting point for the program.
+   </p>
+   <p audio = "4">
+      As with many of the classes you have seen in this lesson, <tt>XEyes</tt>
+      imports the graphics libraries, implements <tt>MouseListener</tt>, extends a <tt>JPanel</tt>, 
+      and has a <tt>JFrame</tt>
+      stored in an instance object. 
+      Objects from this class, then, represent the program's window and 
+      the area where the graphics are drawn.
+   </p>
+   <p audio="5">
+      We know that it will have a <tt>paintComponent</tt>
+      method, a constructor, and implement all the contracted <tt>MouseListener</tt> methods. 
+   </p>
+   <p audio="6">   
+      To handle the mouse input, the <tt>XEyes</tt>
+      class implements <tt>mouseListener</tt>, meaning it will 
+      necessarily have the five mouse handling methods. 
+      Based on what you found out from playing with 
+      the program, you can assume that the <tt>mouseClicked</tt>
+      method will figure out what the
+      new position of the pupil is.
+  </p>
+  <p audio="7"> 
+      The constructor calls a <span class="vocab">helper method</span>
+      to do more work to get an image based 
+      on the string <tt>fileName</tt>.  (The class <tt>File</tt>
+      is 
+      imported from <tt>java.io.*</tt>). 
+   </p>
+   <p audio = "8" class="quoteBrown">
+      The image comes from a file 
+      inside the <i>images</i>
+      directory in your <span class="vocab">BlueJ project</span>.  Later, you
+      can use your own images or ones you find, if you put them
+      in that directory.
+   </p>
+   <p audio="9">
+      Note also that the <tt>XEyes</tt>
+      class has two instance variables 
+      of the class <tt>Eye</tt>.  These <tt>Eye</tt>
+      objects are constructed with 
+      arguments very similar to <tt>drawRect</tt>, specifying an origin and a 
+      size.
+   </p>
+   <p audio="10">
+      The <tt>paintComponent</tt>
+      method first draws the image, and the asks
+      the eyes to draw themselves.
+   </p>
+   </p>
+</p>
+</body>
+</html>

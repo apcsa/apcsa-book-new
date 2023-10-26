@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Source code for the <tt>Name</tt> class</title>
+   </head>
+   <body>
+
+         
+         <p audio="name1_1">Here again is the source code for the <tt>Name</tt> class, accessible at <tt>lesson3/Names</tt>.
+         We'll be looking into it closely over the next several pages. Take
+         some time now to look it over, especially noting things that you
+         haven't seen before.  Can you make sense of the <tt>caseFixed</tt>
+         method, for instance?</p>
+         
+      <pre class="width80">// Represent a person's name with three components, a first name,
+// a middle name, and a last name.
+
+public class Name {
+
+   private String myFirst;
+   private String myMiddle;
+   private String myLast;
+   
+   // the constructor
+   public Name (String first, String middle, String last) {
+      myFirst = caseFixed (first);
+      myMiddle = caseFixed (middle);
+      myLast = caseFixed (last);
+   }
+   
+   // Return the name, arranged as 'last, first middle'.
+   public String lastFirst ( ) {
+      return myLast + ", " + myFirst + " " + myMiddle;
+   }
+   
+   // Return the name, arranged as 'first middle last'.
+   public String fullName ( ) {
+      return myFirst + " " + myMiddle + " " + myLast;
+   }
+   
+   // Return the result of "fixing" the given part of the name,
+   // that is, making sure it starts with a capital letter and
+   // has only lower-case letters after the first.
+   private String caseFixed (String namePart) {
+      String temp;
+      temp = namePart.toLowerCase().trim();
+      return temp.substring(0,1).toUpperCase() + temp.substring(1);
+   }
+}</pre>
+   </body>
+</html>

@@ -1,0 +1,28 @@
+
+TODOs
+Any steps : add board related pic from earlier lessons
+
+
+NOTE: students show trouble using Color -- they'll write
+   function blah (Color.c, String name, ...)
+ and other issues.  Problem with static?
+ 
+ Also, studnets are really seeing "main" for the first time in gridworld.  Maybe a page on this?
+
+
+It would be nice to tell students how to make new images for the bugs
+   (put a BugClass.gif file in the same location as BugClass.java file, with the name of the gif
+    exactly the same as the name of the class.)
+    
+Get latest gridworld code into projects in repo
+
+
+
+We need exam level questions.  PErhaps the right thing to do is move 1/2 of week 3 
+earlier, and then add exam-level questions into 3.  See the todo for lesson 28, which has a link to 
+collegeboard supplied questions.
+
+
+Write up something in teachers manual about our experiences with differences between dates in CS3.  That is, 
+nobody reads this unless they get checked on their answers to questions probing their understanding.
+

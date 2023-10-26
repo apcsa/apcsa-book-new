@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Change a picture to greyscale</title>
+   </head>
+   <body>
+   
+      <img class="imageLeft" src="/apcsa/r/static/art/scenes/images_bw.png"
+      alt="Part of octal is turning to black and white, from color">
+         <br />
+      <p audio="2">
+         An image can be converted to <span class="vocab">greyscale</span> (making it
+         a "black and white" image, although pixels will be various shades of grey).
+         To do this, you need to set all three color channels to the same value.
+         However, you have to do this while maintaining the differences in 
+         brightness across the pixels.
+      </p><br />
+      <p audio="3">
+         There a many ways to do this.  The easiest it to set each of the 
+         red, green, and blue values for a pixel to the 
+         <span class="vocab" term="average">average</span> of 
+         the three.
+      </p>
+	  
+      <br />
+      <div class="tryit">
+         <p audio="4">
+            Create a method called <tt>makeGreyscale</tt> that changes
+            the red, green, and blue channels to make a picture "black
+            and white".  
+         </p>
+      </div>
+      <p audio="5">Remember, after you are done changing the values in
+      the objects <tt>red</tt>, <tt>green</tt>, and <tt>blue</tt> instance
+      variables, you need to call the method <tt>refresh</tt>
+      in order to see the changes.</p>
+   </body>
+</html>

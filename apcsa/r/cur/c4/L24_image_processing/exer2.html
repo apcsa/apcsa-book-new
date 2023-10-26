@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Enhancing the contrast in an image.</title>
+   </head>
+   <body>
+ 
+      <p audio="2">
+         Images can often have low contrast because the values of their 
+         pixels only span part of the 0-255 range of possible values.  This can 
+         make images "too dark" (if the values are all too low) or "washed out" 
+         (if the values are all too high).  
+         A simple way to increase the contrast in an image therefore is 
+         to scale the values so they fill this range. This is called 
+         "contrast stretching", and is very similar to normalizing with sounds.
+      </p>
+
+      <ul>
+         <li audio="3">
+            As with normalizing, you will need to first find the minimum and maximum values, 
+            and then use algebra to extend that range to the full 0-255 that is possible.
+            You'll want to do your calculations using doubles, and then cast the 
+            result back into an integer. 
+         </li>
+         <li audio="3b">
+            You should stretch each of the color channels separately.  Do this smartly, however: 
+            don't write a separate loop to contrast stretch each color!
+         </li>
+      </ul>
+ <br/><br/>
+
+      <div class="tryit">
+         <p audio="4">
+            Create a method called <tt>contrastStretch</tt>
+            that increases the contrast of the image the maximum
+            amount possible. 
+         </p>
+      </div><br />
+	  <div class="talkBubble medium_right" char="constance1" align="left" color="red">
+      <p audio="5.f1">
+         Find some washed out or overly dark images and try your method out. 
+         Did it always fix the problem?
+      </p></div>
+   </body>
+</html>

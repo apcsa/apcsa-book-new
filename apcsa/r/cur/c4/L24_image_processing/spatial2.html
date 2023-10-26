@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Write and test a spatial filter method</title>
+   </head>
+   <body>
+      <img class="imageLeft" src="/apcsa/r/static/art/scenes/images_median.png" alt="A robot peering through large glasses">
+      <br /><br />
+      <p audio="2">
+         Write a method <tt>spatialFilter</tt>
+         that takes in an array of 
+         doubles and applies that filter to the image. 
+      </p>
+<br/>
+      <p audio="3">
+         Test images with the following 3x3 filters, as well as 5x5 filters
+         designed to do the same task (you will have to design these yourself;
+         most will be easy to create, but the sharpening may take some 
+         experimentation):
+      </p>
+	  <div class="floatClear"></div>
+	  
+	  <table id="tableBlue">
+	  <tr>
+	  	<th>Smoothing</th>
+		<th>Sharpening</th>
+		<th>Vertical Edge Detection</th>
+		<th>Horizontal Edge Detection</th>
+	  </tr>
+		
+		<tr>
+			<td><img src="/apcsa/r/static/art/graphics/spatial_filter_smoothing.jpg" /></td>
+			<td><img src="/apcsa/r/static/art/graphics/spatial_filter_sharpening.jpg" /></td>
+			<td><img src="/apcsa/r/static/art/graphics/spatial_filter_vert.jpg" /></td>
+			<td><img src="../../../art/graphics/spatial_filter_horiz.jpg"/></td>
+		</tr>
+	  	</table>
+	 
+     <p class="quoteBrown">Hint: Make sure to write a method called something
+     like <tt>applyFilterToPixel</tt>, which will be called for each pixel in the
+     image.  If you don't, you'll have too many nested loops!<Br /> <br/>
+     Also, think about
+     where in the program you'll deal with the special cases at the edge of 
+     the filter.  The possible solutions will work differently depending
+     on which filter is being applied.</p>
+   </body>
+</html>

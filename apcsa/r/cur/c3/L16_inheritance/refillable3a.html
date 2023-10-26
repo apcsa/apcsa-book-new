@@ -1,0 +1,96 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Extending the Refillable class differently(2)</title>
+   </head>
+   <body>
+<p audio="3">
+Here, side by side, are implementations of <tt>Refillable</tt> without inheritance
+and with inheritance. (Click on the Full Screen button in the top right hand corner for better viewing.)
+</p>
+<p audio="4">
+Study the version on the left for a moment; this is the modified <tt>Refillable</tt> class we made earlier in the year before we understood inheritance. <br/><br/>
+The inheritance version, on the right, doesn't change the original <tt>Refillable</tt> class at all and implements the following:
+<ul>
+<li>it supplies two new instance variables: myUseUpCallCount and myTotalUse;</li>
+<li>its constructor initializes these
+variables after calling the <tt>Refillable</tt> constructor, using super(initialAmount) to initialize <tt>Refillable</tt>'s instance variable;</li>
+<li>It modifies the behavior of the <tt>useUp</tt> method;</li>
+<li>it provides a completely new method for computing the average amount used.  
+<li>and finally, you might notice, the <tt>Refillable</tt>'s classes <tt>refill</tt> and <tt>currentAmount</tt> methods are not changed and can be accessed, if necessary, within the <tt>NewRefillable</tt> class.</li>
+</ul>
+
+</p>
+
+<table id="tableTight">
+<tr><td>
+<pre>
+public class NewRefillable {
+
+   private int myAmount;
+   private int myUseUpCallCount;
+   private int myTotalUse;
+   
+   // Initialize a NewRefillable object 
+   // having initialAmount units.
+   public NewRefillable (int initialAmount) {
+      myAmount = initialAmount;
+      myUseUpCallCount = 0;
+      myTotalUse = 0;
+   }
+   
+   // Use amount units.
+   public void useUp (int amount) {
+      myAmount = myAmount - amount;
+      myUseUpCallCount = myUseUpCallCount + 1;
+      myTotalUse = myTotalUse + amount;
+   }
+   
+   // Add amount to the current amount.
+   public void refill (int amount) {
+      myAmount = myAmount + amount;
+   }
+   
+   // Return the current amount.
+   public int currentAmount ( ) {
+      return myAmount;
+   }
+
+   public int averageUse ( ) {
+      return myTotalUse / myUseUpCallCount;
+   }
+}
+</pre>
+</td><td>
+<pre>
+public class NewRefillable extends Refillable {
+
+   private int myUseUpCallCount;
+   private int myTotalUse;
+   
+   // Initialize a NewRefillable object 
+   // having initialAmount units.
+   public NewRefillable (int initialAmount) {
+      super (initialAmount);
+      myUseUpCallCount = 0;
+      myTotalUse = 0;
+   }
+   
+   // Use amount units.
+   public void useUp (int amount) {
+      super.useUp (amount);
+      myUseUpCallCount = myUseUpCallCount + 1;
+      myTotalUse = myTotalUse + amount;
+   }
+   
+   public int averageUse ( ) {
+      return myTotalUse / myUseUpCallCount;
+   }
+}
+</pre>
+</td></tr></table>
+
+
+   </body>
+</html>

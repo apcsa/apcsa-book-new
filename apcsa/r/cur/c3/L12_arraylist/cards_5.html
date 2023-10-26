@@ -1,0 +1,36 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Elevens (1)</title>
+</head>
+<body>
+<p audio="1">
+A solitaire game named Elevens (<i>The Complete Book of Solitaire and Patience Games</i>,
+by Albert H. Morehead and Geoffrey Mott-Smith, Bantam Books, 1966) is played as follows.
+</p>
+<ol>
+<li audio="2">Deal nine cards. (This will be the hand.)</li>
+<li audio="3">Repeat until no more cards remain.</li>
+<ol>
+	<li audio="4">Remove pairs of cards whose ranks add to 11 (an ace's rank is 1 in this game).</li>
+	<li audio="5">Remove face cards (ranks 11, 12, and 13) in groups of three.</li>
+	<li audio="6">Deal cards to the hand to replace the ones that were removed.</li>
+</ol>
+</ol>
+<p audio="7">
+To remove cards from the hand, we will use the <tt>ArrayList remove</tt> method.
+<tt>remove</tt> takes a position as argument. It removes the element at the given position,
+moving all following elements down one position/
+The diagrams below show the result of executing <tt>remove(3)</tt>.
+</p><br />
+<table id="tableCenter">
+	<tr>
+		<td><img src="/apcsa/r/static/art/graphics/before_removal.png"></td> <td>shaded item is the one to be removed</td>
+	</tr>
+	<tr>
+		<td><img src="/apcsa/r/static/art/graphics/during_removal.png"></td> <td>subsequent items move down</td>
+	</tr>
+</table>
+</body>
+</html>

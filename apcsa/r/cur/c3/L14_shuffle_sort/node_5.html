@@ -1,0 +1,34 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>Shuffling by selection</title>
+</head>
+<body>
+<p>
+A better way to shuffle starts with two <tt>ArrayList</tt> objects: one that contains the elements to be sorted&mdash;we'll use <tt>myCards</tt> for this&mdash;and the other empty&mdash;we'll call it <tt>shuffled</tt>.
+</p>
+<pre>
+private void shuffle ( ) {
+   ArrayList &lt;Card&gt; shuffled = new ArrayList &lt;Card&gt; ( );
+      ...
+      ...
+  myCards = shuffled;
+</pre>
+<p>
+The main part of the body of the <tt>shuffle</tt> method is a loop that runs once for each card. Each iteration finds a random card in <tt>myCards</tt>,
+removes that card from <tt>myCards</tt>, and adds it to the end of <tt>shuffled</tt>. After all the cards have been removed from <tt>myCards</tt>,
+<tt>shuffled</tt> contains the completely shuffled deck.
+The table below illustrates the algorithm applied to a deck of four cards.
+</p>
+<table id="tableBlue">
+<tr><td><tt>myCards</tt></td> <td>randomly chosen card</td> <td><tt>shuffled</tt></td></tr>
+<tr><td>A B C D</td> <td align="center">C</td> <td>C</td></tr>
+<tr><td>A B D</td> <td align="center">A</td> <td>C A</td></tr>
+<tr><td>B D</td> <td align="center">D</td> <td>C A D</td></tr>
+<tr><td>B</td> <td align="center">B</td> <td>C A D B</td></tr>
+
+</table>
+</body>
+</html>

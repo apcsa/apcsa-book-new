@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solidifying your understanding (3)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="solidify_ifthenelse1.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1">
+Consider the <tt>Refillable</tt> class's <tt>useUp</tt> method below.
+ </p>
+ <table>
+ <tr>
+ <td>
+<pre> void useUp (int amount) {
+ if (myAmount < amount) {
+ System.out.println ("not enough left");
+ } else {
+ myAmount = myAmount - amount;
+ }
+ }</pre> </td> </tr> </table>
+ <p audio="2">
+ Suppose that <tt>myAmount</tt> contains the value 14,
+ and <tt>useUp</tt> is called with the argument 4.
+ Of the following statements, which is the first to be executed?
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">
+ <tt>System.out.println ("not enough left");</tt>
+ 
+        </div>
+        <div class="feedback">
+ No. Because <tt>myAmount</tt> is greater than <tt>amount</tt>, the
+ test for the <tt>if</tt> statement will evaluate to false, 
+ and the <tt>System.out.println</tt> statement
+ will be skipped.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">
+ <tt>myAmount = myAmount - amount;</tt>
+ 
+        </div>
+        <div class="feedback">
+ Right. Because <tt>myAmount</tt> is greater than <tt>amount</tt>, the
+ test for the <tt>if</tt> statement will evaluate to false, 
+ and the <tt>else</tt> statement
+ will be executed.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">
+ Neither of those two statements will be executed.
+ 
+        </div>
+        <div class="feedback">
+ No, one of the above statements will get executed.
+ 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 2"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

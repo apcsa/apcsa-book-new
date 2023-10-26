@@ -1,0 +1,30 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top25";
+		</script>
+        <title>Selection-based sorting</title>
+</head>
+<body>
+<p audio="1">
+Shuffling is essentially "unsorting".
+It makes sense, then, that a sorting algorithm might have the same structure
+as a shuffling algorithm.
+Here is pseudocode for an algorithm named <span class="vocab">selection sort</span>
+that arranges the elements of an <tt>ArrayList</tt> named <tt>myCards</tt> in order from smallest to largest.  We use an auxiliary <tt>ArrayList</tt>, which we'll name <tt>sortedSoFar</tt>.
+</p>
+<ol>
+	<li audio="2">Initialize <tt>sortedSoFar</tt> to empty.</li>
+<li>If <tt>myCards</tt> is nonempty, perform the sorting.</li>
+<ol type="a"><li>Choose the smallest element in <tt>myCards</tt>.</li>
+	<li audio="3">Remove it from <tt>myCards</tt> 
+	    and add it to the end of <tt>sortedSoFar</tt>.</li>
+	<li audio="4">Repeat this process until no more elements remain in <tt>myCards</tt>.</li></ol>
+
+<li>
+Finally, replace <tt>myCards</tt> by <tt>sortedSoFar</tt>.</li>
+</ol>
+</body>
+</html>

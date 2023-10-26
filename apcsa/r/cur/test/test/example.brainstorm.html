@@ -1,0 +1,54 @@
+
+<html>
+
+<head>
+<!-- put the following in exactly -->
+<script id="llab-bootstrap" type="text/javascript" src="/apcsa/llab/loader.js"></script>
+<title>Example brainstorm in page</title>
+<!--ORIGINAL NAME: Experiment with drawing commands-->
+
+</head>
+
+
+
+<body>
+    <h2>Sample brainstorm page, yo</h2>
+    <p>you might have some instructions here, yo</p>
+
+    <!-- A brainstorm generates an unique identifier that it uses to communicate with the server and group responses.  
+         You can control the unique identifier in various ways:
+           First, an "id" is picked:
+               if the id attribute is present and long enough (6 chars), it will be used.  You'll need to remember
+                 to change this every time, though!
+               if the id attribute is missing (or short), then "title" will be checked.  You can make sure those are unique
+                 more easily, perhaps.  If title is long enough, it will be used.
+               if title isn't good, then the body of the div is used (not the <div> tags and attributes themselves, though).
+           Then, the "id" is concatenated with the course name, and the thing is hashed to generate the unique identifier
+         If two brainstorms have the same unique identifier, then comments will spill over!
+         -->
+    <div class="brainstorm-data" id="something unique across all brainstorms in this course" isgated="true" expected-lines="5"
+        display-name="true" use-server="true" server="default">
+
+        <!-- see example.brainstorm for discussion on brainstorm-data -->
+
+        <div class="title">TITLE_STRING</div>
+
+        <div class="prompt">
+            <p>PROMPT_HTML</p>
+        </div>
+
+        <div class="starter">NOT USUALLY HERE</div>
+
+        <div class="canned-responses">
+            <div name="Joe">JOES_CANNED_RESPONSE</div>
+            <div name="Mary">MARYS_CANNED_RESPONSE</div>
+        </div>
+
+    </div>
+
+    <p class="quoteBrown">And some after brainstorm instructions
+        also</p>
+
+</body>
+
+</html>

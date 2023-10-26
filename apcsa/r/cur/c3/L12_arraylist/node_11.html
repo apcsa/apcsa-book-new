@@ -1,0 +1,48 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>Maintaining a "top ten" list</title>
+</head>
+<body>
+<p>
+Some video games keep track of the highest scores that players have achieved. This exercise involves implementing such a feature. 
+</p>
+<p>
+We start with a simple class that represents a person and the score he or she has received.
+</p>
+<pre>
+public class Score {
+   
+   private int myPoints;
+   private Name myPlayerName;
+
+   public Score (int points, Name playerName) {
+      myPoints = points;
+      myPlayerName = playerName;
+   }
+
+   // Return true if this Score's myPoints is greater than
+   // the argument Score's myPoints; return false otherwise.
+   public boolean isBetterThan (Score score) {
+      ...
+   }
+
+   public String toString ( ) {
+      return myPoints + "\t" + myPlayerName;
+   }
+}
+</pre>
+<p>
+Now define and test a <tt>TopTen</tt> class whose single instance variable
+is an <tt>ArrayList</tt> of <tt>Score</tt> objects.
+This class provides the following methods:
+</p>
+<ul>
+<li>A constructor with no arguments.</li>
+<li>A <tt>void</tt> method named <tt>update</tt> that takes a <tt>Score</tt> and adds it to the score collection.</li>
+<li>A <tt>void</tt> method named <tt>print</tt> that prints the top ten <tt>Score</tt> objects, ordered from highest to lowest points. If there are fewer than ten scores in the collection, <tt>print</tt> should print as many as are currently in the collection.</li>
+</ul> 
+</body>
+</html>

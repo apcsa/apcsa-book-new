@@ -1,0 +1,42 @@
+
+
+
+==== TODO
+
+
+
+
+ 
+
+
+
+
+====== SOMEDAY
+
+
+
+- add some more assessments at end of intro sequence
+- discuss scanner at some point, you yahoo
+
+-- talk about how inheritance works in command /inputgather class.
+
+-- add canned responses to room6.bs
+
+-- ITEMS, ITEMS, ITEMS!!!
+
+  - v1 framework, lots and lots of stuff
+	  - item	
+     - command
+     - player
+  - first item, an ipod
+  - specialize so gives a different description each time it prints it
+    (random select from songs its playing).
+  - items that can't be taken
+  - integrate room and item -- key and fridge
+
+ - could have a "ItemHolder" interface that both Player and Room 
+   implement -- addItem, removeItem(String name).  But, you want
+   this to mean you don't have to write those methods in both
+   classes, and with interface you still do.  Does the interface
+   buy you anything?
+     - could do inheritance...

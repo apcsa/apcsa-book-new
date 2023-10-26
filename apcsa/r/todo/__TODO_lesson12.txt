@@ -1,0 +1,80 @@
+Lesson 12
+BLUEJ Steps:
+- Draw1
+- Card1
+- Card2
+- Card3
+- Card4
+- Card5
+
+=====================
+STEPS:
+NATE - s1 - VISUAL - need splash graphic "Collections" -  
+NATE  - Step 20, where a while loop is rewritten as a for loop, isn't ideal.
+    really, they should recode a find-element pattern and use a break, but currently
+    they don't.  This could be done, however, with the while loop in runRace, but it 
+    would involve changing that while loop to use a break in the first place.
+
+
+
+=======
+
+Done:
+
+NATE - step 12.9 --   - add dot racing as a project here?  make it buggy?  Have them fill it in?
+[MIKE fixed] Step 4: 
+	- I might explain the nested construction of a Name object in the add method
+	- Add Step for Index Out of Range illustrating an index of -1 and size() or greater
+[MIKE: I killed this step. ]  SEAN  - make 'arraylistRefillable' project
+[MIKE -- I worked on this.]  Exercises need some work
+[MIKE: done.] Summary
+s8 - VISUAL - Edit code to fit frame & divide into 2 parts. "Program to save mouse clicks"
+EDIT -- &dash; --> need to be subtract [MIKE: fixed]
+		 EDIT -- bottomCards is crossed out [MIKE: fixed]
+MIKE - Move these to lesson 14
+MIKE - Perfect shuffle is already (re)covered in lesson 14.
+Step 28: 
+		 BLUEJ - Card5 is not setup
+Step 6: NATE -- swtich to multiple choice (say put name into arraylist<string> - one choice, toString() gets called.
+Step 7: No MC questions		
+Step 8: BlueJ - framework for setting up arraylist
+[MIKE: current step 10 needs code location.]
+Step 11/12: BlueJ
+   MIKE: we thought three stages:
+       stage 1 -- polygon that never closes, what is given.  has pattern1.
+       stage 2 -- write closing (checks first element in list)
+       stage 3 -- write no clicks on existing points (uses pattern2)
+[MIKE: I did stage 1 and a variation of stage 3]       
+       stage 4 (later?) -- draw line between every pair of points (nested loops)
+Step 15: Show the declaration of the ArrayLists in each example
+Step 13:  I might throw an illustrated example like Step 15's here - just to have a visual Or maybe one of the cartoons?
+s18 - BS need feedback. "while vs for loops"
+Step 19 : - Last paragraph example uses arrays [MIKE: not any more]
+		  - EDIT = =we discourage ++ or -- anywhere but on a line
+	Step 22: EDIT :: declare int k = 0;
+		 - They would need two lines -- is it misleading to put one line
+		 	if(myCards.get(k).suit() != myCards.get(k+1).suit())
+			 				return false;
+		- Tell them to open project -- Card1
+		- BLUEJ -- Card1 - ArrayList is not initialized	  - Do we show x += 1 type later?
+Step 23:- EDIT "process every element" instead of "process every elements"
+		- Needs more than one line in the code example
+		- Add comments to BlueJ Hand class
+		- BLUEJ -- Card2 - ArrayList is not initialized
+						 - The first line of code needs : int k = myCards.get(0).suit();
+						 - what exactly do we want here?
+[MIKE: class name Hand needs to be <tt> in step #24]
+Step 26: Change to MC?
+[MIKE: in step #29, the second bullet needs to be split.]
+NATHAN - Step 8.5, 8.6 (or later): Drag questions to have them test knowledge of list operations. 
+Step 30/31 in Summary are empty
+NATE -- FIX ALL THE CARD CLASSES, MOVE FROM LESSON 14, FIX HAND (build the array list)
+Step 20 : Should we introduce the Hand class as well?
+						 
+Step 24: Card3	 --> does the nested loop explanation need more work -- seperate step maybe?
+				 --> instantiate ArrayList
+
+Step 27: BLUEJ -- Card4 -- instantiate and fill Hand
+						-- put in order to begin with
+
+ 

@@ -1,0 +1,23 @@
+title: Lesson 27: Advanced Recursion
+
+{
+h2: Merge sort: n advanced recursive algorithm
+
+
+heading: Introducing Merge sort
+    resource: Merge sort(1) [/apcsa/r/cur/c4/L27_advanced_recursion/merge0.html]
+    resource: Merge sort(2) [/apcsa/r/cur/c4/L27_advanced_recursion/merge0a.html]
+    quiz: MergeSort analysis [/apcsa/r/cur/c4/L27_advanced_recursion/merge1.html]
+    resource: Merging two sorted arrays [/apcsa/r/cur/c4/L27_advanced_recursion/merge2.html]
+    resource: A fast merge algorithm [/apcsa/r/cur/c4/L27_advanced_recursion/merge3.html]
+    resource: A trace of the algorithm [/apcsa/r/cur/c4/L27_advanced_recursion/merge4.html]
+    resource: The main loop [/apcsa/r/cur/c4/L27_advanced_recursion/merge5.html]
+    resource: When source1 or source2 runs out ... [/apcsa/r/cur/c4/L27_advanced_recursion/merge6.html]
+    brainstorm: Unnecessary tests [/apcsa/r/cur/c4/L27_advanced_recursion/merge7.html]
+
+heading: Thinking about Merge sort
+    brainstorm: Convincing yourself of merge sort correctness [/apcsa/r/cur/c4/L27_advanced_recursion/merge8.html]
+    resource: Usefulness of merge sort [/apcsa/r/cur/c4/L27_advanced_recursion/merge9.html]
+    resource: Experiments [/apcsa/r/cur/c4/L27_advanced_recursion/merge10.html]
+    brainstorm: Choice of sorting methods [/apcsa/r/cur/c4/L27_advanced_recursion/merge11.html]
+    brainstorm: Best case for merge sort [/apcsa/r/cur/c4/L27_advanced_recursion/merge12.html]

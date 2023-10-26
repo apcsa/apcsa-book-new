@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Implementing the two-argument add method</title>
+   </head>
+   <body>
+<p audio="2">
+The two-argument <tt>add</tt> method is given as its first argument
+the position where the new element is to be placed.
+Elements starting at that position must be shifted up in the array
+to make room for the new element. The diagram below displays
+the element shifting that accompanies the call
+</p>
+<pre>
+add (2, obj);
+</pre>
+<img class="marginleft50" src="/apcsa/r/static/art/scenes/arrays_inside.png">
+<p audio="3">
+Here, again ignoring the case where the array is already full,
+is the code for add.
+</p>
+<pre>
+public void add (int position, Object obj) {
+   for (int k=myElemCount; k&gt;=position; k--) {
+      myElements[k+1] = myElements[k];
+   }
+   myElements[position] = obj;
+   myElemCount++;
+}
+</pre>
+   </body>
+</html>

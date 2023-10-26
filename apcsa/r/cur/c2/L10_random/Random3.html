@@ -1,0 +1,26 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Details of java.util.Random</title>
+</head>
+<body>
+<p audio="2">
+For <tt>java.util.Random</tt>, <tt>a</tt> was chosen to be a large value.
+Also, instead of the rightmost digits, the value returned is chosen
+from digit positions further left in the product.
+More details are provided in the online Java documentation.
+</p>
+<p>
+The computation also takes advantage of another quirk of Java arithmetic.
+The number of different values that can be stored in an <tt>int</tt> is limited;
+the maximum allowable int value is <tt>2<sup>31</sup>-1</tt>.
+One might expect some sort of error to result from trying to compute a value that's too big.
+(This is called <span class="vocab">overflow</span>.)
+When we compute a sum or a product that's greater than <tt>2<sup>31</sup>-1</tt>,
+however, <i>no error is signalled</i>.
+This lets some unintended arithmetic errors go undetected,
+but simplifies the coding of classes like <tt>Random</tt>.
+</p>
+</body>
+</html>

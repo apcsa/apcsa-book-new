@@ -1,0 +1,52 @@
+title: Lesson 07: Java graphics
+
+{
+h2: Java graphics
+
+
+heading: Greetings in Java
+    resource: Introduction [/apcsa/r/cur/c2/L07_graphics/node_0.html]
+    resource: A greeting program [/apcsa/r/cur/c2/L07_graphics/node_1.html]
+    codeit: Experiments [/apcsa/r/cur/c2/L07_graphics/node_9.html]
+    resource: Importing prewritten classes [/apcsa/r/cur/c2/L07_graphics/node_2.html]
+    resource: Importing JPanel and JFrame classes [/apcsa/r/cur/c2/L07_graphics/node_2b.html]
+    resource: Using the extends keyword [/apcsa/r/cur/c2/L07_graphics/node_2c.html]
+    quiz: Omitting import? [/apcsa/r/cur/c2/L07_graphics/node_36.html]
+    resource: Greetings constructor [/apcsa/r/cur/c2/L07_graphics/node_4.html]
+    resource: The paintComponent method [/apcsa/r/cur/c2/L07_graphics/node_4b.html]
+    resource: Writing paintComponent [/apcsa/r/cur/c2/L07_graphics/node_4c.html]
+    resource: Callbacks [/apcsa/r/cur/c2/L07_graphics/node_7.html]
+    brainstorm: Callback examples? [/apcsa/r/cur/c2/L07_graphics/node_8.html]
+    resource: The drawing region [/apcsa/r/cur/c2/L07_graphics/node_5.html]
+    brainstorm: Pixels per inch? [/apcsa/r/cur/c2/L07_graphics/node_6.html]
+
+heading: Experimenting with drawRect
+    resource: Other graphics methods [/apcsa/r/cur/c2/L07_graphics/node_11.html]
+    resource: What drawRect does [/apcsa/r/cur/c2/L07_graphics/node_12.html]
+    quiz: drawString coordinates [/apcsa/r/cur/c2/L07_graphics/node_10.html]
+    quiz: Outlining the greeting (1) [/apcsa/r/cur/c2/L07_graphics/node_13.html]
+    quiz: Outlining the greeting (2) [/apcsa/r/cur/c2/L07_graphics/node_14.html]
+    codeit: Outlining the greeting (3) [/apcsa/r/cur/c2/L07_graphics/node_15.html]
+    codeit: When paintComponent is called [/apcsa/r/cur/c2/L07_graphics/node_37.html]
+    codeit: Adjacent rectangles [/apcsa/r/cur/c2/L07_graphics/node_16.html]
+    quiz: Predict the output [/apcsa/r/cur/c2/L07_graphics/node_17.html]
+    codeit: Multiple windows [/apcsa/r/cur/c2/L07_graphics/node_21.html]
+    codeit: Rectangle = four lines [/apcsa/r/cur/c2/L07_graphics/node_20.html]
+    codeit: An alternate drawRect [/apcsa/r/cur/c2/L07_graphics/node_22.html]
+    summary: Handling windows of different sizes [/apcsa/r/cur/c2/L07_graphics/node_23.html]
+    brainstorm: Declaration of width? [/apcsa/r/cur/c2/L07_graphics/node_34.html]
+    codeit: A 'safe' drawRect [/apcsa/r/cur/c2/L07_graphics/node_24.html]
+
+heading: More experiments
+    resource: drawOval, fillRect, and fillOval [/apcsa/r/cur/c2/L07_graphics/node_25.html]
+    quiz: Overlapping rectangles [/apcsa/r/cur/c2/L07_graphics/node_26.html]
+    quiz: Drawing a bull's eye [/apcsa/r/cur/c2/L07_graphics/node_29.html]
+
+heading: Programming exercises
+    homework: Big letters [/apcsa/r/cur/c2/L07_graphics/node_30.html]
+    homework: The Olympic rings [/apcsa/r/cur/c2/L07_graphics/node_31.html]
+    homework: A drawing 'turtle' [/apcsa/r/cur/c2/L07_graphics/node_32.html]
+    homework: Creating art [/apcsa/r/cur/c2/L07_graphics/node_33.html]
+
+heading: Review
+    summary: What we've done [/apcsa/r/cur/c2/L07_graphics/node_35.html]

@@ -1,0 +1,12 @@
+
+
+TODO
+Step 14 - talk bubble (nest bot 3 w/ constance etc)
+Anywhere: use nestbot3.png (from art/scenes) as a char in a talkbubble.
+
+use nestbot_4.png and nestbot_5.png to make things more lively.
+
+- Path Counting Step 8 --> We need to define what a path is -- straight line is one path ? Or is every cell counted one path
+- would row, col be clearer instead of n,k?
+- Step #10 :: Are we asking what is returned? The answer is 1. Or are we asking should 1 be returned if n,k is your starting point? Is this an existential question or operational or both:)
+- Could we add some context for path counting -- this an interesting problem that has applications (maps,etc right?) -- maybe on the intro page

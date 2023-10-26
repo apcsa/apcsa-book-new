@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Another use for a static variable</title>
+   </head>
+   <body>
+<p audio="1">
+Another application that requires a static variable
+is the maintenance of a counter that keeps track of how many objects in a class
+have been instantiated.
+Such a counter might be useful in a card game, where we would want to make sure
+that a player isn't allowed to cheat by generating new cards beyond those
+already in the deck.
+</p>
+<p>
+Here's part of a Card <tt>class</tt> with a card counter 
+and <tt>NUMSUITS</tt> and <tt>NUMRANKS</tt> constants.
+Note the use of "our" in the static variable name rather than "my",
+to indicate that the variable is shared among all the cards.
+</p>
+<pre>
+public class Card {
+
+   public static final int NUMSUITS = 4;
+   public static final int NUMRANKS = 13;
+   private int myRank;
+   private int mySuit;
+   private static int ourCardCounter = 0;
+   private static final int MAXCARDS = 52;
+   
+   public Card (int rank, int suit) {
+      if (rank &gt;= 0 &amp;&amp; rank &lt; NUMRANKS) {
+         myRank = rank;
+      } else {
+         ... // signal error
+      }
+      if (suit &gt;= 0 &amp;&amp; suit &lt; NUMSUITS) {
+         mySuit = suit;
+      } else {
+         ... // signal error
+      }
+      ourCardCounter++;
+      if (ourCardCounter &gt; MAXCARDS) {
+         ... // signal error
+      }
+   }
+   
+   ...
+}
+</pre>
+</body>
+</html>

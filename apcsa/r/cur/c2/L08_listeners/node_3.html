@@ -1,0 +1,39 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Mouse events with drawing</title>
+   </head>
+   <body>
+      <p audio="2">Since we have a graphical object (the <tt>JPanel</tt>, in the case of <tt>SimpleClicker</tt>), it makes sense to combine the mouse handling 
+         with graphic output.</p>
+      <p audio="3">As with the work we did in the last lesson, this 
+         means including a <tt>paintComponent</tt> callback method. 
+         There is an extra wrinkle, however: we are likely to need to  
+         change the graphics in response to a mouse click.  That is, 
+         we need to have some control over when the <tt>paintComponent</tt> method is run.</p>
+      <p audio="4">We aren't allowed to call <tt>paintComponent</tt> directly; 
+         anyway, how  
+         could we make the <tt>Graphics</tt> object that it takes as 
+         an argument?  Rather, we can call a method <tt>repaint</tt>, 
+         which takes no arguments, and forces Java to immediately  
+         update the screen. </p>
+      <p audio="5">Because we aren't calling <tt>paintComponent</tt> directly, we 
+         can't pass any information to it.  Therefore, if we want to 
+         use something known in the mouse event&mdash;say, 
+         the coordinate where the mouse was clicked&mdash;that information 
+         has to be stored in an instance variable.  That is,  
+         the mouse method stores the information, and then 
+         the <tt>paintComponent</tt> method reads it.</p>
+      <br>
+      <br>
+      <div class="openbluejproj" project="lesson8/Clicker">
+         <p audio="6">Open the current project in BlueJ (<tt>lesson8/Clicker</tt>).</p>
+         <p audio="6b">Look at the <tt>Clicker</tt> class, run it, and explore 
+         it. 
+            How is information being shared between <tt>mouseClicked</tt> and 
+            <tt>paintComponent</tt>?</p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The methods in the <tt>CandyJar</tt> class (1)</title>
+   </head>
+   <body>
+      <p audio="methods1_1">The <tt>CandyJar</tt> class has four methods. </p>
+      <p audio="methods1_2">The <tt>eat</tt> method implements the eating behavior 
+         we talked about earlier. 
+         Eating some of the candy means reducing the value of the <tt>myCandyCount</tt> instance variable. </p>
+      <pre class="width50">public void eat (int amount) {
+   myCandyCount = myCandyCount - amount; 
+}</pre>
+      <p audio="methods1_3">The second method is <tt>refill</tt>.  Refilling a <tt>CandyJar</tt> 
+      increases the value of the <tt>myCandyCount</tt> instance variable.</p>
+      <pre class="width50">public void refill (int amount) {
+   myCandyCount = myCandyCount + amount; 
+}</pre>
+<br />
+      <div class="talkBubble" char="twitterton2" color="orange" align="right">
+         <p audio="methods1_4.m4">Method names follow the same conventions as variable names for 
+            capitalization: they start with a lower case letter and additional words are capitalized. 
+            <br>
+            <br>
+            But, they don't generally start with the word "my", because that 
+            isn't a natural way to talk about behaviors.
+         </p>
+      </div>
+   </body>
+</html>

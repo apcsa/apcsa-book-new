@@ -1,0 +1,45 @@
+
+
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script>
+        vocabClass="top400";
+        </script>
+        <title>Finding the most-occurring rank</title>
+</head>
+<body>
+<p audio="1">
+It is also useful in Poker to determine the most often-occurring rank in the hand:
+</p>
+<ol>
+	<li audio="2">Does the hand contain four cards, all of the same rank? If so, return 4.</li>
+	<li audio="3">If not, does the hand contain three cards, all of the same rank? If so, return 3.</li>
+	<li audio="4">If not, does the hand contain two cards of the same rank? If so, return 2.</li>
+	<li audio="5">Otherwise return 1.</li>
+</ol>
+<p audio="6">
+One approach to computing this value is to check how many times <i>each rank</i>
+occurs in the hand.  Open the BlueJ project for this node and take a look at the pseudocode in the <tt>maxInRank</tt> in the <tt>Hand</tt> class.
+</p>
+<div class="openbluejproj" project="lesson12\Card3">
+         <p audio="7">Open the current project in BlueJ 
+            (<b>lesson12\Card3</b>).</p>
+        </div>
+<p audio="8">
+Complete the <tt>maxInRank</tt> method.
+Your solution should involve a loop&mdash;counting occurrences of <tt>r</tt>&mdash;within 
+the outer loop.  This situation is called a <span class="vocab">nested loop</span>.
+<br/>
+<br/>
+A test method, <tt>testMaxInRank</tt>, is provided. After you implement the <tt>maxInRank</tt>, execute <tt>testMaxInRank</tt>. The output should be the following:<br/><br/>
+This test should show 1 card rank the same :1<br/>
+This test should show 2 card rank the same :2<br/>
+This test should show 3 card rank the same :3<br/>
+This test should show 4 card rank the same :4
+</p>
+</body>
+</html>
+
+

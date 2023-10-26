@@ -1,0 +1,47 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>Determining the length of a string</title>
+</head>
+<body>
+<p audio="2">On to design of the <tt>length</tt> method. We start
+with a counter as in the "I like Java!" printer. It initially gets
+value 0, indicating that we haven't yet processed any characters in
+the string.</p>
+<pre class="width40">
+private int length (String s) {
+   int charCount;
+   charCount = 0;
+   while ( ... ) {
+      ...
+   }
+}
+</pre>
+<p audio="3">Inside the <tt>while</tt> loop, we must do two
+things. One is to increment <tt>charCount</tt> to acknowledge that
+we've seen another character in the string. The second is to remove
+that character from the string to avoid counting it twice or more.</p>
+<pre class="width70">
+   while ( ... ) {
+      charCount = charCount + 1;
+      s = s.substring (1); 
+      // new s has everything but the first character of old s
+   }
+</pre>
+<p audio="4">The <tt>while</tt> condition must then ensure that
+there is at least one more character in the string to tally in the
+length:</p>
+<pre class="width70">
+   while (!s.equals("")) {
+      charCount = charCount + 1;
+      s = s.substring (1); 
+      // new s has everything but the first character of old s
+   }
+</pre>
+<!--  TODO
+describe roles of variables
+-->
+</body>
+</html>

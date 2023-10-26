@@ -1,0 +1,51 @@
+<!-- Image here maybe, that shows heirarchy of toString methods and how they are called? -->
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>How polymorphism fits in</title>
+      
+      <!-- TODO an image here, maybe, showing hierarchy of toString 
+      methods and how they are called.
+      Also, break this step into multiple pieces. -->
+   </head>
+   <body>
+<p audio="1">
+We have seen that <tt>ArrayList.contains</tt> apparently requires 
+an <tt>equals</tt> method defined as follows:
+</p>
+<pre class="width60">
+   public boolean equals (Object obj) ...
+</pre>
+<p audio="2">As it happens, many other collection classes in <tt>java.util</tt> 
+assume that the classes of their elements include an <tt>equals</tt> method defined as above.
+The reason is that these collection classes are set up to contain <i>any</i> object, 
+not just <tt>Measurements</tt> and the like.
+</p>
+<p audio="3">
+We earlier noted that in Java, 
+the <tt>Object</tt> class is the top class in the inheritance hierarchy.
+Every class extends <tt>Object</tt>.
+One of the methods provided in the <tt>Object</tt> class is <tt>equals</tt>; 
+our redefinition of <tt>equals</tt> overrides <tt>Object</tt>'s version.
+In <tt>java.util.ArrayList.contains</tt>, there is a call to <tt>equals</tt>.
+Its argument is most likely a reference to a subclass of <tt>Object</tt>.
+The compiler verifies that an <tt>equals</tt> method is available. 
+(<tt>Object.equals</tt> suffices if no overriding version has been provided.) 
+Then, at run time, the most specific <tt>equals</tt> is used to make the comparison.
+</p>
+<p audio="4">
+Another of <tt>Object</tt>'s methods is <tt>toString</tt>:
+</p>
+<pre class="width50">
+   public String toString ( ) ...
+</pre>
+<p audio="5">
+The <tt>toString</tt> method we defined for <tt>Measurement</tt>
+overrode <tt>Object.toString</tt>. 
+When a method like <tt>System.out.print</tt> calls <tt>toString</tt>, 
+it uses the most specific version.
+</p>
+<p audio="6"></p>
+</body>
+</html>

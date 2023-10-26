@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Examples of boolean methods</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+
+<body>
+<p audio="node5_3">
+<b>Example 2: CheckerBoard</b></br></br>
+A checkerboard is 8 rows and 8 columns of squares.  One can imagine that a program simulating a checkerboard will need a method
+to check if a given row and column are legal positions on the board; in others words, within the 8x8 grid. If a user attempts to place
+a checker at row 10 and column 8 this method should return <tt>false</tt> and obviously a checker at row 4 and column 2 should return <tt>true</tt>.
+</p><p>
+Here's an example of a method in a checkerboard class, that might do just this:
+</p>
+<img class="imageRight" src="/apcsa/r/static/art/scenes/board_player.png"
+  alt="A robot playing a board game"
+  width="160px"/>  
+<pre class="width60">
+// Return true if the given coordinates represent
+//  a legal checkerboard position
+// (i.e. both are between 0 and 7, inclusive); 
+//   return false otherwise.
+private boolean isLegalPosition (int row, int col) {
+   return (row &gt;= 0 &amp;&amp; row &lt;= 7
+           &amp;&amp; col &gt;= 0 &amp;&amp; col &lt;= 7);
+}
+</pre>
+<p audio="node5_4" class="clearFloats">
+An example use:
+</p>
+<pre class="width80">
+   if (isLegalPosition (row, col)) ...
+</pre>
+</body>
+</html>

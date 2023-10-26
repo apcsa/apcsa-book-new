@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Callbacks, revisited</title>
+   </head>
+   <body>
+<p audio="1">
+It is common in Java for a method we provide to be called not by our own code 
+but by someone else's.  
+Two examples we've seen in earlier activities are 
+the <tt>toString</tt> and <tt>mouseClicked</tt> methods.  
+<tt>toString</tt> is rarely called directly.  
+More likely, it is called by code that needs to produce a people-readable 
+representation of an object, for instance, the <tt>System.out.print</tt> method. 
+<tt>mouseClicked</tt>, as we have seen, is called by the Java system
+when the mouse is clicked in a suitably initialized drawing window.
+The situation where we call a method of a library class and 
+another of our methods gets called as a result is referred to as a <i>callback</i>.
+</p>
+<p audio="2">
+Another frequent participant in a callback is the <tt>equals</tt> method.
+For example, the <tt>ArrayList contains</tt> method calls <tt>equals</tt> 
+to determine if the argument to <tt>contains</tt> is an element of the list.
+We will experiment with the <tt>equals</tt> method in the context of a <tt>Measurement</tt> class
+that represents measurements in feet and inches.
+</p>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "5",
+         "prompt": " \n<p audio=\"1\">\nFor each of the questions you listed in the previous step\nas being impossible to answer with the starting environment,\ndescribe what extra objects you will create and where you will\ncreate them in order to answer the question.\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [
+      {
+         "name": "StudentName1",
+         "response": " \n"
+      },
+      {
+         "name": "StudentName2",
+         "response": "\n"
+      }
+   ],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Which experiments?",
+   "type": "Brainstorm",
+   "useServer": true
+}

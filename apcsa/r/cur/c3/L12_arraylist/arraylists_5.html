@@ -1,0 +1,41 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>ArrayList processing patterns</title>
+</head>
+<body>
+<p audio="1">
+Code you wrote for the <tt>paintComponent</tt> method most likely contains an example of a common <tt>ArrayList</tt> pattern,
+that of <i>processing every element</i> in the <tt>ArrayList</tt>.
+A variable is initialized to 0, then incremented each time through the loop
+in order to process element 0, element 1, and so on up to element <tt>size()-1</tt>.
+In pseudocode, it looks like the following:
+</p>
+<pre class="width60">
+k = 0;
+while (k &lt; <i>the size of the ArrayList</i>) {
+   <i>process element k of the ArrayList;</i>
+   k = k + 1;
+}
+</pre>
+<p audio="2">
+Code you wrote for the <tt>mouseClicked</tt> method probably involved <i>search</i> in an <tt>ArrayList</tt>,
+another common pattern.
+The code resembles that of processing every element&mdash;where "processing"
+means "checking whether the element is what we're searching for"&mdash;
+except that it is possible for the loop to end early if the search succeeds.
+Exiting the loop is done with the <tt>break</tt> statement.
+Here is pseudocode.
+</p>
+<pre class="width60">
+k = 0;
+while (k &lt; <i>the size of the ArrayList</i>) {
+   <i>if element k of the ArrayList is what we're searching for</i>) {
+      break;
+   }
+   k = k + 1;
+}
+</pre>
+</body>
+</html>

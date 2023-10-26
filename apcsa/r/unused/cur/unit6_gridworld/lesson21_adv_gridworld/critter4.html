@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <script type="text/javascript" src="../../../script/loader_main.js">
+      </script>
+      <title>Extending Critter</title>
+   </head>
+   <body>
+<p audio="2">
+The case study goes on to describe two classes that extend <tt>Critter</tt>:
+<tt>ChameleonCritter</tt> and <tt>CrabCritter</tt>.
+</p>
+<ul>
+<li audio="3">
+A <tt>ChameleonCritter</tt> gathers the same actors as a <tt>Critter</tt> does.
+Instead of eating them, however, it chooses a random actor from the list
+and changes its own color to match that of the chosen actor.
+It moves like a <tt>Critter</tt>, except that it also turns toward the new location
+as it moves.
+</li>
+<li audio="4">
+A <tt>CrabCritter</tt> gathers actors that are
+located either immediately in front of it, immediately to its left-front,
+or immediately to its right-front.
+If those actors aren't <tt>Rocks</tt> or <tt>Critters</tt>, it eats them.
+It then moves randomly to the right or left, unless both locations are blocked,
+in which case it turns 90&deg; randomly to the left or right.
+</li>
+</ul>
+   </body>
+</html>

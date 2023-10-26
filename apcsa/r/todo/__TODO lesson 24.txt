@@ -1,0 +1,68 @@
+
+
+
+==== TODO
+
+ - should add an undo method to framework code.  need 2 more images
+ (each 3 arrays) (prev_red),
+ and swap them within refresh().   ?
+
+
+  - write flip horizontal, using flipvetical as a guide.
+
+  - help with contrast stretching math -- do as double and cast to int, etc.
+
+  - median filtering (to remove dust, noise, etc)
+     - need to give them a noisy image first.  noiseify one of the existing
+     images.
+
+
+
+
+  - spatial filtering 
+     - smoothing
+     - sharpening
+     - edge detection
+     
+     - itegrate images
+  - median filtering/blurring (robot with glasses)
+
+     
+     
+
+     
+====== SOMEDAY
+
+     exercise ideas:
+   -  swtich red/blue/green around.
+   -  make negative image (only one color)
+
+     
+
+
+add example images to the exercises (i.e., what they are supposed to do)
+
+
+rgb illumination from http://en.wikipedia.org/wiki/File:RGB_illumination.jpg
+
+- tell about refresh earlier
+
+walk them through flipvertical.  have them change it, see what happens
+,etc (switch only one color).
+
+ - fix up last two sequences, make less didactic eh
+
+
+
+
+  - make 3D image (shift one color).  whoa, cool.
+     -  make an image 3d.   need multiple images, composing them,
+     and shifting each slightly farther in the background...
+     - use cyan (equal blue and green), so only two channels.
+     if red/blue glasses, then just remove green channel altogether
+
+  - composing images
+     - greenscreen?
+     
+
+

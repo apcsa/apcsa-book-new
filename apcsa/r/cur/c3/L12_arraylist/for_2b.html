@@ -1,0 +1,47 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>A for variation</title>
+</head>
+<body>
+<p audio="1">
+There is a variation on the <tt>for</tt> loop, named a <tt>for</tt>-each loop.
+It's used with collection class objects,
+and basically is a translation of "for each element of the collection, ..."
+In pseudocode, it looks like the following:
+</p>
+<pre class="width60" >
+for (<i>ElementType variable</i> : <i>collection</i>) {
+   ...
+}
+</pre>
+<p audio="2">
+Two examples of its use with the <tt>friends</tt> and <tt>clicks</tt> collections appear below.
+</p>
+<table id="tableBlue">
+<tr><td>
+<pre>
+// Print the initials of the names in friends.
+ArrayList<Name> friends = new ArrayList<Name>();
+//... add a bunch of Name objects to friends
+
+for (Name person : friends) {
+   System.out.println (person.initials());
+}
+</pre>
+</td></tr>
+<tr>
+<td>
+<pre>
+// Draw a circle at each click position.
+ArrayList<Point> clicks = new ArrayList<Point>();
+//... add a bunch of Point objects to clicks
+
+for (Point p: clicks) {
+   g.fillOval (p.x-5, p.y-5, 10, 10);
+}
+</pre>
+</td></tr></table>
+</body>
+</html>

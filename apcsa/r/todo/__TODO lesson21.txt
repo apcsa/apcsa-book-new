@@ -1,0 +1,20 @@
+lesson 21
+
+============ todo
+
+
+
+
+
+- add a CrabCritter question that looks like node0.ms
+
+
+Anywhere: use inherit 1 - 5.png as talk bubble chars.
+
+
+
+
+============== someday
+
+
+

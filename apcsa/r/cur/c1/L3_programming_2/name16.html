@@ -1,0 +1,34 @@
+<html>
+   <head>
+   	<script>
+            vocabClass = "top100";
+          
+        </script>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>More details about <tt>caseFixed</tt></title>
+   </head>
+   <body>
+      <p audio="name16_1">The <tt>caseFixed</tt> method has some other interesting features.</p>
+      <ul>
+         <li audio="name16_2">
+            It's a private method, intended solely for use by the <tt>Name</tt> constructor. 
+               It's not accessible from outside <tt>Name</tt>.
+         </li>
+         <li audio="name16_3">
+            It uses a <span class="vocab">local variable</span> named <tt>temp</tt>. 
+               Since <tt>temp</tt> is declared in <tt>caseFixed</tt>, 
+               it can be used only within <tt>caseFixed</tt>.
+         </li>
+         <li audio="name16_4">
+            It calls several <tt>String</tt> methods. 
+               We have seen how to call methods of objects in the BlueJ workbench, 
+               but this is our introduction to calling methods inside the top-level methods. 
+               If <i>objectName</i> is the name of an object and <i>methodName</i> is the name
+               of a method in the corresponding class, then the expression
+            <pre class="width60"><i>objectName . methodName (parameters)</i></pre>
+            calls the named method.
+         </li>
+      </ul>
+   </body>
+</html>

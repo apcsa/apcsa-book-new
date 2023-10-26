@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <script>
+            vocabClass = "top0";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Moving a piece by calling a method with a parameter</title>
+    </head>
+    <body>
+        <img src="/apcsa/r/static/art/scenes/board_player.png" width="200" class="imageRight">
+        <p audio="movepiece1">
+            Right-click one of the objects of the class <tt>GamePiece</tt>
+            that you created previously 
+            and select <tt>moveRight(int)</tt>. The <tt>int</tt>
+            between parentheses says that the <tt>moveRight</tt> method takes a parameter 
+            of type <tt>int</tt>
+            (<tt>int</tt> is short for <tt>integer</tt>, a number without a decimal point. <tt>3</tt>, <tt>872</tt>, and <tt>-4</tt>
+            are integers. <tt>3.1415</tt>
+            and <tt>8.1</tt>
+            are not).
+        </p>
+        <p audio="movepiece2">
+            A dialog box will allow you to type in something. Type in <tt>3</tt>
+            and click <tt>OK</tt>. 
+            Notice what happened to the game piece. Now try typing in <tt>50</tt>
+            and observe the outcome. 
+        </p>
+        <p audio="movepiece3">
+            A call to <tt>moveRight()</tt>
+            doesn't take a parameter. It moves the piece to the right for a <em>fixed</em>
+            distance (one square). In contrast, the <tt>moveRight(int)</tt>
+            method lets you specify a number telling the method how far to move the piece. 
+        </p>
+        <center>
+            <img class="imageCenter" id="SlideshowPicture" src="/apcsa/r/static/art/introToBlueJ/movepiece.png" alt="The GameBoard class" />
+        </center>
+    </body>
+</html>
+

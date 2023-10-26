@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A different algorithm</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">A different algorithm</div>
+
+    <div class="prompt">
+    <p>
+In an attempt to make <tt>goatDoorToShow</tt> more understandable, a student recodes the outer <tt>if</tt> case as follows:
+</p>
+<pre>
+ if (chosenDoor == doorWithCar) {
+ doorToOpen = randoms.nextInt (2) + 1;
+ while (doorToOpen == doorWithCar) {
+ doorToOpen = randoms.nextInt (2) + 1;
+ }
+ } else ...
+</pre>
+<p>
+What is the effect of this change?
+</p>
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">This looks more understandable. We just keep asking for a random number until we find one that works. It might be less efficient than the original but not much less.
+        </div>
+        
+        <div name="Sherry">It never returns 3, so that's a bug.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+<title>How it works</title>
+</head>
+<body>
+
+<p audio="1">To understand how the revised <tt>sumHelper</tt> works, we repeat the steps covered earlier:</p>
+<ol>
+		<li audio="2">Examine the base case. There's only one base case, and it returns the correct value for an empty interval.</li>
+			
+		<li audio="3">Try arguments that are one recursive call away from a base case. This would be a one-element interval (for which <tt>left
+		== right</tt>), say, with <tt>left</tt> and <tt>right</tt> both equal to 4. It computes <tt>mid = (left+right)/2</tt>, which is
+		4, and adds that to the values returned by <tt>sumHelper (4, 3)</tt> and <tt>sumHelper (5, 4)</tt>, which are both 0. So
+		far, so good.</li>
+		
+		<li audio="4">Let's now try a three-element interval, namely <tt>[4,6]</tt>. <tt>mid</tt> is <tt>(4+6)/2</tt>, which is 5; the
+		recursive calls are <tt>sumHelper (4, 4)</tt>, which returns 4 as just described, and <tt>sumHelper (6, 6)</tt>, which
+		returns 6.</li>
+</ol>
+
+<p audio="5"><b>Do you see a pattern?</b></p>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+title: Lesson 4: Introduction to Conditionals
+
+{
+
+heading: Introduction to Conditionals
+    resource: Broken real-world objects [/apcsa/r/cur/c1/L4_conditionals_1/brokenRW.html]
+    resource: Broken programming objects [/apcsa/r/cur/c1/L4_conditionals_1/broken2.html]
+    resource: The meaning of broken [/apcsa/r/cur/c1/L4_conditionals_1/node_0.html]
+    quiz: Signs of breakage [/apcsa/r/cur/c1/L4_conditionals_1/node_1.html]
+    brainstorm: Description of breakage [/apcsa/r/cur/c1/L4_conditionals_1/node_2.html]
+
+    heading: Causes of breakage
+        resource: Sources of misuse [/apcsa/r/cur/c1/L4_conditionals_1/broken3.html]
+        quiz: More bad numbers [/apcsa/r/cur/c1/L4_conditionals_1/broken5.html]
+        brainstorm: Method calls that break a Refillable [/apcsa/r/cur/c1/L4_conditionals_1/node_3.html]
+        quiz: One more kind of breakage [/apcsa/r/cur/c1/L4_conditionals_1/broken7.html]
+        resource: Bad method calls [/apcsa/r/cur/c1/L4_conditionals_1/node_4.html]
+        summary: Why do we care? [/apcsa/r/cur/c1/L4_conditionals_1/broken8.html]
+        resource: Detecting attempts to break a Refillable object [/apcsa/r/cur/c1/L4_conditionals_1/broken9.html]
+        resource: An example [/apcsa/r/cur/c1/L4_conditionals_1/broken9a.html]
+        resource: The entire Refillable class [/apcsa/r/cur/c1/L4_conditionals_1/broken9b.html]
+
+    heading: What are Conditionals?
+        resource: Motivation for Conditionals [/apcsa/r/cur/c1/L4_conditionals_1/cond1-Intro.html]
+        summary: The Conditional Statement [/apcsa/r/cur/c1/L4_conditionals_1/cond2-Intro2.html]
+        resource: Comparisons [/apcsa/r/cur/c1/L4_conditionals_1/node_7.html]
+        resource: true and false [/apcsa/r/cur/c1/L4_conditionals_1/node_8.html]
+        quiz: Opposite operators [/apcsa/r/cur/c1/L4_conditionals_1/opposite_ops.html]
+        resource: An example [/apcsa/r/cur/c1/L4_conditionals_1/cond2a-Intro2.html]
+        simulation: Animating useUp [/apcsa/r/cur/c1/L4_conditionals_1/useUp.html]
+        codeit: Validating the constructor's argument [/apcsa/r/cur/c1/L4_conditionals_1/node_9.html]
+        quiz: Solidifying your understanding (1) [/apcsa/r/cur/c1/L4_conditionals_1/solidify_if_stmt.html]
+        quiz: Solidifying your understanding (2) [/apcsa/r/cur/c1/L4_conditionals_1/solidify_if.html]
+
+heading: Conditionals in Depth
+    summary: The if-else Statement [/apcsa/r/cur/c1/L4_conditionals_1/cond5-ifthenelse.html]
+    resource: An example [/apcsa/r/cur/c1/L4_conditionals_1/cond5a-ifthenelse.html]
+    simulation: Animating useUp again [/apcsa/r/cur/c1/L4_conditionals_1/useUp2.html]
+    quiz: Solidifying your understanding (3) [/apcsa/r/cur/c1/L4_conditionals_1/solidify_ifthenelse1.html]
+    quiz: Solidifying your understanding (4) [/apcsa/r/cur/c1/L4_conditionals_1/solidify_ifthenelse2.html]
+    brainstorm: Comparing two program segments [/apcsa/r/cur/c1/L4_conditionals_1/cond8-compare.html]
+    codeit: Using nested if statements [/apcsa/r/cur/c1/L4_conditionals_1/cond9-complete.html]
+    resource: Cascading if-else statements [/apcsa/r/cur/c1/L4_conditionals_1/cond10-cascadeifthenelse.html]
+    simulation: Another simulation [/apcsa/r/cur/c1/L4_conditionals_1/CascadeIfThenElse.html]
+    brainstorm: Analyzing Buggy Code [/apcsa/r/cur/c1/L4_conditionals_1/cond12-buggy.html]
+    resource: Nested if statements [/apcsa/r/cur/c1/L4_conditionals_1/cond13-nestedifs.html]
+    simulation: And another simulation [/apcsa/r/cur/c1/L4_conditionals_1/NestedIfs.html]
+    resource: Optional curly brackets [/apcsa/r/cur/c1/L4_conditionals_1/node_10.html]
+    resource: Reasons for not using this shortcut [/apcsa/r/cur/c1/L4_conditionals_1/node_11.html]
+    quiz: A common bug [/apcsa/r/cur/c1/L4_conditionals_1/node_12.html]
+    resource: Indenting styles [/apcsa/r/cur/c1/L4_conditionals_1/node_13.html]
+    resource: Coding Alternatives [/apcsa/r/cur/c1/L4_conditionals_1/cond46-codingalternatives.html]
+
+heading: Introduction to Testing
+    simulation: Finding a bug [/apcsa/r/cur/c1/L4_conditionals_1/debug_test1.html]
+    brainstorm: How you found it [/apcsa/r/cur/c1/L4_conditionals_1/debug_test3.html]
+    brainstorm: Cause of the bug [/apcsa/r/cur/c1/L4_conditionals_1/debug_test4.html]
+    codeit: Why test a program? [/apcsa/r/cur/c1/L4_conditionals_1/debug_test5.html]
+
+    heading: A Testing Principle
+        summary: Test principle 1 [/apcsa/r/cur/c1/L4_conditionals_1/test_principle1.html]
+        resource: Leap years [/apcsa/r/cur/c1/L4_conditionals_1/leap_year_bkgnd.html]
+        matchsequence: Identifying leap years [/apcsa/r/cur/c1/L4_conditionals_1/leap_year_check.html]
+        codeit: February 29th [/apcsa/r/cur/c1/L4_conditionals_1/isFeb29.html]
+        brainstorm: Your definition [/apcsa/r/cur/c1/L4_conditionals_1/own_words.html]
+        codeit: A Leap Day Counter [/apcsa/r/cur/c1/L4_conditionals_1/leap_day_counter.html]
+        resource: Applying testing principle 1 [/apcsa/r/cur/c1/L4_conditionals_1/applying_princ1.html]
+        brainstorm: Reasons the bug might be undetected [/apcsa/r/cur/c1/L4_conditionals_1/why_inadequate.html]
+
+    heading: Another Principle
+        summary: Testing Principle 2 [/apcsa/r/cur/c1/L4_conditionals_1/princ2.html]
+        resource: Examples (1) [/apcsa/r/cur/c1/L4_conditionals_1/princ2a.html]
+        resource: Examples (2) [/apcsa/r/cur/c1/L4_conditionals_1/princ2b.html]
+        resource: Examples (3) [/apcsa/r/cur/c1/L4_conditionals_1/princ2c.html]
+        resource: Principle 2 applied to leap day counting [/apcsa/r/cur/c1/L4_conditionals_1/more_princ2.html]
+        quiz: Which are possible? [/apcsa/r/cur/c1/L4_conditionals_1/logically_possible.html]
+        summary: Defining boundary cases [/apcsa/r/cur/c1/L4_conditionals_1/boundary_cases.html]
+        brainstorm: Devising boundary cases [/apcsa/r/cur/c1/L4_conditionals_1/boundary_cases.html]
+
+heading: Review and Exercises
+    summary: What we've done (1) [/apcsa/r/cur/c1/L4_conditionals_1/node_14.html]
+    summary: What we've done (2) [/apcsa/r/cur/c1/L4_conditionals_1/node_15.html]
+    summary: What we've done (3) [/apcsa/r/cur/c1/L4_conditionals_1/node_16.html]
+    homework: Practice with conditionals [/apcsa/r/cur/c1/L4_conditionals_1/node_17.html]

@@ -1,0 +1,85 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>ArrayLists</title>
+</head>
+<body>
+<p>
+<tt>ArrayList</tt> objects solve this problem.
+An <tt>ArrayList</tt> (found in the <tt>java.util</tt> library) represents a sequence of elements, all the same type,
+in which each element is accessed by its position in the sequence
+(a nonnegative integer).
+For example, consider a recoding of <tt>whoMoves</tt>
+that uses a three-<tt>Dot</tt> <tt>ArrayList</tt> named <tt>racers</tt>:
+</p>
+<pre>
+public Dot whoMoves ( ) {
+   int moverChoice = randgen.nextInt (3);
+   return racers.get (moverChoice);
+}
+</pre>
+<p>
+As with any object, setting up an <tt>ArrayList</tt> includes
+declaration, for example,
+</p>
+<pre>
+   ArrayList<Dot> racers;
+</pre>
+<p>
+and initialized,
+</p>
+<pre>
+   racers = new ArrayList<Dot> ( );
+</pre>
+<p>
+The elements of the <tt>ArrayList</tt> must also be initialized.
+</p>
+<p>
+<tt>ArrayLists</tt> have many methods (go to the online Java documentation to discover them). We worked with several, listed below.
+(Assume that <tt>values</tt> is an initialized <tt>ArrayList</tt>.)
+</p>
+<table border="1">
+<tr>
+<td>
+<tt>
+values.add (<i>element</i>)
+</tt>
+</td>
+<td>Put the argument at the end of the sequence</td></tr>
+<tr><td>
+<tt>values.add (<i>position</i>, <i>element</i>)<tt>
+</td>
+<td>
+Insert the second argument into <tt>values</tt> at the given position,
+moving subsequent elements up one position to make room.
+</td>
+</tr>
+<tr>
+<td>
+<tt>values.size ( )</tt></td>
+<td>
+Return the number of elements in <tt>values</tt>.
+</td>
+</tr>
+<tr>
+<td>
+<tt>values.get (<i>position</i>)</tt>
+</td>
+<td>
+Returns the element at the given position in <tt>values</tt>.
+</td></tr>
+<tr><td>
+<tt>values.remove (<i>position</i>)</tt>
+</td><td>
+Remove the element at the given position from <tt>values</tt>,
+moving subsequent elements down one position.
+</td</tr></table>
+<p>
+Legal position values range from 0 to <tt>size ( ) - 1</tt>.
+A common bug is to use an incorrect position,
+producing an "array index out of range" error.
+</p>
+</body>
+</html>

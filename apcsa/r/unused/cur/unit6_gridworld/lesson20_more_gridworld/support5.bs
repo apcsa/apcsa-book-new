@@ -1,0 +1,34 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "5",
+         "prompt": " \n<p audio=\"1\">\nWe noted earlier that calling a Rock's moveTo method to move it on top\nof a Bug caused the Bug to disappear.\nTrace through the statements in the various classes that caused this\nbehavior,\nand provide a summary below.\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [
+      {
+         "name": "StudentName1",
+         "response": " \n"
+      },
+      {
+         "name": "StudentName2",
+         "response": "\n"
+      }
+   ],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "A disappearing bug",
+   "type": "Brainstorm",
+   "useServer": true
+}

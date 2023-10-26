@@ -1,0 +1,35 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>An example</title>
+</head>
+<body>
+<p audio="2">
+Here's an example.  Suppose the seed is 4, a is 9, b is 5, and we want a single random digit
+at each call (we choose the rightmost digit). </p>
+<table>
+	<tr>
+		<td>r</td> <td>a * r + b</td> <td>return value</td>
+	</tr>
+	<tr>
+		<td>4</td> <td>9 * 4 + 5 = 41</td> <td>1</td>
+	</tr>
+	<tr>
+		<td>1</td> <td>9 * 1 + 5 = 14</td> <td>4</td>
+	</tr>
+	<tr>
+		<td>4</td> <td>9 * 4 + 5 = 41</td> <td>1</td>
+	</tr>
+	<tr>
+		<td></td> <td>...</td>
+	</tr>
+</table>
+<p>
+This of course is not a very interesting random number generator,
+since it only returns two values, alternating between them.
+In a real random number generator, 
+<tt>a</tt> and <tt>b</tt> are chosen so that the return values look randomly chosen.
+</p>
+</body>
+</html>

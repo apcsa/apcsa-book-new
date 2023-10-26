@@ -1,0 +1,100 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript">
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <title>The <i>Comparisons</i></title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+</head>
+<body>
+       <p audio="cond2_2">
+A simple yes-or-no question to ask is a <i>comparison</i>.
+             The comparison compares the values of two variables, or a variable and a constant. 
+            It uses one of the <span class="vocab" term="comparison operator">comparison operators</span>:
+        </p>
+        <table id="tableBlue">
+            <tr>
+                <td>
+                    <i>operator</i>
+                </td>
+                <td>
+                    <i>meaning</i>
+                </td>
+                                <td>
+                    <i>operator</i>
+                </td>
+                <td>
+                    <i>meaning</i>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <tt>&gt;</tt>
+                </td>
+                <td>
+                    "is greater than"
+                </td>
+                                <td align="center">
+                    <tt>&gt;=</tt>
+                </td>
+                <td>
+                    "is greater than or equal to"
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <tt>&lt;</tt>
+                </td>
+                <td>
+                    "is less than"
+                </td>
+                               <td align="center">
+                    <tt>&lt;=</tt>
+                </td>
+                <td>
+                    "is less than or equal to"
+                </td>
+ 
+            </tr>
+            <tr>
+                <td align="center">
+                    <tt>==</tt>
+                </td>
+                <td>
+                    "is equal to" <br /> (Note, this is <i>two</i> equal signs.)
+                </td> 
+                               <td align="center">
+                    <tt>!=</tt>
+                </td>
+                <td>
+                    "is not equal to"
+                </td>
+            </tr>
+        </table>
+<p>
+Here's an example. Suppose we want to refill a <tt>Refillable</tt> object with 20 only if the current amount is 0.
+The code is:
+</p>
+<pre>
+if (currentAmount ( ) == 0) {
+   refill (20);
+}
+</pre>
+
+<p>
+You could also write this code like this:
+</p>
+<pre>
+if (myUseUpCallCount == 0) {
+   refill (20);
+}
+</pre>
+<p>
+Will these pieces of code work the same?
+</p>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+	<nodes>
+		<HtmlNode identifier="reviewintro" title="Course Review Intro"
+			class="intro">
+			<ref filename="reviewintro.html" />
+		</HtmlNode>
+		<HtmlNode identifier="intro2" title="Study Guide"
+			class="intro">
+			<ref filename="intro2.html" />
+		</HtmlNode>
+		<HtmlNode identifier="zeroone1" title="Lesson 1:  Behaviors and State"
+			class="curriculum">
+			<ref filename="zeroone1.html" />
+		</HtmlNode>
+		<BrainstormNode identifier="zeroone2"
+			title="Behaviors and States" class="brainstorm">
+			<ref filename="zeroone2.bs" />			
+		</BrainstormNode>
+		<BrainstormNode identifier="zeroone3"
+			title="Linking Behaviors, States, Methods, and Variables" class="brainstorm">
+			<ref filename="zeroone3.bs" />			
+		</BrainstormNode>
+		<HtmlNode identifier="zeroone4" title="Classes and Instances"
+			class="curriculum">
+			<ref filename="zeroone4.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L2-1" title="Lesson 2:  Beginning Programming"
+			class="curriculum">
+			<ref filename="L2-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L3-1" title="Lesson 3:  Abstraction and Strings"
+			class="curriculum">
+			<ref filename="L3-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L4-1" title="Lesson 4:  Conditionals and Testing"
+			class="curriculum">
+			<ref filename="L4-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L5-1" title="Lesson 5:  Comparisions and Booleans"
+			class="curriculum">
+			<ref filename="L5-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L6-1" title="Lesson 6:  A Virtual Pet"
+			class="curriculum">
+			<ref filename="L6-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L7-1" title="Lesson 7:  Java Graphics"
+			class="curriculum">
+			<ref filename="L7-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L8-1" title="Lesson 8:  Events"
+			class="curriculum">
+			<ref filename="L8-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L9-1" title="Lesson 9:  Loops"
+			class="curriculum">
+			<ref filename="L9-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L10-1" title="Lesson 10:  Randomness"
+			class="curriculum">
+			<ref filename="L10-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L11-1" title="Lesson 11:  Monty Hall"
+			class="curriculum">
+			<ref filename="L11-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L12-1" title="Lesson 12:  ArrayList"
+			class="curriculum">
+			<ref filename="L12-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L13-1" title="Lesson 13:  Sound Manipulation"
+			class="curriculum">
+			<ref filename="L13-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L14-1" title="Lesson 14:  Sorting"
+			class="curriculum">
+			<ref filename="L14-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L15-1" title="Lesson 15:  Elevens Project"
+			class="curriculum">
+			<ref filename="L15-1.html" />
+		</HtmlNode>
+	</nodes>
+
+	<sequences>
+		<sequence identifier="master" title="master" view="">
+			<sequence-ref ref="seq_0" />
+			<sequence-ref ref="seq_1" />
+			<sequence-ref ref="seq_2" />
+			<sequence-ref ref="seq_3" />
+			<sequence-ref ref="seq_4" />
+			<sequence-ref ref="seq_5" />
+		</sequence>
+		<sequence identifier="seq_0" title="Introduction" view="">
+			<node-ref ref="reviewintro" />
+			<node-ref ref="intro2" />
+		</sequence>
+		<sequence identifier="seq_1" title="Reviewing Unit 0"
+			view="">
+			<node-ref ref="zeroone1" />
+			<node-ref ref="zeroone4" />
+			<node-ref ref="zeroone2" />
+			<node-ref ref="zeroone3" />						
+		</sequence>
+		<sequence identifier="seq_2" title="Reviewing Unit 1"
+			view="">
+			<node-ref ref="L2-1" />
+			<node-ref ref="L3-1" />									
+		</sequence>
+		<sequence identifier="seq_3" title="Reviewing Unit 2"
+			view="">
+			<node-ref ref="L4-1" />
+			<node-ref ref="L5-1" />
+			<node-ref ref="L6-1" />									
+		</sequence>
+		<sequence identifier="seq_4" title="Reviewing Unit 3"
+			view="">
+			<node-ref ref="L7-1" />
+			<node-ref ref="L8-1" />
+			<node-ref ref="L9-1" />
+			<node-ref ref="L10-1" />
+			<node-ref ref="L11-1" />												
+		</sequence>
+		<sequence identifier="seq_5" title="Reviewing Unit 4"
+			view="">
+			<node-ref ref="L12-1" />
+			<node-ref ref="L13-1" />
+			<node-ref ref="L14-1" />
+			<node-ref ref="L15-1" />															
+		</sequence>
+	</sequences>
+	<method>
+		<startpoint>
+			<sequence-ref ref="master" />
+		</startpoint>
+	</method>
+</project>

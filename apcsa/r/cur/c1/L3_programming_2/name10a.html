@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>A method that helps other methods do their jobs</title>
+   </head>
+   <body>
+      <p audio="name10a_1">Let's examine the <tt>Name</tt> constructor more closely:
+	  </p>
+	  <pre class="width80">
+public Name (String first, String middle, String last) {
+   myFirst = caseFixed(first);
+   myMiddle = caseFixed(middle);
+   myLast = caseFixed(last);
+}
+</pre>
+		
+	  
+	  <p audio="name10a_2">It takes three parameters, and assigns them to each of the 
+	  instance variables.  However, it is using the <tt>caseFixed</tt>
+	  method to <em>transform</em> each of the parameters prior to assigning them to the instance variables. 
+	  That is, it passes 
+	  each parameter into <tt>caseFixed</tt>, and then assigns the 
+	  instance variable to <tt>caseFixed</tt>'s return value.</p>
+	  
+	<p audio="name10a_3"> As you might expect from the name, the <tt>caseFixed</tt> method
+	is making sure that the capitalization of each parameter is correct:
+	that they start with a capital letter and contain only lower-case
+         letters thereafter.  We'll look more closely at it in a bit.</p>
+
+   </body>
+</html>

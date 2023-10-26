@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script>
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.min.js">
+        </script>
+        <script type="text/javascript">
+            var WinRef;
+            function openChild(url){
+                WinRef = window.open(url, "WindName", "width=800,height=660,resizable=yes,scrollbars=yes");
+                return false;
+            }
+        </script>
+        <title>Calling a method with some information</title>
+    </head>
+    <body>
+        <p audio="calling2_1">
+            Recall the discussion of <span class="vocab" term="parameter">parameters</span>, pieces of information that let us write more general methods.
+            Here's how a method with a parameter is called in BlueJ.
+        </p>
+        <p class="step" audio="calling2_2">
+            Make an object of the <tt>GamePiece</tt> class, and call it<tt> piece1</tt>. 
+            It should appear in the object bench. Here's a slide show depicting the following steps if you get confused: <a class="slideshowLink" href="slideshow5.html" onClick="return openChild(this.href);">1</a>
+        </p>
+        <p class="step" audio="calling2_3">
+            To make your object visible in the window associated with <tt>gameBoar1</tt>, we need to add the piece to the board.  Adding a piece is a 
+            behavior of a <tt>GameBoard</tt>, rather than a <tt>GamePiece</tt>. 
+            Right-click on the <tt>gameBoar1</tt>
+            object in the object 
+            bench, and select the <tt>addPiece method</tt>. 
+        </p>
+        <p class="step" audio="calling2_4">
+            A dialog box will open up
+            and you will be asked to type three things, because the <tt>addPiece</tt> method requires three parameters.
+			</p>
+		
+            <ol>
+                <li audio="calling2_5">The first is the piece&mdash;an object instantiated from the <tt>GamePiece</tt> class 
+                    &mdash;to add. 
+                    Provide the name of the piece to add in the top text box; your  <tt>GamePiece</tt> object is named <tt>piece1</tt>, so type that in
+                    the first slot.</li>
+                <li audio="calling2_6">The other two parameters indicate the location where this piece 
+                    is to appear on the board. Enter <tt>1</tt> for the row number 
+                    and <tt>1</tt> for the column number.</li>
+            </ol>
+    
+        <p class="step" audio="calling2_7">
+            Click OK, and you have added <tt>piece1</tt> to <tt>gameBoar1</tt>. 
+            Call the <tt>showBoard</tt> method, then look at <tt>gameBoar1</tt>'s window and check that the piece was added. 
+        </p>
+        <p class="question" audio="calling2_8">
+            Was this piece added in the place you expected?
+        </p>
+        <div class="clearFloats">
+        </div>
+    </body>
+</html>

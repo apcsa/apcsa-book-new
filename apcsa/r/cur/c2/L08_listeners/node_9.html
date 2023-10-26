@@ -1,0 +1,48 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Explanation of the framework</title>
+
+</head>
+<body>
+<p>
+Much of the program resembles the graphics code we saw in lesson 7.
+For example, we see
+</p>
+<pre>
+public class <i>class name</i> extends JPanel ...
+</pre>
+<p>
+as before. The first few statements of the constructor should be familiar as well.
+To access the graphics classes, we used <tt>import</tt> statements
+at the start of the program. We add another <tt>import</tt> statement
+to access mouse event handler methods.
+The <tt>paintComponent</tt> is what draws on the screen as in earlier code.
+</p>
+<p>
+A feature of Java that we saw for the first time here is an <span class="vocab">
+interface</span>.
+A Java interface sets up a <i>contract</i> in which the user of the interface
+promises to set up a given set of callback methods.
+We use the <tt>implements</tt> keyword to agree to that contract.
+Here, we agree to a contract about handling mouse clicks,
+promising that we will supply methods <tt>mouseClicked</tt>,
+<tt>mouseReleased</tt>, <tt>mousePressed</tt>, <tt>mouseEntered</tt>,
+and <tt>mouseExited</tt>. (We only actually use <tt>mouseClicked</tt>.)
+</p>
+<p>
+Finally, here are two more details.
+We connect the listener methods to the Java runtime system with the statement
+</p>
+<pre>
+addMouseListener (this);
+</pre>
+<p>
+placed in the constructor.
+When the <tt>mouseClicked</tt> method is called,
+it can call <tt>repaint</tt> to redraw the screen.
+</p>
+
+</body>
+</html>

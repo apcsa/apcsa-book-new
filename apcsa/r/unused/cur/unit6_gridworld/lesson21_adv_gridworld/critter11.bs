@@ -1,0 +1,34 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "5",
+         "prompt": " \n<p audio=\"1\">\nSuppose there are <tt>CrabCritters</tt> at (3,4)\nfacing south and at (2,3) facing north,\nthere is a <tt>Rock</tt> at (4,3),\nand there is a <tt>Flower</tt> at (4,5).\nExplain the effect of calling the <tt>act</tt> method\non the south-facing <tt>CrabCritter</tt>.\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [
+      {
+         "name": "StudentName1",
+         "response": " \n"
+      },
+      {
+         "name": "StudentName2",
+         "response": "\n"
+      }
+   ],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Tracing an act call",
+   "type": "Brainstorm",
+   "useServer": true
+}

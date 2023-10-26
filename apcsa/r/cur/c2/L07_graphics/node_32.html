@@ -1,0 +1,75 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<script type="text/javascript">
+	vocabClass = "top25";
+</script>
+<title>A drawing 'turtle'</title>
+</head>
+<body>
+<p audio="2"><span class="vocab" term="turtle graphics">Turtle
+graphics</span> is an easy way of graphics programming, popularized in the
+programming language "Logo". There are many different kinds of turtle
+graphics, but there are some basic features always present. A
+programmer gives commands to a 'turtle' that then walks around the
+drawing canvas. A command such as <i>walk</i> might move the turtle
+forward. The turtle carries a pen that can be down or up, which, when
+down, will leave a trace of where the turtle has walked. Using turtle
+graphics, some relatively complicated pictures can be drawn with
+relatively simple programs.</p>
+<p audio="2b">In this exercise, you will create a <tt>Turtle</tt>
+class that can be used to do some simple turtle graphics.</p>
+<div audio="3">
+<p>Your <tt>Turtle</tt> class should have four instance variables:
+<ul>
+	<li>the first representing the direction in which the turtle is
+	facing ("up", "right", "left", or "down")</li>
+	<li>the second representing the state of the pen (up or down)</li>
+	<li>and the final two keeping track of the coordinates of the
+	pixel that the turtle is currently on.</li>
+</ul>
+<p>Choose some reasonable starting values for these variables.</p>
+</div>
+<p audio="3b">It should have five methods, all taking no
+arguments:</p>
+<ul>
+	<li audio="4"><tt>lowerPen</tt> and <tt>raisePen</tt>, which
+	lower and raise the pen, respectively;</li>
+	<li audio="5"><tt>takeStep</tt>, which moves the turtle 20
+	pixels in the direction it is headed, drawing a line or not according
+	to whether the pen is down or up.</li>
+	<li audio="6"><tt>turnRight</tt>, which changes the direction of
+	the turtle according to the following table:
+	<table id="tableBlue">
+		<tr>
+			<td><i>before the call to <tt>turnRight</tt></i></td>
+			<td><i>after the call</i></td>
+		</tr>
+		<tr>
+			<td>up</td>
+			<td>right</td>
+		</tr>
+		<tr>
+			<td>right</td>
+			<td>down</td>
+		</tr>
+		<tr>
+			<td>down</td>
+			<td>left</td>
+		</tr>
+		<tr>
+			<td>left</td>
+			<td>up</td>
+		</tr>
+	</table>
+	</li>
+	<li audio="7">A <tt>turnLeft</tt> method, logically opposite to
+	the <tt>turnRight</tt> method above.</li>
+</ul>
+<p audio="10">Test your program by making another class called <tt>Drawing1</tt>.
+In this class, make a <tt>Turtle</tt> object and give it some
+commands.</p>
+</body>
+</html>

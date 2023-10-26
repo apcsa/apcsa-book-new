@@ -1,0 +1,76 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Testing principle 2</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p> 
+An elaboration of principle 1 addresses the need to test various <i>paths</i> VOCAB through the program.
+Here are examples of path counting in a program segment with two top-level statements.
+<ul> 
+<li><p> 
+There is just one path through two assignment statements.
+</p> 
+</li> 
+<li><p> 
+There are two paths through an assignment statement followed by an <tt>if</tt>: 
+the path corresponding to a successful test, 
+and the path corresponding to an unsuccessful test.
+</p> 
+</li> 
+<li><p> 
+Now consider <i>two</i> consecutive <tt>if</tt> statements:
+</p> 
+<pre>    if ( ... ) {
+    }
+    if ( ... ) {
+    }
+</pre> 
+<p> 
+There are two possibilities for each test, success or failure. 
+Thus there are four paths through the two statements, corresponding to the four possibilities
+</p> 
+<ul> 
+<li>success, success</li> 
+<li>success, failure</li> 
+<li>failure, success</li> 
+<li>failure, failure</ll> 
+</ul> 
+</li> 
+</ul> 
+<p> 
+This explains why one test was insufficient to exercise all the code in 
+</p> 
+<pre>    leapDay = 0;
+    if (year % 4 == 0) {
+        leapDay = 1;
+    }
+    if (year % 100 == 0) {
+        leapDay = 0;
+    }
+    if (year % 400 == 0) {
+        leapDay = 1;
+    }
+</pre> 
+<p> 
+From the previous discussion, we see a need for <i>eight</i> tests, 
+corresponding to the eight paths through the three tests. 
+They are listed below.  We form the entire table, then remove the tests that are logically impossible:
+<ul> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 == 0</tt> (which just means that <tt>year % 400 == 0</tt>)</li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 != 0</tt></li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 == 0</tt> (not possible)</li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 != 0</tt></li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 == 0</tt> (not possible)</li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 != 0</tt> (not possible)</li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 == 0</tt> (not possible)</li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 != 0</tt> (equivalently, <tt>year % 4 != 0</tt>)</li> 
+</ul> 
+<p> 
+This leaves the four tests we needed for the earlier version.
+</p> 
+</body>
+</html>

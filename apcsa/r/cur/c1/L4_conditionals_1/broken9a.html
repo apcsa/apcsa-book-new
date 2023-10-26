@@ -1,0 +1,31 @@
+<html>
+<head>
+	      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+<title>An example</title>
+</head>
+<body>
+
+<p audio="broke9a_1">
+Here's an example of how we'll change the <tt>Refillable</tt> constructor
+to check for an invalid argument.
+</p>
+<pre>
+   // Initialize a Refillable object having initialAmount units.
+   public Refillable (int initialAmount) {
+<span class="comment">
+     // if initialAmount &lt; 0, 
+     //        then print a message about a negative argument
+     // otherwise
+      </span>
+         myAmount = initialAmount;
+         myUseUpCallCount = 0;
+         myTotalUse = 0;
+   }
+</pre>
+
+<p audio="broke9a_2">
+In what other methods do we need to add checks?
+</p>
+</body>
+</html>

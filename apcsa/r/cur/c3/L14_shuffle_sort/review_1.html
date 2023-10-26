@@ -1,0 +1,43 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>What we've done (1)</title>
+</head>
+<body>
+<p audio="1">
+In this lesson, we explored algorithms for two kinds of algorithms: shuffling ("un-sorting") and sorting.  Shuffling is of course useful for any kind of card game. Sorting is perhaps the most frequently occurring algorithm in any computer applications.
+</p>
+<p>
+The idea of repeated <i>selection</i>&mdash;find and store the smallest, find and store the next smallest, and so on&mdash;turns out to be useful both for shuffling and for sorting ("selection sort" occurs frequently enough to be identifiable by name).
+</p>
+<table border="1">
+<tr><td>
+<ol>
+	<li audio="2">Initialize <tt>shuffledSoFar</tt> to empty.</li>
+<li>If <tt>myCards</tt> is nonempty, perform the shuffling.</li>
+<ol type="a"><li>Choose a random card from <tt>myCards</tt>.</li>
+	<li audio="3">Remove it from <tt>myCards</tt> 
+	    and add it to the end of <tt>shuffledSoFar</tt>.</li>
+	<li audio="4">Repeat this process until no more elements remain in <tt>myCards</tt>.</li></ol>
+
+<li>
+Finally, replace <tt>myCards</tt> by <tt>shuffledSoFar</tt>.</li>
+</ol>
+</td>
+<td>
+<ol>
+	<li audio="2">Initialize <tt>sortedSoFar</tt> to empty.</li>
+<li>If <tt>myCards</tt> is nonempty, perform the sorting.</li>
+<ol type="a"><li>Choose the lowest-ranking card from <tt>myCards</tt>.</li>
+	<li audio="3">Remove it from <tt>myCards</tt> 
+	    and add it to the end of <tt>sortedSoFar</tt>.</li>
+	<li audio="4">Repeat this process until no more elements remain in <tt>myCards</tt>.</li></ol>
+
+<li>
+Finally, replace <tt>myCards</tt> by <tt>sortedSoFar</tt>.</li>
+</ol>
+</td>
+</td></tr></table>
+</body>
+</html>

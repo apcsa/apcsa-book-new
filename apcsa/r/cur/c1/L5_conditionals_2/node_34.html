@@ -1,0 +1,30 @@
+<html>
+<head>
+<script>
+	vocabClass = "top0";
+	helpClass = "top0";
+</script>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+
+<title>What we've done</title>
+</head>
+<body>
+<p>
+This lesson continues our focus on conditional execution.
+Activities include working with <i>boolean expressions</i> formed by the <tt>&amp;&amp;</tt> ("and"), <tt>||</tt> ("or"), and <tt>!</tt> ("not") operators.
+These operators let us translate English uses of "and" and "or" directly (more or less) into Java, potentially making our programs easier to understand.  They may also, however, complicate the process of understanding what our programs are doing.
+</p>
+<p>
+For instance, we may be interested in how many comparisons result from evaluating a boolean expression.
+The <tt>&amp;&amp;</tt> and <tt>||</tt> operators are both <i>short-circuitable</i>. That is, they only evaluate their second operand if necessary. If the first operand to <tt>||</tt> is <tt>true</tt>, the whole expression must be <tt>true</tt>; if the first operand to <tt>&amp;&amp;</tt> is <tt>false</tt>, the whole expression must be <tt>false</tt>.
+</p>
+<p>
+A technique for managing the complexity of evaluating a boolean expression is to give it a name, isolating the details of evaluation in a boolean method. We saw this kind of abstraction in several contexts: checking for legality of a percentage and a checkerboard position, and determining whether given arguments are in increasing order or have the same sign.
+</p>
+<p>Revisiting the <tt>Name</tt> class, we encountered a feature of the <tt>==</tt> operator. When applied to values of primitive types (<tt>int</tt>, <tt>double</tt>, or <tt>boolean</tt>), it compares those values. When applied to references&mdash;boxes that contain arrows&mdash;it compares the <i>arrows</i> rather than what they point to.  For example, comparing two <tt>String</tt> references with <tt>==</tt> checks if the two arrows <i>point to the same object</i> and not whether the contents of the strings are the same.
+The <tt>String</tt> class provides a method named <tt>equals</tt> to handle the latter case.
+</p>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+<head>
+	      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+<title>The entire Refillable class</title>
+</head>
+<body>
+
+<p audio="broke9b_1">
+Here is the entire <tt>Refillable</tt> class,
+with error checks added. Were you correct?
+</p>
+<pre class="width80">
+public class Refillable {
+
+   private int myAmount;
+   private int myUseUpCallCount;
+   private int myTotalUse;
+   
+   // Initialize a Refillable object having initialAmount units.
+   public Refillable (int initialAmount) {
+      <span class="comment">
+      if initialAmount &lt; 0, then print a message about a negative argument
+      otherwise
+      </span>
+         myAmount = initialAmount;
+         myUseUpCallCount = 0;
+         myTotalUse = 0;
+   }
+   
+   // Use amount units.
+   public void useUp (int amount) {
+      <span class="comment">
+      if amount &lt; 0, then print a message about a negative argument.
+      Otherwise if amount &gt; myAmount, then print a message that 
+	  there's not enough to useUp.
+	  Otherwise do this:
+      </span>
+         myAmount = myAmount - amount;
+         myUseUpCallCount = myUseUpCallCount + 1;
+         myTotalUse = myTotalUse + amount;
+   }
+   
+   // Add amount to the current amount.
+   public void refill (int amount) {
+      <span class="comment">
+      if amount &lt; 0, then print a message about a negative argument
+      otherwise
+      </span>
+         myAmount = myAmount + amount;
+   }
+   
+   // Return the current amount.
+   public int currentAmount ( ) {
+      return myAmount;
+   }
+
+   public int averageUse ( ) {
+      <span class="comment">
+      if myUseUpCallCount is 0, then print a message about this fact 
+	  and return 0 otherwise
+      </span>
+         return myTotalUse / myUseUpCallCount;
+   }
+}
+</pre>
+</body>
+</html>

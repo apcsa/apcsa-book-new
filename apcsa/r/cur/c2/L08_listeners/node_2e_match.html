@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What happens if...</title>
+    <script src="/apcsa/llab/loader.js"></script>
+</head>
+<body>
+<div class="matchsequence-data">
+    <script class="llab_msdata" type="application/json">
+        {
+            "assessmentItem":{
+                "adaptive":false,
+                "identifier":"MatchSequence",
+                "interaction":{
+                    "choices":[{
+                        "identifier":"gapText_0",
+                        "matchMax":"1",
+                        "value":"           Remove <br> <tt>import java.awt.event.*</tt> from           the top of the file.         "
+                    },
+                        {
+                            "identifier":"gapText_1",
+                            "matchMax":"1",
+                            "value":"Remove <br> <tt>extends JPanel</tt> from           the class header.       "
+                        },
+                        {
+                            "identifier":"gapText_2",
+                            "matchMax":"1",
+                            "value":"           Remove  <tt>implements MouseListener</tt> from           the class header.     "
+                        },
+                        {
+                            "identifier":"gapText_3",
+                            "matchMax":"1",
+                            "value":"           Remove <br> <tt>addMouseListener (this)</tt>           from the constructor.         "
+                        },
+                        {
+                            "identifier":"gapText_4",
+                            "matchMax":"1",
+                            "value":"           Remove the entire <tt>mousePressed</tt>           method.         "
+                        }
+                    ],
+                    "fields":[{
+                        "identifier":"gapMultiple_0",
+                        "name":"\u000a          Can't compile (causes a compile error)\u000a        ",
+                        "numberOfEntries":"0",
+                        "ordinal":"false"
+                    },
+                        {
+                            "identifier":"gapMultiple_1",
+                            "name":"           Runs incorrectly.     ",
+                            "numberOfEntries":"0",
+                            "ordinal":"false"
+                        },
+                        {
+                            "identifier":"gapMultiple_2",
+                            "name":"\u000a          Still works correctly (no change)\u000a        ",
+                            "numberOfEntries":"0",
+                            "ordinal":"false"
+                        }
+                    ],
+                    "hasInlineFeedback":true,
+                    "ordered":false,
+                    "prompt":"\u000a          <p audio=\"1\">\u000a          Consider what will happen to the <tt>SimpleClicker</tt> class if you make each\u000a          of the changes below (and only that change).  Drag the change into the box that correctly\u000a          describes what will occur.  (You should also test these changes in BlueJ, either before or after\u000a          answering this question, to familiarize yourself with relevant error messages and program behavior.)\u000a          </p>\u000a        ",
+                    "responseIdentifier":"MatchSequence",
+                    "shuffle":false
+                },
+                "responseDeclaration":{
+                    "correctResponses":[{
+                        "choiceIdentifier":"gapText_0",
+                        "feedback":"\u000a          Correct: it can't find the <tt>MouseListener</tt> class, because it doesn't have access to the\u000a          appropriate library.\u000a        ",
+                        "fieldIdentifier":"gapMultiple_0",
+                        "isCorrect":true,
+                        "isDefault":false,
+                        "order":"0"
+                    },
+                        {
+                            "choiceIdentifier":"gapText_1",
+                            "feedback":"\u000a          Right: a lot of methods require that <tt>SimpleClicker</tt> act like a <tt>JPanel</tt>.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_0",
+                            "isCorrect":true,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_2",
+                            "feedback":"\u000a          Right: it would work except for that <tt>addMouseListener(this)</tt> line, which requires that\u000a          <tt>this</tt> implements a <tt>MouseListener</tt>.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_0",
+                            "isCorrect":true,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_3",
+                            "feedback":"\u000a          No, the class compiles.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_0",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_4",
+                            "feedback":"\u000a          Right: without the <tt>mousePressed</tt> method, the class isn't fullfilling the <tt>MouseListener</tt>\u000a          interface contract.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_0",
+                            "isCorrect":true,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_0",
+                            "feedback":"\u000a          Nope.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_1",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_1",
+                            "feedback":"\u000a          Nope.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_1",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_2",
+                            "feedback":"\u000a          No.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_1",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_3",
+                            "feedback":"\u000a          Right.  The class runs, but it doesn't do anything when you click now!\u000a        ",
+                            "fieldIdentifier":"gapMultiple_1",
+                            "isCorrect":true,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_4",
+                            "feedback":"\u000a          Wrong.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_1",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_0",
+                            "feedback":"\u000a          Nope.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_2",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_1",
+                            "feedback":"\u000a          Nope.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_2",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_2",
+                            "feedback":"\u000a          No.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_2",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_3",
+                            "feedback":"\u000a          No, something isn't working correctly.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_2",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        },
+                        {
+                            "choiceIdentifier":"gapText_4",
+                            "feedback":"\u000a          Wrong.\u000a        ",
+                            "fieldIdentifier":"gapMultiple_2",
+                            "isCorrect":false,
+                            "isDefault":false,
+                            "order":"0"
+                        }
+                    ],
+                    "identifier":"MatchSequence"
+                },
+                "timeDependent":false
+            },
+            "type":"MatchSequence"
+        }
+    </script>
+</div>
+</body>
+</html>

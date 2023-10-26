@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Places where we might use inheritance</title>
+   </head>
+   <body>
+   <br />
+   	<div class="imageRight">
+   		<img src="/apcsa/r/static/art/graphics/Monty_secondChoice.jpg" alt="Switch or not?" />
+   	</div>
+<p audio="2">
+In the Monty Hall simulation, we compared the strategy of always switching doors
+with the strategy of never switching.</p>
+
+<p audio="3">A version of that program using inheritance could use a <tt>Player</tt> class
+with a <tt>chooseDoor</tt> method,
+along with subclasses <tt>SwitchingPlayer</tt> and <tt>StayingPlayer</tt> that override
+the <tt>chooseDoor</tt> method to implement the switching and staying strategies.
+</p>
+<div class="floatClear"></div>
+<p class="quoteOrange" audio="4">
+Some board games have pieces that share some attributes but move differently.
+For example, an uncrowned checker piece moves differently from a king.
+The features common to all pieces could be included in a superclass that would be
+inherited by a class representing uncrowned pieces and another class representing kings.
+</p>
+   </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+   <head>
+   	<script>
+            vocabClass = "top150";
+            helpClass = "top0";
+        </script>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The inner structure of the <tt>CandyJar</tt> class</title>
+   </head>
+   <body>
+      <p audio="structure2_1">The "guts" of <tt>CandyJar</tt> are its state (its 
+      instance variables) and
+         its behavior (its methods).</p>
+      <pre class="width80">public class CandyJar {
+
+   private int myCandyCount; <span class="new">//the instance variable</span>
+   
+   
+   public CandyJar (int startingCount) {  <span class="new">//the constructor</span>
+      <b><i>... the guts of the constructor ...</i></b> 
+   }
+   
+   public void eat (int amount) { <span class="new">//the eat method</span>
+      <b><i>... the guts of the eat method ...</i></b> 
+   }
+   
+   public void refill (int amount) {  <span class="new">//the refill method</span>
+      <b><i>... the guts of the refill method ...</i></b> 
+   }
+   
+   public int candyCount ( ) { <span class="new">//the candyCount method</span>
+      return myCandyCount;
+   }
+}</pre>
+
+<br>
+<div class="talkBubble" char="raster4" color="orange" align="left">
+   <p audio="structure2_2.m1">
+      In the Java snippets above, you can see "notes" written in English.
+      These are <span class="vocab">comments</span>.  Programmers use
+      these to remind themselves about what the program is doing.  Comments
+      start with <tt>//</tt>, and continue to the end of the line.
+   </p>
+</div>
+   </body>
+</html>

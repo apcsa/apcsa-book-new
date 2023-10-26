@@ -1,0 +1,37 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What will happen?</title>
+   </head>
+   <body>
+<p audio="2">
+Suppose <tt>charCount</tt> were recoded as follows, with the argument
+to <tt>substring</tt> changed from 1 to 2.
+</p>
+<table>
+	<tr>
+		<td>
+			<pre>
+public static int charCount (String s) {
+   if (s.equals("")) {
+      return 0;
+   } else {
+      return 1 + charCount (s.substring(2));
+   }
+}
+</pre>
+		</td>
+	</tr>
+</table>
+
+<p audio="3">
+What is returned by the call <tt>charCount ("abc")</tt>?
+</p>
+<p audio="4">
+What is returned by the call <tt>charCount ("abcd")</tt>?
+</p>
+
+
+   </body>
+</html>

@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Extending <tt>Room</tt> to end the game</title>
+   </head>
+   <body>
+      <br>
+      <p audio="2" class="quoteOrange">
+         Text adventure games need goals, and ways for the 
+         player to reach those goals (and end the game). In this step, 
+         you'll make a new subclass of <tt>Room</tt> that ends the 
+         game when you enter it.
+      </p>
+      <br>
+      <p audio="3">First, how does a method end the game?  Examine the
+      <tt>play</tt> method in the <tt>World</tt> class.  The loop stops
+      when the <tt>isPlaying</tt> boolean instance variable is set to false. 
+      That is a private instance variable (as it should be), so other objects
+      won't be able to change it.  Rather, the <tt>World</tt> method <tt>gameOver</tt>
+      lets any object turn the game off.  
+      </p>
+      <br>
+      <div class="talkBubble" char="float5" align="left" color="red">
+         <p audio="4">So, the task is to create a new class that
+         extends <tt>Room</tt> and calls <tt>gameOver</tt> when 
+         it is entered?</p>
+      </div>
+      <br>
+      <p audio="5">Precisely!  Do it now, and add a room (a bathroom?)
+      where the player can find the inner peace she seeks.  (The next page
+      has a few tips for you).
+      
+   </body>
+</html>

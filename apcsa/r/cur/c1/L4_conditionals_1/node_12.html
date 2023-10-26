@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A common bug</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_12.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt"><p>
+Consider the following code.
+</p>
+<pre>
+ void useUp (int amount) {
+ if (myAmount &lt; amount)
+ System.out.println ("not enough left");
+ amount = 0;
+ myAmount = myAmount - amount;
+ }
+</pre>
+<p>
+Suppose <tt>myAmount</tt> contains 40. What does it contain after the call <tt>useUp(10)</tt>? 
+    </div>
+
+    
+    <div class="choice" identifier="7Etf7wqCz5">
+        <div class="text">30
+        </div>
+        <div class="feedback">No. Think about when the assignment to <tt>amount</tt> happens.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="ygvqU7Bttw">
+        <div class="text">40
+        </div>
+        <div class="feedback">Right!
+        </div>
+    </div>
+    
+    <div class="choice" identifier="SBTI2WxdEv">
+        <div class="text">0
+        </div>
+        <div class="feedback">No. Trace through the code carefully.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="6WNtTh5GgA">
+        <div class="text">10
+        </div>
+        <div class="feedback">No. Trace through the code carefully.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="ygvqU7Bttw"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

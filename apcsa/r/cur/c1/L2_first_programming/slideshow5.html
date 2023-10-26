@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.js">
+        </script>
+        <title>Calling a method with some information SLIDESHOW</title>
+		
+<style type="text/css">
+#nav {margin: 20px 0 10px 0}
+#nav a {margin: 0 5px; padding: 3px 5px; border: 1px solid #ccc; background: #FFE6C6; text-decoration: none }
+#nav a.activeSlide { background: #FF9D1E }
+#nav a:hover {background: #FFFF00; }
+#nav a:focus { outline: none; }
+#output {text-align:center;margin:0 auto;font-weight:bold;margin:20px 0 0 0;}
+</style>
+
+<script type="text/javascript">
+    $.fn.cycle.defaults.timeout = 6000;
+    $(function(){
+        $('#s5').before('<div id="nav">').cycle({
+            fx: 'scrollHorz',
+            speed: 'fast',
+            timeout: 0,
+			after:   onAfter,
+            pager: '#nav'
+        });
+    });
+   
+    function onAfter(){
+        $('#output').html(this.alt);
+    }
+</script>
+
+    </head>
+ <body>
+        <center>
+      <div id="s5" style="position: relative;">
+         <img src="/apcsa/r/static/art/introToBlueJ/param-1.png" width="512" height="412" alt="You have already created an instance of GameBoard" />
+         <img src="/apcsa/r/static/art/introToBlueJ/param-2.png" width="512" height="412" alt="Right-click on the GamePiece class"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-3.png" width="512" height="412" alt="Create a new instance of GamePiece"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-4.png" width="512" height="412" alt="Name the new instance of GamePiece"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-5.png" width="512" height="412" alt="The new instance of GamePiece shows up at the bottom"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-6.png" width="512" height="412" alt="Right-click on your instance of GameBoard"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-7.png" width="512" height="412" alt="Choose a method to run that requires arguments"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-8.png" width="512" height="412" alt="A window will open for you to enter the arguments"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-9.png" width="512" height="412" alt="Use the drop-down to choose values or just type values in"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-10.png" width="512" height="412" alt="Click OK"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-1.png" width="512" height="412" alt="The method runs and performs its calculations"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-12.png" width="512" height="412" alt="Call the showBoard() method (refer to previous slideshow) to display the graphical GameBoard"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/param-13.png" width="512" height="412" alt="A larger view of the graphical GameBoard"/>
+      </div>
+        </center>
+		
+<div id="output">Status area</div>
+
+<div id="buttonClose">
+    <a href="javascript:window.close();">close</a>
+</div>
+
+</body>
+</html>

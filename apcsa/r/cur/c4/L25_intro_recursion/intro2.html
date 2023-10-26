@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top225";
+	  </script>
+      <title>An example</title>
+   </head>
+   <body>
+<p audio="2">
+Here's an example of a recursive method.
+</p>
+<pre class="width70">
+// Find the number of characters in a nonnull 
+// (though possibly empty) string.
+public static int charCount (String s) {
+   if (s.equals("")) {
+      return 0;
+   } else {
+      return 1 + charCount (s.substring(1));
+   }
+}
+</pre>
+<p audio="3">
+Observe the two cases in this method.
+One, the <span class="vocab" term="base case">base case</span>, doesn't include a call
+to <tt>charCount</tt>.
+The other, the <span class="vocab" term="recursive case">recursive case</span>, does.
+The call to <tt>charCount</tt>, however, has an argument that has one fewer character
+than the argument passed originally to <tt>charCount</tt>.
+This helps ensure that execution will eventually reach the base case.
+</p>
+   </body>
+</html>

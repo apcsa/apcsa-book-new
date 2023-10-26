@@ -1,0 +1,56 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript">
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <title>Indenting styles</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+
+</head>
+<body>
+<p>
+There are several kinds of editing styles for conditional statements, shown below.  The one we use appears on the left.  Your instructor may prefer one of the other styles.  Above all, you should be consistent.
+</p>
+<table>
+<tr>
+<td valign="top">
+<pre>
+if (myAmount &lt; amount) {
+   System.out.println ( ... );
+} else {
+   myAmount = myAmount - amount;
+}
+</pre>
+</td>
+<td valign="top">
+<pre>
+if (myAmount &lt; amount) 
+{
+   System.out.println ( ... );
+}
+else 
+{
+   myAmount = myAmount - amount;
+}
+</pre>
+</td>
+<td valign="top">
+<pre>
+if (myAmount &lt; amount) 
+   {
+   System.out.println ( ... );
+   } 
+else 
+   {
+   myAmount = myAmount - amount;
+   }
+</pre>
+</td>
+</tr>
+</table>
+</body>
+</html>

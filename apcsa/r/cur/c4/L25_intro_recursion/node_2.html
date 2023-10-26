@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Self-check(3)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Self-check again</div>
+
+    <div class="prompt">
+    <p audio="2">
+
+Suppose <tt>charCount</tt> were recoded as follows, with the <tt>return 0</tt>
+
+statement changed to <tt>return 2</tt>.
+
+</p>
+
+<table>
+
+ <tr>
+
+ <td>
+
+ <pre>
+public static int charCount (String s) {
+ if (s.equals("")) {
+ return 2;
+ } else {
+ return 1 + charCount (s.substring(1));
+ }
+}
+</pre> 
+
+ </td>
+
+ </tr>
+
+</table>
+
+<br />
+
+<p audio="3">
+
+What is returned by the call <tt>charCount ("abc")</tt>?
+
+</p>
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+    </div>
+
+</div>
+    </body>
+</html>

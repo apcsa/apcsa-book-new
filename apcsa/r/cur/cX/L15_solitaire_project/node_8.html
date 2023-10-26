@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_8.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">Suppose <tt>k1</tt> is the position of a card with rank 9,
+and <tt>k2</tt> is the position of a card with rank 2, with <tt>k1 &lt; k2</tt>.
+Which of the following successfully removes the two cards from <tt>myCards</tt>?</p>
+
+    </div>
+
+    
+    <div class="choice" identifier="FIB7enohDw">
+        <div class="text"><pre class="width40">myCards.remove (k1); <br>myCards.remove (k2); </pre>
+        </div>
+        <div class="feedback">When the card at position k1 is removed, all subsequent cards move down one position.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="GKoiZAWoB6">
+        <div class="text"><pre class="width40">myCards.remove (k2);<br>myCards.remove (k1); </pre>
+        </div>
+        <div class="feedback">Yes. This removes the element that is later in the list first allowing us to then remove element 2 and then all subsequent cards move down one position.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="rd8NMCffmN">
+        <div class="text">Either works correctly.
+        </div>
+        <div class="feedback">When the card at position k1 is removed, all subsequent cards move down one position.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="GKoiZAWoB6"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

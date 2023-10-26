@@ -1,0 +1,51 @@
+
+
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>A 'perfect' shuffle</title>
+</head>
+<body>
+<p audio="1">
+Write a <tt>void</tt> method named <tt>perfectShuffle</tt> that simulates the way
+many people shuffle a deck of cards.
+</p>
+<ul>
+	<li audio="2">First, the cards are split into two piles, with the same number of cards in each.</li>
+	<li audio="3">Then, the two piles are interleaved as shown in the diagram below.</li>
+</ul><br/>
+<div class="imageCenter">
+<img src="/apcsa/r/static/art/graphics/perfect_shuffle.png">
+</div>
+<p audio="4">
+This process is called a "perfect shuffle". It is typically repeated several times.
+(We will shortly see that a perfect shuffle is really quite imperfect.)
+</p>
+<p audio="5">
+In more detail, your method should perform as follows.
+Suppose that there are <tt>k</tt> cards in <tt>myCards</tt>.
+Your method should create two <tt>ArrayLists</tt>, one named <tt>topCards</tt>, consisting of
+elements <tt>0</tt> through <tt>k/2&ndash;1</tt> of <tt>myCards</tt>, 
+and the other named <tt>bottomCards</tt>,
+containing elements <tt>k/2</tt> through <tt>k&ndash;1</tt> of <tt>myCards</tt>.
+It should then interleave <tt>topCards</tt> and <tt>bottomCards</tt> 
+into <tt>myCards</tt> as follows:
+</p>
+<ol>
+	<li audio="6">element 0 from <tt>topCards</tt></li>
+	<li audio="7">element 0 from <tt>bottomCards</tt></li>
+	<li audio="8">element 1 from <tt>topCards</tt></li>
+	<li audio="9">element 1 from <tt>bottomCards</tt></li>
+	<li audio="10">etc.</li>
+</ol>
+
+<div class="openbluejproj" project="lesson12\Card5">
+         <p audio="11">Open the current project in BlueJ 
+            (<b>lesson12\Card5</b>).</p>
+        </div>
+		
+</body>
+</html>
+
+

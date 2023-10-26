@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tracing some code</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="matchsequence-data">
+    <script class="llab_msdata" type="application/json">
+        {
+   "assessmentItem":{
+      "adaptive":false,
+      "identifier":"MatchSequence",
+      "interaction":{
+         "choices":[{
+               "matchMax":"1",
+               "value":"Spongebob Squarepants",
+               "identifier":"choice_0"
+            },
+            {
+               "matchMax":"1",
+               "value":"Dorothy Gale",
+               "identifier":"choice_1"
+            },
+            {
+               "matchMax":"1",
+               "value":"Cowardly Lion",
+               "identifier":"choice_2"
+            },
+            {
+               "matchMax":"1",
+               "value":"Mickey Mouse",
+               "identifier":"choice_3"
+            },
+            {
+               "matchMax":"1",
+               "value":"Tin Man",
+               "identifier":"choice_4"
+            }
+         ],
+         "fields":[{
+               "identifier":"field_0",
+               "numberOfEntries":"0",
+               "ordinal":false,
+               "name":"elements of friends"
+            },
+            {
+               "identifier":"field_1",
+               "numberOfEntries":"0",
+               "ordinal":false,
+               "name":"not in friends"
+            }
+         ],
+         "hasInlineFeedback":true,
+         "ordered":true,
+         "prompt":"<p>\u000aWhat is the contents of <tt>friends</tt> after executing the following program segment?\u000a</p>\u000a<pre>\u000aArrayList &lt;Name&gt; friends = new ArrayList &lt;Name&gt; ( );\u000afriends.add (new Name (\"Dorothy\", \"Gale\"));\u000afriends.add (new Name (\"Tin\", \"Man\"));\u000afriends.add (new Name (\"Cowardly\", \"Lion\"));\u000afriends.remove (1);\u000afriends.add (2, new Name (\"Mickey\", \"Mouse\"));\u000afriends.add (0, new Name (\"Spongebob\", \"Squarepants\"));\u000a</pre>",
+         "responseIdentifier":"MatchSequence",
+         "shuffle":true
+      },
+      "responseDeclaration":{
+         "correctResponses":[{
+               "choiceIdentifier":"choice_0",
+               "fieldIdentifier":"field_0",
+               "feedback":"Correct.",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"choice_1",
+               "fieldIdentifier":"field_0",
+               "feedback":"Correct.",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"1"
+            },
+            {
+               "choiceIdentifier":"choice_2",
+               "fieldIdentifier":"field_0",
+               "feedback":"Correct.",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"2"
+            },
+            {
+               "choiceIdentifier":"choice_3",
+               "fieldIdentifier":"field_0",
+               "feedback":"Correct.",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"3"
+            },
+            {
+               "choiceIdentifier":"choice_4",
+               "fieldIdentifier":"field_1",
+               "feedback":"Correct.",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            }
+         ],
+         "identifier":"MatchSequence"
+      },
+      "timeDependent":false
+   },
+   "type":"MatchSequence"
+}
+    </script>
+</div>
+    </body>
+</html>

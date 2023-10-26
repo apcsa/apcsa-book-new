@@ -1,0 +1,67 @@
+title: Lesson 5: More Work with Conditionals
+
+{ 
+//h2: Activities
+
+
+heading: Boolean Expressions
+    resource: Speaking versus programming [/apcsa/r/cur/c1/L5_conditionals_2/cond34-booleans.html]
+    resource: Combining Boolean Expressions [/apcsa/r/cur/c1/L5_conditionals_2/cond34a-booleans.html]
+    quiz: Working with boolean operations (1) [/apcsa/r/cur/c1/L5_conditionals_2/node_19.html]
+    quiz: Working with boolean operations (2) [/apcsa/r/cur/c1/L5_conditionals_2/node_20.html]
+    codeit: Working with boolean operations (3) [/apcsa/r/cur/c1/L5_conditionals_2/node_21.html]
+    codeit: Working with boolean operations (4) [/apcsa/r/cur/c1/L5_conditionals_2/node_22.html]
+    brainstorm: Comparing Temperature Processing [/apcsa/r/cur/c1/L5_conditionals_2/tempprocessing.bs.html]
+    brainstorm: Comparing Ways to Categorize a Day [/apcsa/r/cur/c1/L5_conditionals_2/cond36.bs.html]
+    resource: Truth tables [/apcsa/r/cur/c1/L5_conditionals_2/node_23.html]
+    brainstorm: Analyzing temperature classification code [/apcsa/r/cur/c1/L5_conditionals_2/node_0.html]
+    codeit: Classifying by Age [/apcsa/r/cur/c1/L5_conditionals_2/cond38-selftest.html]
+    resource: Boolean Alternatives [/apcsa/r/cur/c1/L5_conditionals_2/cond40-boolalternatives.html]
+    resource: Boolean Expressions and short-circuiting [/apcsa/r/cur/c1/L5_conditionals_2/cond34b-booleans.html]
+    resource: Code to analyze [/apcsa/r/cur/c1/L5_conditionals_2/node_24.html]
+    quiz: Comparison counting (1) [/apcsa/r/cur/c1/L5_conditionals_2/node_30.html]
+    brainstorm: Comparison counting (2) [/apcsa/r/cur/c1/L5_conditionals_2/node_31.html]
+    brainstorm: Comparison counting (3) [/apcsa/r/cur/c1/L5_conditionals_2/node_32.html]
+    codeit: Comparison counting (4) [/apcsa/r/cur/c1/L5_conditionals_2/node_33.html]
+    resource: The Not Operator [/apcsa/r/cur/c1/L5_conditionals_2/cond43-notoperator.html]
+    resource: Relation of &amp;quot;and&amp;quot;, &amp;quot;or&amp;quot;, and &amp;quot;not&amp;quot; [/apcsa/r/cur/c1/L5_conditionals_2/node_36.html]
+
+heading: Boolean variables and methods
+    resource: Boolean Variables and Methods [/apcsa/r/cur/c1/L5_conditionals_2/cond47-booleanvars.html]
+    resource: Boolean method example : Gradebook [/apcsa/r/cur/c1/L5_conditionals_2/node_5.html]
+    resource: Boolean method example : CheckerBoard [/apcsa/r/cur/c1/L5_conditionals_2/node_5a.html]
+    resource: Abstraction with boolean methods [/apcsa/r/cur/c1/L5_conditionals_2/node_6.html]
+    codeit: Checking for increasing arguments [/apcsa/r/cur/c1/L5_conditionals_2/node_26.html]
+    codeit: Checking for same sign [/apcsa/r/cur/c1/L5_conditionals_2/node_27.html]
+    brainstorm: A mystery method [/apcsa/r/cur/c1/L5_conditionals_2/node_28.html]
+    codeit: Removing uses of true and false [/apcsa/r/cur/c1/L5_conditionals_2/node_29.html]
+
+//heading: Testing Boolean Expressions
+    resource: Testing Booleans [/apcsa/r/cur/c1/L5_conditionals_2/cond44-testingbools.html]
+    codeit: More on Boundary Cases [/apcsa/r/cur/c1/L5_conditionals_2/cond45-moreonboundary.html]
+
+heading: Comparing using ==
+    resource: Modifying the Name class [/apcsa/r/cur/c1/L5_conditionals_2/cond50-comparisonintro.html]
+    resource: Types of Comparisons [/apcsa/r/cur/c1/L5_conditionals_2/cond51-typesofcomparing.html]
+    brainstorm: String comparison (1) [/apcsa/r/cur/c1/L5_conditionals_2/node_1.html]
+    brainstorm: String comparison (2) [/apcsa/r/cur/c1/L5_conditionals_2/node_3.html]
+    codeit: Comparison Experiments [/apcsa/r/cur/c1/L5_conditionals_2/cond54-compexperiment.html]
+    resource: The Empty String [/apcsa/r/cur/c1/L5_conditionals_2/cond55-emptystring.html]
+
+heading: Revisiting the Name Class
+    resource: Revisiting the Name class [/apcsa/r/cur/c1/L5_conditionals_2/cond57-moreonName.html]
+    resource: Adding Name Constructors [/apcsa/r/cur/c1/L5_conditionals_2/cond58-nameconstructors.html]
+    resource: The fullName method [/apcsa/r/cur/c1/L5_conditionals_2/cond59-newnamemethods.html]
+    brainstorm: fullName analysis [/apcsa/r/cur/c1/L5_conditionals_2/node_4.html]
+    homework: Programming a Method [/apcsa/r/cur/c1/L5_conditionals_2/cond61-programmingamethod.html]
+
+heading: Playing cards
+    resource: A Card class [/apcsa/r/cur/c1/L5_conditionals_2/cond48-cardclassintro.html]
+    codeit: Code for the Card Class [/apcsa/r/cur/c1/L5_conditionals_2/node_7.html]
+    resource: What is 'this'? [/apcsa/r/cur/c1/L5_conditionals_2/node_8.html]
+    brainstorm: Testing a Card Class [/apcsa/r/cur/c1/L5_conditionals_2/cond49.bs.html]
+    codeit: Adding an outranks method [/apcsa/r/cur/c1/L5_conditionals_2/node_9.html]
+
+heading: Review
+    summary: What we've done [/apcsa/r/cur/c1/L5_conditionals_2/node_34.html]
+    homework: Exercises [/apcsa/r/cur/c1/L5_conditionals_2/node_35.html]

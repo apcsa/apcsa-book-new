@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Testing <tt>&amp;&amp;</tt> and <tt>||</tt> expressions</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+    </head>
+    <body>
+        <p audio="cond44_1">
+            With either an <tt>&amp;&amp;</tt>
+            or an <tt>||</tt>, we again should test all possibilities:
+        </p>
+        <pre class="width30">
+true and/or true
+true and/or false
+false and/or true
+false and/or false
+</pre>
+        <p audio="cond44_2">
+            Consider the <tt>isLegalPercentage()</tt> method from the Gradebook example:
+        </p>
+        <pre class="width30">if (x &gt;= 0 &amp;&amp; x &lt;= 100) ...
+</pre>
+        <p audio="cond44_3">
+            The cases to test are:
+        </p>
+        <ol class="width40">
+            <li>x &gt;= 0 is true, x &lt;= 100 is true</li>
+            <li>x &gt;= 0 is true, x &lt;= 100 is false</li>
+            <li>x &gt;= 0 is false, x &lt;= 100 is true</li>
+            <li>x &gt;= 0 is false, x &lt;= 100 is false</li>
+        </ol>
+		
+        <p class="quoteOrange" audio="cond44_4">
+           Each case above respresents a set of numbers, defined as follows:</br>
+           &#149; In the first case, values between 0 and 100, inclusive.</br>
+           &#149; In the second case, all values greater than 100.</br>
+           &#149; In the third case, all negative numbers.</br>
+           &#149; The fourth case contains no values at all and thus doesn't need to be tested.
+        </p>
+    </body>
+</html>

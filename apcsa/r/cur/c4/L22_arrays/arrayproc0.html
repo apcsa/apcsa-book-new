@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>Common array-processing patterns</title>
+</head>
+<body>
+<p audio="1">Patterns for array processing resemble those for <tt>ArrayList</tt> processing.</p>
+<p audio="2">Processing every element of a <tt>values</tt> array</p>
+<pre>
+for (int k=0; k&lt;values.length; k++) {
+   <i>process</i> values[k];
+}
+</pre>
+<p audio="3">Finding the position of an "interesting" element of values</p>
+<pre>
+int k;
+for (k=0; k&lt;values.length; k++) {
+   if (values[k] <i>is interesting</i>) {
+      break;
+   }
+}
+// Either k == values.length, in which case none of the elements of values
+// are interesting, or k == the position of the first interesting element.
+</pre>
+
+</body>
+</html>

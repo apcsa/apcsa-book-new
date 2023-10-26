@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code analysis</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Code analysis</div>
+
+    <div class="prompt">
+     
+<p audio="1">
+Given below are two versions of <tt>pathCount</tt>,
+one that you've seen already and a version that's coded slightly differently.
+</p>
+
+<table>
+<tr>
+<td>
+<pre>
+public int pathCount (int n, int k) {
+ if (n==0 || k==0) {
+ return 1;
+ } else if (n&lt;0 || k&lt;0) {
+ return 0;
+ } else {
+ return pathCount(n-1,k) 
+ + pathCount(n,k-1);
+ }
+}
+</pre>
+
+</td>
+<td>
+<pre>
+public int pathCount (int n, int k) {
+ if (n==0 &amp;&amp; k==0) {
+ return 1;
+ } else if (n<0 || k<0) {
+ return 0;
+ } else {
+ return pathCount(n-1,k) 
+ + pathCount(n,k-1);
+ }
+}
+</pre>
+</td>
+</tr>
+</table>
+
+<p audio="2">
+Decide which of the following is true,
+and describe how you determined your answer.
+</p>
+
+<ul>
+<li audio="3">The two versions of <tt>pathCount </tt> are equivalent.</li>
+<li audio="4">The second version of <tt>pathCount </tt> returns
+an answer for all integer inputs, but in some cases that answer differs
+from what the first version of <tt>pathCount </tt> returns.</li>
+<li audio="5">The second version of <tt>pathCount </tt>
+crashes on some arguments between <tt>-100</tt> and <tt>+100</tt>.</li>
+</ul>
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="StudentName1"> 
+
+        </div>
+        
+        <div name="StudentName2">
+
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

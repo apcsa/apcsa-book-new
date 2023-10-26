@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script>
+            vocabClass = "top0";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Object interaction</title>
+    </head>
+    <body>
+      
+        <p audio="objinteract1">
+            One way for objects to interact with one another is by calling each other's methods. 
+            We will illustrate this idea using the game board and its game pieces.  
+            The idea will be revisited in more detail in a future lesson. 
+        </p>
+		  <img src="/apcsa/r/static/art/scenes/board_sim.png" width="220" class="imageLeft">
+        <p audio="objinteract2">
+            Clear the object bench of all objects.  Right-click on each object (the board and all the pieces) and choose <i>remove</i>.<br/><br/>
+            Now create a new board and three new game pieces. 
+            You should see four objects on the object bench <i>(see below)</i>. 
+            Right-click the board object and call the method <tt>moveEveryPiece()</tt>. 
+            Observe what happened to the configuration.  
+            The method <tt>moveEveryPiece()</tt>, as its name implies, moves every piece on the board to a new location. 
+            Briefly, this is achieved by having the board object calling a <tt>move</tt> method on every <tt>GamePiece</tt>
+            object currently on the board. 
+        </p>
+        <br/>
+        <center>
+            <img class="imageCenter" id="SlideshowPicture" width="380" src="/apcsa/r/static/art/introToBlueJ/moveeverypiece.PNG" alt="The GameBoard class slideshow" />
+        </center>
+    </body>
+</html>

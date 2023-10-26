@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Guides to understanding a recursive method</title>
+   </head>
+   <body>
+<p audio="2">
+There are several steps to understanding a recursion.
+</p>
+<ol>
+<li audio="3">
+
+Examine the base cases.
+These should correspond to arguments for which the method can easily handle
+or return an answer for without any extra computation.
+
+</li>
+<li audio="4">
+
+Try arguments that are one recursive call away from a base case.
+Does the recursive call progress toward the base case?
+Does the method correctly use the result of the recursive call
+to compute its own answer?
+
+</li>
+<li audio="5">
+
+Try arguments that are two recursive calls away from a base case.
+Ask yourself the same questions: Is there progress toward a base case?
+Is the return value used correctly?
+
+</li>
+<li audio="6">
+
+By now, you should be seeing a pattern to the calls and returns.
+If there's a comment for the method that describes its arguments
+and return values, you ought by now to be able to rely on it
+without having to trace through multiple calls.
+If there's not a comment, you ought now to be able to invent one.
+
+</li>
+</ol>
+</body>
+</html>

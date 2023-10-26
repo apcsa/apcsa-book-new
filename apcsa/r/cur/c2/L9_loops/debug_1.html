@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Removing all blank characters from a string</title>
+</head>
+<body>
+<p audio="2">
+The method below is intended to return a string containing all the nonblank
+characters of the argument <tt>s</tt>.  It has a bug.
+</p>
+<pre class="width70">
+public String blanksRemoved (String s) {
+   int pos = 0;
+   while (pos &lt; s.length()) {
+      // Examine character at position pos.
+      if (s.substring (pos,pos+1).equals(" ")) {
+         // There's a blank at position pos.
+         // Create a string that doesn't have the blank.
+         s = s.substring (0,pos) + s.substring (pos+1);
+      }
+      // Go on to the next character.
+      pos = pos + 1;
+   }
+   return s;
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.js">
+        </script>
+        <title>Make some changes SLIDESHOW</title>
+		
+<style type="text/css">
+#nav {margin: 20px 0 10px 0}
+#nav a {margin: 0 5px; padding: 3px 5px; border: 1px solid #ccc; background: #FFE6C6; text-decoration: none }
+#nav a.activeSlide { background: #FF9D1E }
+#nav a:hover {background: #FFFF00; }
+#nav a:focus { outline: none; }
+#output {text-align:center;margin:0 auto;font-weight:bold;margin:20px 0 0 0;}
+</style>
+
+<script type="text/javascript">
+    $.fn.cycle.defaults.timeout = 6000;
+    $(function(){
+        $('#s6').before('<div id="nav">').cycle({
+            fx: 'scrollHorz',
+            speed: 'fast',
+            timeout: 0,
+			after:   onAfter,
+            pager: '#nav'
+        });
+    });
+   
+    function onAfter(){
+        $('#output').html(this.alt);
+    }
+</script>
+
+    </head>
+ <body>
+        <center>
+      <div id="s6" style="position: relative;">
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-1.png" width="548" height="608" alt="Open the GameBoard project"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-2.png" width="548" height="608" alt="Double-click on the GameBoard class"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-3.png" width="548" height="608" alt="The editor opens with the GameBoard source code"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-4.png" width="548" height="608" alt="Change the file by doing something simple such as hitting spacebar, notice how the GameBoard icon now has diagonal lines across it since you have changed the file"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-6.png" width="548" height="608" alt="Click the Compile button"/>
+         <img src="/apcsa/r/static/art/introToBlueJ/compile-7.png" width="548" height="608" alt="The diagonal lines on the GameBoard icon disappear because the file is now successfully compiled"/>
+      </div>
+        </center>
+		
+<div id="output">Status area</div>
+
+<div id="buttonClose">
+    <a href="javascript:window.close();">close</a>
+</div>
+
+</body>
+</html>

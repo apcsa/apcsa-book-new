@@ -1,0 +1,78 @@
+title: Lesson 1: An Introduction to Objects and Classes: behaviors, state, and modeling the real world
+
+{ 
+//h2: An Introduction to Objects and Classes
+
+
+heading: Objects and Behaviors
+    video: Understanding an alarm   [/apcsa/r/cur/c1/L1_objects_classes/a1s1.html]
+    resource: Models and objects [/apcsa/r/cur/c1/L1_objects_classes/a2s3.html]
+    resource: Determining behaviors [/apcsa/r/cur/c1/L1_objects_classes/node_1.html]
+    brainstorm: Alarm clock behaviors [/apcsa/r/cur/c1/L1_objects_classes/a1s2c.html]
+    resource: Remembering information [/apcsa/r/cur/c1/L1_objects_classes/1.4.memory.html]
+    resource: Variables [/apcsa/r/cur/c1/L1_objects_classes/1.4.variables.html]
+    resource: An alarm clock's memory [/apcsa/r/cur/c1/L1_objects_classes/1.4.alarmclock.html]
+    resource: Level of modeling detail [/apcsa/r/cur/c1/L1_objects_classes/node_6.html]
+    resource: Behaviors and state: working together [/apcsa/r/cur/c1/L1_objects_classes/1.7.html]
+    brainstorm: Examples [/apcsa/r/cur/c1/L1_objects_classes/node_23.html]
+    resource: Behaviors thus far [/apcsa/r/cur/c1/L1_objects_classes/node_24.html]
+    resource: Disable alarm vs. turn off alarm [/apcsa/r/cur/c1/L1_objects_classes/node_26.html]
+    quiz: The tick behavior [/apcsa/r/cur/c1/L1_objects_classes/node_7.html]
+    resource: Characteristics of behaviors [/apcsa/r/cur/c1/L1_objects_classes/node_8.html]
+    quiz: Advanced behaviors [/apcsa/r/cur/c1/L1_objects_classes/1.6.html]
+    resource: Interacting objects [/apcsa/r/cur/c1/L1_objects_classes/node_20.html]
+    quiz: Interaction? [/apcsa/r/cur/c1/L1_objects_classes/node_22.html]
+    matchsequence: The clock-plus-calendar tick behavior [/apcsa/r/cur/c1/L1_objects_classes/node_10.html]
+
+heading: A more complicated object
+    display: A toaster's behavior [/apcsa/r/cur/c1/L1_objects_classes/1.8.toasterstate.html]
+    brainstorm: Pop up vs. stop toasting [/apcsa/r/cur/c1/L1_objects_classes/node_25.html]
+    resource: A toaster's variables [/apcsa/r/cur/c1/L1_objects_classes/1.8.toastervariables.html]
+    matchsequence: Classification of toaster behaviors [/apcsa/r/cur/c1/L1_objects_classes/node_11.html]
+    brainstorm: A proposed state variable [/apcsa/r/cur/c1/L1_objects_classes/node_12.html]
+    //fillblank: Noticing similarities among behaviors [/apcsa/r/cur/c1/L1_objects_classes/1.10.html]
+    resource: Dealing with similarity in behaviors [/apcsa/r/cur/c1/L1_objects_classes/1.11.paragraphs.html]
+    resource: Parameters [/apcsa/r/cur/c1/L1_objects_classes/1.11.parameters.html]
+    resource: A parameter with a toaster behavior [/apcsa/r/cur/c1/L1_objects_classes/1.12.html]
+    brainstorm: Cell phone state and behaviors [/apcsa/r/cur/c1/L1_objects_classes/1.14.html]
+
+heading: Objects and Classes
+    resource: Creating and running programs [/apcsa/r/cur/c1/L1_objects_classes/node_13.html]
+    resource: Classes and instances [/apcsa/r/cur/c1/L1_objects_classes/2.1.html]
+    codeit: Visualizing classes and instances [/apcsa/r/cur/c1/L1_objects_classes/2.2.html]
+    quiz: Inferring a class  [/apcsa/r/cur/c1/L1_objects_classes/2.3.html]
+    brainstorm: Supplying some instances [/apcsa/r/cur/c1/L1_objects_classes/2.4.html]
+    brainstorm: Class vs instance [/apcsa/r/cur/c1/L1_objects_classes/2.5b.html]
+    resource: Playing cards [/apcsa/r/cur/c1/L1_objects_classes/2.6.html]
+    quiz: Card class vs card instances (Q1) [/apcsa/r/cur/c1/L1_objects_classes/2.8.html]
+    quiz: Card class vs card instances (Q2) [/apcsa/r/cur/c1/L1_objects_classes/2.10.html]
+
+heading: Looking Inside an Object
+    codeit: Details about state (1) [/apcsa/r/cur/c1/L1_objects_classes/3.1.html]
+    resource: Details about state (2) [/apcsa/r/cur/c1/L1_objects_classes/3.1b.html]
+    brainstorm: Alternative to Boolean info [/apcsa/r/cur/c1/L1_objects_classes/3.2.html]
+    resource: Representing pieces of information with state variables [/apcsa/r/cur/c1/L1_objects_classes/3.3.html]
+    quiz: Representation (Q1) [/apcsa/r/cur/c1/L1_objects_classes/3.4.html]
+    quiz: Representation (Q2) [/apcsa/r/cur/c1/L1_objects_classes/3.5.html]
+    resource: Combining complicated information [/apcsa/r/cur/c1/L1_objects_classes/3.6.html]
+    brainstorm: Data representation [/apcsa/r/cur/c1/L1_objects_classes/3.7.html]
+    brainstorm: Representing a volume [/apcsa/r/cur/c1/L1_objects_classes/3.8.html]
+    brainstorm: Numeric representation of music volume [/apcsa/r/cur/c1/L1_objects_classes/3.9.html]
+    brainstorm: Representing max/min volumes with a string [/apcsa/r/cur/c1/L1_objects_classes/3.10.html]
+    brainstorm: Representing the state of a toaster [/apcsa/r/cur/c1/L1_objects_classes/3.11.html]
+    resource: Representing behaviors as Java methods [/apcsa/r/cur/c1/L1_objects_classes/3.12.html]
+    resource: Calling methods [/apcsa/r/cur/c1/L1_objects_classes/3.13.html]
+    resource: Drawing a game board [/apcsa/r/cur/c1/L1_objects_classes/3.14.html]
+    simulation: Demonstration of a game board [/apcsa/r/cur/c1/L1_objects_classes/3.15.html]
+    quiz: What happened (Q1) [/apcsa/r/cur/c1/L1_objects_classes/3.16.html]
+    quiz: What happened (Q2) [/apcsa/r/cur/c1/L1_objects_classes/3.17.html]
+
+heading: Summary
+    summary: What we've done (1) [/apcsa/r/cur/c1/L1_objects_classes/node_21.html]
+    summary: What we've done (2) [/apcsa/r/cur/c1/L1_objects_classes/node_27.html]
+    summary: What we've done (3) [/apcsa/r/cur/c1/L1_objects_classes/node_28.html]
+
+heading: Exercises
+    homework: Portable media player state and behaviors [/apcsa/r/cur/c1/L1_objects_classes/node_14.html]
+    homework: Vending machine state and behaviors [/apcsa/r/cur/c1/L1_objects_classes/node_15.html]
+    homework: A more interesting vending machine [/apcsa/r/cur/c1/L1_objects_classes/node_16.html]

@@ -1,0 +1,27 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Fixing average by using a <tt>double</tt> rather than an <tt>int</tt></title>
+
+</head>
+<body>
+<p>
+A value of type <tt>double</tt> probably makes more sense
+for computing an average than an <tt>int</tt> value.
+Let's fix up the <tt>Refillable</tt> class to have <tt>averageUse</tt>
+return a <tt>double</tt> instead of an <tt>int</tt>.
+</p>
+<pre>
+   public double averageUse ( ) {
+      return myTotalUse / myUseUpCallCount;
+   }
+</pre>
+<p>
+The code is available at <tt>lesson3/Refillable2</tt>.
+Make the change just suggested in the <tt>Refillable</tt> class,
+then, using an <tt>initialAmount</tt> of 300, test the program.
+</p>
+
+</body>
+</html>

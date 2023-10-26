@@ -1,0 +1,25 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+
+<title>In-place sorting</title>
+</head>
+<body>
+<p>
+Rewrite the selection sort method to not use a second <tt>ArrayList</tt>.
+Instead, maintain a partition of <tt>myCards</tt> in which the first <tt>k</tt> elements store the elements sorted so far and the remaining elements are still unsorted.  The algorithm will thus work as follows:
+</p>
+<pre>
+   for (int k=0; k&lt;myCards.size ( ); k++) {
+      // Find the smallest value in elements k through myCards.size()-1,
+      // and exchange it with element k.
+   }
+</pre>
+<p>
+The diagram below illustrates how this algorithm works.
+</p>
+<img src="/apcsa/r/static/art/graphics/sorting.png">
+
+</body>
+</html>

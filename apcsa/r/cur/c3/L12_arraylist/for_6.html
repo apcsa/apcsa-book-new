@@ -1,0 +1,44 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Shortcuts to incrementing and decrementing</title>
+</head>
+<body>
+<p audio="1">
+Suppose <tt>k</tt> is an integer variable.
+Then the statement
+</p>
+<pre class="width20">
+    k++;
+</pre>
+<p audio="2">
+has the same effect as the statement
+</p>
+<pre class="width20">
+    k = k + 1;
+</pre>
+<p audio="3">
+There is a similar shortcut for decrementing:
+</p>
+<pre class="width20">
+    k--;
+</pre>
+<p audio="4">
+has the same effect as
+</p>
+<pre class="width20">
+    k = k - 1;
+</pre>
+<p audio="5">
+The motivation for this shorthand notation is that 
+the operations of incrementing and decrementing by 1 are <i>very</i> common.
+</p>
+<p audio="6">
+It is legal in Java to increment or decrement a variable within a larger expression, for example, <tt>System.out.println(values.get(k++))</tt>.
+Don't do this; it's asking for off-by-one errors.
+We will actively discourage you from using the <tt>++</tt> or <tt>--</tt> operators 
+anywhere but on a line (or a <tt>for</tt> loop increment) by themselves.</p>
+</p>
+</body>
+</html>

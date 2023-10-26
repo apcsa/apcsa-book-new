@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The <tt>fullName</tt> method</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <p audio="cond59_1"> Here's an updated <tt>fullName</tt> method.</p>
+      <pre class="width70">   public String fullName ( ) {
+      if (myMiddle.equals ("")) {
+         if (myLast.equals ("")) {
+            return myFirst;
+         }
+         return myFirst + " " + myLast;
+      }
+      return myFirst + " " + myMiddle + " " + myLast;
+   }
+</pre>
+      <p audio="cond59_2"> Test the code on all three kinds of names (one-word, two-word, and three-word). 
+         Pay close attention to the number of blanks separating the words in <tt>fullName</tt>'s result.</p>
+   </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ending the exchange</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Terminating an exchange-based shuffle</div>
+
+    <div class="prompt">
+     
+
+
+ <p audio="3">
+
+ To start, let's look at exchange shuffling. 
+
+ Here is pseudocode.
+
+ </p><table id="tableBlue"><tr><td>
+
+ <pre class="width80">
+done = false;
+while (!done) {
+     r1 = randGen.nextInt (myCards.size());
+     r2 = randGen.nextInt (myCards.size());
+     Card temp = myCards.get(r1);
+     myCards.set(r1, myCards.get(r2));
+     myCards.set(r2, temp);
+     if (<i>we're finished</i>) {
+         break;
+     }
+ }
+ </pre></td></tr></table>
+<br />
+ <p audio="4">
+
+ What might be a good termination condition for the loop? 
+
+ Try out your ideas.
+
+ </p>
+
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">It seems like we should do a lot of exchanges, so one possible way to stop the loop would be to count the iterations and stop when the count reaches 1000 or so.
+        </div>
+        
+        <div name="Sherry">Maybe the loop should continue until every random integer between 0 and the deck size minus 1 has been generated.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

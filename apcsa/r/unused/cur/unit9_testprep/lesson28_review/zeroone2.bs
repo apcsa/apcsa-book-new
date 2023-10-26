@@ -1,0 +1,25 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "10",
+         "prompt": " \n<p audio=&quot;brainstorm1&quot;>\nConsider the computer mouse that you're using right now.  What behaviors and state are needed to make the mouse work?  Keep your answer simple!\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": true,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Behaviors and States",
+   "type": "Brainstorm",
+   "useServer": true
+}

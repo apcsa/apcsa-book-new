@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Handling windows of different sizes</title>
+   </head>
+   <body>
+      <p audio="2">A user is allowed to resize a window while a program is running, 
+      so our programs need to be flexible in that way. 
+         Java gives us some help here with the <tt>getSize</tt> method. 
+         <tt>getSize</tt> returns a <tt>Dimension</tt> object that has two 
+         public instance variables, <tt>width</tt> and <tt>height</tt>, 
+         representing the current size of <tt>this</tt> <tt>JPanel</tt>object.</p>
+<p class="quoteBlue" audio="2b">For instance, a call of <tt>getSize().width</tt> inside a 
+method in a <tt>JPanel</tt> class will return
+the width of the <tt>JPanel</tt> as an <tt>int</tt>.
+</p>
+
+<p>
+The expression <tt>getSize().width</tt> is relatively complex.
+Here is how it's evaluated:
+</p>
+<ul>
+<li><tt>getSize</tt> is a method of the <tt>JPanel</tt>
+and therefore of our <tt>Greetings</tt> class.
+We call it.
+</li>
+<li>
+It returns an object of class <tt>Dimension</tt>.
+</li>
+<li>
+A <tt>Dimension</tt> object has a <tt>width</tt> instance variable,
+which we access via the "dot" operator. That gives us an <tt>int</tt>.
+</li>
+</ul>
+
+
+   </body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Examples of boolean methods</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+
+<body>
+<p audio="node5_1">
+We can use boolean expressions within methods to return <tt>true</tt> or <tt>false</tt>. These are often referred to as <i>boolean methods</i> or <span class="vocab"><i>predicates</i></span>. We'll look at two examples.<br/><br/>
+
+<b>Example 1: Gradebook</b></br>
+A gradebook program might invoke a method every time a user enters a percentage to make sure the entry is valid&mdash;that is, 
+between 0 and 100, inclusive.
+
+Here's what the method in a <tt>GradeBook</tt> class might look like:
+</p>
+
+<img class="imageRight" src="/apcsa/r/static/art/scenes/boolean_percents.png"
+  alt="A robot puzzling over percentage values"/>  
+<pre class="width50">
+// Return true if the given value is a 
+//   legal percentage,
+// i.e. it's between 0 and 100, inclusive;
+//   return false otherwise.
+private boolean isLegalPercentage (int val) {
+   return (val &gt;= 0 &amp;&amp; val &lt;= 100);
+}
+</pre>
+<p audio="node5_2" class="clearFloats">
+Here are two ways we could invoke this method to verify that a variable <tt>pct</tt> contains a legal
+percentage value:
+</p>
+<pre class="width80">
+   if (isLegalPercentage (pct)) ... 
+</pre>
+<pre class="width80">
+   boolean isLegal = isLegalPercentage (pct);
+</pre>
+
+
+</body>
+</html>

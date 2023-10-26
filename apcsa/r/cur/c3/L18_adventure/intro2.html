@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Looking at the classes in the Adventure program</title>
+   </head>
+   <body>
+      <p audio="2">
+         Before looking at the Java code that we'll start with, 
+         let's look at the BlueJ object diagram
+         and talk about the classes in the program:
+      </p>
+      <img src="/apcsa/r/static/art/screenshots/adventure_uml.png"
+      alt="A layout of the classes in the Adventure_v0 project">
+      <p audio="3">
+         There are three main areas to this program, although each
+         area contains two classes:
+        
+      </p>
+      <ul>
+         <li audio="4">Getting the typed input from the user, and 
+         interpreting it.  This functionality is in the <tt>InputGather</tt>
+         and <tt>Command</tt> classes at the right of the diagram.
+         Notice that these classes are related through inheritance.
+         </li>
+         <li audio="5">
+            Representing the rooms and the connections 
+            between them.  The <tt>Room</tt> and <tt>Path</tt>
+            classes contain these functions.  We'll spend some time 
+            extending the <tt>Room</tt> class to make more interesting
+            rooms.
+         </li>
+         <li audio="6">
+            Controlling the general play of the game.  The <tt>World</tt>
+            and <tt>Player</tt> class set up the map for the game and 
+            contain the  basic loop in the game: get a command from
+            the user, print out information about what happens, and repeat.
+         </li>
+      </ul>
+   </body>
+</html>

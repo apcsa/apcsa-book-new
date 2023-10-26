@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A different coin flipper</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title"></div>
+
+    <div class="prompt">
+    
+<p audio="2">
+On the left below is the <tt>nextFlip</tt> method you just tested in the <tt>CoinFlipGenerator</tt> class of the Coin0 project.
+On the right is a proposed revision.
+</p>
+
+<table id="tableBlue">
+<tr>
+<td>
+<pre>
+public String nextFlip ( ) {
+  if (randGen.nextInt (2) == 0) {
+    return "heads";
+  } else {
+    return "tails";
+  }
+}
+</pre>
+</td>
+<td>
+<pre>
+public String nextFlip ( ) {
+  if (randGen.nextInt (2) == 0) {
+    return "heads";
+  } else if (randGen.nextInt (2) == 1) {
+    return "tails";
+  }
+}
+</pre>
+</td>
+</tr>
+</table>
+<br />
+<p audio="3">
+Does the behavior of the revised version of <tt>nextFlip</tt> match the behavior of the original? 
+Why or why not?
+</p>
+
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Sherry">There are times that the revised nextFlip's return value is undefined. That doesn't happen in the first version.
+        </div>
+        
+        <div name="Joe">They act the same except the second version makes two calls to nextFlip instead of one.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

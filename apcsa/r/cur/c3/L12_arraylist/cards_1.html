@@ -1,0 +1,20 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Checking the same suit: Two possible methods</title>
+</head>
+<body>
+
+<p audio="1">
+It is useful in Poker to determine if all the cards in a hand
+are the same suit. There are couple methods you might use to do this:
+<ol>
+<li><u>Process neighbors:</u> <br/>This method would start from element 1 and check its neighbor. If the neighbors were not the same suit, the method would immediately return false and not check any other element. Makes sense right? As soon as two neighbors are not the same suit you have your answer. If element 1 and 2 are the same than move on and check element 2 and 3. If you make to end of the list you can return true.</li>
+<li><u>Process every element:</u><br/>This method is slightly less efficient but would also work. It would look at every element in the list. If any element was different from the first the method returns false, other wise true. The difference is that it will not terminate the loop until every element has been processed.</li>
+</ol>
+<p>
+The next two steps ask you to implement each of these methods for checking if every card in your hand is the same suit.  
+</p>
+</body>
+</html>

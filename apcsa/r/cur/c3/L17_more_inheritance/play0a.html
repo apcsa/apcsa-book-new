@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Superclass, Subclass, Subsubclass and Test class codes</title>
+   </head>
+   <body>
+
+<table id="tableTight">
+<tr><td>
+<pre>
+public class Superclass {
+
+    public void methodA ( ) {
+        System.out.print ("Super's methodA. ");
+    }
+    
+    public void methodB ( ) {
+        System.out.print ("Super's methodB. ");
+    }
+    
+    public void methodC ( ) {
+        System.out.print ("Super's methodC. ");
+    }
+}
+
+public class Subclass extends Superclass {
+
+    public void methodA ( ) {
+        System.out.print ("Sub's methodA. ");
+    }
+}
+
+public class Subsubclass extends Subclass {
+
+    public void methodB ( ) {
+        System.out.print ("Subsub's methodB. ");
+    }
+}
+</pre>
+</td><td>
+<pre>
+public class Test {
+
+    public Test ( ) {
+        Superclass s1 = new Superclass ( );
+        Subclass s2 = new Subclass ( );
+        Subsubclass s3 = new Subsubclass ( );
+        Superclass s4 = new Subsubclass ( );
+        
+        s2.methodA ( );
+        s3.methodB ( );
+        s1.methodC ( );
+        System.out.println ( );
+        
+        s1.methodA ( );
+        s2.methodB ( );
+        s3.methodC ( );
+        System.out.println ( );
+
+        s3.methodA ( );
+        s3.methodB ( );
+        s3.methodC ( );
+        System.out.println ( );
+
+        s4.methodA ( );
+        s4.methodB ( );
+        s4.methodC ( );
+        System.out.println ( );
+    }
+}
+</pre>
+</td></tr></table>
+</body>
+</html>

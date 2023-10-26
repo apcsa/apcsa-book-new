@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Deciding how to code alternatives</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <div class="talkBubble" char="constance5" align="right" color="red">
+         <p audio="cond43_1.f1">We've looked at various ways to arrange tests to perform a given computation. </p>
+           
+         <p audio="cond43_2.f1">
+			Choosing one way over another is largely a matter of personal preference, in my opinion.  Ha ha. 
+         </p>
+      </div>
+      <div class="talkBubble" char="bolt2" align="left" color="orange">
+         <p audio="cond43_3.m3">Nested conditions are generally tougher to understand than conditions arranged in a cascading form. Compare the earlier (equivalent) examples: </p>
+            </div>
+
+            <table id="tableClear">
+                <tr>
+                    <td>
+<pre>
+/* Cascading conditionals
+ *  are easy to follow: */
+
+if (temp &gt; 80) {
+    comfortLevel = "too hot";
+} else if (temp &lt; 50) {
+    comfortLevel = "too cold";
+} else {
+    comfortLevel = "comfortable";
+}
+</pre>
+                    </td>
+                    <td>
+<pre>
+/* Whereas nested conditionals can
+ *  quickly become confusing: */
+
+if (temp &gt;= 50) {
+    if (temp &gt; 80) {
+        comfortLevel = "too hot";
+    } else {
+        comfortLevel = "comfortable";
+    }
+} else {
+    comfortLevel = "too cold";
+}
+</pre>
+                    </td>
+                </tr>
+            </table>
+
+   </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice with ArrayList Methods (1)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_16.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">Consider the following declaration:<br/>
+<pre>ArrayList&lt;Name&gt; friends = new ArrayList&lt;Name&gt;();</pre>
+<br/>
+We are trying to insert items into our ArrayList. Which of the following will NOT work:
+    </div>
+
+    
+    <div class="choice" identifier="FIB7enohDw">
+        <div class="text"><code>friends.add(new Name("Ciara","Smith"));</code>
+        </div>
+        <div class="feedback">No, this will work, we are creating an instance of the Name object and adding it to the list
+        </div>
+    </div>
+    
+    <div class="choice" identifier="GKoiZAWoB6">
+        <div class="text"><code>friends.add("Ciara Smith");</code>
+        </div>
+        <div class="feedback">You are correct. This <tt>ArrayList</tt> takes Name objects not String objects.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="rd8NMCffmN">
+        <div class="text"><code>Name person = new Name("Ciara","Smith");<br/> friends.add(person);</code>
+        </div>
+        <div class="feedback">No, this will work. Here we make an object of type Name and assign it the reference person. Then we use the Name reference to add the object to the list.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="GKoiZAWoB6"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

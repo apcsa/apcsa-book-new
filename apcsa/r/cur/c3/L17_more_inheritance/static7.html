@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Static methods</title>
+   </head>
+   <body>
+<p audio="1">
+The term "static" is also used with methods.
+Methods we've seen so far have an implicit parameter,
+the instance of the class that contains the method,
+that we refer to as <tt>this</tt>.
+A static method does not have this implicit parameter,
+either because the method doesn't need it,
+or because no objects have yet been instantiated.
+</p>
+<p>
+An example of a method that doesn't need <tt>this</tt> is the following,
+which returns the smaller of its two argument values.
+</p>
+<pre>
+public static int min (int a, int b) {
+   if (a &lt; b) {
+      return a;
+   } else {
+      return b;
+   }
+}
+</pre>
+<p>
+This method is self-contained; all the information it needs is passed as arguments. 
+It doesn't use any instance variables or any non-static methods.
+</p>
+<p>
+As it happens, <tt>min</tt> is provided in the Java <tt>Math</tt> class along with a variety
+of other useful static methods.
+Accessing static methods is similar to accessing static variables.
+For example, we might say
+</p>
+<pre>
+int smaller = Math.min (a, b);
+</pre>
+</body>
+</html>

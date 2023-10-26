@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Where is the piece? (c)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_8.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt"><p>
+Try to answer this question without using BlueJ.
+</p>
+<p>
+<tt>Piece1</tt> was placed at a random location on the board. It then called the following sequence of methods:
+</p>
+<pre>
+moveRight(2);
+moveDown();
+moveRight(2);
+moveRight();
+</pre>
+<p>
+It is now at location (7,7). What was its starting location?
+</p>
+    </div>
+
+    
+    <div class="choice" identifier="DeyJPhofwW">
+        <div class="text">It is not possible to get to location (7,7) from any location on the
+board with these steps.
+        </div>
+        <div class="feedback">No, location (7,7) is a valid location and the starting location is a
+valid location.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="k0k7G3Ej5Y">
+        <div class="text">(0,0)
+        </div>
+        <div class="feedback">No, if (0,0) was the starting location the ending location would be (1,5).
+        </div>
+    </div>
+    
+    <div class="choice" identifier="ElkibzZpmC">
+        <div class="text">(6,3)
+        </div>
+        <div class="feedback">No, it moved right a total of 5 rows and ended at row 7, so it had to
+start in row 2.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="lLckWaxUdQ">
+        <div class="text">(6,2)
+        </div>
+        <div class="feedback">Yes, it moved down one row and to the right 5 rows, so it started at (6,2).
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="lLckWaxUdQ"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

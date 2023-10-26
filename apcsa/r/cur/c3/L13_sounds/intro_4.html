@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What sound is this?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="intro_4.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+<p audio="1">
+Consider a one-second sampled sound that consists of 22,050 integers, each of which
+is the maximum possible value (32767). What would this sample sound like when played?
+</p>
+
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">It would sound like the loudest possible sound.
+        </div>
+        <div class="feedback">No. It is not the size of individual samples that determine the volume of a sound, but the size of the difference between the biggest and smallest samples.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">It would vary in pitch and volume as it was played.
+        </div>
+        <div class="feedback">No, change in pitch and volume only come through changes in the individual samples.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">It would be complete silence.
+        </div>
+        <div class="feedback">Correct. When there is no <i>change</i> in pressure, there is no sound. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text">There is no way to know what it would sound like.
+        </div>
+        <div class="feedback">Not at all. When you have a sound sampled at sufficient quality (and a sampling rate of 22,050 samples per second is of sufficient quality), you will hear exactly what the sound is. Said another way, an <tt>ArrayList</tt> of numbers like this will determine a sound exactly.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

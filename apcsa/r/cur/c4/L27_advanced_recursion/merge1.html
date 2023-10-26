@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MergeSort analysis</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="merge1.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">
+ <p audio="1">
+ Suppose <tt>values</tt> contains <tt>{3,1,4,5,9,2,8,6}</tt>
+ and the call <tt>mergeSort (values)</tt> is made.
+In that call, two recursive calls are made, one with a four-element <tt>leftHalf</tt> array as argument, the other with a four-element <tt>rightHalf</tt> array as argument.
+ Upon the return from that second call to <tt>mergeSort</tt>
+(the one with the four-element <tt>rightHalf</tt> as argument),
+ what do the <tt>leftHalf</tt> and <tt>rightHalf</tt> arrays contain?
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> <tt>leftHalf</tt> contains <tt>{1,2,3,4}</tt>,
+<tt>rightHalf</tt> contains <tt>{5,6,7,8}</tt>. 
+        </div>
+        <div class="feedback">The value 2 is never in a "left half", and the value 5 is never in a
+"right half".
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> <tt>leftHalf</tt> contains <tt>{1,3,4,5}</tt>,
+<tt>rightHalf</tt> contains <tt>{2,6,8,9}</tt>. 
+        </div>
+        <div class="feedback">Correct!
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> <tt>leftHalf</tt> contains <tt>{3,1,4,5}</tt>,
+<tt>rightHalf</tt> contains <tt>{9,2,8,6}</tt>. 
+        </div>
+        <div class="feedback">After the recursive calls to <tt>mergeSort</tt>, <i>something</i> should
+be sorted!
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"> <tt>leftHalf</tt> contains <tt>{1,3,4,5}</tt>,
+<tt>rightHalf</tt> contains <tt>{2,9,6,8}</tt>. 
+        </div>
+        <div class="feedback">We wanted the contents of <tt>rightHalf</tt> <i>after</i> the second
+call to <tt>mergeSort</tt>.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 2"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

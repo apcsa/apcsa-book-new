@@ -1,0 +1,32 @@
+title: Lesson 6: Virtual Pets: a first programming project
+{ 
+//h2: Activities
+
+
+heading: A virtual pet?
+    codeit: Objectives [/apcsa/r/cur/c1/L6_virtual_pets/01intro.html]
+    //fillblank: Conditional Review [/apcsa/r/cur/c1/L6_virtual_pets/02review.html]
+    resource: Introduction to the Virtual Pet [/apcsa/r/cur/c1/L6_virtual_pets/03pet.html]
+    resource: Open BlueJ Project [/apcsa/r/cur/c1/L6_virtual_pets/04open.html]
+    resource: Explore the Code 1 [/apcsa/r/cur/c1/L6_virtual_pets/05explore1.html]
+    codeit: Explore the Code 2 [/apcsa/r/cur/c1/L6_virtual_pets/06explore2.html]
+    codeit: Explore the Code 3 [/apcsa/r/cur/c1/L6_virtual_pets/07explore3.html]
+    codeit: Explore the Code 4 [/apcsa/r/cur/c1/L6_virtual_pets/08explore4.html]
+
+heading: Programming
+    quiz: Make A Quick Fix [/apcsa/r/cur/c1/L6_virtual_pets/09quickfix.html]
+    quiz: How Does Hunger Work? [/apcsa/r/cur/c1/L6_virtual_pets/10hunger.html]
+    //fillblank: Fill in the Blank [/apcsa/r/cur/c1/L6_virtual_pets/11fill.html]
+    quiz: Making Hunger Realistic 1 [/apcsa/r/cur/c1/L6_virtual_pets/12hunger1.html]
+    codeit: Making Hunger Realistic 2 [/apcsa/r/cur/c1/L6_virtual_pets/13hunger2.html]
+    codeit: Making Hunger Realistic 3 [/apcsa/r/cur/c1/L6_virtual_pets/14hunger3.html]
+    brainstorm: Is there a Better Way to Die? [/apcsa/r/cur/c1/L6_virtual_pets/15better.html]
+    quiz: Squash the Bugs [/apcsa/r/cur/c1/L6_virtual_pets/16squash.html]
+    brainstorm: Virtual Pet Brainstorm [/apcsa/r/cur/c1/L6_virtual_pets/17petbrainstorm.html]
+
+heading: Write your own
+    resource: A 'miniproject' [/apcsa/r/cur/c1/L6_virtual_pets/write_1.html]
+    resource: Images [/apcsa/r/cur/c1/L6_virtual_pets/write_2.html]
+    brainstorm: Ideas for moods [/apcsa/r/cur/c1/L6_virtual_pets/write_3.html]
+    brainstorm: Share your ideas [/apcsa/r/cur/c1/L6_virtual_pets/write_3b.html]
+    codeit: Good luck! [/apcsa/r/cur/c1/L6_virtual_pets/write_4.html]

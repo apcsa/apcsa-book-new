@@ -1,0 +1,37 @@
+title: Lesson 10: Generating random numbers
+
+{
+h2: Generating and using random numbers
+
+
+heading: Introduction
+    resource: Modeling 'random' processes [/apcsa/r/cur/c2/L10_random/node_0.html]
+
+heading: Generating randomness
+    resource: The Random class [/apcsa/r/cur/c2/L10_random/random_0.html]
+    codeit: A test of the Random class [/apcsa/r/cur/c2/L10_random/random_1.html]
+    brainstorm: Appearing 'Random' [/apcsa/r/cur/c2/L10_random/node_6.html]
+    brainstorm: A human's view of randomness [/apcsa/r/cur/c2/L10_random/node_12.html]
+    brainstorm: A different coin flipper [/apcsa/r/cur/c2/L10_random/node_8.html]
+    codeit: A die roll generator [/apcsa/r/cur/c2/L10_random/random_5.html]
+    codeit: Graphing a random distribution [/apcsa/r/cur/c2/L10_random/random_6.html]
+    brainstorm: A pair of dice [/apcsa/r/cur/c2/L10_random/node_14.html]
+    codeit: Forbidden rolls [/apcsa/r/cur/c2/L10_random/random_7.html]
+    brainstorm: Alternative for forbidding rolls [/apcsa/r/cur/c2/L10_random/node_9.html]
+    codeit: Magic coins [/apcsa/r/cur/c2/L10_random/random_9.html]
+
+heading: Simulations
+    reading: Simulation [/apcsa/r/cur/c2/L10_random/simulation_0.html]
+    codeit: Simulation and probability [/apcsa/r/cur/c2/L10_random/simulation_1.html]
+    brainstorm: The St. Petersburg Lottery [/apcsa/r/cur/c2/L10_random/node_10.html]
+    codeit: Simulation of the St. Petersburg Lottery [/apcsa/r/cur/c2/L10_random/simulation_3.html]
+    brainstorm: Simulation results [/apcsa/r/cur/c2/L10_random/node_11.html]
+
+heading: Review
+    summary: What we've done [/apcsa/r/cur/c2/L10_random/node_13.html]
+
+heading: Exercises
+    codeit: Dot racing (1) [/apcsa/r/cur/c2/L10_random/exercises_0.html]
+    codeit: Dot racing (2) [/apcsa/r/cur/c2/L10_random/exercises_0b.html]
+    codeit: Craps [/apcsa/r/cur/c2/L10_random/exercises_1.html]
+    codeit: Simon Says [/apcsa/r/cur/c2/L10_random/exercises_4_graph_guesser.html]

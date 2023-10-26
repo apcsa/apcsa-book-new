@@ -1,0 +1,25 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "10",
+         "prompt": " \n\n<p audio=&quot;1&quot;>\nHow did you do on your practice exam?  What about it was the most surprising to you?  Which question on your exam were you most comfortable answering?  Which question on your exam were you least comfortable answering?\n</p>\n\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [],
+   "displayName": "2",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": true,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Practice Exam Reflection",
+   "type": "Brainstorm",
+   "useServer": true
+}

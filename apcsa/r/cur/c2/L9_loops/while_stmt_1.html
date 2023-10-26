@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top100";
+		</script>
+        <title>The while statement</title>
+		
+</head>
+<body>
+<p audio="2">
+Suppose we want to print the line "I like Java!" eighty times on the console.
+Doing it once is easy:
+</p>
+<pre class="width60">
+System.out.println ("I like Java!");
+</pre>
+<p audio="3">
+Doing it eighty times is woefully slow and inefficient.
+</p>
+<p audio="4">
+A better way to do this in Java is with a <span class="vocab" term="while"><tt>while</tt></span>  statement.
+A <tt>while</tt> statement has three parts:
+</p>
+<ol>
+	<li audio="5">the keyword <tt>while</tt>;</li>
+	<li audio="6">a boolean expression enclosed in parentheses; and</li>
+	<li audio="7">a program segment to be repeated, referred to as the <span class="vocab" term="loop body">body</span>
+	of the <tt>while</tt> statement.</li>
+</ol>
+<p audio="8">
+A <tt>while</tt> loop is executed as follows. </p>
+<ol>
+	<li audio="9">First, the boolean expression is evaluated. 
+	    If it's false, the repetition stops, 
+	    and execution continues with the statement following the <tt>while</tt> loop body.</li>
+	<li audio="10">If the expression is true, the <i>entire body</i> is executed.</li>
+	<li audio="11">Then the boolean expression is evaluated again, 
+	    and the <tt>while</tt> statement terminates or continues as just described.</li>
+</ol>
+<p audio="12">
+One way to diagram this process is shown below in a <span class="vocab">flow chart</span>, as shown below.
+Arrows specify the <i>flow</i> of the program, namely the execution sequence.
+A <tt>while</tt> statement is often referred to as a <span class="vocab">loop</span>.
+The arrow from the bottom of the body to the boolean expression closes the loop.
+</p>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="/apcsa/r/static/art/graphics/flow_chart.png">
+</body>
+</html>

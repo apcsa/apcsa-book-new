@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Summing over an interval</title>
+   </head>
+   <body>
+<p audio="2">
+Consider an <tt>Interval</tt> class that represents a collection
+of consecutive integers.  For example, the interval [3,5]
+represents the set {3, 4, 5}.
+An interval whose starting value is greater than its ending value&mdash;for
+example, [5,3]&mdash; is empty.
+</p>
+<p audio="3">
+A framework for this class appears below.
+It refers to the starting value in this interval as <tt>myLeft</tt> 
+and the largest value as <tt>myRight</tt>,
+and contains a method that returns the sum of all the values in this interval.
+</p>
+<p audio="4">
+The <tt>sum</tt> method calls <tt>sumHelper</tt>,
+passing it arguments that start out the recursion.
+This use of a top-level method to call a recursive "helper" method
+is typical in recursive applications.
+</p>
+<pre class="width80">
+public class Interval {
+
+   private int myLeft;
+   private int myRight;
+   
+   public Interval (int left, int right) {
+      myLeft = left;
+      myRight = right;
+   }
+   
+   // Return the sum of the integers represented by this interval.
+   public int sum ( ) {
+      return sumHelper (myLeft, myRight);
+   }
+   
+   private int sumHelper (int left, int right) {
+      if (left &gt; right) {
+         return 0;
+      } else {
+         return left + sumHelper (left+1, right);
+      }
+   }
+}
+</pre>
+   </body>
+</html>

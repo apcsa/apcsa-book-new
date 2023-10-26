@@ -1,0 +1,75 @@
+Lesson 13 To Do
+==============
+BlueJ:
+- Can we add a method to pick another sound to Sound class
+- I put a solution to all the methods -- I don't think my normalize nor my addNoise is correct
+- old todo - NATE - make sure the wav files are 22050, etc, in /sounds
+===============
+Steps:
+s1 - VISUAL - maybe add a step w/ some splash graphic. "Introduction" - it looks like one is there?
+Step 2 :  - VISUAL - add some image / speech bubble
+s3 - VISUAL - image of amplitude and frequency -- can we find better?
+
+Summary
+Exercises
+
+================
+OLDER To do: SMM notes on this -- 11/2010
+3) exercise_0.html. add table of note->hertz -
+refers Steps 9-10 : looks fine to me? 6) intro_6.html needs serious Look and Feel help!!!  multiple pages? 
+       slideshow?  Can't really get rid of the vocab word...(ML)
+7) more in intro, or somewhere, about writing another
+    class as a script class, to quickly rebuild objects. -- [SMM] Not sure what refers too
+8) more exercises 
+       -- drum machine (need samples). -- [SMM] would be good but there is enough to go on
+       ?
+9) make sounds - [SMM] not sure what this is
+   - square wave
+   - triangle wave
+   - sin wav
+
+10) advanced: -- [SMM - More exercises?]
+    filter out pops ?
+    add two sounds together, making a ratio of how much 
+      to attenuate
+    echo/delay/reverb
+    Detect the end of a song, or words, etc  
+    
+11) intro_4b.html, giving metaphor about speaker cone position?  -- [SMM] not sure what refers too and 4b is gone
+                  messiness of sound?
+
+==============
+DONE 
+-  Amplitude needs glossary entry
+Step 4: - Needs 2nd graphic
+        - needs feedback and answer defined
+Step 5: - Needs graphic
+        - needs feedback and answer defined
+Step 6: EDIT : rate of 22050 ==> comma in number
+
+Step 7: EDIT : one of the feedbacks -- rate of 22050 samples
+Step 15: - bluej icon
+Step 13: BS -- needs canned responses
+Step 16  - bluej icom
+		 - EDIT - Many different ways can work. --> Many different values can work
+		 - EDIT _ you you might want to add --> you might want to add
+		 - EDIT - bullet or lightening icon the tasks
+		 
+Step 18: BS -- needs canned responses
+			-- the BS icon is different - haven't seen before
+			Step 14: EDIT - extra space between numbers in blue square
+			  - bluej icon - lightbulb on step
+		 -NOT HERE We might want to explore how to initialize max and min 
+		 		int max = 0; ==> where could this go wrong?
+		 		what is a better way
+		 		int max = myData.get(0);
+		 - For normalize, does it matter what you pick max or min -- what is the effect? Pick the greatest?
+		 - tell them don't forget to cast when you multiply
+		 
+Step 12: Change to BlueJ lightbulb icon to make look like BlueJ step
+		-  we need to explore casting:  myData.set(i, (int) (myData.get(i) * amt));
+- Can we add method to restore original sound?
+- No parameter constructor works correctly but the one parameter String filename causes NPE error on 
+	line 739 of Viewer class
+- Change file opener to get straight to Sound/sounds
+	

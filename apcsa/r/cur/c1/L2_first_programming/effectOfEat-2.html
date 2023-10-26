@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eating effects 2?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="effectOfEat-2.mc"
+    hasinlinefeedback="true"
+    maxchoices="0"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1">Suppose that <tt>myCandyCount</tt> contains the value 7,
+ and the <tt>eat</tt> method is called with an argument of 3.<br/><br/>Which of the following are variables whose values
+ are <u><i>changed</u></i> as a result of that call?
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> <tt audio="2">eat</tt> 
+        </div>
+        <div class="feedback"> This isn't a variable! It is a method. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> <tt audio="3">myCandyCount</tt> 
+        </div>
+        <div class="feedback"> Right: when <tt>eat</tt> is called, <tt>myCandyCount</tt> 
+ is assigned that amount remaining. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> <tt audio="4">amount</tt> 
+        </div>
+        <div class="feedback"> No, when the method <tt>eat</tt> is called, <tt>amount</tt>
+doesn't change value. It is used to calculate the new value
+for <tt>myCandyCount</tt>, but it doesn't get changed by
+itself. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"> <tt audio="5">startingCount</tt> 
+        </div>
+        <div class="feedback"> <tt>startingCount</tt> isn't a instance 
+variable or parameter used by the <tt>eat</tt> method! 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+       <div class="correctResponse" identifier="choice 2"></div> 
+    </div>
+</div>
+    </body>
+</html>

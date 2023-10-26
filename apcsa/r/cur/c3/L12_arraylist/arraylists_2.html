@@ -1,0 +1,28 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Some ArrayList methods</title>
+</head>
+<body>
+<p audio="1">
+The <tt>ArrayList</tt> class has several methods.
+For now, we will look at three:
+</p>
+<ul>
+	<li audio="3"><tt>get</tt>, which returns the element at the given position in the <tt>ArrayList</tt>; </li>
+	<li audio="4"><tt>size</tt>, which returns the number of elements contained in the <tt>ArrayList</tt>; and</li>
+	<li audio="2"><tt>add</tt>, which adds its argument to the end of the <tt>ArrayList</tt>.</li>
+</ul>
+<p audio="5">
+We start by instantiating an <tt>ArrayList</tt> of <tt>Name</tt> objects:
+</p>
+<pre>
+   <tt>friends = new ArrayList&lt;Name&gt; ( );</tt>
+</pre>
+<p>
+<tt>friends.size()</tt> returns 0.&nbsp&nbsp
+<tt>friends.get(0)</tt> is trying to access the 0th element of <tt>friends</tt>, but causes an exception&mdash;"array index out of bounds"&mdash;because <tt>friends</tt> is empty and has no element at position 0.
+</p>
+</body>
+</html>

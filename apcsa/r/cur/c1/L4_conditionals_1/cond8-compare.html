@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comparing two program segments</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Comparing two program segments</div>
+
+    <div class="prompt">
+    
+
+
+
+
+
+<table id="tableClear"> 
+
+<tr> 
+
+<td> 
+
+<pre>
+void useUp (int amount) {
+ if (myAmount &lt; amount) {
+ System.out.println("not enough!");
+ amount = 0;
+ }
+ myAmount = myAmount - amount;
+}
+</pre> 
+
+</td> 
+
+<td> 
+
+<pre>
+void useUp (int amount) {
+ if (myAmount &lt; amount) {
+ System.out.println("not enough!");
+ } else {
+ myAmount = myAmount - amount;
+ }
+}
+</pre> 
+
+</td> 
+
+</tr> 
+
+</table> 
+
+<br/> <br/> 
+
+<p audio="one.m1">
+
+In the first example, the assignment to <tt>myAmount</tt> is always made; 
+
+in the second example, the assignment is made only sometimes. 
+
+Do these two versions of the <tt>useUp</tt> method always produce the same result? Briefly explain.
+
+</p>
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Jack">Of course it's not the same! In the left example, myAmount gets subtracted no matter if myAmount is less than amount. If the useUp method tries to use more than myAmount has, then the left example will allow that while the right example doesn't. So, the left example can end up with negative numbers for myAmount.
+        </div>
+        
+        <div name="Diane">It looks like it will always be the same since amount is set to zero in the left example so there will be no change to myAmount when amount is negative.
+        </div>
+        
+        <div name="mike">There are two cases: either the argument is legal or it isn't.
+If it's legal, the same assignment to myAmount is made in both versions. If it's not legal, myAmount in the first useUp is decreased by 0, while in the second useUp no assignment to myAmount is made.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

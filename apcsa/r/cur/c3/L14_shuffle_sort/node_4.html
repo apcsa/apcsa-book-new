@@ -1,0 +1,56 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+<title>What about two exchanges?</title>
+</head>
+<body>
+<p>
+Work out the cases for <i>two</i> exchanges.  Here's a start. If we count the possible arrangements from the table on previous step, we would get this aggregation:
+</p>
+<table id="tableBlue">
+<tr><td>arrangement</td><td>number of times it occurs on one exchange</td></tr>
+<tr><td align="center">A B C</td><td align="center">3</td></tr>
+<tr><td align="center">A C B</td><td align="center">2</td></tr>
+<tr><td align="center">B A C</td><td align="center">2</td></tr>
+<tr><td align="center">B C A</td><td align="center">0</td></tr>
+<tr><td align="center">C A B</td><td align="center">0</td></tr>
+<tr><td align="center">C B A</td><td align="center">2</td></tr>
+</table>
+<p>
+There are 3 possibilities for the first exchange not to have any effect.
+There are 9 cases for the second exchange, 3 of which also have no effect, and 2 of which produce either "A C B", "B A C", or "C B A".
+That means that, for the 81 possible ways to generate 2 exchanges, the first exchange will have no effect in 1/3 of that 81 = 27.  Among those 27, 1/3 will have no effect,
+"A C B" will appear in 6 exchanges, "B A C" will appear in 6 exchanges, and "C B A" will appear in 6 exchanges.
+</p>
+<p>
+What's left to analyze are the cases where the first exchange produces "A C B", "B A C", or "C B A".
+We'll do the first of these, then you do the rest.
+</p>
+<table id="tableBlue">
+<caption>possibilities assuming first exchange produced A C B</caption>
+<tr><td>exchange</td><td>result</td></tr>
+<tr><td align="center">1 with 1</td><td align="center">A C B</td></tr>
+<tr><td align="center">1 with 2</td><td align="center">C A B</td></tr>
+<tr><td align="center">1 with 3</td><td align="center">B C A</td></tr>
+<tr><td align="center">2 with 1</td><td align="center">C A B</td></tr>
+<tr><td align="center">2 with 2</td><td align="center">A C B</td></tr>
+<tr><td align="center">2 with 3</td><td align="center">A B C</td></tr>
+<tr><td align="center">3 with 1</td><td align="center">B C A</td></tr>
+<tr><td align="center">3 with 2</td><td align="center">A B C</td></tr>
+<tr><td align="center">3 with 3</td><td align="center">A C B</td></tr>
+</table>
+<P>
+Adding those into the previous results gives the following possible configuration counts when the first exchange produces "A B C" or "A C B".
+</p>
+<table id="tableBlue">
+<tr><td>arrangement</td><td>number of possibilities when first exchange gives "A&nbsp;B&nbsp;C"</td><td>number when first exchange gives "A&nbsp;C&nbsp;B"</td><td>total</td></tr>
+<tr><td align="center">A B C</td><td align="center">3</td><td align="center">2</td><td align="center">5</td></tr>
+<tr><td align="center">A C B</td><td align="center">2</td><td align="center">3</td><td align="center">5</td></tr>
+<tr><td align="center">B A C</td><td align="center">2</td><td align="center">0</td><td align="center">2</td></tr>
+<tr><td align="center">B C A</td><td align="center">0</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td align="center">C A B</td><td align="center">0</td><td align="center">2</td><td align="center">2</td></tr>
+<tr><td align="center">C B A</td><td align="center">2</td><td align="center">0</td><td align="center">2</td></tr>
+</table>
+</body>
+</html>

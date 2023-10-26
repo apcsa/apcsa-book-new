@@ -1,0 +1,157 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript">
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+        <title>Practice with conditionals</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+
+</head>
+<body>
+<ol>
+<li>
+<p>
+Fill in the blanks in the program segment on the right so that it has exactly
+the same effect as the one on the left.
+</p>
+<table border="1">
+<tr>
+<td>
+<pre>
+if (n == 0) {
+   icode = icode + 3;
+} else {
+   icode = icode + 2;
+}
+</pre>
+</td>
+<td>
+&nbsp;
+</td>
+<td valign="top">
+<pre>
+icode = _______________ ;
+if (n == 0) {
+   icode = _______________ ;
+}
+</pre>
+</td>
+</tr>
+</table>
+</li>
+
+<li>
+<p>
+Do the same for the following program segment.
+</p>
+<pre>
+if (n &gt;= 2) {
+   n = 2 * n;
+}
+if (n &gt;= 4) {
+   n = n - 2;
+}
+</pre>
+<pre>
+if ( ______________________________ ) {
+   n = _________________________________ ;
+}
+</pre>
+</li>
+
+<li>
+<p>
+Provide the code for a <tt>Weight</tt> class that represents a weight expressed in pounds and ounces.
+Your class should provide the following public operations:
+</p>
+<ul>
+<li>
+<p>
+a constructor with one <tt>int</tt> argument, a nonnegative number
+of ounces that's between 0 and 15;
+</p>
+</li>
+
+<li>
+<p>
+a constructor with two <tt>int</tt> arguments, a nonnegative number
+of pounds and a value for ounces that's between 0 and 15;
+</p>
+</li>
+
+<li>
+<p>
+a <tt>boolean isHeavier</tt> method with one <tt>Weight</tt> argument that returns <tt>true</tt> if this <tt>Weight</tt> object is heavier than the argument and <tt>false</tt> otherwise;
+</p>
+</li>
+
+<li>
+<p>
+a <tt>multiple</tt> method that, given a positive <tt>int</tt> argument, returns a new <tt>Weight</tt> object that results from multiplying the integer by the represented weight (e.g. multiplying 1 pound 9 ounces by 3 gives 4 pounds 11 ounces;
+</p>
+</li>
+
+<li>
+<p>
+a <tt>print</tt> method that prints this <tt>Weight</tt> object as "<tt>n pounds m ounces"</tt>, where <tt>n</tt> is a nonnegative integer and <tt>m</tt> is an integer between 0 and 15, inclusive.
+</p>
+</li>
+</ul>
+<p>
+You may define additional private methods.
+The constructors are the only methods that should change the internal information in the <tt>Weight</tt> object to which they are applied.
+</p>
+<p>
+There are 16 ounces in a pound. Your code need not do any error checking.
+</p>
+</li>
+
+<li>
+<p>
+Design a tester class to test the <tt>Weight</tt> class,
+and describe what additional evidence each test provides about the correctness of your code.
+</p>
+</li>
+
+<li>
+<p>
+Write a method named <tt>category</tt> that returns a <tt>String</tt>, given a positive integer argument named <tt>height</tt>, does the following:
+</p>
+<ul>
+<li>
+if <tt>height</tt> is less than 60, <tt>category</tt> returns the string "short";
+</li>
+<li>
+if <tt>height</tt> is at least 60 but less than 80, <tt>category</tt> returns the string "medium";
+</li>
+<li>
+if <tt>height</tt> is greater than or equal to 80,
+<tt>category</tt> returns the string "tall".
+</li>
+</ul>
+<p>
+Your method should perform as few comparisons as possible. 
+Also, the first comparison it should make is
+</p>
+<pre>
+   if (height &lt; 80) ...
+</pre>
+</li>
+
+<li>
+<p>
+If <tt>b</tt> is a boolean variable, then what is the effect
+of  the assignment
+</p>
+<pre>
+   b = (b == false);
+</pre>
+</li>
+
+</ol>
+</body>
+</html>

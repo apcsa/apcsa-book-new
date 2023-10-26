@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Array initialization, method 2</title>
+   </head>
+   <body>
+<p audio="1">
+The second way combines declaration and initialization.
+We declare the array as described earlier, add an equals sign,
+and then specify the elements of the array explicitly
+inside braces, separated by commas. 
+We don't specify the type or number of elements in the array;
+those are determined from what we include between braces.
+</p>
+<pre>
+int [ ] monthLengths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+String [ ] monthNames = {"January", "February", "March", "April", "May", "June",
+   "July", "August", "September", "October", "November", "December"};
+</pre>
+<p audio="2">
+In either case, the number of elements in the array is fixed after initialization.
+We can't change, say, the number of names in <tt>monthNames</tt> without creating a complete
+new array.
+</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Declaring and initializing a two-dimensional array</title>
+   </head>
+   <body>
+<p audio="2">
+Not surprisingly, declaring and initializing a two-dimensional array
+is similar to declaring and initializing a one-dimensional array.
+The table below gives examples. </p>
+<table id="tableBlue">
+	<tr>
+		<th>operation</th> 
+		<th>one-dimensional array</th> 
+		<th>two-dimensional array</th>
+	</tr>
+	<tr>
+		<td>declaration</td> 
+		<td><tt>int [ ] values;</tt></td> 
+		<td><tt>int [ ] [ ] values;</tt></td>
+	</tr>
+	<tr>
+		<td>initialization</td> 
+		<td><tt>values = new int[20];</tt></td> 
+		<td><tt>values = new int[20][30];</tt></td>
+	</tr>
+	<tr>
+		<td>declaration + initialization</td> 
+		<td><tt>int [ ] values = {1, 5, 7};</tt></td> 
+		<td><tt>int [ ] [ ] values <br>
+		        = {{1,4,7}, {2,5,8}, {3,6,9}};</tt></td>
+	</tr>
+	<tr>
+		<td>use</td> 
+		<td><tt>values[k]</tt></td> 
+		<td><tt>values[row][col]</tt></td>
+	</tr>
+</table>
+
+   </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>A slight complication</title>
+   </head>
+   <body>
+      <p audio="name13_1">A straightforward translation of the <tt>fixFirst</tt>, <tt>fixMiddle</tt>, and&nbsp;<tt>fixLast</tt> methods into a single <tt>fixCase</tt> method yields the following. 
+ </p>
+      <pre>
+   public Name (String first, String middle, String last) {
+      myFirst = first;
+      myMiddle = middle;
+      myLast = last;
+      fixCase (myFirst);
+      fixCase (myMiddle);
+      fixCase (myLast);
+   }
+
+   private void fixCase (String namePart) {
+      namePart = namePart.toLowerCase().trim();
+      namePart = namePart.substring(0,1).toUpperCase() + namePart.substring(1);
+   }</pre>
+      <p audio="name13_2">Copy the <tt>Name</tt> constructor and the <tt>fixCase</tt> method into the <tt>Name</tt> class, replacing the methods originally in that class. 
+         Then make an instance of the <tt>Name</tt> class, and supply the strings <tt>"hillARY"</tt>, <tt>"RodhaM"</tt>, and <tt>"CLINTON"</tt> as arguments to the constructor. 
+         Finally, call the <tt>fullName</tt> method and see how they are stored.</p>
+   </body>
+</html>

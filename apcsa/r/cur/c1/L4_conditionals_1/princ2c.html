@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The third example of principle 2</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <p audio="1">Here are examples of path counting in various program segments:</p>
+      <ul>
+         <li>
+            <span audio="p2c_1">Now consider <i>two</i> consecutive <tt>if</tt> statements:</span>
+            <pre class="width50">    if ( comparison/boolean value ) {
+    }
+    if ( comparison/boolean value ) {
+    }
+</pre>
+            <span audio="p2c_2">There are two possibilities for each test, success or failure. 
+               Thus there are four paths through the two statements, corresponding to the four possibilities:</span>
+            <ul>
+               <li audio="p2c_3">
+                  1st if : true<br/>
+                  2nd if : true
+               </li>
+               <li audio="p2c_4">
+                  1st if : true<br/>
+                  2nd if : false
+               </li>
+               <li audio="p2c_5">
+                  1st if : false<br/>
+                  2nd if : true
+               </li>
+               <li audio="p2c_6">
+                  1st if : false<br/>
+                  2nd if : false
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </body>
+</html>

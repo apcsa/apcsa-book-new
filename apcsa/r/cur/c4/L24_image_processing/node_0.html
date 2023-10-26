@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Zooming</title>
+</head>
+<body>
+<p>
+(This problem appeared on the 1988 AP CS exam.)
+</p>
+<p>
+Write a procedure <tt>Expand</tt> that expands its first argument, <tt>M</tt>, 
+which is a matrix of numbers, by an amount specified by its second argument,
+<tt>Factor</tt>, which is a nonnegative integer.
+(A matrix is a two-dimensional table.)
+In particular, if <tt>M</tt> starts with <tt>r</tt> rows and <tt>c</tt> columns
+and if the value of <tt>Factor</tt> is <tt>k</tt>, then <tt>M</tt> is returned as a matrix of <tt>k*r</tt> rows and <tt>k*c</tt> columns, 
+where each element <tt>e</tt> of the original matrix is replaced by a <tt>k</tt>-by-<tt>k</tt> matrix, all of whose elements are <tt>e</tt>.
+</p>
+<p>
+The matrix passed to <tt>Expand</tt> is to be of type <tt>MatrixType</tt>,
+which contains a two-dimensional array such that the element in the <tt>i</tt>th row
+and <tt>j</tt>th column of the matrix is in the <tt>[i, k]</tt> position of the array.
+</p>
+<p>
+The effect of the call <tt>Expand(M, 3)</tt> is shown in the diagram below.
+</p>
+<table>
+<tr><td>Value of <tt>M</tt> at the time of the call</td><td>Value of <tt>M</tt> upon return from the call</td></tr>
+<tr>
+<td>
+<pre>
+7 2 3
+4 8 6
+</pre>
+</td>
+<td>
+<pre>
+7 7 7 2 2 2 3 3 3
+7 7 7 2 2 2 3 3 3
+7 7 7 2 2 2 3 3 3
+4 4 4 8 8 8 6 6 6
+4 4 4 8 8 8 6 6 6
+4 4 4 8 8 8 6 6 6
+</pre></td></tr></table>
+<p>
+Assume the following declarations.
+</p>
+<pre>
+const
+   MaxSize = &lt;<i>some large integer constant</i>&gt;
+type
+   MatrixArray = array[1..MaxSize, 1..MaxSize] of integer;
+   MatrixType = record 
+      Numbers: MatrixArray;
+      NumRows: integer;
+      NumCols: integer
+   end;
+</pre>
+<p>
+Because each variable of type <tt>MatrixType</tt> takes up a significant amount
+of memory, you cannot assume that a second variable of type <tt>MatrixType</tt>
+would fit in memory. Thus, <b>you will receive no credit if you make use of any
+array variable other than the one passed into the procedure</b>.
+</p>
+<p>
+You may find it helpful to write and call an auxiliary proedure that assigns a value to every element of a rectangular portion of a two-dimensional array.
+</p>
+</body>
+</html>

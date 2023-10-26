@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Solidifying your understanding (2)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="solidify_if.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">
+ <p audio="1">
+ Again, consider the <tt>useUp</tt> method below.
+ </p>
+ <table>
+ <tr>
+ <td>
+<pre> void useUp (int amount) {
+ if (myAmount &lt; amount) {
+ System.out.println ("not enough left");
+ amount = 0;
+ }
+ myAmount = myAmount - amount;
+ }</pre>
+ </td>
+ </tr>
+ </table>
+ <p audio="2">
+ Suppose that <tt>myAmount</tt> contains the value 14, and <tt>useUp</tt> is called with the argument 24. Of the following statements, which is the first to be executed?
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text">
+ <tt>System.out.println ("not enough left");</tt>
+ 
+        </div>
+        <div class="feedback">
+ Correct!
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text">
+ <tt>amount = 0;</tt>
+ 
+        </div>
+        <div class="feedback">
+ No! Because <tt>myAmount</tt> is less than <tt>amount</tt>,
+ the test of the <tt>if</tt> statement will be true. However, 
+ <tt>amount = 0;</tt> is not the first statement in the true clause.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text">
+ <tt>myAmount = myAmount - amount;</tt>
+ 
+        </div>
+        <div class="feedback">
+ No. Because <tt>myAmount</tt> is less than <tt>amount</tt>,
+ the test of the <tt>if</tt> statement will be true, and the 
+ statements in the true clause for the <tt>if</tt> will be
+ executed.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text">
+ None of the three statements will be executed.
+ 
+        </div>
+        <div class="feedback">
+ No, one of the above statements will get executed.
+ 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 1"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

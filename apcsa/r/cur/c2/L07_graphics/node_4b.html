@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>Drawing in the paintComponent method</title>
+   </head>
+   <body>
+      <p audio="2">Let's look at the whole class again, focusing more 
+         closely at the <tt>paintComponent</tt> method: </p>
+      <pre class="width70">public class Greetings extends JPanel {
+   private int myWindowWidth = 300;
+   private int myWindowHeight = 400;
+	
+   public Greetings() {
+      JFrame easel = new JFrame();		
+      easel.setSize (myWindowWidth, myWindowHeight);
+      easel.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+      easel.add (this);
+      easel.setVisible (true);
+   }
+	
+   public void paintComponent (Graphics g) {
+      g.drawString ("Hi there!", 150, 200);	
+   }
+}</pre>
+      <p audio="3">The <tt>paintComponent</tt> method is what does the 
+         actual drawing.  The <tt>drawString</tt> method will draw a 
+         string on a <tt>JPanel</tt> (the canvas).  But we are getting 
+         ahead of ourself:  where in this class is the <tt>paintComponent</tt> method
+         ever getting called?</p>
+      <p class="quoteBlue" audio="3b">Look closely.  You'll notice that nothing in 
+         the <tt>Greetings</tt> class calls <tt>paintComponent</tt>. 
+         As you might have guessed, the <tt>JPanel</tt> class, 
+         which the <tt>Greetings</tt> class is acting like, is doing something sneaky.</p>
+      <p audio="3c">It is called whenever the
+         underlying system&mdash;that is, Java&mdash;thinks the drawing window needs to be
+         updated, for example, immediately after the call to <tt>setVisible</tt>, 
+         or after the window is resized, or after
+         an overlapping window is moved or deleted.  (We saw a similar situation in lesson 1, where the "tick" method in the alarm clock was called by some clock internal process.)
+</p><p>
+If the <tt>JFrame</tt> was 
+         never made visible, or if the <tt>Greetings</tt> object was never attached
+         to the <tt>JFrame</tt>, then <tt>paintComponent</tt> would never be called.</p>
+
+
+   </body>
+</html>

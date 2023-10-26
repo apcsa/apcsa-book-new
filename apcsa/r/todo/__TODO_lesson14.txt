@@ -1,0 +1,81 @@
+Todo LESSON 14
+
+General --
+- I might add steps that force them to predict the state of the list
+  in the next step of either sort
+- Can we point them to animations to see how they work
+- Diagrams would be good too.
+=====================
+BlueJ:
+- suitSize is not in Deck do we add or delete one parameter constructor from Card
+
+========================
+Steps (step numbers have been updated in this section):
+
+Step 4: - needs feedback
+Step 15: - BlueJ icon
+		 - Do outranks first -- maybe seperate steps (DONE MJC)
+		 - we are dscribing in line(in place?) selection sort? Should we make that clearer?
+		 	-> One way to sort is to build the sorted list from the end.
+		 - Can we point to an animation? Or create one our selves?
+Step 16: - BlueJ icon
+		 - "Choose the first element? "  Animation?
+Step 24: think about replacement since current version is both hard and long
+Step 25: Needs code or a reference to a BlueJ activity
+Step 27: do everything in spades?
+Step 28: include a choice with clubs
+Step 31: Sherry response is incompatible with sort by name; do we want sort by hand?
+
+Add color?
+Use collections.sort?
+Make sure glossary entries are provided.
+Advertise Sort Detective.
+
+============
+Done:
+Add a debugging step.
+
+Step 2: - Add BlueJ Icon
+		- Add in which integers map to which suit
+Step 3: Get rid of bluej box
+Step 4: BS Canned Responses
+Step 5: EDIT -- extra parentheses by For
+		- Do we push them to make a chart?
+		s7 - VISUAL - add a space between paragraph and table. "A perfect shuffle"
+s8 - VISUAL - plain. add img. "Two approaches to random shuffling"
+
+Step 9: - BS canned reponses 
+		- This line needs to change to : int temp = myCards.get(r1); --> Card temp = myCards.get(r1);
+		- why are we setting this up to terminate on break? - for loop ?
+		- turn into BlueJ project -- make more explicit to try it -- DIDN't do
+
+
+Step 10/11: I think this needs some more work -- I having to read it pretty intensely
+s10 - VISUAL - Content about "<->" arrows are hard to read. "Analysis by hand"
+s11 - BS need feedback. "Evaluating the exchange-based shuffle"
+
+
+Step 14: Canned responses
+Step 15: Canned responses
+Step 17 refers to Hand class? Means Deck?
+Step 17: Correct spelling of "choosen"; also use myCards for consistency with sorting stuff
+Step 18: Needs code or a reference to a BlueJ activity
+Step 18: Canned responses
+			- refers to Hand class
+Step 19: Canned response
+			- refers to Hand class
+Step 22: Needs code or a reference to a BlueJ activity
+Step 24: "1b" => "2b"; 
+Step 26: say "choose ... from the start of the list"
+Step 28: "is" => "could be"
+Step 40: missing paren
+
+ s16 to s17 - VISUAL - plain. need img!
+
+Exercises
+Summary
+
+ 
+ 
+ 
+ 

@@ -1,0 +1,41 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Motivation for conditional execution</title>
+
+   </head>
+   <body>
+      <p audio="cond1_1">
+      Our programs so far have involved three kinds of statements:
+</p>
+<ul>
+<li>assignment statements;</li>
+<li>method calls; </li>
+<li><tt>return</tt> statements.</li>
+</ul>
+<p>
+When we call a method from the Object Bench, we know exactly what statements are executed as a result, and exactly what sequence they will be executed.
+For example, calling the constructor of the <tt>Refillable</tt> class always executes its three assignment statements in the same order:
+</p>
+<pre>
+   myAmount = initialAmount;  // always executed first
+   myUseUpCallCount = 0;      // always executed second
+   myTotalUse = 0;            // always executed third
+</pre>
+      <p audio="cond1_5.m1"> We haven't yet seen a way to sometimes <i>not</i> execute a statement, even though it might not
+         make any sense to execute. 
+         In the original version of the <tt>Refillable</tt> class, 
+         we were not able to <i>validate</i> arguments by handling nonsense values or values that don't make sense
+         in the context of the program differently from reasonable values.
+
+         </p>
+         <div class="talkBubble medium_right" align="right" color="green" char="constance5">
+         <p audio="cond1_6.f1">
+         We'll use <i>conditional execution</i> to handle this.
+         It'll also be useful for designing <i>flexible</i> code that can handle
+         a variety of reasonable situations.
+         </p>
+         </div>
+   </body>
+</html>

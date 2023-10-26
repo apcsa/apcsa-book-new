@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Determining the length of a string</title>
+</head>
+<body>
+	<div class="imageRight">
+		<img src="/apcsa/r/static/art/scenes/strings_length.png" alt="Bolt measuring length of String" />
+	</div>
+<p audio="2">
+The <tt>String</tt> class that we used to store parts of a name
+has its own <tt>length</tt> method.
+It is illustrative, however, to program it here using a <tt>while</tt> loop.
+We'll assume that our <tt>length</tt> method is inside the <tt>Name</tt> class,
+and will be used with one of the components of the name in the same way as the
+<tt>fixedCase</tt> method.
+</p>
+<p audio="3">
+First, recall some facts about the <tt>substring</tt> method.
+</p>
+<br /><br />
+<ul>
+<li audio="4">
+<tt>s.substring (k)</tt> returns a new string that contains the characters
+starting at position <tt>k</tt> of <tt>s</tt> and extending to the end
+of <tt>s</tt>.  For example, if <tt>s</tt> contains "I love Java!",
+s.substring (2) returns "love Java!".
+</li>
+<li audio="5">
+<tt>s.substring (startPos, endPos)</tt> returns a new string 
+that contains the characters
+starting at position <tt>startPos</tt> of <tt>s</tt> and extending up to
+but not including the character at position <tt>endPos</tt>.
+For example, if <tt>s</tt> contains "I love Java!",
+<tt>s.substring (2, 6)</tt> returns "love".
+Another example: <tt>s.substring (k, k+1)</tt> returns a single-character
+string that contains the character at position <tt>k</tt> of <tt>s</tt>.
+</li></ul>
+
+</body>
+</html>

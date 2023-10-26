@@ -1,0 +1,23 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Explanation of the program</title>
+</head>
+<body>
+<p audio="1">
+The <tt>ArrayList</tt> in which clicks are collected is named <tt>myCorners</tt>.
+It's declared with the <tt>myWindowWidth</tt> and <tt>myWindowHeight</tt> variables,
+and initialized in the <tt>Polygon</tt> constructor to be an empty <tt>ArrayList</tt>.
+</p>
+<p audio="2">
+Each successive pair of mouse click coordinates is stored in a <tt>Point</tt> object 
+(<tt>Point</tt> is declared in <tt>java.awt</tt>;
+it has <i>public</i> instance variables named <tt>x</tt> and <tt>y</tt>.)
+After saving the most recent click, the program draws the partially completed polygon.
+If the polygon is complete&mdash;the current click is sufficiently near any
+of the earlier clicks&mdash;the
+program empties <tt>myCorners</tt> and continues.
+</p>
+</body>
+</html>

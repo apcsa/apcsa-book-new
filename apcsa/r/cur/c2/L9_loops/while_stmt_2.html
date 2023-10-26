@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Eighty lines to five lines</title>
+   </head>
+   <body>
+      <p audio="2">
+         To print the line "I like Java!" eighty times on the console, 
+         we use a variable named <tt>count</tt>
+         (any reasonably descriptive name is fine)
+         whose value says how many lines we've printed so far. 
+         Thus <tt>count</tt>
+         plays the role of a <span class="vocab">counter variable</span> 
+         or a "stepper" variable. 
+         The initial value of the <tt>int</tt> <tt>count</tt>
+         should be 0, indicating that we haven't printed anything yet.
+      </p>
+      <pre class="width60">
+   count = 0;
+</pre>
+      <p audio="3">
+         The <span class="vocab">loop body</span> contains the <tt>println</tt>
+         statement 
+         as well as an <span class="vocab">assignment statement</span> 
+         that increments <tt>count</tt>.
+      </p>
+      <pre class="width60">
+   count = count + 1;         
+   System.out.println ("I like Java!");  
+</pre>
+      <p audio="4">
+         Finally, we supply the <span class="vocab">boolean expression</span>.  
+         We want to continue the loop
+         while we haven't yet printed eighty lines.
+         Alternatively, we want to terminate the loop 
+         once we've printed the eightieth line.
+         A boolean expression that represents our desires is
+      </p>
+      <pre class="width60">
+   while (count &lt; 80)
+</pre>
+      <p audio="5">
+         Putting it all together, we have
+      </p>
+      <pre class="width70">
+   count = 0;
+   while (count &lt; 80) {
+      count = count + 1;
+      System.out.println ("I like Java!");
+   }
+</pre>
+      <p audio="6">
+         Quite an exchange&mdash;we need only five lines to do the work of eighty!
+      </p>
+   </body>
+</html>

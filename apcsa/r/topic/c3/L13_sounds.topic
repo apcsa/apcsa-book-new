@@ -1,0 +1,33 @@
+title: Lesson 13: Sounds
+{
+h2: Understanding lists by working with digital audio
+
+
+heading: Sampling Sound
+    resource: Introduction [/apcsa/r/cur/c3/L13_sounds/intro_0.html]
+    resource: What is sound? [/apcsa/r/cur/c3/L13_sounds/intro_1.html]
+    resource: A sound diagram [/apcsa/r/cur/c3/L13_sounds/node_0.html]
+    quiz: Understanding the diagram (1) [/apcsa/r/cur/c3/L13_sounds/node_1.html]
+    quiz: Understanding the diagram (2) [/apcsa/r/cur/c3/L13_sounds/node_2.html]
+    reading: Sampling sound [/apcsa/r/cur/c3/L13_sounds/intro_2.html]
+    quiz: What sound is this? [/apcsa/r/cur/c3/L13_sounds/intro_4.html]
+    codeit: Sounds in Java [/apcsa/r/cur/c3/L13_sounds/intro_5.html]
+    reading: Zooming [/apcsa/r/cur/c3/L13_sounds/intro_6.html]
+    reading: Zooming(2) [/apcsa/r/cur/c3/L13_sounds/intro_6b.html]
+    reading: The Sound class [/apcsa/r/cur/c3/L13_sounds/intro_7.html]
+
+heading: Sound transformations
+    codeit: Making a sound louder [/apcsa/r/cur/c3/L13_sounds/trans_0.html]
+    resource: Casting [/apcsa/r/cur/c3/L13_sounds/node_4.html]
+    quiz: Why Cast? [/apcsa/r/cur/c3/L13_sounds/node_3.html]
+    brainstorm: A sound too loud? [/apcsa/r/cur/c3/L13_sounds/trans_1.html]
+    codeit: Normalizing [/apcsa/r/cur/c3/L13_sounds/trans_2.html]
+    codeit: Reversing [/apcsa/r/cur/c3/L13_sounds/trans_3.html]
+    codeit: Making noise [/apcsa/r/cur/c3/L13_sounds/trans_4.html]
+    brainstorm: Argument choice [/apcsa/r/cur/c3/L13_sounds/trans_4a.html]
+    brainstorm: How much is too much? [/apcsa/r/cur/c3/L13_sounds/trans_4b.html]
+    summary: Removing noise? [/apcsa/r/cur/c3/L13_sounds/trans_4c.html]
+
+heading: Exercises
+    homework: Reading musical scores [/apcsa/r/cur/c3/L13_sounds/exercise_0.html]
+    homework: More complicated scores [/apcsa/r/cur/c3/L13_sounds/exercise_1.html]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Why Cast?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_3.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">The previous step mentioned the term casting in regards to this line:
+<pre>myData.set(9,(int)myData.get(9) * 1.2);</pre>
+
+
+    The cast, <code>(int)myData.get(9) * 1.2</code>, forces the multiplication operation to become an integer. In this case, why did we need to do this?
+    </div>
+
+    
+    <div class="choice" identifier="Lgf6vOaCPR">
+        <div class="text">Because this ArrayList stores integer objects and multiplying by 1.2 results in a double.
+        </div>
+        <div class="feedback">Yes. Casting to an integer forces the double to become an integer.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="iQbILxQ5ks">
+        <div class="text">Because this ArrayList stores integers and multiplying by 1.2 results in an integer - we just need to tell the ArrayList this as well.
+        </div>
+        <div class="feedback">No. Multiplying by 1.2 will result in a double. Casting will remove, or truncate, the decimal.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="zMfDe36odG">
+        <div class="text">We didn't need to but we wanted to make it clear to other programmers that we needed an integer.
+        </div>
+        <div class="feedback">No. This ArrayList stores integers -- we can only put integers into this ArrayList.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="Lgf6vOaCPR"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

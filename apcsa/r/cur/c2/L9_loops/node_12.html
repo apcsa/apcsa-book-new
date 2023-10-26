@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A flawed implementation</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title"></div>
+
+    <div class="prompt">
+    <p>
+The code below has stylistic flaws plus a bug or two. List as many flaws as you can.
+</p>
+<pre>
+ public int palindromeCount (int start, int finish) {
+     int k = start;
+     int returnVal = 0;
+     while (k &lt; finish) {
+         int temp = k;
+         int r = 0;
+         while (temp &gt; 0) {
+             r = 10 * r + temp % 10;
+             temp = temp / 10;
+         }
+         if (r == k) {
+             returnVal++;
+         }
+         k++;
+     }
+     return returnVal;
+ }
+
+</pre>
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Sherry">I would have called my <tt>reversed</tt> method.  It would have made the inside of the outer loop much clearer.
+The variable names aren't very good.
+
+        </div>
+        
+        <div name="Joe">k and r are off by 1.
+        </div>
+        
+        <div name="Maria">k isn't updated anywhere, so it will infinite loop.
+
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>The fix</title>
+   </head>
+   <body>
+      <p audio="name15_1">We fix the problem by having <tt>fixCase</tt> <i>return</i> the fixed name part. 
+         This requires that we change <tt>void</tt> to <tt>String</tt> and add a <tt>return</tt>&nbsp;statement at the end of <tt>fixCase</tt>, and also change the name "fix case" 
+         to a word that suggests some sort of translating activity, for example "case fixed". 
+         Finally, we change the constructor to accommodate the change to <tt>caseFixed</tt>.
+         Here's the code again.</p>
+      <pre class="width80">
+public Name (String first, String middle, String last) {
+   myFirst = caseFixed (first);
+   myMiddle = caseFixed (middle);
+   myLast = caseFixed (last);
+}
+
+private String caseFixed (String namePart) {
+   String temp;
+   temp = namePart.toLowerCase().trim();
+   return temp.substring(0,1).toUpperCase() + temp.substring(1);
+}
+</pre>
+   </body>
+</html>

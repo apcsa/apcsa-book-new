@@ -1,0 +1,33 @@
+<html>
+   <head>
+   	<script>
+            vocabClass = "top250";
+            helpClass = "top0";
+        </script>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The methods in the <tt>CandyJar</tt> class (2)</title>
+   </head>
+   <body>
+      <p audio="methods2_1"> The third method in the <tt>CandyJar</tt> class, named <tt>candyCount</tt>, 
+         doesn't change any state information;
+         it merely informs the caller how many pieces of candy 
+         are currently in the jar. </p>
+         <p audio="methods2_2">You'll notice that this is the only method whose name
+         is followed by parentheses that don't contain any information.
+         More about that later!</p>
+      <pre class="width50">   public int candyCount ( ) {
+      return myCandyCount; 
+   }
+</pre>
+      <p audio="methods2_3">The fourth method is a <span class="vocab top100">constructor</span>. 
+         Its role is to give initial values 
+         to the instance variables.  Constructors are generally called 
+         once, when the object is first made.</p>
+      <pre class="width60">   public CandyJar (int startingCount) {
+      myCandyCount = startingCount; 
+   }
+</pre>
+ 
+   </body>
+</html>

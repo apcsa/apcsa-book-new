@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <script type="text/javascript" src="../../../script/loader_main.js">
+      </script>
+      <title>Critter processing</title>
+   </head>
+   <body>
+<p audio="2">
+The <tt>Critter</tt> class overrides the <tt>Actor</tt> <tt>act</tt> method,
+calling five methods:
+</p>
+<ul>
+	<li audio="3">getActors, which gathers interesting actors into an <tt>ArrayList</tt>;</li>
+	<li audio="4">processActors, which processes the actors in the list;</li>
+	<li audio="5">getMoveLocations, which gathers possible locations to move to;</li>
+	<li audio="6">selectMoveLocation, which chooses one of the possibilities;</li>
+	<li audio="7">makeMove, which moves the Critter to its new location.</li>
+</ul>
+<p audio="8">
+By default, it gathers the neighboring actors, "eats" them (removes
+them from the grid), and moves to a randomly chosen empty neighboring location.
+Appendix C contains the <tt>Critter</tt> code.
+</p>
+   </body>
+</html>

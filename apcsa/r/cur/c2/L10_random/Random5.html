@@ -1,0 +1,45 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Multiple Random objects?</title>
+</head>
+<body>
+<p audio="2">
+Suppose you want to model a pair of dice.
+You might think of doing the following:
+</p>
+<pre>
+import java.util.Random;
+
+public class PairOfDice {
+
+    private Random d1;
+    private Random d2;
+    
+    public PairOfDice ( ) {
+        d1 = new Random ( );
+        d2 = new Random ( );
+    }
+    
+    public void roll ( ) {
+        System.out.println ("Roll: " + (d1.nextInt(6)+1)
+                + " " + (d2.nextInt(6)+1));
+    }
+}
+</pre>
+<p>
+Recall, however, how the values returned by a <tt>Random</tt> object are computed.
+In the code above, we've let the Java system choose the seed;
+thus <tt>d1</tt>'s seed and <tt>d2</tt>'s seed are the same, 
+as are their <tt>a</tt> and <tt>b</tt> values.
+Calling <tt>roll</tt> thus produces two equal die rolls!
+</p>
+<p>
+The moral: use one Random object throughout a program.
+(One way to do this is via a <span class="vocab">static variable</span>
+that's "owned" by <i>all</i> the objects in a class.
+We'll explore the use of static methods and variables in a few weeks.
+</p>
+</body>
+</html>

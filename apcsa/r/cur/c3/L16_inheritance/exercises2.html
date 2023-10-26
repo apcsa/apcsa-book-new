@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The prisoner's dilemma</title>
+   </head>
+   <body>
+<p audio="2">
+The Prisoner's Dilemma problem describes a two-player game played as follows:
+At each turn in the game, each player says whether or not he will cooperate with
+or compete with his opponent.
+</p>
+<ul>
+	<li audio="3">If both players cooperate, they each receive 3 points.</li>
+	
+	<li audio="4">If both players compete, they each receive 1 point.</li>
+	<li audio="5">If one player cooperates and the other competes, 
+	    the successful competitor will receive 5 points 
+	    and the unsuccessful cooperator none.</li>
+</ul>
+<div class="imageLeft">
+	<img src="/apcsa/r/static/art/scenes/prisoner.png"  width="300" alt="Bolt is in jail!" />
+</div>
+<br />
+<p audio="6">
+This process is repeated a specified number of turns.
+The object of the game is to earn as many points as possible.
+</p>
+<p audio="7">
+One can show that, in a single turn, it's in each player's interest to compete
+rather than cooperate. Over the course of the entire game, however,
+players can observe and react to each other's choices;
+thus the incentive to compete can be overcome by the greater potential payoff for cooperation.
+</p>
+<p audio="9">
+	In the next four steps we're going to ask you to code different types of player strategies and have the players fight against each other.
+</p>
+<div class="floatClear"></div>
+
+<p class="quoteGreen" audio="8">
+The program [<tt>/lesson16/PrisonerDilemmaIntro</tt>] includes a <tt>Player</tt> class that represents a player who always cooperates,
+and a <tt>Simulation</tt> class for playing two players against one another.
+Run the program and verify that each player is earning 3 points at each turn.
+</p>
+</body>
+</html>

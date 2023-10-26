@@ -1,0 +1,40 @@
+<html><head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Enabling cheating</title></head>
+<body>
+<p audio="2">
+If you were a player, wouldn't it be nice to get the car every time?
+Since we have control over the simulation, let's do it!
+</p>
+<p audio="3">
+Monty keeps the location of the car in an instance variable.
+Right now, that variable is private.
+Monty is pretty smart:
+it probably isn't a good idea to let just anybody know that value.
+However, <i>we</i> can make it accessible to the <tt>Player</tt>.
+</p>
+<ol>
+<li audio="4">
+Make the <tt>doorWithCar</tt> instance variable <tt>public</tt> instead of <tt>private</tt>.  
+Poor Monty.
+
+</li>
+<li audio="5">
+
+Modify the <tt>Player</tt> class to take advantage of this change.  
+That is, fix it to ensure that the player always chooses the door with the car.
+</li>
+</ol>
+<p audio="6">
+Now play the game and test your change.  Does it work?  
+You won't get to choose the door the first time because of your change.  
+It should, however, be pretty obvious whether to switch or stay ...  
+</p>
+<p audio="7">
+When making an instance variable or method, 
+your choice of <tt>public</tt> or <tt>private</tt> can have repercussions 
+on how your code is used!
+</p>
+</body>
+</html>

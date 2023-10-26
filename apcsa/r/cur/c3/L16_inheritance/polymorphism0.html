@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top150";
+	  </script>
+      <title>Polymorphism(1)</title>
+   </head>
+   <body>
+<p audio="2">
+As you may have noticed,
+it's possible to pass a subclass instance where a superclass instance is expected.
+In order to compare, say, the <tt>Unforgiving</tt> player with the <tt>TitForTat</tt> player 
+in the Prisoner's Dilemma simulation,
+we created an instance of <tt>Unforgiving</tt> and an instance of <tt>TitForTat</tt>
+and passed them as arguments to the <tt>Simulation</tt> constructor,
+which is expecting to receive two <tt>Player</tt> objects.
+Not only will this be accepted by the compiler,
+but the compiled code will use the <tt>cooperates</tt> methods 
+of <tt>Unforgiving</tt> and <tt>TitForTat</tt>.
+</p>
+
+<p class="quoteBrown" audio="3">
+This facility is called <span class="vocab">polymorphism</span>.
+The word "polymorphism" comes from the Greek words for "many" and "forms". 
+In the context of object-oriented programming, it means that a given object 
+can be regarded either as an instance of its own class, 
+as an instance of its superclass, 
+as an instance of its superclass's superclass, and so on up the hierarchy.</p>
+</body>
+</html>

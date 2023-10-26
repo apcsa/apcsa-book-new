@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>Auto-expanding</title>
+</head>
+<body>
+<p audio="2">Finally, we consider the case where <tt>add</tt> is called when the myElements array is full.</p>
+
+<p audio="3">We noted earlier that the number of elements an array can hold is fixed when that array is initialized. Thus we cannot
+expand the <tt>myElements</tt> array. What we can do is construct <i>another</i>, bigger array, copy the elements from <tt>myElements</tt>
+into it, and then replace <tt>myElements</tt> by the new array.</p>
+
+<p audio="4">Here's the code:</p>
+
+<pre>
+public void add (Object obj) {
+   if (myElements.length == myElemCount) {
+      Object [ ] temp = new Object [2*myElemCount];
+      for (int k=0; k&lt;myElemCount; k++) {
+         temp[k] = myElements[k];
+      }
+      myElements = temp;
+   }
+   // Now there is room for the new element.
+   // Add it as was described earlier.
+}
+</pre>
+</body>
+</html>

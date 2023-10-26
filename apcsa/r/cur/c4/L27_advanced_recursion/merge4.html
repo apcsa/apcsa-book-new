@@ -1,0 +1,55 @@
+<html>
+<head>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+<title>A trace of the algorithm</title>
+</head>
+<body>
+<p audio="2">We'll go through the steps of the loop to combine <tt>{1,4,7,9}</tt> with <tt>{2,3,6,8}</tt>. The elements
+indexed by <tt>ks1</tt> and <tt>ks2</tt> are underlined in the steps below.</p>
+<br />
+<table id="tableCenter">
+		<tr>
+				<th style="border-right: 1px solid #666;"><tt>source1</tt></th>
+				<th style="border-right: 1px solid #666;"><tt>source2</tt></th>
+				<th>resulting <tt>destination</tt></th>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt><u>1</u> 4 7 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt><u>2</u> 3 6 8</tt></td>
+				<td><tt>1</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 <u>4</u> 7 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt><u>2</u> 3 6 8</tt></td>
+				<td><tt>1 2</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 <u>4</u> 7 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 <u>3</u> 6 8</tt></td>
+				<td><tt>1 2 3</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 <u>4</u> 7 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 3 <u>6</u> 8</tt></td>
+				<td><tt>1 2 3 4</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 4 <u>7</u> 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 3 <u>6</u> 8</tt></td>
+				<td><tt>1 2 3 4 6</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 4 <u>7</u> 9</tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 3 6 <u>8</u></tt></td>
+				<td><tt>1 2 3 4 6 7</tt></td>
+		</tr>
+		<tr>
+				<td style="border-right: 1px solid #666;"><tt>1 4 7 <u>9</u></tt></td>
+				<td style="border-right: 1px solid #666;"><tt>2 3 6 <u>8</u></tt></td>
+				<td><tt>1 2 3 4 6 7 8</tt></td>
+		</tr>
+</table>
+</body>
+</html>

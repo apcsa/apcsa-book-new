@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ingredients for computing the average use</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="refillable13.mc"
+    hasinlinefeedback="true"
+    maxchoices="0"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">
+ <p audio="1">
+ Which of the following do we need to determine the average use? (Check all that apply.)
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> <span audio="2">the total number of calls to
+<tt>useUp</tt></span> 
+        </div>
+        <div class="feedback"> Right! We need to keep track of this to be the denominator
+when we calculate the average: total amount divided by number of calls.
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> <span audio="3">the total number of calls to
+<tt>refill</tt></span> 
+        </div>
+        <div class="feedback"> No, we will need the total number of calls to <tt>useUp</tt> not <tt>refill</tt>. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> <tt audio="4">myAmount</tt> 
+        </div>
+        <div class="feedback"> No, we don't care about the current amount in the object
+when we need the average. The formula we'll use needs the
+total amount of the arguments to calls to <tt>useUp</tt>
+and the number of times <tt>useUp</tt> has been called. 
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"> <span audio="5">the sum of all the arguments supplied in calls
+to <tt>useUp</tt></span> 
+        </div>
+        <div class="feedback"> Right. We'll need this to be the numerator when we
+calculate the average: total amount divided by number of calls. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text"> <span audio="6">the sum of all the arguments supplied in calls
+to the <tt>Refillable</tt> constructor</span> 
+        </div>
+        <div class="feedback"> No, in order to calculate the average use, we don't care
+about how much the object started with. We only care about calls to
+useUp. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 6">
+        <div class="text"> <span audio="7">the argument of the most recent call to
+<tt>useUp</tt></span> 
+        </div>
+        <div class="feedback"> No, this won't give us enough information to calculate 
+ the average use. We need to keep track of all the 
+calls to useUp. 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 1"></div>
+        
+        <div class="correctResponse" identifier="choice 4"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

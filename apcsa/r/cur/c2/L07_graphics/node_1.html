@@ -1,0 +1,50 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A greeting program</title>
+   </head>
+   <body>
+      <p audio="2">Let's take a look at a program to greet the user.</p>
+      <pre class="width80">
+import java.awt.*;
+import javax.swing.*;
+
+public class Greetings extends JPanel {
+	
+   private int myWindowWidth = 300;
+   private int myWindowHeight = 400;
+	
+   public Greetings() {
+      JFrame easel = new JFrame();		
+      easel.setSize (myWindowWidth, myWindowHeight);
+      easel.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+      easel.add (this);
+      easel.setVisible (true);
+   }
+	
+   public void paintComponent (Graphics g) {
+      g.drawString ("Hi there!", 150, 200);	
+   }
+}
+</pre>
+      <p audio="3"> There are several new things about this code.</p>
+      <ul>
+         <li audio="4">
+            the use of <tt>import</tt>
+            and <tt>extends</tt>;
+         </li>
+         <li audio="5">
+            the <tt>Graphics</tt>, <tt>JFrame</tt>, and <tt>JPanel</tt>
+            classes;
+         </li>
+         <li audio="6">
+            the <tt>JFrame</tt>
+            methods called to set up the display;
+         </li>
+         <li audio="7">
+            the <tt>paintComponent</tt>, which no one seems to call.
+         </li>
+      </ul>
+   </body>
+</html>

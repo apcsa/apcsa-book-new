@@ -1,0 +1,26 @@
+title: Lesson 18: Adventure
+
+{
+h2: The "Adventure!" mini-project
+
+
+heading: Introduction
+    resource: A case study [/apcsa/r/cur/c3/L18_adventure/intro0.html]
+    reading: Adventure games [/apcsa/r/cur/c3/L18_adventure/intro1.html]
+    reading: Classes in the program [/apcsa/r/cur/c3/L18_adventure/intro2.html]
+    codeit: Look at the code [/apcsa/r/cur/c3/L18_adventure/intro3.html]
+    quiz: Processing commands [/apcsa/r/cur/c3/L18_adventure/intro4.html]
+
+heading: Making special rooms
+    resource: Examining Room [/apcsa/r/cur/c3/L18_adventure/room0.html]
+    reading: So many methods... [/apcsa/r/cur/c3/L18_adventure/room1.html]
+    quiz: What comes next [/apcsa/r/cur/c3/L18_adventure/room2.html]
+    resource: Basic rooms [/apcsa/r/cur/c3/L18_adventure/room3.html]
+    codeit: Ending the game [/apcsa/r/cur/c3/L18_adventure/room4.html]
+    reading: Some tips [/apcsa/r/cur/c3/L18_adventure/room5.html]
+    forum: Password protection [/apcsa/r/cur/c3/L18_adventure/room6.html]
+    codeit: Write it [/apcsa/r/cur/c3/L18_adventure/room7.html]
+
+heading: Now you do it!
+    codeit: Your turn [/apcsa/r/cur/c3/L18_adventure/doit0.html]
+    codeit: Some ideas [/apcsa/r/cur/c3/L18_adventure/doit1.html]

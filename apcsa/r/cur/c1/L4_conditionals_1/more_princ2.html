@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Testing principle 2</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p audio="morep_1"> 
+This explains why one test was insufficient to exercise all the code in 
+</p> 
+<pre class="width40">    leapDayCount = 0;
+    if (year % 4 == 0) {
+        leapDayCount = 1;
+    }
+    if (year % 100 == 0) {
+        leapDayCount = 0;
+    }
+    if (year % 400 == 0) {
+        leapDayCount = 1;
+    }
+</pre> 
+<p audio="morep_2"> 
+From the previous discussion, we see a need for <i>eight</i> tests, 
+corresponding to the eight paths through the three tests:
+</p>
+<ol> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 == 0</tt></li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 != 0</tt></li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 == 0</tt></li> 
+<li><tt>year % 4 == 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 != 0</tt></li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 == 0</tt></li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 == 0</tt>, and <tt>year % 400 != 0</tt></li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 == 0</tt></li> 
+<li><tt>year % 4 != 0</tt>, <tt>year % 100 != 0</tt>, and <tt>year % 400 != 0</tt></li> 
+</ol> 
+</body>
+</html>

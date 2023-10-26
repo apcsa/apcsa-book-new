@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Comparison counting (1)</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_30.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt"><p>
+Here again is the temperature classifying code.
+</p>
+<pre>
+ if (temp &lt; 40) {
+ tempStr = "cold";
+ } else if (temp &gt;= 40 &amp;&amp; temp &lt; 60) {
+ tempStr = "cool";
+ } else if (temp &gt;= 60 &amp;&amp; temp &lt; 80) {
+ tempStr = "warm";
+ } else if (temp &gt;= 80) {
+ tempStr = "hot";
+ }
+</pre>
+
+How many comparisons are made if <tt>temp</tt> has the value 75?
+</p>
+    </div>
+
+    
+    <div class="choice" identifier="fOud1ilejn">
+        <div class="text">3
+        </div>
+        <div class="feedback">No, definitely more than that. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="SLEAx08HsF">
+        <div class="text">4
+        </div>
+        <div class="feedback">No. Remember, both <tt>temp >=60</tt> <b>and</b> <tt>temp < 80</tt> in the third case will be run for any value that reaches that case.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="B7upfKxtNW">
+        <div class="text">5
+        </div>
+        <div class="feedback">Correct: one in the first case, two in the second case, and two more in the third case. The fourth case won't be run.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="jaN3BS3njH">
+        <div class="text">6
+        </div>
+        <div class="feedback">No, the last test (<tt>temp >= 80</tt>) will never be run.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="B7upfKxtNW"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

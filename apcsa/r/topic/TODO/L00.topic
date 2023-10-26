@@ -1,0 +1,50 @@
+title: Lesson 00: Unit 0 Lesson 0
+
+{
+h2: Unit 0 Lesson 0
+
+
+heading: Welcome
+    resource: Start Page [/apcsa/r/cur/cTODO/L0_welcome/start.html]
+
+heading: About the Course
+    movie: Welcome Video [/apcsa/r/cur/cTODO/L0_welcome/introvideo.html]
+    reading: Reading Pages [/apcsa/r/cur/cTODO/L0_welcome/reading.html]
+    cartoon: Programming Conversations [/apcsa/r/cur/cTODO/L0_welcome/conversations.html]
+    reading: Navigating the course [/apcsa/r/cur/cTODO/L0_welcome/navigating.html]
+    brainstorm: Brainstorm Pages [/apcsa/r/cur/cTODO/L0_welcome/brainstorm.html]
+    matchsequence: Matching Question [/apcsa/r/cur/cTODO/L0_welcome/match.html]
+    quiz: Multichoice Question [/apcsa/r/cur/cTODO/L0_welcome/multichoice.html]
+
+    heading: Survey, 5 pages
+        display: Survey (part 1 of 5) [/apcsa/r/cur/cTODO/L0_welcome/survey1.html]
+        openresponse: Survey (part 2 of 5) [/apcsa/r/cur/cTODO/L0_welcome/survey2.html]
+        openresponse: Survey (part 3 of 5) [/apcsa/r/cur/cTODO/L0_welcome/survey3.html]
+        openresponse: Survey (part 4 of 5) [/apcsa/r/cur/cTODO/L0_welcome/survey4.html]
+        quiz: Survey (part 5 of 5) [/apcsa/r/cur/cTODO/L0_welcome/survey5.html]
+    display: The Development Environment [/apcsa/r/cur/cTODO/L0_welcome/ide.html]
+
+heading: Wrap Up
+    reading: Don't forget [/apcsa/r/cur/cTODO/L0_welcome/remember.html]
+    summary: All's Well that Ends Well [/apcsa/r/cur/cTODO/L0_welcome/summary.html]
+
+
+
+// ISSUES CONVERTION FROM WISE
+//Ignored 16 files:
+//  (unknown ext) __TODO_lesson0.txt
+//  conversations.ht
+//  ide.ht
+//  introvideo.ht
+//  (unknown ext) journal.or
+//  (unknown ext) lesson0.project.json
+//  (unknown ext) lesson0.project.xml
+//  navigating.ht
+//  reading.ht
+//  remember.ht
+//  start.ht
+//  summary.ht
+//  survey1.ht
+//  (unknown ext) survey2.or
+//  (unknown ext) survey3.or
+//  (unknown ext) survey4.or

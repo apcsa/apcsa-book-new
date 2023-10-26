@@ -1,0 +1,168 @@
+LESSON 4 TODO
+
+- check all brainstorms for canned responses
+- supply feedback for all other assessments.
+
+ - add images already written:
+ looking under hood, etc.
+
+-- step63 table is ugly -- add "id=tableBlue"
+
+Testing
+Mike Clancy's entries for Aug 22 are in upper case.
+
+========= projects
+
+Note, leapYear should be renamed to LeapDay, and LeapYear2 to LeapYear.
+
+And, why do we do the whole leapXCount business as an int?  Perhaps they don't know/have practice with booleans yet, but...
+A big problem with LeapYear2, really, is that leapYearCount is set to 0 to start, which can make them write weird if structures
+since they don't actually have to set it.
+
+Regular bluej projects
+*  "Sources of misuse" (step 6) is changed to use "Refillable version2" from lesson 4.
+   (this is a copy of Refillable version2 in lesson 3
+*  Step 42, "Finding a bug" uses BuggyRefillable.   
+
+BlueJ exercises:
+*	"using nested if statements", step 31.
+   Refillable_nested_ifs
+*  Completing setLeapDay, step 49  (not working quite yet -- sept 22) 
+*  Determining the number of leap days, step 51
+*  LeapYearTester  lesson4/LeapYearTester, step 52, 
+   
+???
+*	lesson4/ifStatements should get flushed, I think, since they're using Refillable2 for earlier stuff.
+
+
+
+
+
+============== Sean Morris - June 2010
+=========================== Would be nice and Larger Questions:
+- Step 17 -- I added another piece of code to the one written showing you can access the myUseUpCallCount directly
+          -- wasn't sure the students would get the call to the method currentAmount() in side the 
+             if's parentheses -- 
+
+
+============================ To Be Done
+-  if...else vs. if ... then ... else? [FIXED]
+-  Introduce no bracket if statements  first line executes [ADDED]
+
+-  "Sources of misuse" : the graphic is confusing. I am not sure what we are trying to do
+					- what is num and how does it relate to constructor?
+					- Is the graphic referring to refill's method body?
+					[THIS GRAPHIC NEEDS FIXING; I COMMENTED IT OUT]
+-  Step 7: It should be averageUse as the answer but my buggyRefillable is not buggy. 
+		   The conditionals need to be removed. [FIXED]
+           Do we mess with BlueJ now or wait?
+			- change feedback on to be Correct it breaks the object
+-  Step 8: 	Concept of validation -- could use Password or Username checking 
+			to bring back in Strings
+-  Step 8 : we refer to error message coming from BlueJ -- what do think about 
+			saying that errors come from Java compiler rather than making 
+			it seem that you need BlueJ to see errors.	[NOT CHANGED]
+			
+-  Step 10 : Add examples [NOT SURE WHAT THIS IS (steps got renumbered)
+-  Step 12: Have we talked about control flow yet? I think the box is going 
+			to be difficult for the students to access
+					-- a diagram?
+				 	-- now we switch to "validate arguements" [CHECK REWRITE][looks good -smm]
+				--> Practice right here on creating the statement that evaluate the simple if 
+				--> Maybe a MC that provides a series of examples here before doing next step?
+				[CHECK REWRITE MJC][looks good -- smm]
+-  Step 13: The grey vocab box extends past where needed and creates scroll bar  
+-  Step 13: There are a number of ways to get a true or false value:
+								if(true) ...
+								if(something == true) ....
+								if(something <  somethingelse) ....
+								...
+								...
+								...
+								... [NOT SURE WHAT'S WANTED HERE]
+			[Maybe overkill but have just watch student's get confused by the various ways one get use the comparison to get their values
+			 - I think we cover decently and I'll try to check it out more this week.]
+-  Step 34:  What are we expecting them to say? I might drop this one or change it
+	[WE TALKED ABOUT THIS FRIDAY; I CHANGED IT ONLY A LITTLE]
+-  BlueJ Exercises: We need to go over which Refillable classes should be open 
+	and what we expect them to look like
+			- Step 32 : buggyRefillable [SEE ABOVE]
+			- Step 3: buggyRefiable -- should this be ifStatements [IFSTATEMENTS IS USELESS]
+			- Step 39 -- LeapYear --> all code is already in file -- I hit reset to clear 
+				-- how do we ensure cleared when open
+			- Step 41: LeapYear2 -- the Year classes formatting is tweaky
+		 		- if we removed the line numbers the sample lines could be copied to BJ?
+		 		- Can we set up tests for the method to see if there code is correct?
+-   VLE :
+	 - Sometimes style is not applied and all text is centered and small font. It happened Step 16. 
+	 	If you click another step and go back it usually 
+	 resets itself -- Chrome/Safari
+	  Step 30: - Animation clears the comfortLevel as soon as animation finishes
+	- I changed the color of all text in talk bubble to dark blue - color:#334B7B;
+
+
+		
+================== DONE
+Step 3: -- String should be capitalized (fixed by Nathan)			
+Step 3: - I missed the IfStatements folder?	-- it is back						
+Step 4: - Added another sample answer
+Step 5: We need to establish what they did wrong or what we intended them to do 
+		 		wrong in order for Steps 4 and 5 to make sense - DONE
+Step 7: **** Added line telling to students to open up editor and look at code 
+	-- how else would be able to answer question?
+
+Step 9: DONE Made the swtich - We swith to the word illegal -- how about invalid 
+	or not valid in this context of your program?
+Step 10 : DONE I might do like this:
+						//if initialAmount is less than 0
+							//print message here
+						//otherwise do the following:
+							...			
+Step 11: Use up example should in second clause say:
+					amount > myAmount
+					
+Step 12: 	 -- somthing is creating a horizontal scroll bar on this page
+			-- "handling nonsense values" right or even handling values that don't make sense 
+				in the context of the program
+
+Step 13: ... depending on the value of a variable  vs. ... depending on whether result(true/false) 
+	of evaluating a comparison or boolean operator
+				-- I might approach from a different angle
+					-->  The parentheses on the if are for a boolean parameter. 
+						We know what this means. An "if" takes a true or false.  
+						True means ... False means ... 
+Step 14:  Sometimes it is useful or easier to think about the opposite of what you want 
+	to provide to the if control structure 
+					-- Give it a shot, what is opposite of x < y?
+
+Step 15 : 	- get rid of It checks, get reid of if so and, "and" prints an
+					- seem should be seen
+					- Box 3. execution continues on the line directly following the if block(body)?		
+Step 17: Consider the Refillable classes useUp method below
+		 			- Answers 2 and 3 remove the and before both	
+		 			
+Step 22,23: Consider the useUp method below
+ Step 24 : The seen answer is a bit disturbing although I see what 
+		 			you are trying to do. We need some sort of tagging system? 
+		 				--> Added canned response
+Step 36:  "Our tests" is referring to what tests?  The examples earlier in the lesson? 
+-- Changed this to our animations
+Step 39: if monthNumber is 2 or 12 [REMOVE 12] and dateInMonth is 29 -- clarified what method to complete
+Step 47: change to the ... to a boolean value and then rewrite the possible paths explicitly
+Step 49: says "check" the ones logically possible but it is radio buttons
+Step 51: Add that Sunday is considered 0 to instructions.
+-  Glossary : conditional contain an example both if ... else, tertiary, and chained elses
+				[I HAVEN'T CHANGED THE GLOSSARY ENTRIES]
+  				What we mean here is:  we get to choose which are executed 
+  				depending on some conditions.
+  				if the conditions are true execut the if body and if not the else body
+				[DONE -- SMM]
+
+======== WORKING THROUGH STILL
+
+
+
+	
+
+
+		

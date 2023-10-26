@@ -1,0 +1,51 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Method headers</title>
+   </head>
+   <body>
+      <p audio="methods3_1"> Here are all the <span class="vocab" term="method header">method
+       headers</span>, or the first line of their definitions.  (You 
+       can also call this the method's <span class="vocab">signature</span>).
+    </p>
+      <pre class="width60">   public void eat (int amount)
+   public void refill (int amount)
+   public int candyCount ( )
+   public CandyJar (int startingCount)</pre>
+      <p audio="methods3_2">
+      The header
+      for each method contains four important pieces of information:
+	  </p>
+	  
+      <ul>
+         
+            <li audio="methods3_3">The method's accessibility (<tt>public</tt> or <tt>private</tt>,
+               according to whether or not something in another class is allowed to call it).
+			   </li>
+       
+       
+            <li audio="methods3_4">The kind of value it returns.  <tt>void</tt> means it doesn't return any information,
+            while <tt>int</tt> means that it will return an integer.
+               And, constructors are special, and don't specify a return type.
+         </li>
+            <li audio="methods3_4b">The name of the method.  Again,
+            constructors are special: the name of a constructor is the 
+            same as the name of the class.</li>
+            <li audio="methods3_5">The types and names for the method's <span class="vocab" term="parameter">parameters</span>, 
+               which specify how information is given to the method (and,
+               this means, how information is given to the object with those
+               methods).
+               <br/><br/>The parameters in the <tt>eat</tt> and <tt>refill</tt> methods
+               tell the method how much should be taken away or added to the
+               <tt>CandyJar</tt>'s instance variable.  For the constructor, this parameter
+               specifies how much candy should be in the jar when it is 
+               created.  And the poor <tt>candyCount</tt> method doesn't
+               need any parameters to do its job.</li>
+       
+      </ul>
+   </body>
+</html>

@@ -1,0 +1,46 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Code to determine the number of leap days</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+   <body>
+      <p audio="leapcount1_1">
+      	Finish the <tt>setLeapYear</tt> method such that it correctly sets 
+      	<tt>leapYearCount</tt> to <tt>1</tt> if the 
+		   variable <tt>year</tt> contains a value that represents a leap year, 
+         and sets <tt>leapYearCount</tt> to <tt>0</tt> otherwise.</p>
+		 
+      <div class="openbluejproj">
+         <p audio="leapcount1_2">Open up BlueJ, and open the project for this step.</p>
+         
+         <p audio="leapcount1_3">(The project for this step can be found at <tt>lesson4/LeapYear2</tt>.) </p>
+      </div>
+	  
+<p>
+You will need to make use of the the <tt>%</tt> operator, also called <span class="vocab">modulus</span>. 
+It computes the <i>remainder</i> when dividing the first operand by the second.   
+For example, <tt>year % 4</tt> divides <tt>year</tt> by 4 and returns the remainder, which will be one of 0, 1, 2, or 3. 
+If <tt>year</tt> is 5, <tt>year % 4</tt> would return 1.
+You can get more information from the glossary entry for "modulus".
+</p>
+	  
+	  
+      <p audio="leapcount1_4">As a hint in your solution for <tt>setLeapYear</tt>, here is a list of program statements that you will need.  You might not need to use
+         some of these, and you might need to use others more than once.
+         </p>
+      <pre class="width40"><i>(1)</i>   leapDayCount = 0;
+<i>(2)</i>   leapDayCount = 1;
+<i>(3)</i>   if (year % 4 == 0) {
+<i>(4)</i>   if (year % 100 == 0) {
+<i>(5)</i>   if (year % 400 == 0) {
+<i>(6)</i>   } else
+<i>(7)</i>   } else {
+<i>(8)</i>   }
+</pre>
+
+   </body>
+</html>

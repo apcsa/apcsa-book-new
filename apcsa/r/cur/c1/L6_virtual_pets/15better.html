@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Is there a Better Way to Die?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="8"
+    display-name="1" use-server="true"
+    server="default">
+
+
+    <div class="title">BRAINSTORM 4.1</div>
+
+    <div class="prompt">
+    
+ <p audio="audio1" class="width90">Consider these two versions of the <tt>sleep</tt> method, each trying to change the mood to "dead" if <tt>hunger</tt> is over <tt>12</tt>:
+ </p><table><tbody><tr><th><strong>Version A</strong></th><th><strong>Version B</strong></th>
+ </tr>
+ <tr>
+ <td><code>public void sleep() {<br>&nbsp;&nbsp;&nbsp;hunger = hunger + 1;<br>&nbsp;&nbsp;&nbsp;face.setMessage("zzzzzzzzzz");<br>&nbsp;&nbsp;&nbsp;face.setImage("asleep");<br> &nbsp;&nbsp;&nbsp;if (hunger &gt; 12) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setMessage("I got too hungry!");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setImage("dead");<br>&nbsp;&nbsp;&nbsp;}<br>}</code></td>
+ 
+ <td><code>public void sleep() {<br>&nbsp;&nbsp;&nbsp;hunger = hunger + 1;<br>&nbsp;&nbsp;&nbsp;if (hunger &gt; 12) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setMessage("I got too hungry!");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setImage("dead");<br>&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setMessage("zzzzzzzzzz");<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;face.setImage("asleep");<br>&nbsp;&nbsp;&nbsp;}<br>}</code></td>
+ </tr></tbody></table><br /><p audio="audio2" class="width90">Will these two versions behave identically, from the standpoint of someone playing with the toy? If not, how will the difference show up, and which version do you think is better? Why?</p>
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Mary R.">
+            I don't think the two versions will look identical, because
+            in version A the message and image might flicker.
+        
+        </div>
+        
+        <div name="Javier N.">
+            i like version B better, although it is longer.  That's because the message and image are only set one time -- maybe this will make is faster?
+        
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

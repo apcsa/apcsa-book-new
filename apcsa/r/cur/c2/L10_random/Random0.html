@@ -1,0 +1,34 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top150";
+		</script>
+        <title>How Random works</title>
+</head>
+<body>
+<p audio="2">
+The values produced by <tt>Random</tt> aren't truly random, of course;
+they are produced by an algorithm.
+Here is how it works.
+</p>
+<p>
+First, some terminology.
+Let's let <tt>r<sub>0</sub></tt> be the first value returned by a <tt>Random</tt> object, 
+<tt>r<sub>1</sub></tt> be the second value returned, and so on.
+Each <tt>r<sub>k</sub></tt> value is related to the previous value <tt>r<sub>k-1</sub></tt> 
+by a formula:
+</p>
+<pre>
+   r<sub>k</sub> = <i>some of the digits in the quantity</i> a * r<sub>k-1</sub> + b
+</pre>
+<p>
+where <tt>a</tt> and<tt> </tt>b are specially chosen. 
+The value from which <tt>r<sub>0</sub></tt>
+is calculated is called the <span class="vocab">seed</span>.
+We can supply the seed as an argument to the <tt>Random</tt> constructor,
+or let the Java library supply a value by calling the 0-argument constructor.
+</p>
+</body>
+</html>

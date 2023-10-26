@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The CandyJar Class</title>
+   </head>
+   <body>
+      <p audio="fclass1">Now that we have developed an intuition for how Java classes are structured, let's take a look at a new Java class. Here's the code.</p>
+      <img class="imageRight" src="/apcsa/r/static/art/scenes/refillable_jars.png" alt="A jar filled with candy." />
+      <pre class="width70">public class CandyJar {
+
+   private int myCandyCount;
+   
+   // Initialize a CandyJar object having 
+   // startingCount pieces of candy.
+   public CandyJar (int startingCount) {
+      myCandyCount = startingCount;
+   }
+   
+   // Eat amount pieces of candy.
+   public void eat (int amount) {
+      myCandyCount = myCandyCount - amount;
+   }
+   
+   // Add amount to the candy currently in the jar.
+   public void refill (int amount) {
+      myCandyCount = myCandyCount + amount;
+   }
+   
+   // Return the number of pieces of candy currently in the jar.
+   public int candyCount ( ) {
+      return myCandyCount;
+   }
+}</pre>
+      <p audio="fclass2">This class models a jar of candy.
+         We can eat some of the candy, we can refill the candy jar with more candy,
+         and we can find out how much candy it contains.</p>
+   </body>
+</html>

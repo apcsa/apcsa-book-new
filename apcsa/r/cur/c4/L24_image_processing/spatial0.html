@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>Spatial filtering</title>
+   </head>
+   <body>
+
+      <img class="imageLeft" src= "/apcsa/r/static/art/scenes/images_spatial.png" alt= "Cam floating in space">
+     
+      <p audio="2">
+         Spatial filtering provides a way of doing a
+         variety of image processing tasks, such as smoothing and
+         sharpening, by applying different spatial filters through one
+         common method.
+      </p>
+      <p audio="3">
+         A spatial filter is a small, square,
+         two-dimensional array of doubles. The width and height of
+         this matrix is odd (e.g., 3 cells by 3 cells, 5 cells by 5
+         cells, etc), such that there is a specific cell at the center
+         of the filter. Generally, the numbers in the cells of a filter 
+         should sum to <tt>1</tt>, although <tt>0</tt> is not uncommon. 
+         To this end, a filter might contain
+         some negative values and some positive values, or it might
+         contain all positive numbers between 0 and 1.
+      </p>
+      <img class="imageRight" src="/apcsa/r/static/art/graphics/spatial_filter_smoothing.jpg"
+      alt="Example of a spatial filter for smoothing">
+      <p audio="4">To process a spatial filter for a particular pixel,
+      line up the filter so that the center cell corresponds to that pixel,
+      and the other cells correspond to nearby neighbor pixels.  For each
+      filter cell, multiply a color value of the pixel with the 
+      corresponding filter cell, sum all of these up, and set that result
+      as the pixel's value for that color.  This process happens separately
+      for each color channel.</p>
+      <p audio="5">Two issues will arise:</p>
+      <ul>
+         <li audio="5a">The result of the spatial filter may be less than
+         <tt>0</tt> or greater than <tt>255</tt>.  Make sure anything out
+         of range gets set to the appropriate maximum or minimum value.</li>
+         <li audio="5b">When at the edges of an image, there won't be
+         pixels to correspond to each cell in the filter.  Two options: 
+         don't apply the filter to a pixel unless all cells correspond to
+         a neighbor pixel, or apply the filter to only the relevant cells.</li>
+      </ul>
+   </body>
+</html>

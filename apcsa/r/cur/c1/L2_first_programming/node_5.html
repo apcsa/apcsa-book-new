@@ -1,0 +1,48 @@
+<html>
+<head>
+        <script>
+            vocabClass = "top200";
+            helpClass = "top0";
+        </script>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.min.js">
+        </script>
+        <script type="text/javascript">
+            var WinRef;
+            function openChild(url){
+                WinRef = window.open(url, "WindName", "width=800,height=600,resizable=yes,scrollbars=yes");
+                return false;
+            }
+        </script>
+        <title>Creating an object from a class</title>
+</head>
+<body>
+    <p audio="instantiate1">
+        We have discussed the distinction between classes and objects in previous activities. 
+        In BlueJ, we build, or <strong>construct</strong>, an object from a class.
+        Here's how we do it.
+    </p>
+    <p class="step click" audio="instantiate2">
+        Right-click on the <tt>GameBoard</tt> class. From the list options, choose <tt>Compile</tt>. 
+        By choosing compile, you have asked the computer to turn the <i>source</i> code into <i>object</i> code
+        What do you see on the screen?<br/><br/>
+        &nbsp;&nbsp;&nbsp;Here is a slide show of these steps if you prefer an illustration: <a class="slideshowLink" href="slideshow3.html" onClick="return openChild(this.href);">1</a>
+    </p>
+    <p class="step click" audio="instantiate3">
+        Right-click on the <tt>GameBoard</tt> class. From the list options, choose <tt>new GameBoard()</tt>. 
+        You will be asked for a "name of the instance"; clicking OK  will do for now. 
+        What do you see on the screen?
+    </p>
+    <p class="step result" audio="instantiate4">
+        You should see a rectangle 
+        at the bottom of the screen called <tt>gameBoar1: GameBoard</tt>. 
+        Congratulations, you've just made your first object in BlueJ! 
+    </p>
+
+    <p class="quoteBlue" audio="instantiate7">
+        <tt>gameBoar1</tt> may seem like a strange name for a <tt>GameBoard</tt>.  What happened to the 'd'?  By default, BlueJ uses the first eight characters of the class name followed by a number, so the 'd' got cut off.  If you named it yourself, you could name it <tt>gameBoard1</tt> or any other legal Java name.  However, for now, <tt>gameBoar1</tt> will work just fine.</span> 
+    </p>
+    </center>
+</body>
+</html>

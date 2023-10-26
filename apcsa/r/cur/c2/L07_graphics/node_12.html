@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What drawRec does</title>
+   </head>
+   <body>
+      <p audio="2">The <tt>drawRect</tt> method of the <tt>Graphics</tt>
+       class draws a rectangle on a <tt>JPanel</tt>.  It takes four arguments:</p>
+      <ol>
+         <li audio="3">
+            the column coordinate of the rectangle's upper left corner;
+         </li>
+         <li audio="4">
+            the row coordinate of the rectangle's upper left corner;
+         </li>
+         <li audio="5">
+         the width in pixels of the rectangle; and </li>
+         <li audio="6">
+            the height in pixels of the rectangle.
+         </li>
+      </ol><br/>
+      <img class="imageRight" src="/apcsa/r/static/art/screenshots/Greetings-drawrect.png"
+      alt="The graphics window of the Greetings class with a drawRect method added.">
+      <p audio="7">The picture to the right displays the result of adding the 
+      call to the <tt>Greetings</tt> class:</p>
+      <pre>public void paintComponent (Graphics g) {
+   g.drawString ("Hi there!", 150, 200);	
+   // draw a rectangle with its 
+   // upper left at (150,200), 70 pixels
+   // wide, and 25 pixels high
+   g.drawRect (150, 200, 70, 25);     //ADDED
+}</pre>
+   </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Positional representations: decimal</title>
+    <script type="text/javascript" src="/apcsa/llab/loader.js"></script>
+</head>
+<body>
+<p>
+    We are accustomed to using the decimal system for representing numbers. In this system, we represent a value with a
+    sequence of decimal digits, each being one of 0, ..., 9. The position of a digit in this sequence is important: 758
+    represents a different value from 857. In fact, each position is associated with a <i>weight</i>. The weights and
+    the digits are combined arithmetically to form the represented value. Finally, it's a <i>based</i> number system, in
+    that each weighting factor is a power of some base value (also referred to as the <i>radix</i>). In decimal, the
+    base is 10. A decimal representation of an integer M is then a sequence of decimal digits
+</p>
+<pre>
+   d<sub>n-1</sub> d<sub>n-2</sub> ... d<sub>1</sub> d<sub>0</sub>
+</pre>
+<p>
+    such that
+</p>
+<pre>
+   M = d<sub>n-1</sub> x 10<sup>n-1</sup> + d<sub>n-2</sub> x 10<sup>n-2</sup> + ... + d<sub>1</sub> x 10<sup>1</sup> + d<sub>0</sub> x 10<sup>0</sup>
+</pre>
+<p>
+    For example, 758 represents 7 x 10<sup>2</sup> + 5 x 10<sup>1</sup> + 8 x 10<sup>0</sup>.
+</p>
+
+</body>
+</html>

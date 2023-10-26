@@ -1,0 +1,31 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+
+<title>Checking results by hand</title>
+</head>
+<body>
+<p>
+To determine how many exchanges are necessary, we try some possibilities.
+We examine as small a deck as necessary to give us the information we need. Even a deck of size 4 gives a large number of possibilities, so we start with a deck of size 3 whose cards are A, B, and C.
+</p>
+<p>
+The table below displays the possibilities for one shuffle step. It includes all the cases for choosing two random integers between 0 and 2, inclusive.  (<tt>r1</tt> and <tt>r2</tt> are the variables in which the random numbers are stored.)
+</p>
+<table id="tableBlue">
+<tr><td><tt>r1</tt></td><td><tt>r2</tt></td><td>resulting deck</td></tr>
+<tr><td>0</td><td>0</td><td align="center">A B C</td></tr>
+<tr><td>0</td><td>1</td><td align="center">B A C</td></tr>
+<tr><td>0</td><td>2</td><td align="center">C B A</td></tr>
+<tr><td>1</td><td>0</td><td align="center">B A C</td></tr>
+<tr><td>1</td><td>1</td><td align="center">A B C</td></tr>
+<tr><td>1</td><td>2</td><td align="center">A C B</td></tr>
+<tr><td>2</td><td>0</td><td align="center">C B A</td></tr>
+<tr><td>2</td><td>1</td><td align="center">A C B</td></tr>
+<tr><td>2</td><td>2</td><td align="center">A B C</td></tr>
+</table>
+<p>
+This is not so good. There are three pairs of values that result in no change to the deck, and no pairs of values that produce the arrangements "B C A" or "C A B".
+</body>
+</html>

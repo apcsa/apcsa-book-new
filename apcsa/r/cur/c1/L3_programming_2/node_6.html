@@ -1,0 +1,34 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>More on using <tt>int</tt>s and <tt>double</tt>s in the same program</title>
+
+</head>
+<body>
+<p>
+As we just noted, in any arithmetic operation involving both
+a <tt>double</tt> and an <tt>int</tt>, the <tt>int</tt> gets
+converted to a <tt>double</tt> before the operation is performed.
+The conversion conceptually has the result of adding ".0" to the
+end of the integer.
+</p>
+<p>
+Essentially the same thing happens in an assignment of an <tt>int</tt>
+right-hand side to a <tt>double</tt> variable:
+</p>
+<pre>
+   double x;
+   x = 25;      // x now contains 25.0
+</pre>
+<p>
+Assigning a <tt>double</tt> value to an <tt>int</tt> variable,
+however, produces a compiler error: "Possible loss of precision" in BlueJ.
+The compiler is protecting us from accidentally throwing away part of
+the <tt>double</tt> value&mdash;the part after the decimal point&mdash;even
+if it's zero.
+We'll see later in the course how to get around this limitation.
+</p>
+
+</body>
+</html>

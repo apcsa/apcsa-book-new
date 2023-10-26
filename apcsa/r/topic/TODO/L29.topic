@@ -1,0 +1,27 @@
+title: Lesson 29: master
+
+{
+h2: master
+
+
+heading: Introduction
+    resource: Semester 2 Review [/apcsa/r/cur/cTODO/L29_sem2_review/intro.html]
+    resource: Semester 2 Study Guide [/apcsa/r/cur/cTODO/L29_sem2_review/intro2.html]
+
+heading: Reviewing Unit 5
+    reading: Lesson 16:  Inheritance [/apcsa/r/cur/cTODO/L29_sem2_review/L16-1.html]
+    reading: Lesson 17:  Interfaces, Abstract and Static [/apcsa/r/cur/cTODO/L29_sem2_review/L17-1.html]
+    reading: Lesson 18:  Adventure [/apcsa/r/cur/cTODO/L29_sem2_review/L18-1.html]
+
+heading: Reviewing Unit 6
+    reading: Lessons 19-21:  GridWorld [/apcsa/r/cur/cTODO/L29_sem2_review/L19-1.html]
+
+heading: Reviewing Unit 7
+    reading: Lesson 22:  Arrays [/apcsa/r/cur/cTODO/L29_sem2_review/L22-1.html]
+    reading: Lesson 23:  Two-Dimensional Arrays [/apcsa/r/cur/cTODO/L29_sem2_review/L23-1.html]
+    reading: Lesson 24:  Image Processing [/apcsa/r/cur/cTODO/L29_sem2_review/L24-1.html]
+
+heading: Reviewing Unit 8
+    reading: Lesson 25:  Recursion [/apcsa/r/cur/cTODO/L29_sem2_review/L25-1.html]
+    reading: Lesson 26:  Complex Recursion [/apcsa/r/cur/cTODO/L29_sem2_review/L26-1.html]
+    reading: Lesson 27:  Merge Sort [/apcsa/r/cur/cTODO/L29_sem2_review/L27-1.html]

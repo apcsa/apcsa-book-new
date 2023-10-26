@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The contains method</title>
+   </head>
+   <body>
+<p audio="2">
+The <tt>contains</tt> method searches the array for a value equal to that
+of the argument.</p>
+<pre>
+public boolean contains (Object obj) {
+   for (int k=0; k&lt;myElemCount; k++) {
+      if (myElements[k].equals(obj)) {
+         return true;
+      }
+   }
+   return false;
+}
+</pre>
+   </body>
+</html>

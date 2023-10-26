@@ -1,0 +1,241 @@
+LESSON 3 TODO:
+
+===================
+VLE :
+ - MC Multiple answers -- if they only get one answer of two there is nothing to indicate this
+
+==== To Be Done 
+--> Lesson 3: Step 63.5
+     --> Add in brainstorm/discussion in extra for experts : How many empty strings are in a string?  str.indexOf("") ==> 0(!) Follow-up on 
+--> Activity on getting String length --> they can't answer Exercise #2 without it
+- Exercise #5 -- I put this in question #5 -- please review
+    public class Hangman{
+           private String wordToBeGuessed;
+           private String userString;
+
+           //... lots of other code
+
+           //implement this one for Exercise 4
+           public void update(String letterGuessed){
+
+
+
+           }
+   } 
+					
+New Step(s) around 35-37 (to be pulled into a new subfolder)
+    --  Should we add a step on Number Systems -- it is in AP (multiple bases)
+   -- converting between bases around the discussion of bits
+   -- step 36 on bits is too dense...  albany students confused
+   -- ideas 
+       - converting between bases important -- how about base2 to base10 (AP will often ask a question where you have to convert TO base10)
+       - why is 2 special?  why not base 3?
+       - base 16 example --
+       - AP says base 2, 16, 10, and 8 are the important ones.  Could add exercises
+         on some of these
+       - AP says concepts: limited magnitude, imprecision, round-off error
+   - too much detail for right here?  probably, maybe.  How about in 
+     the review lessons just before the test?
+     [*** Mostly done by MJC, except folder structure not updated.  The text needs to
+      	be proofread for appropriateness.  The review/exercises
+					should be arranged in folders also.]
+         
+   
+Step 15: -  Why isn't Refillable a great name?  This is an interesting question
+            by itself, a good teachers disuccion.  Teachers manual entry -
+            key is that we *don't* want them to think it is a bad name because
+            there isn't a thing that is a refillable!  We need non-thing
+            classes in programming...
+            
+	[MJC -- I changed "extend" to "expand" to avoid confusion with inheritance.]
+	[SMM -- I am leaving this one here -- I'll check it out with my student's tomorrow -- I could be off base here]
+
+Step 22: Is "affect" correct here -- should it be "effect"
+Step 33: BS needs canned responses  
+Step 41: "use" to "uses"
+Step 44: there is no page here -- I guess we were supposed to put together a joke(!) 
+Step 49: Should docs link be changed to 1.6
+Step 52: When did we tell them not to put a semicolon on the end for Code Pad?
+Step 59: Should read "new Name(...)"     
+Step 76 - Unit 1 Quiz
+   I think the quiz needs to be rewritten.
+   question #1 - local variables were barely mentioned, and I am not sure they were called local variables are explained
+              Was the difference between a parameter and an argument explained at all?
+			  Are parameters considered to be local variables?  I always have considered them to be, but I could be
+			  wrong.		  
+    question #3 is hard and confusing.
+    question #4 is easy.  Is there any difference between the four parts other than 100 + 0, 100 + 5, etc.
+    I could try to write a quiz if you would like.
+
+    Also, I know teachers would greatly appreciate quiz and test bank questions added to the teacher's manual.  
+
+Step 77 - Exercises 
+    I think the Exercises are good.  Could they be spread out more in the content instead of having them all at the
+     end.
+
+Also, teachers would appreciate lots of exercises to choose from in the manual or simply listed at the end.			  
+
+Step 78 ("Boxes and arrows", "Representing variables with pictures of boxes")
+looks really ugly, but I have no clue why.
+
+
+================================================================================
+
+=====  Nathan Mattix, Summer 2010, Proposed Changes to be Reviewed by Secondary Reviewer ======
+
+Step 65 - Practice with System.out.println
+
+There are two correct ways to print the remaining candies:
+
+System.out.println(candyCount()); and
+System.out.println(myCandyCount);
+
+Possible Brainstorm?  Can you think of two ways to do this?  Is one better than the other?  
+[MJC -- Seems overly subtle for this part of the course.]
+[SMM -- I'll try as a class discussion/exercise and see if any gets anywhere - I think it is worth trying]
+
+Step 68 - Experimenting with the tester class
+Do they already have the Tester class in blueJ?  I had to copy and paste it from Step 65.  If they don't already
+have it, they should be told how to get it.  Make a new class named Tester and type the code, etc.
+
+They probably need a reminder of what is meant by state.  Something like, "In other words, show that changing 
+myCandyCount for the CandyJar named rtest2 does not change the myCandyCount for the CandyJar named rtest."
+
+Step 69 - Primative vs. reference types [MJC -- Fixed.]
+
+We might mention that there are only 8 primative data types, of which AP students are only responsible for
+knowing 3 of these (int, double, and boolean).  Therefore, most of the types encountered will be reference types.
+
+Step 70 - Initialization [MJC -- Fixed]
+
+I would change the example to the following:
+Put the example of an initialization to a constant first
+
+myAmount = 0; 
+
+Then give this example for an initialization to a variable of the same type.  It is clearer that
+initialAmount has already been declared as type int and initialized.
+
+int initialAmount = 5;  
+int myAmount = initialAmount;
+
+The String example is overly complex.  I think this one is clearer to the point.
+
+String namePart = "HILLARY";
+String temp = namePart.toLowerCase();
+
+Step 74 - Another rTest (BlueJ)
+       Should there by a place for them to put their answer?
+       [MJC -- Yes. What kind of step would this be?]
+
+
+  
+========================= DONE
+Steps 50 - 52 are new and need to be reviewed.  (nlm)
+[MJC -- I made some minor edits.]
+
+
+Step #3 : has one instance variable
+		  - add canned response with Standard Casing rather than camel to provoke discussion  
+		  ( I don't know what you mean.  nlm)
+    	 [SMM - done changed had to has and added canned response]
+    	 
+Step #7: - change playerScore -> getPlayerScore -- maybe not? Introduce standard way of naming getters?
+          (They haven't actually named the instance variable yet.  Keeping with the naming convention
+		   it would probably be named myScore instead of playerScore meaning that the conventional name
+		   for the getter would be getMyScore.  It is probably best to leave it as it is.  nlm)
+	[MJC -- I renamed playerScore to score.  Regarding getter methods,
+	     I don't like Java's convention of get...; the name of a typed
+	     method should be a noun, not a command.]
+	[SMM -- OK ] 
+
+Step 13: Canned reponses: 
+		 - VLE doesn't line breaks here (I don't know what you mean.  nlm) -- (SMM - Nate knows and is dealing with it)
+		 - Score keeping is not Refillable -- do we need a more absract name in order to incorporate score here
+		 (That would be a very big change for a small gain.  I wouldn't do it.  The issue is discussed in
+		   step #15 anyway.  nlm)
+		 [OK -- SMM]
+		 
+		  feedback #5: -- o, we are calculating the average use, or the average value of arguements passed to useUp.
+		  (not sure what you mean here.  nlm)
+		  [SMM - I  simplied feedback to #5 to just say we are worried about total calls to useUp not refill]
+Step 30 - Resulting Behavior.
+[MJC -- I added some transition explanation.]
+[SMM -- OK great -- I see the addition - thanks]
+This question is unclear.  I assume it refers back to the previous step.  This should be made clearer.
+Then, the only way they can find out the answeres is to try it in BlueJ.  
+
+I assume that what it is trying to demonstrate is that an integer / integer results in an integer, which
+causes errors. 
+
+Step 32: Right answers without parens
+[MJC -- Why the line breaks before myUseUpCallCount?]
+[SMM -- Got rid of line breaks
+
+done	Go over naming (see "helper method" discussion in steps 60 ff)
+done	It would be nice to have a diagram for step 63 (What happened?).
+	Brainstorm responses.
+done?	Provide test class in "A tester class" (step 70)
+	[I haven't been able to run it under bluej.]
+
+
+Step 53 - caseFixed parameter
+[MJC -- I changed step 64 (Fixing the problem) to use caseFixed instead
+of fixCase. I think we may need a step or two that talk about naming: void methods
+should be imperative verbs, and typed methods should be nouns.]
+
+The comment says the code is bad style, but in fact it won't work due to the fact that the instance variables
+are never initialized using the parameters.  In future steps this is fixed, but I think it adds confusion to 
+this step.  The issue being discussed is whether you want three methods without parameters that basically do the
+same thing, or if you want one method where each of the three names is passed in as a parameter.  However, by
+not initializing the variables first, it makes it a bigger issue than just abstraction.  I am making the
+following changs to this step:
+
+Previous constructor:
+
+public Name (String first, String middle, String last) {
+      fixFirst ( );
+      fixMiddle ( );
+      fixLast ( );
+   }
+
+What I changed it to:
+
+  public Name (String first, String middle, String last) {
+      myFirst = first;
+      myMiddle = middle;
+      myLast = last;
+      fixFirst ();
+      fixMiddle ();
+      fixLast ();
+   }
+   
+ I actually think the best way to make the point would be to write the constructor like this:
+ 
+ public Name(String first, String middle, String last) {
+      myFirst = fixFirst(first);
+	  myMiddle = fixMiddle(middle);
+	  MyLast = fixLast(last);
+	  
+}
+
+because then they would be comparing the above constructor that has bad style (three fix methods instead
+of just one) to the constuctor with good style:
+
+public Name (String first, String middle, String last) {
+	myFirst = caseFixed(first);
+	myMiddle = caseFixed(middle);
+	myLast = caseFixed(last);
+}
+
+The only thing changed now is the abstraction.  Of course, this would mean rewriting the three methods fixFirst,
+fixMiddle and fixLast.
+
+Step 61 - Experimenting [MJC -- Someone fixed this already.]
+
+There is an error on this step as well.
+String s = "";
+"Then try passing s  to the String  methods toLowerCase, trim, substring, and toUpperCase."
+None of these methods take String parameters.  You would call them by doing s.toLowerCase(), etc.
+Also, the substring method must take one or two int parameters.  s.substring(0), etc.
+

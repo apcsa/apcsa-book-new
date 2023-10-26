@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Making a sound louder</title>
+   </head>
+   <body>
+      <p audio="2">
+         When we want to change a sound file in some way, we need to 
+         write a method in the <tt>Sound</tt>
+         class that modifies the 
+         numbers in the <tt>ArrayList</tt>
+         stored in the <tt>myData</tt>
+         instance variable.
+      </p>
+      <p audio="3" class="quoteBrown">
+         The easiest transformations are those that modify 
+         each invidual sample in the same way. 
+      </p>
+      <p audio="4" class="step">
+         Write a method <tt>amplify</tt>
+         that multiplies 
+         every individual sample in a sound by <tt>1.2</tt>.  This 
+         will make each sample slightly bigger if it is positive,  
+         and slightly smaller if it is negative.  This should make the 
+         sound louder.
+      </p>
+      <ul class="width80">
+         <li>
+            <p audio="4b">
+               You will be operating on the <tt>ArrayList</tt> reference field <tt>myData</tt>, using 
+               the <tt>get</tt>
+               method to read the original value and the <tt>set</tt>
+               method to write a new value to that same
+               place.  
+               <br/> <br />
+               You haven't seen an <tt>ArrayList</tt>'s <tt>set</tt> method
+               yet: it takes an index and a value, and sets the cell at that 
+               index to the value you give it.
+
+               <br/> <br />
+               For example, to increase the 10th element in the list by 1.2. You would write:<br/>
+              </p>
+               <pre>
+               myData.set(9, (int)(myData.get(9) * 1.2));
+               </pre>   
+             <p audio="4c"> 
+              You might be wondering what (int) does?  This is called casting;  it forces the value behind it
+               to become an int -- we'll look at this more in the next step.
+            </p>
+         </li>
+         <li audio="4d">
+
+               You'll need to write a loop that runs the same code 
+               on each value in the ArrayList. 
+         </li>
+         <li audio="4e">
+     
+               When you are done, you will need to call <tt>refresh</tt>
+               on the <tt>Sound</tt>
+               object to see your changes. 
+         </li>
+      </ul>
+      <p audio="5" class="step">
+         Compile the project, load the <tt>birdcall.wav</tt>
+         file, and listen to it. 
+      </p>
+      <p audio="6" class="step">
+         Run your <tt>amplify</tt>
+         method on it.  Listen again: did it get louder? 
+         Run <tt>amplify</tt>
+         again and perhaps again, listening each time. 
+      </p>
+   </body>
+</html>

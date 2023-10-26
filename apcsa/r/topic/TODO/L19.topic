@@ -1,0 +1,32 @@
+title: Lesson 19: master
+
+{
+h2: master
+
+
+heading: Introduction to GridWorld
+    resource: The GridWorld case study [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro0.html]
+    resource: Setting up GridWorld [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro0.html]
+    resource: Running GridWorld [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro1.html]
+    brainstorm: Additional experiments needed? [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro2.html]
+    brainstorm: Which experiments? [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro3.html]
+    brainstorm: Bug heading southwest [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_1.html]
+    resource: Exercises [/apcsa/r/cur/cTODO/L19_intro_gridworld/intro5.html]
+
+heading: Examining the code for Actor and Bug
+    resource: Exploring Actor subclasses [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug0.html]
+    brainstorm: Inheritance choices [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_2.html]
+    reading: Focus on Bug.act [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_3.html]
+    matchsequence: Which class contains a given method? [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_4.html]
+    quiz: Call question [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_0.html]
+
+heading: Extending the Bug class
+    reading: Moving on to part 2 [/apcsa/r/cur/cTODO/L19_intro_gridworld/node_5.html]
+    resource: BoxBugs [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug2.html]
+    brainstorm: BoxBug overriding [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug3.html]
+    resource: Colored BoxBugs [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug4.html]
+    resource: Do You Know, set 2 [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug5.html]
+    resource: Exercises [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug6.html]
+    resource: One more exercise [/apcsa/r/cur/cTODO/L19_intro_gridworld/bug7.html]
+
+// NOTE: ERROR WHEN CONVERTIING THIS FROM WISE!

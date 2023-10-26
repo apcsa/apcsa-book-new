@@ -1,0 +1,41 @@
+General:
+========
+- Possible steps:
+	- we could lead them through a unit testing scenario where we set up the 
+		unit tests
+	- each step explores each what each helper method should accomplish
+- I copied over the two elevens steps from Lesson 12 - cards5 and node_8 -- they are not in yet
+- I committed a solution in the teacher area as well a template in
+	the student area.
+- The student version has everything implemented but: 
+		- play
+		- removeJQK
+		- removeSum11
+		- simulate -
+- Possible Class Structure:
+	Card class:
+		- standard -- wth outranks
+	Deck Class
+		- resetDeck
+		- shuffle
+		- dealTopCard
+		- numCardsLeftInDeck
+	Elevens Class
+		- Deck field
+		- onTable ArrayList field -- this could be separate class?
+		- play
+		- removeJQK
+		- removeSum11
+		- sortOnTable <-- if you sort the cards on the table 
+							then easier to remove JQK or Sum11
+		- simulate -
+
+Issues :
+	- both play and simulate need nested loops
+	- rank in the Card class is stored 0-based so you must had one to rank before
+		checking sums
+	- removing the cards from OnTable in removeJQK and removeSum11 needs 
+		to consider that the indexes 
+		all reduce by one whenever you remove an element 
+	- you need to remember to reset and shuffle the deck, as well empty
+		the arraylist of the cards on the table everytime you call play

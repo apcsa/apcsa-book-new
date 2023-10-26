@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript" src= "/apcsa/llab/loader.js">
+</script>
+<title>One name, two methods</title>
+</head>
+<body>
+<p> 
+
+The first of the two <tt>substring</tt> methods has only one argument, an integer which represents the starting index of the substring.  The substring that is returned by this method includes all the characters starting with the index going all the way to the end of the original string. For example,</p>
+<pre class="width40">
+   String s1 = "teddy bear";
+   String s2 = s1.substring(6);
+</pre>
+<p>
+would result in <tt>s2</tt> being set equal to the substring "bear".
+</p>
+<p>
+The second substring method has two arguments, an integer representing the starting index and an integer representing the ending index, well almost.  You have to subtract one from the second argument to get the ending index.  This is a source of confusion for many beginning students.  For example,</p>
+<pre class="width40"> 
+   String s1 = "teddy bear";
+   String s2 = s1.substring(0,5);
+</pre>
+<p>
+would result in <tt>s2</tt> being set to the substring "teddy" (the substring beginning at index 0 and ending at index <b>4</b>).
+</p>
+
+</body>
+</html>

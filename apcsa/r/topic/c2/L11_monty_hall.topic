@@ -1,0 +1,37 @@
+title: Lesson 11: Let's Play Monty Hall
+
+{
+h2: Let's play Monty Hall
+
+
+heading: Introduction
+    resource: A larger program [/apcsa/r/cur/c2/L11_monty_hall/intro_0.html]
+
+heading: The 'Monty Hall' problem
+    resource: The Monty Hall problem [/apcsa/r/cur/c2/L11_monty_hall/monty_0.html]
+    resource: A program to model the Monty Hall problem [/apcsa/r/cur/c2/L11_monty_hall/monty_1.html]
+    brainstorm: Your results [/apcsa/r/cur/c2/L11_monty_hall/monty_2.html]
+    brainstorm: The best strategy [/apcsa/r/cur/c2/L11_monty_hall/monty_3.html]
+
+heading: Exploring the program
+    brainstorm: Sequence of calls [/apcsa/r/cur/c2/L11_monty_hall/node_0.html]
+    matchsequence: Relation of values [/apcsa/r/cur/c2/L11_monty_hall/node_1.html]
+    quiz: Mouse click handling [/apcsa/r/cur/c2/L11_monty_hall/node_2.html]
+    quiz: Calls to Stage methods [/apcsa/r/cur/c2/L11_monty_hall/node_3.html]
+    quiz: Clicks vs. doorWithCar [/apcsa/r/cur/c2/L11_monty_hall/node_18.html]
+    reading: The goatDoorToShow method [/apcsa/r/cur/c2/L11_monty_hall/node_9.html]
+    codeit: Desired results when contestant has guessed the car [/apcsa/r/cur/c2/L11_monty_hall/node_10.html]
+    brainstorm: How it works [/apcsa/r/cur/c2/L11_monty_hall/node_11.html]
+    reading: Suppose the contestant has chosen a goat [/apcsa/r/cur/c2/L11_monty_hall/node_5.html]
+    brainstorm: How it works [/apcsa/r/cur/c2/L11_monty_hall/node_8.html]
+    brainstorm: Alternative goatDoorToShow [/apcsa/r/cur/c2/L11_monty_hall/node_16.html]
+    brainstorm: A different algorithm [/apcsa/r/cur/c2/L11_monty_hall/node_12.html]
+    brainstorm: Generalizing from limited data [/apcsa/r/cur/c2/L11_monty_hall/node_14.html]
+    codeit: Lots of trials [/apcsa/r/cur/c2/L11_monty_hall/node_15.html]
+    brainstorm: The best strategy [/apcsa/r/cur/c2/L11_monty_hall/node_17.html]
+
+heading: Exercises
+    homework: A cheating Monty [/apcsa/r/cur/c2/L11_monty_hall/node_19.html]
+    homework: Consistency checking [/apcsa/r/cur/c2/L11_monty_hall/node_20.html]
+    homework: Using Random.nextInt [/apcsa/r/cur/c2/L11_monty_hall/node_21.html]
+    homework: goatDoor values [/apcsa/r/cur/c2/L11_monty_hall/node_22.html]

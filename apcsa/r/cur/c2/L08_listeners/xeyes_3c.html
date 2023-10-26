@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top225";
+	  </script>
+      <title>How can an eye draw itself?</title>
+   </head>
+   <body>
+      <div class="talkBubble" char="float1" color="green" align="right">
+         <p audio="5.m2">
+            Wait, an <tt>Eye</tt>
+            object knows how to draw itself? 
+            I've been paying attention, and it doesn't extend <tt>JPanel</tt>.
+            So how can it draw itself?
+         </p>
+      </div>
+      <div class="talkBubble" char="constance2" color="red" align="left">
+         <p audio="6.f1">
+            Good question.   Remember that the <tt>XEyes paintComponent</tt>
+            method called the <tt>Eye draw</tt>
+            method.  So, <tt>draw</tt>, then, acts just like an <tt>Eye</tt>
+            <tt>paintComponent</tt>
+            method.  As such, it is a <span class="vocab">callback</span>
+            method.
+            <br/>
+            <br/>
+            Also, remember that when <tt>draw</tt>
+            was called by the <tt>XEyes paintComponent</tt>
+            method, it passed along the <tt>Graphics</tt>
+            object it got as a <span class="vocab">parameter</span>. 
+            The <tt>draw</tt>
+            method can use that object to call <tt>fillOval</tt>
+            and so forth. 
+         </p>
+      </div><br />
+      <div class="talkBubble" char="raster3" color="blue" align="right">
+         <p audio="7.m1">
+            Because that <tt>Graphics</tt>
+            object was made by the <tt>JPanel</tt>'s <tt>paintComponent</tt>, 
+            any method <i>in any class</i>
+            can use it to draw 
+            on that <tt>JPanel</tt>.  Tricky!
+         </p>
+      </div><br />
+   </body>
+</html>

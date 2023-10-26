@@ -1,0 +1,62 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Open the image processing framework code</title>
+   </head>
+   <body>
+      <p audio="2">
+         We've provided a simple class for you to write methods within, and
+         created another class to hide away most of the "ugliness" of converting
+         image formats, saving to disk, and so forth.
+      </p>
+
+      <div class="openbluejproj" project="lesson24/ImageProcessor">
+         <p audio="3">
+            Open the current BlueJ step.
+            <br>
+            
+            (This is <tt>lesson24/ImageProcessor</tt>)
+         </p>
+      </div>
+      <p audio="4">
+         Of the two classes, you will work entirely 
+         in the <tt>RGBImage</tt>
+         class.  (Feel 
+         free to look inside the <tt>Helper</tt>
+         class 
+         if you really want to). 
+      </p>
+      <p audio="5">
+         Open the <tt>RGBImage</tt>
+         class.  Near the top you will see the 
+         central data objects of an image: 
+               </p>
+               <pre class="width50">    private int red[][];
+    private int green[][];
+    private int blue[][];</pre>
+    
+    <p audio="6">These three arrays carry the 
+    red, green, and blue values for each pixel.  Thus,
+    the color of the upper left pixel in the image
+    is determined by <tt>red[0][0]</tt>, 
+    <tt>green[0][0]</tt>, and
+    <tt>blue[0][0]</tt>.  The size of these arrays will be set
+    automatically by the image that you have loaded.  (We won't be
+    changing image sizes in this lesson, just manipulating the 
+    pixel colors).
+    </p>
+    <p audio="7">Most of the methods in the <tt>RGBImage</tt>
+    class are to help you create an instance based on 
+    an image in your BlueJ project folder, save 
+    your work to the file, and so forth.  Reading the 
+    comment above the definition should make things
+    clear.  
+    Your manipulation
+    methods, as we'll talk about next, will be added
+    to the end of the file. </p>
+    
+   </body>
+</html>
+

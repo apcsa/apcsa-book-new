@@ -1,0 +1,8 @@
+
+Make sure we cover Math class in here
+  - abs (double, int) , pow, sqrt, random
+    - especially the random stuff, which is covered in lesson 10
+    
+    
+Make sure we point to the AP website for old exam questions:
+  http://www.collegeboard.com/student/testing/ap/compsci_a/samp.html?compscia

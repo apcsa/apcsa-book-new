@@ -1,0 +1,47 @@
+<!-- webjava please -->
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A remove method</title>
+      <!--  webjava here please -->
+   </head>
+   <body>
+<p audio="2">
+A <tt>remove</tt> method is trickier.
+The structure is the same as that of <tt>contains</tt>,
+but encountering a value to be removed requires that the array be modified.
+</p>
+<p audio="3">
+We choose to take advantage of the unordered nature of the <tt>myElements</tt>
+elements in implementing removal.
+When we encounter an element to be removed,
+we <i>exchange</i> it with <tt>myElements[myElemCount-1]</tt> 
+(the last element of the set)
+and then decrement <tt>myElemCount</tt>,
+thereby removing it from consideration as a set element.
+</p>
+<p audio="4">
+Fill in the code for the removal case.
+</p>
+<pre class="width80">
+// Remove x from this set.
+public void remove (int x) {
+	removeHelper (x, 0);
+}
+
+// Remove all occurrences of x from myElements[k] through 
+// myElements[myElemCount-1], decrementing myElemCount for each
+// value removed.
+private void removeHelper (int x, int k) {
+	if (k &gt;= myElemCount) {
+		return;
+	} else if (myElements[k] == x) {
+		__________ ;
+	} else {
+		removeHelper (x, k+1);
+	}
+}
+</pre>
+   </body>
+</html>

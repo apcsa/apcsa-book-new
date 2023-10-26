@@ -1,0 +1,61 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Different kinds of comparison</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body> 
+<img class="imageRight" src="/apcsa/r/static/art/scenes/images_mirror.png"
+      alt="A robot looking at itself in a mirror"/>
+<p audio="cond51_1"> 
+We have seen how the <tt>==</tt> operator is used to compare <tt>int</tt> values.</br>
+</br>
+For example:
+<pre class="width30">
+int x = 10; int y = 10;
+if (x == y) { 
+   //do something
+} else {
+   //do something else
+}
+</pre>
+<p audio="cond51_2">
+Here <tt>x == y</tt> "asks", does <tt>x</tt> match <tt>y</tt>? In this case, the answer is <tt>true</tt>&mdash;they are the same number.
+</br></br>
+However, <tt>==</tt> means something rather different when applied to objects.
+
+Consider this:
+</p>
+
+<pre class="width40">
+Card c1 = new Card(9,2);
+Card c2 = new Card(9,2);
+if (c1 == c2) {
+   //do something
+} else {
+   //do something else
+}
+</pre>
+
+<p audio="cond51_3">
+To check that <tt>c1 == c2</tt>, where <tt>c1</tt> and <tt>c2</tt> 
+each resulted from constructing a <tt>Card</tt> object, asks whether <tt>c1</tt>'s object
+<em>is the same object as</em> <tt>c2</tt>'s object. The answer here is <tt>false</tt>; <tt>c1</tt> and <tt>c2</tt> are not the same object even though
+their <em>content</em>, or instance variables, are the same. How do we compare these objects to see if their contents are same?
+</p>
+ 
+<p class="quoteGreen" audio="cond51_4"> 
+We rely on a method named <tt>.equals(...)</tt> to make the comparison for us. This gets a little complicated but it
+is fairly straightforward with strings. 
+Two different <tt>String</tt> objects may contain the same characters in the same sequence,
+but comparing them with <tt>==</tt> will fail.
+Instead, we use the <tt>equals</tt> method in the <tt>String</tt> class.
+Given two <tt>String</tt> variables <tt>s1</tt> and <tt>s2</tt>,
+the expression <tt>s1.equals(s2)</tt> has value <tt>true</tt> if <tt>s1</tt> and <tt>s2</tt> contain the same characters
+in the same sequence. It returns <tt>false</tt> otherwise.
+</p> 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What the compiler does</title>
+   </head>
+   <body>
+<p audio="2">
+To determine the legality of the method call
+</p>
+<pre class="width40">
+    p.move (7, 9);
+</pre>
+<p audio="3">
+the compiler examines the type of <tt>p</tt>.
+If the class for which <tt>p</tt> is a reference, or one of its superclasses, 
+contains a <tt>move</tt> method that takes two integers as arguments, the statement is legal.
+If not, an error message results.  Similarly, for a statement like
+</p>
+<pre class="width40">
+    a.get(3).move(7,9);
+</pre>
+<p audio="4">
+the compiler examines the type of <tt>a.get(3)</tt>, 
+searching for a <tt>move</tt> method either in the corresponding class 
+or one of its superclasses.
+According to the online documentation for <tt>ArrayList</tt>,
+the <tt>get</tt> method returns an <tt>Object</tt>.
+<tt>Objects</tt> don't have a <tt>move</tt> method; thus, the error message.
+</p>
+<p audio="5">
+We just considered the alternative of
+</p>
+<pre class="width40">
+    Point p = a.get(3);
+    p.move(7,9);
+</pre>
+<p audio="6">
+The statement <tt>p.move(7,9);</tt> would work fine; <tt>p</tt> is a reference 
+of type <tt>Point</tt>, and the <tt>Point</tt> class has a <tt>move</tt> method.
+The compiler's complaint arises from the assignment statement; 
+it objects to the attempt to take a reference to an <tt>Object</tt> 
+and store it in a <tt>Point</tt> reference.  
+Since almost all <tt>Objects</tt> are <i>not</i> <tt>Points</tt>, 
+the compiler has probability on its side.
+</p>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+   <head>
+      <meta name="generator" content="HTML Tidy, see www.w3.org">
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <title>Exercises</title>
+   </head>
+   <body>
+<p>Use the <span class="help">string_methods</span> link to the right for a summary review of the commonly used String methods.</p>
+      <ol>
+         <li audio="name22_1">
+            <p>Write the <tt>initials</tt> method (suitable for
+               keeping track of scores in a video game).<tt>initials</tt> should return the result of 
+               concatenating the first letters of <tt>myFirst</tt>,&nbsp;<tt>myMiddle</tt>, and <tt>myLast</tt>.</p>
+         </li>
+         <li>
+            <p audio="name22_2">Write a <tt>nickname</tt> method that returns the
+               first initial of the first name followed by the first 
+               half of the last name. For example, if <tt>s</tt> represents the name Jennifer Lynn Lopez,&nbsp;<tt>s.nickname
+                  ( )</tt> should return <tt>"JLo"</tt>.</p>
+         </li>
+         <li>
+            <p audio="name22_3">Your younger sibling changed (either by replacing,
+               inserting, or deleting) a single character in the&nbsp;<tt>Name</tt> class, with the result that after a 
+               constructor call with the arguments <tt>"george"</tt>,<tt>"walker"</tt>, and <tt>"bush"</tt>, a call to&nbsp;<tt>lastFirst</tt> returns <tt>"Bush George
+                  Walker"</tt>. What character was changed?</p>
+         </li>
+         
+         <li>
+            <p audio="name22_4">Your younger sibling changed (either by replacing,
+               inserting, or deleting) a single character in the <tt>Name</tt>
+               class, with the result that after a constructor call 
+               with the arguments <tt>"george"</tt>,<tt>"walker"</tt>, and <tt>"bush"</tt>, a call to <tt>lastFirst</tt> returns <tt>"ush, eorge alker"</tt>.
+               What character was changed in the the <tt>Name</tt> class?</p>
+         </li>
+         <li>
+            <p audio="name22_5">In the game of Hangman, someone guesses letters in a
+               word until he/she guesses the word or runs out of
+               guesses. A program that allows a user to play the game
+               maintains two strings as internal state: the word to be
+               guessed, and the string to be shown to the 
+               user&mdash;we'll call it <tt>userString</tt>&mdash;with
+               underline characters that represent letters that the
+               user hasn't yet guessed. Write a method named&nbsp;<tt>update</tt> that, given a letter that occurs
+               exactly once in the secret word, updates&nbsp;<tt>userString</tt> to replace the corresponding
+               underline character with the correctly guessed
+               character.</p>
+             <pre>    public class Hangman{
+       private String wordToBeGuessed;
+       private String userString;
+
+       //... lots of other code <br>
+       // Write the update method<br>
+       public void update(String letterGuessed){
+                               
+         } 
+        }
+         </li></pre>
+<li>
+<p>
+What is the decimal representation of the value represented in binary as 1001010?
+</p>
+</li>
+
+<li>
+<p>
+What is the binary representation of the value represented in decimal as 37?
+</p>
+</li>
+
+<li>
+<p>
+Consider the method below, intended to exchange the values of its arguments.
+</p>
+<pre>
+void exchange (int a, int b) {
+   int temp = a;
+   a = b;
+   b = temp;
+}
+</pre>
+<p>
+When called from a tester class, it doesn't work:
+</p>
+<pre>
+  int x = 3;
+  int w;
+  w = 30;
+  exchange (x, w);
+  System.out.println ("x = " + x + "  w = " + w);
+</pre>
+<p>
+Intended output:  <tt>x = 30  w = 3</tt> </br>
+Actual output:  <tt>x = 3  w = 30</tt>
+</p>
+<p>
+Explain what went wrong.
+</p>
+</li>
+
+<li>
+<p>
+Would the <tt>exchange</tt> method have worked if the arguments were <tt>String</tt> objects?
+Briefly explain why or why not.
+</p>
+</li>
+      </ol>
+   </body>
+</html>

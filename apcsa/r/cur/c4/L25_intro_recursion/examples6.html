@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A contains method</title>
+   </head>
+   <body>
+<p audio="2">
+A <tt>contains</tt> method can be set up with a helper method as in the 
+<tt>sum</tt> method considered earlier.  Instead of two cases&mdash;are
+we finished or not?&mdash; we have three:
+</p>
+<ol>
+	<li audio="3">Have we looked at all the elements?</li>
+	<li audio="4">If not, have we found what we're looking for,</li>
+	<li audio="5">or not?</li>
+</ol>
+<p audio="6">
+Here's the code.
+</p>
+<pre>
+// Return true when this set contains the argument; return false otherwise.
+public boolean contains (int x) {
+	return containsHelper (x, 0);
+}
+
+// Return true when x is equal to one of myElements[k] through
+// myElements[myElemCount-1]; return false otherwise.
+private boolean containsHelper (int x, int k) {
+	if (k &gt;= myElemCount) {
+		return false;
+	} else if (myElements[k] == x) {
+		return true;
+	} else {
+		return containsHelper (x, k+1);
+	}
+}
+</pre>
+   </body>
+</html>

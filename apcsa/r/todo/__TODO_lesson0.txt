@@ -1,0 +1,12 @@
+- The reason the brainstorm response areas are not parsing the <p> tags is that the Rich Content Editor is not loading consistently
+- If you look at ErrorConsole in your browser you see you are getting some sort of undefined object -- classmateUserInfos - 
+
+1) we got complaints about step 1 -- too busy.
+2) probably we need something *very* simple there, with a big green
+ arrow, and no text...
+ 
+Get rid of journal.or?   Not in the sequence any more!
+
+
+================ DONE
+3) - Added feedback to survey5.mc Part 5 of survey. There is no correct answer? No comments? Every answer is wrong?

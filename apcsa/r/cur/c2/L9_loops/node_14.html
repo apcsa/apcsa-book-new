@@ -1,0 +1,31 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>What we've done</title>
+
+</head>
+<body>
+<p>
+This lesson introduced the <span class="vocab"><tt>while</tt> loop</span>, a mechanism for repeating the execution of a given sequence of statements.
+A <tt>while</tt> loop has two parts: the <i>test</i> (a boolean expression), and the <i>loop body</i> (a sequence of statements).
+It is executed by first evaluating the test.  If the result is false, the loop terminates; execution continues with the statement following the loop body.
+If the result is true, it executes all the statements in the body, then checks the test again. If that result is false, the loop terminates.
+Otherwise it executes all the statements in the body again, then checks the test again, and so on.
+</p>
+<p>
+Loops introduce a significant level of complexity to programming.
+In particular, it is easy to have bugs in a loop that are difficult to find.
+Thorough testing is a good idea, using test data that exercise "typical" behavior as well as <i>boundary</i> cases&mdash;data for which the loop should execute 0 times, the minimum number of times, and the maximum number of times.  It is often a good strategy to design the tests before the code!
+</p>
+<p>
+Any reasonable programming environment comes with a <span class="vocab">debugger</span> that lets you monitor the progress of a program. Debuggers let you do the following:
+</p>
+<ul>
+<li>Set breakpoints, places in the program where the debugger will stop.</li>
+<li>Single-step the program by executing the next statement and then stopping the program again.</li>
+<li>Examine variable values.</li>
+</ul>
+
+</body>
+</html>

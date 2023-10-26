@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Normalizing a sound, to make it as loud as can be</title>
+   </head>
+   <body>
+      <p audio="2">
+         Obviously just spreading all the samples in a sound out can 
+         be problematic.  What professionals will often do is <span class="vocab">normalize</span>
+         a sound, which means making it 
+         as loud as possible without changing its character. 
+      </p>
+      <p audio="3">
+         In order to normalize, you need to:
+         <ul>
+               <li>figure out what the largest individual sample is by taking the absolute value of every sample -- you are trying to find the sample whose value is farthest from zero whether that be a maximum or minimum.</li>
+               <li>find the factor by which you multiply the maximum from the last step to reach 32,767</li>
+               <li>multiply every number in the sample by your factor from the previous step</li>
+         </ul>  
+
+      </p>
+      <div class="tryit">
+         <p audio="4">
+            Write the method <tt>normalize</tt>, which takes no arguments
+            and normalizes the sound.
+         </p>
+      </div>
+      <p audio="4">
+         Two hints:
+      </p>
+      <ol>
+         <li audio="4b">
+         
+               You will need two loops, one after the other. 
+         </li>
+         <li audio="4c">
+            
+               You can find the factor you need by using
+               ratios:  your factor is equal to the maximum possible integer value(32,767) 
+               divided by the maximum number in your sample.
+         </li>
+      </ol>
+   </body>
+</html>

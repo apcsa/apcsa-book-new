@@ -1,0 +1,44 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>We've talked about, now lets do it!</title>
+   </head>
+   <body>
+      <p audio="2">
+         Write the password protected room class, add it to your
+         game, and test it out.  You probably should give a "hint" as 
+         to what the password is in the description of the 
+         room that it is connected to. 
+      </p>
+      <p audio="3">
+         Use this new command class below to gather input
+         and compare it to your password. 
+         Look at <tt>World</tt>'s <tt>play</tt>
+         method to see how it gather's input, although you won't 
+         need to use a loop.  
+      </p>
+      <pre>// This class gathers players input, and lets you match to it.
+public class CompareCommand extends InputGather {
+
+    // we'll just use the parent class' instance variables. 
+
+    // The constructor
+    public CompareCommand() {
+        super();
+    }
+    
+    // ignores case
+    public boolean isInput(String possibleInput) {
+        return (inputString.equalsIgnoreCase(possibleInput));
+    }
+    
+    // ignores case
+    public boolean contains(String possibleInput) {
+        return (inputString.toLowerCase().contains(possibleInput.toLowerCase()));
+    }
+    
+} // end class</pre>
+
+   </body>
+</html>

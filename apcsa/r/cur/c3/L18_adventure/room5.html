@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Some tips for your new class</title>
+   </head>
+   <body><br>
+      <p audio="1">Some tips for writing your <tt>GameOverRoom</tt>
+      (you can call it anything you want, of course):</p>
+      <br>
+<div class="talkBubble" char="raster1" align="right" color="orange"> 
+         <p audio="6a">
+            You'll want the <span class="vocab" term="overriding">overridden</span> 
+            <tt>enterRoom</tt> method to 
+            print out some information about why the game is suddenly
+            ending.  Since entering this room always ends the game,
+            you could do this in the description. 
+            <br><br>
+             Think about whether
+            you should do this with a call to <tt>super.enterRoom()</tt>
+            or simply a call to <tt>printDescription</tt>.  Both can work.
+         </p>
+         </div>
+         
+         <br>
+        <div class="talkBubble" char="constance5" align="left" color="red">
+         <p audio="6b">
+            Your new class will need a <tt>World</tt> instance variable
+            so that it can call the <tt>gameOver</tt> method.  This means
+            you will need a new <span class="vocab">constructor</span>.  
+            Remember, you need to call
+            <tt>super()</tt> as the first statement
+             in your new constructor method.
+         </p>
+         </div>
+      <br>
+            <div class="talkBubble" char="twitterton5" align="right" color="green">
+         <p audio="6c">
+            Don't forget to add your room with the <tt>World</tt> constructor,
+            attach it to an existing room using the <tt>addExit</tt> method,
+            and test it thoroughly!  
+         </p>
+         </div>  
+  
+
+     
+   </body>
+</html>

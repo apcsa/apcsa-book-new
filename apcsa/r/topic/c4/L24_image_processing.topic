@@ -1,0 +1,24 @@
+title: Lesson 24: Image Processing
+
+{
+h2: Applications with arrays: processing digital images
+
+
+heading: Introduction
+    resource: Imaging [/apcsa/r/cur/c4/L24_image_processing/intro0.html]
+    reading: The RGB model [/apcsa/r/cur/c4/L24_image_processing/intro1.html]
+    codeit: Code and classes [/apcsa/r/cur/c4/L24_image_processing/intro2.html]
+    reading: Try it out [/apcsa/r/cur/c4/L24_image_processing/intro3.html]
+    quiz: What if [/apcsa/r/cur/c4/L24_image_processing/intro4.html]
+
+heading: Exercises
+    codeit: Greyscale [/apcsa/r/cur/c4/L24_image_processing/exer0.html]
+    codeit: Mirroring [/apcsa/r/cur/c4/L24_image_processing/exer1.html]
+    codeit: Contrast stretch [/apcsa/r/cur/c4/L24_image_processing/exer2.html]
+    codeit: Thresholding [/apcsa/r/cur/c4/L24_image_processing/exer3.html]
+    codeit: Zooming [/apcsa/r/cur/c4/L24_image_processing/node_0.html]
+
+heading: Spatial Filtering
+    resource: Spatial filtering [/apcsa/r/cur/c4/L24_image_processing/spatial0.html]
+    forum: Which filter? [/apcsa/r/cur/c4/L24_image_processing/spatial1.html]
+    codeit: Write and test [/apcsa/r/cur/c4/L24_image_processing/spatial2.html]

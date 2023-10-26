@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fullName analysis</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">fullName analysis</div>
+
+    <div class="prompt">
+    <p audio="1">Here's the <tt>fullName</tt> method again.</p><table><tr>
+
+ <td>
+
+<pre>
+1. public String fullName() {
+2.      if (myMiddle.equals ("")) {
+3.         if (myLast.equals ("")) {
+4.             return myFirst;
+5.         }
+6.         return myFirst + " " + myLast;
+7.      }
+8.      return myFirst + " " + myMiddle + " " + myLast;
+9. }
+</pre>
+
+
+ </td>
+
+ </tr>
+
+ </table>
+
+</br> <p audio="2">
+
+ Suppose lines 2 and 3 are exchanged; does this change create a bug?
+
+ If not, briefly explain; if so, identify as completely as possible
+
+ the set of names for which it doesn't work.
+
+ </p>
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Stella">Yes, because if the if statements are exchanged, then a name that has a firstname and a middlename, but no lastname would not work. 
+        </div>
+        
+        <div name="Zade">It depends what you mean by bug.  The code will return a String that look like a name but if the user doesn't provide a value for lastName but does provide a middle name then it returns just the firstName. This may have been intended.  I don't know.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

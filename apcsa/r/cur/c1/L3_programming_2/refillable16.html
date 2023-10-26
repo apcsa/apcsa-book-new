@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Methods that change</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="matchsequence-data">
+    <script class="llab_msdata" type="application/json">
+ {
+   "assessmentItem":{
+      "adaptive":false,
+      "identifier":"MatchSequence",
+      "interaction":{
+         "choices":[{
+               "identifier":"gapText_0",
+               "matchMax":"1",
+               "value":"\u000a          <tt>refill</tt>\u000a        "
+            },
+            {
+               "identifier":"gapText_1",
+               "matchMax":"1",
+               "value":"\u000a          <tt>currentAmount</tt>\u000a        "
+            },
+            {
+               "identifier":"gapText_2",
+               "matchMax":"1",
+               "value":"          <tt>Refillable</tt>         "
+            },
+            {
+               "identifier":"gapText_3",
+               "matchMax":"1",
+               "value":"\u000a          <tt>useUp</tt>\u000a        "
+            }
+         ],
+         "fields":[{
+               "identifier":"gapMultiple_0",
+               "name":"\u000a          No change is necessary\u000a        ",
+               "numberOfEntries":"0",
+               "ordinal":"false"
+            },
+            {
+               "identifier":"gapMultiple_1",
+               "name":"\u000a          Change is necessary\u000a        ",
+               "numberOfEntries":"0",
+               "ordinal":"false"
+            }
+         ],
+         "hasInlineFeedback":true,
+         "ordered":false,
+         "prompt":"\u000a          <p audio=\"1\">\u000a          Which of the methods in the existing <tt>Refillable</tt>\u000a          class will have to be changed to implement\u000a          the <tt>averageUse</tt> method?  (Hint: think about which of the following\u000a          should affect the new instance variables).</p>\u000a          \u000a        ",
+         "responseIdentifier":"MatchSequence",
+         "shuffle":false
+      },
+      "responseDeclaration":{
+         "correctResponses":[{
+               "choiceIdentifier":"gapText_0",
+               "feedback":"\u000a          Correct, the <tt>refill</tt> method doesn't affect the new instance variables in any way.\u000a        ",
+               "fieldIdentifier":"gapMultiple_0",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_0",
+               "feedback":"\u000a          No, the <tt>refill</tt> method simply simply changes the <tt>myAmount</tt> instance variable.\u000a          This won't affect the new instance variables in any way.\u000a        ",
+               "fieldIdentifier":"gapMultiple_1",
+               "isCorrect":false,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_1",
+               "feedback":"\u000a          Right, the <tt>currentAmount</tt> method doesn't have anything to do with the new instance variables.\u000a        ",
+               "fieldIdentifier":"gapMultiple_0",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_1",
+               "feedback":"\u000a          No, the <tt>currentAmount</tt> method simply returns the value of the <tt>myAmount</tt> instance\u000a          variable.  This doesn't have anything to do with the new instance variables.\u000a        ",
+               "fieldIdentifier":"gapMultiple_1",
+               "isCorrect":false,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_2",
+               "feedback":"\u000a          No, we will use the constructor to give the new instance variables default values.\u000a        ",
+               "fieldIdentifier":"gapMultiple_0",
+               "isCorrect":false,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_2",
+               "feedback":"\u000a          Correct, we will need to set up the new instance variables in the constructor.\u000a        ",
+               "fieldIdentifier":"gapMultiple_1",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_3",
+               "feedback":"\u000a          No, we need to change the <tt>useUp</tt> method so that it updates the new instance variables.  \u000a          We'll need to add to <tt>myTotalUse</tt> and to <tt>myUseUpCallCount</tt>.\u000a        ",
+               "fieldIdentifier":"gapMultiple_0",
+               "isCorrect":false,
+               "isDefault":false,
+               "order":"0"
+            },
+            {
+               "choiceIdentifier":"gapText_3",
+               "feedback":"\u000a          Correct, we need to change the <tt>useUp</tt> method so that it updates the new instance variables.  \u000a          We'll need to add the value of the parameter to <tt>myTotalUse</tt>, and add <tt>1</tt> \u000a          to <tt>myUseUpCallCount</tt>.\u000a        ",
+               "fieldIdentifier":"gapMultiple_1",
+               "isCorrect":true,
+               "isDefault":false,
+               "order":"0"
+            }
+         ],
+         "identifier":"MatchSequence"
+      },
+      "timeDependent":false
+   },
+   "type":"MatchSequence"
+}
+    </script>
+</div>
+    </body>
+</html>

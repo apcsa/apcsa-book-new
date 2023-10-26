@@ -1,0 +1,54 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+
+<title>Examples</title>
+</head>
+<body>
+<p>
+Here are some examples of how the <tt>ArrayList</tt> methods are used.
+First, we create a list of two <tt>Name</tt> references:
+</p>
+<pre>
+   ArrayList &lt;Name&gt; friends = new ArrayList &lt;String&gt; ( );
+   friends.add (new Name ("Dorothy", "Gale");
+   friends.add (new Name ("Tin", "Man");
+</pre>
+<p>
+Using the two-argument <tt>add</tt> method with first argument 0,
+</p>
+<pre>
+   friends.add (0, new Name ("Cowardly", "Lion"));
+</pre>
+<p>
+results in <tt>friends</tt> containing first the Cowardly Lion, then Dorothy Gale, then Tin Man.
+This has the same effect as the sequence
+</p>
+<pre>
+   ArrayList &lt;Name&gt; friends = new ArrayList &lt;Name&gt; ( );
+   friends.add (new Name ("Cowardly", "Lion");
+   friends.add (new Name ("Dorothy", "Gale");
+   friends.add (new Name ("Tin", "Man");
+</pre>
+<p>
+The call
+</p>
+<pre>
+   friends.remove (1);
+</pre>
+<p>
+removes Dorothy Gale from the <tt>friends</tt> list, leaving Tin Man in position 1 and Cowardly Lion at position 0.
+</p>
+<p>
+Finally, we can <i>change</i> an <tt>ArrayList</tt> item directly with <tt>set</tt>:
+</p>
+<pre>
+   friends.set (0, new Name ("Scarecrow");
+</pre>
+<p>
+The <tt>friends</tt> list now contains Scarecrow and the Tin Man.
+</p>
+</body>
+</html>
+

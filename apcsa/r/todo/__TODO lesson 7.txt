@@ -1,0 +1,108 @@
+LESSON 7 TODO
+
+
+========= BlueJ exercises:
+Greeting2 ==
+  1. Rename it -- has nothing to do with Greeting -> about rectangle drawing
+  2. newDrawRect -- either should take the Graphics object or I guess set instance variable
+
+========= Would be nice and Larger Questions:
+
+
+========= To Be Done
+
+Steps:
+- Step 11 : The glossary entry for "callback method" is awkwardly worded and confusing. 
+
+
+- Step #11 (Callbacks) 
+	The glossary entry for "callback method" is awkwardly worded and confusing. 
+- Step #24 and #23 -- I think should be switched -- The constructor is easier (DONE MJC)
+- Step #25 --  I am not seeng the difference between #23 and #25?
+	(MJC--they're sort of inverses; 
+	 see apcsa/__REMOVE_teacher_info__put_in_moodle/assessments/Exercises
+	 Is this the right place for these?)
+- I suggest moving #28 to after #20 -- do theresizing piece right after the 
+	outlining of Hi There in #20 (DONE MJC)
+- The grpahics_methods page is not on the production server
+- Step 29 : safeDrawRect is good -- I would add instructions to make sure they reset the myWindowWidth and myWindowHeight
+ 			painComponent by call getSize().
+
+- Steps 25/26 : newDrawRect and newDrawRect2 -- need more description related to passing the Graphics object
+											 -- maybe a copy of the code on the page
+
+- Just to note, show students how to find .java file
+
+=======
+ 			(MJC ??? I don't understand)
+============  DONE
+- The grpahics_methods page is not on the production server
+
+- Step 3 Glossary Java library -- should this be changed to 1.6?
+- Step #32 (Drawing a bull's eye) 
+	"Suppose the drawing color is black." What difference does the drawing color 
+	make to the answer? It requires 5 ovals, the first one red, the next one black, etc. – 
+	unless I am missing something here. 
+
+[SMM DONE]
+- Ignored this one Step 7: We switch to saying Greeting class which acts like a JPanel - 
+		maybe introduce this "acts like" earlier?
+
+- Step 9 : glossary - work on definition of parameter -- placeholder in method signature 
+							located between parentheses
+- Step 25/26/27: Maybe we wrap anything that asks students to code in special colored box or just BlueJ box
+- Step 26: BlueJ box asking to open lesson7/Greetings2
+
+- Step 5 : Spelling: Glossary : inheritance -- first line relationship spelled wrong
+			I would add non-private instance variables and methods
+
+- Step 4: Spelling : pre-written, are: [MJC: I can't find an error mentioning "pre-written" or "are".]
+
+- Looks fixed -- Greetings2 not working -- asks students to type in code but can't
+- Made into template Olympic Rings is in the programs section -- should it be moved to teacher answers?
+- Done sm ColorfulShapes project is not working -- I am not sure if this was meant for exercises
+- Looks done - Should cajole the user to open and run greeting before the analysis. 
+  This means moving step 14 -- maybe not 
+
+
+[MJC fixes]
+- Step 4: Spelling : theJPanel towards bottom
+- Step 5: metaphor of flyHigh and writeCode is good but may need more? [MJC: I think
+		we decided against this]
+- Step 6: Match sequence --  [MJC: Check my replacement]
+			- "used at top of your program" twice
+			- this piece needs work -- intro statement about what to do,
+			- "used when you define a class" -- this could be both
+- Step 9: Spelling: Put the g parameter in quotes or something
+- Step 10: link back this discussion to triggers in lesson 1 -- Calendar and clock
+- Step 14: Spelling: extendsand  and GReetingsclass
+- Step 15: THe MC answers needs feedback
+- Step 18/19 : feedback on MC
+- Step 17: Spelling: closing <li> -- two semicolons in end of paintcomponent
+- Step 21: No picture to mimic
+- Step 22: MC : Need code
+- Step 23: MC : Need feedback and the answer doesn't seem correct. [MJC: I got rid
+			- of the negative arguments steps]
+- Step 24: MC : Need answers [MJC: vanished with step 23]
+- Step 28: 	- Spelling: thisJPanel
+- Step 30:  - Spelling : last line says getColor method, ..., method -- delete second mention
+- Step 28: 	- Should we explain getSize().width -- will that get what they are doing?
+			- A brainstorm on what the access specifier of width must be?
+- Step 30:  - put actual paintComponent method using Graphics object to call setColor.
+- Step 31:  - MC feedback
+- Step 32:  - MC feedback
+- Step 35: Spelling : Turtle Graphics question turtle misspelled just before "forward"
+- Step 35: - second box of bullet points indents the last too far
+				 - maybe define turnleft and turnright same time					
+- Summary needed
+
+- It might opportunity to fill out the step on "getSize().width" and create 
+  a series of activites that force them to think about what it means when 
+  a method returns an object reference like in getSize() and why you can call 
+  another method/instance variable(!) on that object [MJC: Done]
+- we might also think about putting more in on why you can see methods from JPanel 
+  when you use the Greeting Object [MJC: I think we decided not to do this]
+
+
+
+		

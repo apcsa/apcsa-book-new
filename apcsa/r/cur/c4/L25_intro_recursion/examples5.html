@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Another set implementation</title>
+   </head>
+   <body>
+<p audio="2">
+We have earlier seen iterative implementations of array operations.
+Now we'll examine some of their recursive counterparts in the context
+of a class that represents a set of integers, specifically an implementation 
+that internally is unordered and may contain
+duplicate elements.  Thus the set {1,3,9} might be represented by arrays 
+containing any of the following:
+</p>
+<pre class="width40">
+9   3   9   1
+1   3   9
+1   1   1   1   1   9   3
+</pre>
+<p audio="3">
+The instance variables for this class are
+</p>
+<pre audio="width80">
+// The elements of the set, unordered, possibly containing duplicates.
+private int [ ] myElements;
+// The number of myElements cells being used for set elements.
+private int myElemCount;
+</pre>
+   </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What will happen (3)</title>
+   </head>
+   <body>
+<p audio="2">
+Suppose <tt>charCount</tt> were recoded as follows, with the <tt>return 0</tt>
+statement changed to <tt>return 2</tt>.
+</p>
+<pre>
+public static int charCount (String s) {
+   if (s.equals("")) {
+      return 2;
+   } else {
+      return 1 + charCount (s.substring(1));
+   }
+}
+</pre>
+<p>
+What is returned by the call <tt>charCount ("abc")</tt>?
+</p>
+   </body>
+</html>

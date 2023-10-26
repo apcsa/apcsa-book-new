@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top25";
+	  </script>
+      <title>Interfaces</title>
+   </head>
+   <body>
+<p audio="1">
+Java has a special construct for an abstract class with <i>all</i> abstract methods
+and no instance variables.  It's called an <span class="vocab">interface</span>.
+We don't extend an interface; 
+instead, we <i>implement</i> it, using the keyword <tt>implement</tt>.
+In doing so, we promise to provide definitions for all the methods named in the interface.
+</p>
+<p audio="2">
+You've seen this already in activities that handled mouse clicks.
+Your class headers contained the phrase "<tt>implements MouseListener</tt>",
+thus promising to provide implementations for five methods:
+</p>
+<pre class="width60">
+void mouseClicked (MouseEvent e) 
+void mouseEntered (MouseEvent e) 
+void mouseExited (MouseEvent e) 
+void mousePressed (MouseEvent e) 
+void mouseReleased (MouseEvent e) 
+</pre>
+<p audio="3">
+Recall that we generally provided only empty method bodies for <tt>mouseEntered</tt> and <tt>mouseExited</tt>.
+That's enough to satisfy Java's requirements.
+</p>
+</body>
+</html>

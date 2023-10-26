@@ -1,0 +1,95 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+	<nodes>
+		<HtmlNode identifier="intro" title="Semester 2 Review"
+			class="intro">
+			<ref filename="intro.html" />
+		</HtmlNode>
+		<HtmlNode identifier="intro2" title="Semester 2 Study Guide"
+			class="intro">
+			<ref filename="intro2.html" />
+		</HtmlNode>
+		
+		<HtmlNode identifier="L16-1" title="Lesson 16:  Inheritance"
+			class="curriculum">
+			<ref filename="L16-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L17-1" title="Lesson 17:  Interfaces, Abstract and Static"
+			class="curriculum">
+			<ref filename="L17-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L18-1" title="Lesson 18:  Adventure"
+			class="curriculum">
+			<ref filename="L18-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L19-1" title="Lessons 19-21:  GridWorld"
+			class="curriculum">
+			<ref filename="L19-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L22-1" title="Lesson 22:  Arrays"
+			class="curriculum">
+			<ref filename="L22-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L23-1" title="Lesson 23:  Two-Dimensional Arrays"
+			class="curriculum">
+			<ref filename="L23-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L24-1" title="Lesson 24:  Image Processing"
+			class="curriculum">
+			<ref filename="L24-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L25-1" title="Lesson 25:  Recursion"
+			class="curriculum">
+			<ref filename="L25-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L26-1" title="Lesson 26:  Complex Recursion"
+			class="curriculum">
+			<ref filename="L26-1.html" />
+		</HtmlNode>
+		<HtmlNode identifier="L27-1" title="Lesson 27:  Merge Sort"
+			class="curriculum">
+			<ref filename="L27-1.html" />
+		</HtmlNode>		
+	</nodes>
+
+	<sequences>
+		<sequence identifier="master" title="master" view="">
+			<sequence-ref ref="seq_0" />
+			<sequence-ref ref="seq_1" />
+			<sequence-ref ref="seq_2" />
+			<sequence-ref ref="seq_3" />
+			<sequence-ref ref="seq_4" />			
+		</sequence>
+		<sequence identifier="seq_0" title="Introduction" view="">
+			<node-ref ref="intro" />
+			<node-ref ref="intro2" />
+		</sequence>
+		<sequence identifier="seq_1" title="Reviewing Unit 5"
+			view="">
+			<node-ref ref="L16-1" />
+			<node-ref ref="L17-1" />
+			<node-ref ref="L18-1" />									
+		</sequence>
+		<sequence identifier="seq_2" title="Reviewing Unit 6"
+			view="">
+			<node-ref ref="L19-1" />												
+		</sequence>
+		<sequence identifier="seq_3" title="Reviewing Unit 7"
+			view="">
+			<node-ref ref="L22-1" />
+			<node-ref ref="L23-1" />
+			<node-ref ref="L24-1" />									
+		</sequence>
+		<sequence identifier="seq_4" title="Reviewing Unit 8"
+			view="">
+			<node-ref ref="L25-1" />
+			<node-ref ref="L26-1" />
+			<node-ref ref="L27-1" />															
+		</sequence>
+		
+	</sequences>
+	<method>
+		<startpoint>
+			<sequence-ref ref="master" />
+		</startpoint>
+	</method>
+</project>

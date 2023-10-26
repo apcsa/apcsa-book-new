@@ -1,0 +1,35 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>The BlueJ debugger&mdash;the debugger window</title>
+</head>
+<body>
+<p audio="2">
+When execution reaches the statement at which you set the breakpoint, it will stop,
+displaying an arrow on the stop sign you set and showing you the debugger window.
+</p><div class="imageCenter">
+<img src="/apcsa/r/static/art/screenshots/arrow.png"></div><br/>
+<div class="imageCenter">
+<img src="/apcsa/r/static/art/screenshots/debugger_first_stop.png"></div>
+<p audio="3">
+The debugger window presents you with a lot of information that's not very useful
+here.  However, it also tells you values of instance variables (in the pane titled
+"Instance variables"), which will be quite helpful.
+</p>
+<p audio="4">
+The five large buttons at the bottom of the window let us control the program
+once it has been suspended.
+</p>
+<ul>
+	<li><tt>Step</tt> executes the next statement or evaluates the next condition in the program. If the statement is a method call, it calls the method, then stops once the method returns.</li>
+	<li><tt>Step Into</tt> does what <tt>Step</tt> does, except if the next statement is a method call, it stops the program at the first statement in the method.</li>
+	<li><tt>Continue</tt> resumes the program.</li>
+	<li><tt>Terminate</tt> kills the program.</li>
+</ul>
+<p audio="5">
+The screen shot below shows the result of hitting <tt>Continue</tt>.
+</p><div class="imageCenter">
+<img src="/apcsa/r/static/art/screenshots/debugger_after_cont.png"></div>
+</body>
+</html>

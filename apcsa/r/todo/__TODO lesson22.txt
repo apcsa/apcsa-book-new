@@ -1,0 +1,47 @@
+
+== 
+
+Need to add summary, exercises at end.
+A good brainstorm in this last section would as 
+  - Compare arrays and ArrayLists.  What are some advantages of each. 
+    (note, arrays are -- more concise is about all they could get.)
+
+ answers for arrays10.mc need to be corrected  (nate just made them up)!
+ 
+ step6 could be a brainstorm, yo.
+ 
+ 
+ 
+ change icons for lesson 12, 13
+ 
+ need bluej projects for 12, 13, and everything else
+ And solutions!
+ 
+ need glossary entry for binary search, and/or some explanatory sentences refed in 13
+ 
+ 
+ =============
+ 
+ OLD STUFF
+ 
+ // TODO by STEP NUMBER
+s1 - VISUAL - right margin vocab line up with text. "Arrays"
+s2 to s10 - VISUAL - boring!! add!
+s2 - VISUAL - shrink code bounding box. (pre class)"Declaration of an array"
+s3 - VISUAL - shrink code bounding box. (pre class)"Array initialization, method 1"
+s6 - EDITORIAL - page & step title contains '(web java)'. "comparing intialization code (web java)"
+s9 - EDITORIAL - page & step title contains '(web java)'. "A LineSegment class (web java)"
+s10 - MC - Question & Answers missing! Need feedback too. "Playing with references to arrays"
+s11 - MC need feedback. "Playing with references in arrays of objects"
+s12 - VISUAL - shrink code bounding box.(pre class) "Common array-processing patterns"
+s14 - EDITORIAL - page & step title contains '(web java)'. "Binary Search (webjava)"
+s16 - VISUAL - center image. "ArrayList instance variables"
+s17 - VISUAL - shrink code bounding box. (pre class) "The contains method"
+s18 - VISUAL - shrink code bounding box (pre class), center img. "Implementing the two-argument add method"
+s19 - BS need feedback. "Shifting direction interchangeable?"
+s20 - EDITORIAL - step and page title contains 'web java'. "The remove method (web java)"
+s21 - VISUAL - shrink code bounding box. (pre class) "Auto-expanding"
+s22 - VISUAL = shrink code bounding box. (pre class) "Running java programs without bluej, revisited"
+
+1)  answers for arrays10.mc need to be corrected  (nate just made them up)!
+2) Project file step icons - vary them.

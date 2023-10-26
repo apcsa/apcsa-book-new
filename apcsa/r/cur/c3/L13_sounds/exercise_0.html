@@ -1,0 +1,76 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Making music from a score</title>
+   </head>
+   <body>
+      <p audio="2">
+         In this exercise, you will write a program to read an <tt>ArrayList</tt>
+         of musical notes, like a piano score, and create 
+         a musical rendition of that score. 
+      </p>
+      <p audio="3">
+         What is a score?  For this exercise, a score will be an <tt>ArrayList</tt>
+         of <tt>String</tt>s, where each string is the name of a single note, a 
+         letter between <tt>a</tt> and <tt>g</tt> inclusive. 
+         For instance, the sequence
+      </p>
+      <p class="quoteOrange">
+         <tt>"c"</tt>, <tt>"d"</tt>, <tt>"e"</tt>, <tt>"c"</tt>, <tt>"c"</tt>, <tt>"d"</tt>, <tt>"e"</tt>, <tt>"c"</tt>, <tt>"e"</tt>, <tt>"f"</tt>, <tt>"g"</tt>, <tt>""</tt>, <tt>"e"</tt>, <tt>"f"</tt>, <tt>"g"</tt>, <tt>""</tt>
+      </p>
+      <p audio="4">
+         is the beginning of the song <i>Frere Jacques</i>.  Note the 
+         use of the empty string (<tt>""</tt>) to denote silence.
+      </p>
+      <p audio="5">
+         You will write the class <tt>ReadScore</tt> which takes such
+         an <tt>ArrayList</tt> and creates an object of the class <tt>Sound</tt>
+         that 'plays' the given score.  Some tips:
+      </p>
+      <ul>
+         
+            <li audio="6">
+               How long should each note last?  The most common way to specify this is
+               in <i>beats per minute</i>.  Include an instance variable named
+               <tt>bbm</tt> in the <tt>ReadScore</tt> class that specifies how many 
+               notes get played within a minute.  (A good, average value is
+               <tt>100</tt>, which means 100 notes play each minute).  
+               You'll need to convert beats per minute into the number of samples
+               that each note will need.  Remember, the <tt>Sound</tt> class
+               creates sounds with <tt>22050</tt> samples per second, if you or your 
+               teacher haven't changed the default.
+            
+         
+            <li><span audio="7">
+               You should make use of the code you wrote in the section on 
+               <i>Making Sounds</i>.  Every note has a specific Hertz, or 
+               cycles per second, as given by the following table:</span>
+              <br/>
+              <table id="tableBlue">
+                 <tr><td><tt>c</tt></td><td>261.63 Hz</td><td><tt>d</tt></td><td>293.66 Hz</td></tr>
+                 <tr><td><tt>e</tt></td><td>329.63 Hz</td><td><tt>f</tt></td><td>349.23 Hz</td></tr>
+                 <tr><td><tt>g</tt></td><td>392 Hz</td><td><tt>a</tt></td><td>440 Hz</td></tr>
+                 <tr><td><tt>b</tt></td><td>493.88 Hz</td><td></td><td></td></tr>
+              </table> <br/>
+              <span audio="7c">
+                 You will need to convert information about Hertz into 
+                 how many samples a particular note needs to complete
+                 a cycle.</span>
+				 
+              </li>
+         
+         
+            <li audio="8">
+               You are going to need nested loops, with the outer loop 
+               working down the score, and the inner loop building a 
+               sound sample by sample.  You can either make each note 
+               a separate sound, and then splice them all together, or 
+               use a single sound where each note gets built at a 
+               different position.  Think about which one might be
+               easier.
+          
+         </li>
+      </ul>
+   </body>
+</html>

@@ -1,0 +1,52 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+<nodes>
+<HtmlNode identifier="support0" title="GridWorld support classes" class="intro">
+<ref filename="support0.html"/>
+</HtmlNode>
+<HtmlNode identifier="support1" title="The Location class" class="intro">
+<ref filename="support1.html"/>
+</HtmlNode>
+<HtmlNode identifier="support2" title="The Grid interface" class="intro">
+<ref filename="support2.html"/>
+</HtmlNode>
+<HtmlNode identifier="support3" title="The Actor class" class="intro">
+<ref filename="support3.html"/>
+</HtmlNode>
+<HtmlNode identifier="support4" title="The Bug class revisited" class="intro">
+<ref filename="support4.html"/>
+</HtmlNode>
+<BrainstormNode identifier="support5" title="A disappearing bug" class="brainstorm">
+<ref filename="support5.bs"/>
+</BrainstormNode>
+<HtmlNode identifier="support6" title="A Jumper class" class="intro">
+<ref filename="support6.html"/>
+</HtmlNode>
+<BrainstormNode identifier="support7" title="Jumper test cases" class="brainstorm">
+<ref filename="support7.bs"/>
+</BrainstormNode>
+<BrainstormNode identifier="support8" title="Jumper design" class="brainstorm">
+<ref filename="support8.bs"/>
+</BrainstormNode>
+</nodes>
+
+<sequences>
+<sequence identifier="master"  title="master" view="">
+<sequence-ref ref="seq_0"/>
+</sequence>
+<sequence identifier="seq_0"  title="GridWorld infrastructure" view="">
+<node-ref ref="support0"/>
+<node-ref ref="support1"/>
+<node-ref ref="support2"/>
+<node-ref ref="support3"/>
+<node-ref ref="support4"/>
+<node-ref ref="support5"/>
+<node-ref ref="support6"/>
+<node-ref ref="support7"/>
+<node-ref ref="support8"/>
+</sequence>
+</sequences>
+<method>
+<startpoint><sequence-ref ref="master"/>
+</startpoint>
+</method>
+</project>

@@ -1,0 +1,38 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>If you need them, here are some possible ideas on what to do.</title>
+   </head>
+   <body>
+      <br><br>
+      <div class="talkBubble" char="/apcsa/r/static/art/scenes/knight_2.png" align="left" color="red">
+         <p audio="3.f1">
+            Here are some ideas about interesting things you can do...
+         </p>
+      </div><br>
+      <ul>
+         <li audio="4">
+            Make and item that has states that change as the user
+            interacts with them (e.g., a balloon that pops).
+         </li>
+         <li audio="5">
+            Make a room with an exit that only becomes visible when 
+            a certain item is held by the player.
+         </li>         
+                  <li audio="6">
+            Make an exit of a room a "random transporter".  When the
+            player uses it, it puts him in a random room.  You'll want
+            to subclass <tt>Path</tt> for this one (think about which
+            method you want to override...).  And, you'll have to change
+            the <tt>TransporterPath</tt> constructor so that it stores 
+            a reference to the <tt>World</tt> object, so it can choose
+            a room.
+         </li>
+         <li audio="7">
+            Make an item that can be used with another item to make
+            something totally different.
+         </li>
+         </ul>
+   </body>
+</html>

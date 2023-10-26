@@ -1,0 +1,9 @@
+
+ TODO ===========================================================
+ add talk bubbles if possible
+
+ Anywhere: use nestbot3.png (from art/scenes) as a char in a talkbubble.
+ 
+ - Get the selection and insertion sort algorithms converted over and ready to use inside 
+   mergesort 
+ 

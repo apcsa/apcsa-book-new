@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <script>
+         vocabClass = "top150"
+      </script>
+      <title>Callbacks, revisited</title>
+   </head>
+   <body>
+      <p audio="b">The mouse event handling that we are going to start 
+         with involves several <span class="vocab">callback</span> methods:</p>
+      <ul>
+         <li audio="c">
+            <tt>mousePressed</tt>
+            handles a press of the mouse button;
+         </li>
+         <li audio="d">
+            <tt>mouseReleased</tt>
+            handles a release of the mouse button;
+         </li>
+         <li audio="e">
+            <tt>mouseClicked</tt>
+            handles a mouse click (a press and release at the same spot);
+         </li>
+         <li audio="f">
+            <tt>mouseEntered</tt>
+            handles a move of the mouse to this drawing window;
+         </li>
+         <li audio="g">
+            <tt>mouseExited</tt>
+            handles a move of the mouse from inside  this window to outside this window.
+         </li>
+      </ul>
+      <p audio="h">(We will concern ourselves mainly with the first three of these.)</p>
+      <p audio="i">All of these methods are callbacks. 
+         Like the <tt>paintComponent</tt> method in earlier activities,
+         we never call these mouse event handlers ourselves. 
+         Instead, the underlying Java system calls the relevant event 
+         handler when the event happens.</p>
+      <p audio="j" class="quoteBlue">So, for instance, you write the method
+      <tt>mouseClicked</tt>, and it will be called every time the mouse button 
+         is clicked. </p>
+   </body>
+</html>

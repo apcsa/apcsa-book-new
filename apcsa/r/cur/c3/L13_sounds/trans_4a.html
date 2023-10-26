@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Argument choice</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="0"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Describe your choice of argument</div>
+
+    <div class="prompt">
+    
+<p audio="1">
+You gave the <tt>addNoise</tt> method a single numeric argument. Describe the type and other characteristics of the argument. Why did you choose to make it that way?
+</p>
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Mario">I chose to make my argument a double, and accepted a range between 0 and 1.  0 means no noise, and 1 means complete and total noise!  I used a little math to convert that to a positive or negative number between (at most) -32000 and
++32000.
+        </div>
+        
+        <div name="Genovieve">I chose to make addNoise take an int, between -32768 and 32767.  Then, I made a random number bwebetween 0 and that argument.  But, it didn't work quite right, because I didn't get both negative and positive noise!  So, I had to get another random number, either -1 or +1, and then I multiplied by that.  The hardest part was making sure the individual signal didn't get too big or too small.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

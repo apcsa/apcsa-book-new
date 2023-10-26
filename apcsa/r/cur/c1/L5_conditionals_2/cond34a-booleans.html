@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+    <head>
+        <meta name="generator" content="HTML Tidy, see www.w3.org">
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Combining boolean expressions in Java</title>
+        <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+        Note: base location gets put in via php, sigh. -->
+    </head>
+    <body>
+        <p audio="cond34Aboolean_1">
+            The Java operator for "and" is <tt>&amp;&amp;</tt>. The corresponding operator for "or" is <tt>||</tt>
+            (two vertical bars).  Here are two program segments that use these operators.
+        </p>
+        <p audio="cond34Aboolean_2" class="quoteBlue">
+            Suppose we want to set the <tt>String</tt> named <tt>tempString</tt>
+            to <tt>"comfortable"</tt>
+            if the value of a variable named <tt>temp</tt>
+            is between 65 and 75, inclusive, and to set <tt>tempString</tt>
+            to <tt>"uncomfortable"</tt>
+            otherwise. Here are a couple of ways to do this.
+        </p>
+        <table id="tableClear" border="1">
+            <tr>
+                <td>
+                    <pre>if (temp &gt;= 65 &amp;&amp; temp &lt;= 75) {
+    tempStr = "comfortable";
+} else {
+    tempStr = "uncomfortable";
+}</pre>
+                </td>
+                <td>
+                    <pre>if (temp &lt; 65 || temp &gt; 75) {
+    tempStr = "uncomfortable";
+} else {
+    tempStr = "comfortable";
+}</pre>
+                </td>
+            </tr>
+        </table>
+        <p audio="cond34Aboolean_3" class="quoteBrown">
+            Suppose the <tt>int</tt>
+            variable <tt>dayNum</tt>
+            contains a value between 0 and 
+            6, with 0 representing Sunday, 1 representing  
+            Monday, and so on up to 6 representing Saturday. 
+            Setting the string variable <tt>dayType</tt>
+            to <tt>"weekendDay"</tt>
+            or <tt>"weekday"</tt>
+            may be done as follows:
+        </p>
+        <table id="tableClear" border="1">
+            <tr>
+                <td>
+                    <pre>if (dayNum == 0 || dayNum == 6) {
+    dayType = "weekendDay";
+} else {
+    dayType = "weekday":
+}</pre>
+                </td>
+                <td>
+                    <pre>if (dayNum &gt; 0 &amp;&amp; dayNum &lt; 6) {
+    dayType = "weekday";
+} else {
+    dayType = "weekendDay":
+}</pre>
+                </td>
+            </tr>
+        </table>
+        
+
+      
+    </body>
+</html>

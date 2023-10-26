@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Looking at the <tt>Room</tt> class</title>
+   </head>
+   <body>
+      <p audio="2" class="quoteBrown">
+         Examine the <tt>Room</tt>
+         class in the <tt>Adventure_v0</tt>
+         project. 
+      </p>
+      <p audio="3">
+         It is a relatively simple class.  It has three 
+         instance variables:
+      </p>
+      <ul>
+         <li audio="3a">
+            <tt>name</tt>, a string
+         </li>
+         <li audio="3b">
+            <tt>description</tt>, another string
+         </li>
+         <li audio="3c">
+            <tt>exits</tt>, an <tt>ArrayList</tt> of <tt>Path</tt> 
+            objects.  (Objects of the <tt>Path</tt> class connect two
+            rooms with a particular <i>direction</i>.  The direction 
+            associated with a <tt>Path</tt> is the name or
+            direction of the exit from the current room.) 
+         </li>
+      </ul>
+            <p audio="4">
+         and only a few methods.  The methods that control
+         movement between rooms include:
+      </p>
+      <ul>
+         <li audio="4a">
+            <tt>enterRoom</tt>, which prints the Rooms description
+            and then returns a <tt>boolean</tt> value of
+            <tt>true</tt>, indicating that the player 
+            successfully entered the room.
+         </li>
+         <li audio="4b">
+            <tt>exitRoom</tt>, which returns the <tt>boolean</tt>
+            value <tt>true</tt>, indicating that the player is
+            allowed to exit the room. 
+         </li>
+         <li audio="4c">
+            <tt>tryToExit</tt>, which gets passed a <tt>String</tt>
+            direction.  If the direction string matches one of the
+            exit directions in the room, and the <tt>exitRoom</tt>
+            method returns <tt>true</tt>, it then figures out
+            the next room based on the <tt>Path</tt> objects
+            <tt>travelDestination</tt> method.</li>  
+      </ul>
+      <p audio="5">And, all of this is controlled by the 
+      <tt>actionTravel</tt> method in the <tt>Player</tt> class.</p>
+      
+      <div class="center"><img src="/apcsa/r/static/art/scenes/adventure_rooms_2.png" width="150px" alt= "Adventure Room graphic"/></div>
+      
+   </body>
+</html>

@@ -1,0 +1,36 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+		<script>
+			vocabClass="top25";
+		</script>
+        <title>Glass-box and black-box testing</title>
+</head>
+<body>
+	<div class="imageLeft">
+		<img src="/apcsa/r/static/art/scenes/testing_clearbox.png" alt="Glass box testing" />
+	</div>
+<p audio="2">
+All the test principles discussed so far focused on testing features of the code. 
+Since they assume that we can see into the program, these techniques are collectively referred
+to as <span class="vocab">glass-box testing</span>. 
+</p>
+<p audio="3">
+Another testing approach is called <span class="vocab">black-box testing</span>. 
+It involves generating test cases based only on the problem specification, 
+not on the code itself. There are several big advantages of this approach:
+</p>
+<ul>
+	<li audio="4">The test generation is not biased by knowledge of the code. 
+	    For instance, a program author might mistakenly conclude 
+	    that a given situation is logically impossible 
+	    and fail to include tests for that situation; 
+	    a black-box tester would be less likely to fall into this trap.</li>
+	<li audio="5">Since black-box tests are generated from the problem specification, 
+	    they can be used without change when the program implementation is modified.</li>
+	<li audio="6">The results of a black-box test should make sense to someone unfamiliar with the code.</li>
+	<li audio="7">Black-box tests can be easily designed before the program is written.</li>
+</ul>
+</body>
+</html>

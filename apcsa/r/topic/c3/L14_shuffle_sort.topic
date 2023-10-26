@@ -1,0 +1,59 @@
+title: Lesson 14: Shuffle and sort
+
+{
+h2: Shuffle and sort
+
+
+heading: Introduction
+    resource: Shuffling and sorting [/apcsa/r/cur/c3/L14_shuffle_sort/intro_0.html]
+    reading: More ArrayList operations [/apcsa/r/cur/c3/L14_shuffle_sort/node_8.html]
+    reading: Examples [/apcsa/r/cur/c3/L14_shuffle_sort/node_9.html]
+    matchsequence: Tracing some code [/apcsa/r/cur/c3/L14_shuffle_sort/node_10.html]
+
+heading: Card shuffling
+    codeit: Initialization of a deck [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_0.html]
+    resource: Shuffling properties [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_1.html]
+    brainstorm: Shuffling results? [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_2.html]
+    quiz: Card arrangement counting (1) [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_3.html]
+    quiz: Card arrangement counting (2) [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_4.html]
+    codeit: A 'perfect' shuffle [/apcsa/r/cur/c3/L14_shuffle_sort/node_2.html]
+    reading: How 'perfect' is it? [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_5.html]
+    reading: Two approaches to random shuffling [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_6.html]
+    brainstorm: Ending the exchange [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_7.html]
+    reading: Checking results by hand [/apcsa/r/cur/c3/L14_shuffle_sort/node_3.html]
+    simulation: What about two exchanges? [/apcsa/r/cur/c3/L14_shuffle_sort/node_4.html]
+    brainstorm: Evaluating the exchange-based shuffle [/apcsa/r/cur/c3/L14_shuffle_sort/shuffle_9.html]
+    reading: Shuffling by selection [/apcsa/r/cur/c3/L14_shuffle_sort/node_5.html]
+    codeit: Coding the selection shuffle [/apcsa/r/cur/c3/L14_shuffle_sort/node_6.html]
+
+heading: Sorting
+    resource: Introduction [/apcsa/r/cur/c3/L14_shuffle_sort/node_11.html]
+    brainstorm: Real-world sorting applications [/apcsa/r/cur/c3/L14_shuffle_sort/node_12.html]
+    codeit: outranks [/apcsa/r/cur/c3/L14_shuffle_sort/node_13.html]
+    resource: Selection-based sorting [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_0.html]
+    quiz: Selection sort getting started [/apcsa/r/cur/c3/L14_shuffle_sort/node_14.html]
+    brainstorm: Properties [/apcsa/r/cur/c3/L14_shuffle_sort/node_15.html]
+    codeit: Implementation [/apcsa/r/cur/c3/L14_shuffle_sort/node_16.html]
+    resource: Insertion sorting [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_1.html]
+    quiz: Insertion sort in action (1) [/apcsa/r/cur/c3/L14_shuffle_sort/node_17.html]
+    quiz: Insertion sort in action (2) [/apcsa/r/cur/c3/L14_shuffle_sort/node_18.html]
+    codeit: Implementation [/apcsa/r/cur/c3/L14_shuffle_sort/node_19.html]
+    reading: Comparison counting sort [/apcsa/r/cur/c3/L14_shuffle_sort/node_25.html]
+    brainstorm: Description of the bug [/apcsa/r/cur/c3/L14_shuffle_sort/node_26.html]
+    codeit: Bug fixing [/apcsa/r/cur/c3/L14_shuffle_sort/node_27.html]
+    brainstorm: Comparison of sorting methods (1) [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_2.html]
+    brainstorm: Comparison of sorting methods (2) [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_3.html]
+    resource: Evaluating algorithm efficiency [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_4.html]
+    resource: Statement counting [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_5.html]
+    brainstorm: Experiments with insertion sort [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_6.html]
+    brainstorm: Experiments with selection sort [/apcsa/r/cur/c3/L14_shuffle_sort/sorting_7.html]
+
+heading: Review
+    summary: What we've done (1) [/apcsa/r/cur/c3/L14_shuffle_sort/review_1.html]
+    summary: What we've done (2) [/apcsa/r/cur/c3/L14_shuffle_sort/node_20.html]
+
+heading: Exercises
+    homework: Identifying the mystery sort [/apcsa/r/cur/c3/L14_shuffle_sort/node_21.html]
+    homework: Checking for 'sortitude' [/apcsa/r/cur/c3/L14_shuffle_sort/node_22.html]
+    homework: Another way to shuffle [/apcsa/r/cur/c3/L14_shuffle_sort/node_23.html]
+    homework: In-place sorting [/apcsa/r/cur/c3/L14_shuffle_sort/node_24.html]

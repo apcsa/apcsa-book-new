@@ -1,0 +1,44 @@
+<html>
+<head>
+     <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+<title>Casting</title>
+</head>
+<body>
+      <div class="talkBubble medium_right" char="float1" color="blue" align="left">
+         <p audio="2.m2">
+            So what is all this casting anyway? I am not in show business. 
+         </p>
+      </div>
+            <div class="talkBubble medium_right" char="raster4" color="green" align="right">
+         <p audio="2.m1">
+Yeah, no kidding Float. Didn't you read the code?  We are trying to amplify the sound by 20% which requires us to multiply every value in the sound wave by 1.2. You know what happens when you multiply an integer by a double? 
+</p>
+      </div>
+      <div class="talkBubble medium_right" char="float1" color="blue" align="left">
+         <p audio="2.m2">
+           Yes, of course. You get a double. What gives?
+         </p>
+      </div>
+          <div class="talkBubble medium_right" char="raster4" color="green" align="right">
+         <p audio="2.m1">
+Well what gives is that in this case, our ArrayList only stores Integer objects; it can not store doubles. Casting the value back to an integer allows us to store the result of the multiplication in our ArrayList again.
+</p>
+      </div>
+      <div class="talkBubble medium_right" char="float1" color="blue" align="left">
+         <p audio="2.m2">
+           Ok fine. I am with you. But please tell me it at least rounds correctly. If I multiply by 1.2 and get 3.6, I get 4 right?
+         </p>
+      </div>
+         <div class="talkBubble medium_right" char="raster4" color="green" align="right">
+         <p audio="2.m1">
+Actually no. Casting to an integer will truncate, or ignore, the decimal and just grab the whole number. If you want to round you need to use the <tt>Math</tt> class. 
+</p>
+      </div>
+   <div class="talkBubble medium_right" char="float1" color="blue" align="left">
+         <p audio="2.m2">
+          I think I get it. Thanks Raster.
+         </p>
+      </div>
+</body>
+</html>

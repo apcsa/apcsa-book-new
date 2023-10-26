@@ -1,0 +1,36 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Limitations of values of type <tt>double</tt></title>
+
+</head>
+<body>
+<p>
+Bits are arranged in a different way to store <tt>double</tt> values.
+Each <tt>double</tt> value is stored in 64 <span class="vocab" term="bit">bits</span>, 
+some of which represent
+the <span class="vocab">exponent</span>, and some the <span class="vocab">coefficient</span>.
+This is similar to <span class="vocab">scientific notation</span>,
+used to represent values in biology, physics, and chemistry.
+</p>
+<p>
+The fractional part of the coefficient is expressed in terms of
+fractional powers of 2.
+For example, the decimal value .5 is represented as <sup>1</sup>/<sub>2</sub>,
+and .65625 is represented as the sum 
+<sup>1</sup>/<sub>2</sub> + <sup>1</sup>/<sub>8</sub> + <sup>1</sup>/<sub>32</sub>
+= .5 + .125 + .03125.
+</p>
+<p>
+Problems arise when the fraction is <i>not</i> exactly representable
+by a sum of fractional powers of 2.
+The fraction must then be approximated by the closest value that is
+represented with such a sum.
+An entire field of computer science, called <i>numerical analysis</i>,
+focuses on managing the inexact nature of computation involving 
+<tt>double</tt> values.
+</p>
+
+</body>
+</html>

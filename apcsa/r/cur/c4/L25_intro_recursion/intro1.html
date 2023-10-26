@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A method calling itself?</title>
+   </head>
+   <body>
+<p audio="2">
+Suppose we have a method named <tt>doIt</tt> that contains a call to itself 
+that's always executed. What would happen?  The initial call to <tt>doIt</tt> would
+</p>
+<ul>
+<li><span audio="3">call <tt>doIt</tt>, which would</span>
+	<ul>
+	<li><span audio="4">call <tt>doIt</tt>, which would</span>
+		<ul>
+		<li audio="5">call <tt>doIt</tt>, and so on ...</li>
+		</ul>
+	</li></ul>
+</li></ul>
+<p audio="6">
+Either this would go on forever, or it would crash somehow.
+</p>
+<p audio="7">
+But now suppose that the call is <i>guarded</i>, so that it sometimes returns
+rather than calling itself.
+Execution might then proceed as follows:
+</p>
+<ul>
+<li><span audio="8">call <tt>doIt</tt>, which would</span>
+	<ul>
+	<li><span audio="9">call <tt>doIt</tt>, which would</span>
+		<ul>
+		<li audio="10">call <tt>doIt</tt>,which would return </li>
+		</ul>
+	<span audio="11">which would return</span></li></ul>
+<span audio="12">which would return</span></li></ul>
+<p audio="13">
+That's how we'll structure our own recursive code.
+</p>
+   </body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The <tt>!</tt> (<i>not</i>) operator</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body> 
+<p audio="cond43_1"> 
+There is one more operator for boolean values, namely the <tt>!</tt> or "not" operator.
+The "not" operator<tt>(!)</tt> <i>negates</i> the expression that immediately follows it;
+that is, if the expression evaluates to true, applying the not operator<tt>(!)</tt> to the expression
+changes the value to false, and vice versa.</p> 
+<p audio="cond43_2"> 
+The <tt>!</tt> operator is not very useful with numeric comparisons,
+since other numeric comparison operators are equivalent and more concise (see the table below).
+We will revisit this operator shortly, however, in the context of object comparisons.
+</p> 
+<img class="imageRight" src="/apcsa/r/static/art/scenes/boolean_not.png"
+  alt="A robot startled by an enormous negation operator."/>
+<table id="tableBlue"> 
+<tr><td><i>expression that uses <tt>!</tt></i></td> 
+    <td><i>equivalent expression that doesn't use <tt>!</tt></i></td></tr> 
+<tr><td align="center"><tt>!(x &gt; 5)</tt></td><td align="center"><tt>x &lt;= 5</tt></td></tr> 
+<tr><td align="center"><tt>!(x &lt; 5)</tt></td><td align="center"><tt>x &gt;= 5</tt></td></tr> 
+<tr><td align="center"><tt>!(x &gt;= 5)</tt></td><td align="center"><tt>x &lt; 5</tt></td></tr> 
+<tr><td align="center"><tt>!(x &lt;= 5)</tt></td><td align="center"><tt>x &gt; 5</tt></td></tr> 
+<tr><td align="center"><tt>!(x == 5)</tt></td><td align="center"><tt>x != 5</tt></td></tr> 
+<tr><td align="center"><tt>!(x != 5)</tt></td><td align="center"><tt>x == 5</tt></td></tr> 
+</table> 
+</body>
+</html>

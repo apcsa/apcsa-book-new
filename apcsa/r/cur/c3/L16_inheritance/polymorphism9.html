@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Accommodating the compiler</title>
+   </head>
+   <body>
+<p audio="2">
+We, however, are smarter than the Java compiler.
+We know that we have only inserted <tt>Points</tt> and <tt>TracedPoints</tt> 
+into the <tt>ArrayList</tt>, and we know that they have <tt>move</tt> methods.
+We communicate this information to the compiler by a type <i>cast</i>, 
+putting a class name in parentheses immediately preceding a reference or reference expression.
+Here's how we would successfully call the <tt>move</tt> methods of the <tt>ArrayList</tt> elements.
+</p>
+<pre class="width40">
+for (int k=0; k&lt;a.size( ); k++) {
+    ((Point) a.get(k)).move (7, 9);
+}
+</pre>
+<p audio="3">
+The compiler knows that <tt>a.get</tt> returns a reference to an <tt>Object</tt>.
+The cast causes the reference to be interpreted as a <tt>Point</tt>, 
+which allows the compiler to find a <tt>move</tt> method.</p>
+</p>
+</body>
+</html>

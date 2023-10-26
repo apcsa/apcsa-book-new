@@ -1,0 +1,36 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Program to save mouse clicks</title>
+</head>
+<body>
+
+<div class="openbluejproj" project="lesson12\Polygon1">
+         <p audio="7">Open the Polygon1 project
+            (<b>lesson12\Polygon1</b>).</p>
+</div>
+<p>
+This program intends to collect positions of mouse clicks and
+draw lines that connect each consecutive pair of clicks in order to form a polygon.
+More specifically, you should add code to do the following:
+</p>
+<ul>
+<li><p>declare an <tt>ArrayList</tt> of <tt>Point</tt> objects;</p></li>
+<li><p>supply a body of the <tt>mouseClicked</tt> method
+in which the position of the click is stored in a <tt>Point</tt> object
+and added to the <tt>ArrayList</tt>, and ended with a call to <tt>repaint</tt>;</p></li>
+<li><p>complete the <tt>paintComponent</tt> method with code that
+draws a filled circle at each click position and connects consecutive clicks with a line as shown below.
+</p></li>
+</ul>
+<img src="/apcsa/r/static/art/graphics/save_clicks.png">
+<p>
+A good way to draw the mouse clicks is
+</p>
+<pre>
+Point p = ...;
+g.fillOval (p.x-5, p.y-5, 10, 10);
+</pre>
+</body>
+</html>

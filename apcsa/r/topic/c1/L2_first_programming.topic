@@ -1,0 +1,82 @@
+title: Lesson 2: First Programming: BlueJ, variables, and a first class
+
+{ 
+h2: First Programming 
+
+
+heading: Introduction to BlueJ
+    resource: An analogy for programming [/apcsa/r/cur/c1/L2_first_programming/i2bj-analogy.html]
+
+    heading: A First Look
+        resource: The BlueJ programing environment [/apcsa/r/cur/c1/L2_first_programming/i2bj-bluej.html]
+        resource: Opening a project [/apcsa/r/cur/c1/L2_first_programming/i2bj-openingProject.html]
+        resource: Classes in projects (a) [/apcsa/r/cur/c1/L2_first_programming/i2bj-classesa.html]
+        resource: Classes in projects (b) [/apcsa/r/cur/c1/L2_first_programming/i2bj-classesb.html]
+        resource: Creating an Object from a Class (a) [/apcsa/r/cur/c1/L2_first_programming/node_5.html]
+        resource: Creating an object from a class (b) [/apcsa/r/cur/c1/L2_first_programming/i2bj-instantiate.html]
+        matchsequence: Review using BlueJ [/apcsa/r/cur/c1/L2_first_programming/i2bj-challenge-1.html]
+
+    heading: Methods in BlueJ
+        resource: Calling a method for an object [/apcsa/r/cur/c1/L2_first_programming/i2bj-calling-1.html]
+        resource: Calling a method with some information [/apcsa/r/cur/c1/L2_first_programming/i2bj-calling-2.html]
+        //fillblank: Add a piece in the top left corner [/apcsa/r/cur/c1/L2_first_programming/i2bj-challenge-addAPiece.html]
+        simulation: Moving a piece [/apcsa/r/cur/c1/L2_first_programming/i2bj-movePiece.html]
+        quiz: Where is the piece? (a) [/apcsa/r/cur/c1/L2_first_programming/node_6.html]
+        quiz: Where is the piece? (b) [/apcsa/r/cur/c1/L2_first_programming/node_7.html]
+        quiz: Where is the piece? (c) [/apcsa/r/cur/c1/L2_first_programming/node_8.html]
+        quiz: Where is the piece? (d) [/apcsa/r/cur/c1/L2_first_programming/node_3.html]
+
+    heading: Objects and Compiling
+        resource: Object Interaction [/apcsa/r/cur/c1/L2_first_programming/i2bj-objectInteraction.html]
+        matchsequence: Identifying Methods [/apcsa/r/cur/c1/L2_first_programming/node_9.html]
+        resource: Source code [/apcsa/r/cur/c1/L2_first_programming/i2bj-source.html]
+        codeit: Compiling [/apcsa/r/cur/c1/L2_first_programming/i2bj-compile.html]
+        resource: More about compilation [/apcsa/r/cur/c1/L2_first_programming/i2bj-moreCompile.html]
+        resource: Compile errors [/apcsa/r/cur/c1/L2_first_programming/i2bj-compileErrors.html]
+
+heading: Programming with BlueJ
+
+    heading: A Candy Jar
+        resource: Transitioning into Programming [/apcsa/r/cur/c1/L2_first_programming/i2bjTOcandyjar.html]
+        resource: A Different Perspective of Gameboard [/apcsa/r/cur/c1/L2_first_programming/i2bjTOcandyjar2.html]
+        resource: Our First Class [/apcsa/r/cur/c1/L2_first_programming/ourFirstClass.html]
+        resource: The big structure [/apcsa/r/cur/c1/L2_first_programming/structure.html]
+        resource: The inner structure [/apcsa/r/cur/c1/L2_first_programming/structure_a.html]
+        display: Instance variables [/apcsa/r/cur/c1/L2_first_programming/instanceVar.html]
+        matchsequence: Good names? [/apcsa/r/cur/c1/L2_first_programming/instanceVar_a.html]
+        display: More on Instance variables [/apcsa/r/cur/c1/L2_first_programming/instanceVar_b.html]
+        brainstorm: Fractional candy? [/apcsa/r/cur/c1/L2_first_programming/fractional.html]
+
+    heading: Explore
+        resource: The methods (1) [/apcsa/r/cur/c1/L2_first_programming/methods.html]
+        resource: The methods (2) [/apcsa/r/cur/c1/L2_first_programming/methods_a.html]
+        resource: Method headers [/apcsa/r/cur/c1/L2_first_programming/methods_b.html]
+        codeit: Instantiate an object [/apcsa/r/cur/c1/L2_first_programming/instantiate.html]
+        display: Calling methods [/apcsa/r/cur/c1/L2_first_programming/callMethods.html]
+        brainstorm: Different method behaviors [/apcsa/r/cur/c1/L2_first_programming/methodBehaviors.html]
+        resource: Calling other methods [/apcsa/r/cur/c1/L2_first_programming/callMethodsOther.html]
+
+    heading: Investigating errors
+        resource: Make some errors [/apcsa/r/cur/c1/L2_first_programming/errors.html]
+        brainstorm: Interpreting an error message [/apcsa/r/cur/c1/L2_first_programming/interpretError.html]
+        brainstorm: Create an error message [/apcsa/r/cur/c1/L2_first_programming/errorNoArgument.html]
+        brainstorm: Interpret another error [/apcsa/r/cur/c1/L2_first_programming/interpretError-2.html]
+
+heading: Keeping track of data
+
+    heading: Assignment Statements
+        resource: Assignment statements [/apcsa/r/cur/c1/L2_first_programming/assign-1a.html]
+        resource: More on assignment [/apcsa/r/cur/c1/L2_first_programming/assign-1b.html]
+        resource: Assignment exercise [/apcsa/r/cur/c1/L2_first_programming/assign-exercises.html]
+        quiz: Eating effects 1? [/apcsa/r/cur/c1/L2_first_programming/effectOfEat-1.html]
+        quiz: Eating effects 2? [/apcsa/r/cur/c1/L2_first_programming/effectOfEat-2.html]
+
+    heading: More work with candy jars
+        quiz: Structure question [/apcsa/r/cur/c1/L2_first_programming/node_10.html]
+        codeit: Working with a second CandyJar argument [/apcsa/r/cur/c1/L2_first_programming/node_12.html]
+        brainstorm: Objects with identical values [/apcsa/r/cur/c1/L2_first_programming/node_13.html]
+        brainstorm: Multiple objects [/apcsa/r/cur/c1/L2_first_programming/node_14.html]
+
+heading: Review and Exercises
+    summary: What we've done [/apcsa/r/cur/c1/L2_first_programming/node_16.html]
+    homework: Exercises [/apcsa/r/cur/c1/L2_first_programming/node_17.html]

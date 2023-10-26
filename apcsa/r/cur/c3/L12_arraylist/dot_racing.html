@@ -1,0 +1,43 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Extending DotRacing with ArrayLists</title>
+</head>
+<body>
+
+<p audio="1">
+Remember the <tt>DotRacing</tt> program?  Use <tt>ArrayList</tt>s to allow any number of 
+racers.
+</p>
+<div class="openbluejproj" project="lesson12/DotRacingArrayList">
+         <p audio="7">Open the <tt>DotRacingArrayList</tt> project
+            (<b>lesson12/DotRacingArrayList</b>).</p>
+</div>
+<p audio="3">
+The <tt>Dot</tt> class hasn't been changed from the project you used way back in 
+lesson 10, but the <tt>DotRacingArrayList</tt> class is different in several ways from
+the <Tt>DotRacing</Tt> class you used then.  The main difference is the <tt>dots</tt>
+instance variable, which is an <tt>ArrayList</tt> that holds <tt>Dot</tt> objects.</p>
+
+<p audio="3c">You'll need to finish three methods to make this program work correctly:</p>
+<ul>
+<li audio="4c">
+The <tt>initializeRacers</tt> method needs set up <tt>dots</tt> correctly.  The main loop
+has already be done for you.
+</li>
+<li audio="5">
+The <tt>whoMoves</tt> method needs to return a randomly choosen <tt>Dot</tt> object.
+</li>
+<li audio="6">
+And, the <tt>drawRacers</tt> method needs to call <tt>drawRacer</tt> for each <tt>Dot</tt>
+object in <tt>dots</tt>.</li>
+</ul>
+<p audio="7">After you have finished the program, test it by changing the number of racers
+in a race&mdash;this is specified in the <tt>initializeRacers</tt> method.</p>
+<p audio="9" class="quoteOrange">
+You might be interested in the <tt>randomName</tt> and <tt>randomColor</tt> methods, which
+set up <tt>ArrayList</tt>s and randomly pick an element from each.  Can you modify them 
+so that duplicate names and/or colors aren't choosen in a race?  This might be tricky!</p>
+</body>
+</html>

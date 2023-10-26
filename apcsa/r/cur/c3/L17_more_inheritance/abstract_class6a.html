@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>More motivation(2)</title>
+   </head>
+   <body>
+
+<p audio="3">
+For example, there is a <tt>sort</tt> method in the <tt>java.util.Collections</tt>
+class (of which <tt>ArrayList</tt> is a subclass).  
+Sorting involves comparing list elements, 
+so a user of the <tt>sort</tt> method needs to supply that method 
+with a mechanism for doing the comparison.  
+One does this by having the element class implement the <tt>Comparable</tt> interface 
+and supply a method named <tt>compareTo</tt> to do comparison between elements.
+</p>
+<p>
+Suppose, for example, we wanted to sort an <tt>ArrayList</tt> of <tt>Point</tt> objects, where points are compared according to their horizontal distance from 0. (We assume here that we have access to the <tt>Point</tt> class.)
+We would add a <tt>compareTo</tt> method to the <tt>Point</tt> class as follows:
+</p>
+<pre>
+public class Point implements Comparable&lt;Point&gt; {
+
+    // Returns -1 if this Point is horizontally closer to 0 than p.
+    // Returns 1 if this Point is horizontally further from 0 than p.
+    // Returns 0 if the two points are equally close to 0.
+    public int compareTo (Point p) {
+        if (Math.abs(p.getX()) &gt; Math.abs(this.getX())) {
+            return -1;
+        } else if (Math.abs(p.getX()) &lt; Math.abs(this.getX())) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+    ...
+}
+</pre>
+
+<p audio="4">
+There is a close connection between Java interfaces and callbacks.  
+A programmer wanting to sort an <tt>ArrayList</tt> 
+would probably not call <tt>compareTo</tt> directly. 
+Instead, he or she would call <tt>sort</tt>, 
+which in turn would call the user-provided method.
+</p>
+<p class="quoteBrown" audio="5">
+To summarize: an interface specifies a <i>contract</i> for a class 
+that implements the interface, 
+which then can be relied upon to supply the relevant methods for users of the class.
+</p>
+</body>
+</html>

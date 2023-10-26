@@ -1,0 +1,101 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What we've done</title>
+
+</head>
+<body>
+<p>
+Activities in this lesson introduced the process of setting up a window
+and drawing in it.
+A "window" in Java consists of two objects: a <tt>JPanel</tt>, 
+on which drawing is done, and a <tt>JFrame</tt>,
+which acts something like an easel holding the <tt>JPanel</tt>. 
+The easel/drawing relationship is illustrated below.
+</p>
+<img src="/apcsa/r/static/art/graphics/JFrame_vs_JPanel.png">
+<p>
+The <tt>JPanel</tt> and <tt>JFrame</tt> classes are supplied in
+<span class="vocab">class libraries</span> that are distributed
+with all Java programming environments.
+The libraries have names; a library class is accessed
+by giving the <tt>import</tt> keyword followed by the name
+of the desired library.
+Here, we need to import two libraries:
+</p>
+<pre>
+   import java.awt.*;
+   import javax.swing.*;
+</pre>
+<p>
+The <tt>import</tt> statement must appear at the <i>top</i> of a program.
+</p>
+<p>
+The <tt>import</tt> statement allows us to <i>access</i> a class.
+In contrast, the <tt>extend</tt> keyword lets us <i>use</i> the class,
+typically by supplying some methods of our own that augment or modify
+those of the extended class. 
+(This technique is called <span class="vocab">inheritance</span>
+and is covered in (much) more depth starting in lesson 16.)
+The code we worked with in this lesson all involved providing a class
+that extends the <tt>JPanel</tt> class:
+</p>
+<pre>
+   public class Greetings extends JPanel {
+</pre>
+<p>
+Setting up the connections between <tt>JPanel</tt> and <tt>JFrame</tt>
+is somewhat complicated, but is pretty much consistent from program
+to program. We start by constructing a <tt>JFrame</tt>,
+then call some of its methods to
+</p>
+<ul>
+<li>
+supply its width and height dimensions, 
+</li>
+<li>
+specify what to do when the "close" box is clicked,
+</li>
+<li>
+<i>add</i> the <tt>JPanel</tt> to the <tt>JFrame</tt>, and
+</li>
+<li>
+and display the window on the screen.
+</li>
+</ul>
+<p>
+Here's the code:
+</p>
+<pre>
+   JFrame easel = new JFrame();		
+   easel.setSize (myWindowWidth, myWindowHeight);
+   easel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+   easel.add (this);
+   easel.setVisible (true);
+</pre>
+<p>
+Finally, we got to do some drawing.
+This is done in the <tt>paintComponent</tt> method.
+The <tt>paintComponent</tt> is an example of
+a <span class="vocab">callback</span> method.
+It's not called directly in our code;
+instead, it is called by the Java system when some action requires
+the window to be redrawn.
+<tt>paintComponent</tt> has a single argument, a <tt>Graphics</tt> object
+whose methods include facilities for drawing lines, text, and shapes.
+</p>
+<p>
+Relevant <tt>Graphics</tt> methods are <tt>drawString</tt>, <tt>drawLine</tt>,
+<tt>drawRect</tt>,
+<tt>fillRect</tt>, <tt>drawOval</tt>, and <tt>fillOval</tt>.
+All take coordinates for a position in the drawing window as arguments.
+Coordinates are all nonnegative&mdash;the upper-left corner of the window
+has coordinates (0,0)&mdash;and increase as we move down or to the right.
+(Refer to the Java online documentation for further details of how these work,
+and for other methods of the <tt>Graphics</tt> class.)
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>An undetected bug</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p> 
+Here's the code just described:
+<pre>    leapDay = 0;
+    if (year % 4 == 0) {
+        leapDay = 1;
+    }
+    if (year % 100 == 0) {
+        leapDay = 0;
+    }
+    if (year % 400 == 0) {
+        leapDay = 1;
+    }
+</pre> 
+<p> 
+Describe a small change that would not affect its behavior for a <tt>year</tt> value of 400 
+but would produce incorrect behavior for other <tt>year</tt> values.
+</p> 
+</body>
+</html>

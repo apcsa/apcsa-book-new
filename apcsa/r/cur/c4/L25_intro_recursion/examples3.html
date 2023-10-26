@@ -1,0 +1,24 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Bug symptoms</title>
+   </head>
+   <body>
+<p audio="2">
+The version of <tt>sumHelper</tt> given below is incorrect.
+Provide an interval for which <tt>sumHelper</tt> returns the correct answer,
+and provide another interval 
+for which <tt>sumHelper</tt> returns the wrong answer.
+</p>
+<pre class="width70">
+private int sumHelper (int left, int right) {
+   if (left &gt; right) {
+      return 0;
+   } else {
+      return left + right + sumHelper (left+1, right-1);
+   }
+}
+</pre>
+   </body>
+</html>

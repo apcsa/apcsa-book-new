@@ -1,0 +1,42 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Testing principle 1, applied to leap day counting</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p audio="apply1_1"> 
+Here's a solution to the leap year counting exercise:
+</p>
+
+<pre class="width40">    if (year % 400 == 0) {
+        leapYearCount = 1;
+    } else if (year % 100 == 0) {
+        leapYearCount = 0;
+    } else if (year % 4 == 0) {
+        leapYearCount = 1;
+    } else {
+        leapYearCount = 0;
+    }
+</pre> 
+
+<p audio="apply1_2"> 
+The code contains four cases, exactly one of which is executed for any particular value 
+of <tt>year</tt>.
+Applying testing principle 1,
+we must test this code with at least one <tt>year</tt> value per case, 
+so at least four values of <tt>year</tt> are needed for testing:
+</p> 
+<p>
+Complete the <tt>LeapYearTester</tt> class in <tt>lesson4/LeapYearTester</tt>, and run it in BlueJ.  Your tests should include the following.
+</p>
+<ul> 
+<li audio="apply1_3">a year that's divisible by 400;</li> 
+<li audio="apply1_4">a year that's divisible by 100 but not by 400;</li> 
+<li audio="apply1_5">a year that's divisible by 4 but not by 100;</li> 
+<li audio="apply1_6">a year that's not divisible by 4.</li> 
+</ul> 
+</body>
+</html>

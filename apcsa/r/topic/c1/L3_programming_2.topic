@@ -1,0 +1,126 @@
+title: Lesson 3: Programming More Broadly: generalizing, and strings
+
+{ 
+//h2: Activities
+
+
+heading: More classes
+    resource: The more things change... [/apcsa/r/cur/c1/L3_programming_2/refillable0.html]
+
+//heading: Cooling drinks
+    resource: A second class [/apcsa/r/cur/c1/L3_programming_2/refillable1.html]
+    brainstorm: Name selection (1) [/apcsa/r/cur/c1/L3_programming_2/refillable2.html]
+    brainstorm: Name selection (2) [/apcsa/r/cur/c1/L3_programming_2/refillable2a.html]
+    quiz: Choosing a variable type [/apcsa/r/cur/c1/L3_programming_2/refillable3.html]
+    matchsequence: Choosing a method type [/apcsa/r/cur/c1/L3_programming_2/refillable3a.html]
+
+//heading: Keeping the score
+    resource: Another example [/apcsa/r/cur/c1/L3_programming_2/refillable4a.html]
+    brainstorm: Name selection (3) [/apcsa/r/cur/c1/L3_programming_2/refillable5.html]
+    brainstorm: Writing a header [/apcsa/r/cur/c1/L3_programming_2/refillable5b.html]
+
+heading: Finding a common ground
+    resource: Finding similarities [/apcsa/r/cur/c1/L3_programming_2/refillable6a.html]
+    resource: Abstraction [/apcsa/r/cur/c1/L3_programming_2/refillable6b.html]
+
+//heading: A more general class
+    resource: A more general class [/apcsa/r/cur/c1/L3_programming_2/refillable7a.html]
+    brainstorm: Other refillable objects [/apcsa/r/cur/c1/L3_programming_2/refillable8.html]
+    codeit: What is a refillable? [/apcsa/r/cur/c1/L3_programming_2/refillable8b.html]
+    quiz: An alternative name for the Refillable class [/apcsa/r/cur/c1/L3_programming_2/refillable9a.html]
+    brainstorm: Alternative names for Refillable methods [/apcsa/r/cur/c1/L3_programming_2/refillable10.html]
+
+heading: More on Refillable
+    resource: Expanding the Refillable class [/apcsa/r/cur/c1/L3_programming_2/refillable11.html]
+    //fillblank: Computing the average by hand [/apcsa/r/cur/c1/L3_programming_2/refillable12.html]
+    quiz: Ingredients for computing the average use [/apcsa/r/cur/c1/L3_programming_2/refillable13.html]
+    brainstorm: Naming the variables [/apcsa/r/cur/c1/L3_programming_2/refillable14.html]
+    resource: Instance variables [/apcsa/r/cur/c1/L3_programming_2/refillable15.html]
+    matchsequence: Methods that change [/apcsa/r/cur/c1/L3_programming_2/refillable16.html]
+    quiz: What average use returns [/apcsa/r/cur/c1/L3_programming_2/refillable16a.html]
+    quiz: averageUse arguments? [/apcsa/r/cur/c1/L3_programming_2/refillable17a.html]
+    resource: Changes to Refillable [/apcsa/r/cur/c1/L3_programming_2/refillable18.html]
+    resource: Something interesting (1) [/apcsa/r/cur/c1/L3_programming_2/refillable19a.html]
+    resource: Something interesting (2) [/apcsa/r/cur/c1/L3_programming_2/refillable19b.html]
+    resource: The double type [/apcsa/r/cur/c1/L3_programming_2/node_0.html]
+    codeit: Refillable with a double average [/apcsa/r/cur/c1/L3_programming_2/node_1.html]
+    quiz: Resulting behavior? [/apcsa/r/cur/c1/L3_programming_2/node_2.html]
+    resource: Dividing and conquering [/apcsa/r/cur/c1/L3_programming_2/node_3.html]
+    quiz: Right answers without parentheses? [/apcsa/r/cur/c1/L3_programming_2/node_4.html]
+    brainstorm: More int-to-double conversion [/apcsa/r/cur/c1/L3_programming_2/node_5.html]
+    resource: Interaction between double and int values [/apcsa/r/cur/c1/L3_programming_2/node_6.html]
+    resource: Capacity of a Refillable [/apcsa/r/cur/c1/L3_programming_2/node_7.html]
+    resource: Forming integer values [/apcsa/r/cur/c1/L3_programming_2/node_30.html]
+    quiz: Forming 9 [/apcsa/r/cur/c1/L3_programming_2/node_32.html]
+    brainstorm: More than one answer [/apcsa/r/cur/c1/L3_programming_2/node_33.html]
+    brainstorm: Unrepresentable values [/apcsa/r/cur/c1/L3_programming_2/node_34.html]
+    resource: Values versus representations [/apcsa/r/cur/c1/L3_programming_2/node_35.html]
+    resource: Positional representations: decimal [/apcsa/r/cur/c1/L3_programming_2/node_36.html]
+    resource: Other bases [/apcsa/r/cur/c1/L3_programming_2/node_37.html]
+    //fillblank: Converting between bases [/apcsa/r/cur/c1/L3_programming_2/node_41.html]
+    //resource: A joke that's part of the CS culture [/apcsa/r/cur/c1/L3_programming_2/node_40.html]
+    resource: Limitations of int values [/apcsa/r/cur/c1/L3_programming_2/node_8.html]
+    resource: Limitations of double values [/apcsa/r/cur/c1/L3_programming_2/node_9.html]
+
+heading: Introduction to a Name class
+    resource: Representing names [/apcsa/r/cur/c1/L3_programming_2/name0.html]
+    resource: Names need letters! [/apcsa/r/cur/c1/L3_programming_2/name0a.html]
+    resource: Source code [/apcsa/r/cur/c1/L3_programming_2/name1.html]
+    
+// heading: Intro to Strings
+    resource: What are strings? [/apcsa/r/cur/c1/L3_programming_2/name4.html]
+    quiz: Indexing a string [/apcsa/r/cur/c1/L3_programming_2/name5a.html]
+    quiz: Indexing any string [/apcsa/r/cur/c1/L3_programming_2/name5b.html]
+    resource: Empty strings [/apcsa/r/cur/c1/L3_programming_2/name6a.html]
+    resource: Concatenation [/apcsa/r/cur/c1/L3_programming_2/name6b.html]
+    resource: Using + on strings [/apcsa/r/cur/c1/L3_programming_2/name6c.html]
+    brainstorm: Why does + do that? [/apcsa/r/cur/c1/L3_programming_2/name7.html]
+    quiz: Empty and empty [/apcsa/r/cur/c1/L3_programming_2/name8.html]
+
+heading: String Methods
+    resource: String methods [/apcsa/r/cur/c1/L3_programming_2/name17.html]
+    resource: The substring method [/apcsa/r/cur/c1/L3_programming_2/node_25.html]
+    resource: One name, two methods [/apcsa/r/cur/c1/L3_programming_2/node_27.html]
+    resource: Exploring substring [/apcsa/r/cur/c1/L3_programming_2/node_26.html]
+    quiz: Practice with substring [/apcsa/r/cur/c1/L3_programming_2/name18.html]
+    resource: The indexOf method [/apcsa/r/cur/c1/L3_programming_2/node_42.html]
+    codeit: Retrieving symbols [/apcsa/r/cur/c1/L3_programming_2/node_43.html]
+    resource: Experimenting [/apcsa/r/cur/c1/L3_programming_2/name19.html]
+
+heading: Strings in the Name class
+    quiz: Source code for Name class [/apcsa/r/cur/c1/L3_programming_2/node_22.html]
+    brainstorm: Similarities [/apcsa/r/cur/c1/L3_programming_2/name2.html]
+    resource: And differences [/apcsa/r/cur/c1/L3_programming_2/name3.html]
+
+heading: Methods helping methods: Fixing capitalization
+    resource: Methods that help [/apcsa/r/cur/c1/L3_programming_2/name10a.html]
+    resource: Exploring [/apcsa/r/cur/c1/L3_programming_2/name10b.html]
+    resource: caseFixed parameter [/apcsa/r/cur/c1/L3_programming_2/name11.html]
+    resource: Using abstraction [/apcsa/r/cur/c1/L3_programming_2/name12.html]
+    resource: Complication [/apcsa/r/cur/c1/L3_programming_2/name13.html]
+    resource: What happened? [/apcsa/r/cur/c1/L3_programming_2/name14.html]
+    resource: An example [/apcsa/r/cur/c1/L3_programming_2/node_29.html]
+    resource: Fixing the problem [/apcsa/r/cur/c1/L3_programming_2/name15.html]
+
+heading: Methods helping methods: Built-in methods
+    resource: A note on naming methods [/apcsa/r/cur/c1/L3_programming_2/node_28.html]
+    resource: More on caseFixed [/apcsa/r/cur/c1/L3_programming_2/name16.html]
+    brainstorm: Without a middle name [/apcsa/r/cur/c1/L3_programming_2/name20.html]
+    resource: Printing [/apcsa/r/cur/c1/L3_programming_2/systemoutprintln.html]
+    resource: More printing [/apcsa/r/cur/c1/L3_programming_2/systemoutprintln2.html]
+    homework: Practice with System.out.println [/apcsa/r/cur/c1/L3_programming_2/systemoutprintln3.html]
+    resource: A tester class [/apcsa/r/cur/c1/L3_programming_2/node_10.html]
+    resource: Features of the Tester class [/apcsa/r/cur/c1/L3_programming_2/node_11.html]
+    codeit: Experimenting with the Tester class [/apcsa/r/cur/c1/L3_programming_2/node_12.html]
+    resource: Primitive vs. reference types [/apcsa/r/cur/c1/L3_programming_2/node_13.html]
+    resource: Initialization [/apcsa/r/cur/c1/L3_programming_2/node_14.html]
+    resource: Initialization of a reference variable using new [/apcsa/r/cur/c1/L3_programming_2/node_15.html]
+    resource: Boxes and arrows [/apcsa/r/cur/c1/L3_programming_2/node_16.html]
+    resource: Declaration and initialization diagrams [/apcsa/r/cur/c1/L3_programming_2/node_17.html]
+    codeit: Another rtest (BlueJ) [/apcsa/r/cur/c1/L3_programming_2/node_18.html]
+    quiz: Assigning variables [/apcsa/r/cur/c1/L3_programming_2/node_19.html]
+
+heading: Exercises
+    summary: What we've done [/apcsa/r/cur/c1/L3_programming_2/node_38.html]
+    quiz: Unit 1 Quiz [/apcsa/r/cur/c1/L3_programming_2/quiz_unit1.html]
+    homework: Exercises [/apcsa/r/cur/c1/L3_programming_2/name22.html]

@@ -1,0 +1,44 @@
+title: Lesson 17: More inheritance
+
+{
+h2: Additional work with inheritance
+
+
+heading: More inheritance puzzles
+    resource: Playing more with inheritance [/apcsa/r/cur/c3/L17_more_inheritance/play0.html]
+    matchsequence: Output prediction [/apcsa/r/cur/c3/L17_more_inheritance/node_0.html]
+    brainstorm: Hardest thing about inheritance? [/apcsa/r/cur/c3/L17_more_inheritance/play5.html]
+
+heading: Callbacks
+    resource: Callbacks, revisited [/apcsa/r/cur/c3/L17_more_inheritance/callbacks0.html]
+    resource: The Measurement class [/apcsa/r/cur/c3/L17_more_inheritance/callbacks1.html]
+    brainstorm: Determining what's wrong [/apcsa/r/cur/c3/L17_more_inheritance/callbacks2.html]
+    brainstorm: A simpler equals method [/apcsa/r/cur/c3/L17_more_inheritance/callbacks3.html]
+    brainstorm: Another equals method [/apcsa/r/cur/c3/L17_more_inheritance/callbacks4.html]
+    brainstorm: The final equals method [/apcsa/r/cur/c3/L17_more_inheritance/callbacks5.html]
+    resource: How polymorphism fits in [/apcsa/r/cur/c3/L17_more_inheritance/callbacks6.html]
+    resource: If we don't override these methods ... [/apcsa/r/cur/c3/L17_more_inheritance/callbacks7.html]
+
+heading: Abstract classes and methods
+    resource: Prisoners' Dilemma player inheritance reorganization [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class0.html]
+    resource: Abstract classes and methods [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class1.html]
+    brainstorm: Abstract remember method? [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class2.html]
+    resource: More on abstract classes(1) [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class3.html]
+    resource: More on abstract classes(2) [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class3a.html]
+    resource: Interfaces [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class5.html]
+    resource: More motivation(1) [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class6.html]
+    resource: More motivation(2) [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class6a.html]
+    resource: Sorting an ArrayList [/apcsa/r/cur/c3/L17_more_inheritance/abstract_class7.html]
+
+heading: Static
+    resource: Static variables and methods [/apcsa/r/cur/c3/L17_more_inheritance/static0.html]
+    brainstorm: Meaning of static? [/apcsa/r/cur/c3/L17_more_inheritance/static1.html]
+    resource: Static constants [/apcsa/r/cur/c3/L17_more_inheritance/static2.html]
+    resource: Definition and use of static constants [/apcsa/r/cur/c3/L17_more_inheritance/static3.html]
+    brainstorm: A use for a static variable [/apcsa/r/cur/c3/L17_more_inheritance/static4.html]
+    resource: Another use for the static variable [/apcsa/r/cur/c3/L17_more_inheritance/static5.html]
+    resource: Static random number generator [/apcsa/r/cur/c3/L17_more_inheritance/static6.html]
+    resource: Static methods [/apcsa/r/cur/c3/L17_more_inheritance/static7.html]
+    resource: A special static method [/apcsa/r/cur/c3/L17_more_inheritance/static8.html]
+    brainstorm: When to use static [/apcsa/r/cur/c3/L17_more_inheritance/static9.html]
+    brainstorm: Uses of static [/apcsa/r/cur/c3/L17_more_inheritance/static11.html]

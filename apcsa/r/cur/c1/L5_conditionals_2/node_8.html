@@ -1,0 +1,55 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Using the <tt>this</tt> keyword to refer to the current object</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+<p audio="node8_1">
+Consider the <tt>outranks</tt> method whose header appears below.
+</p>
+<pre class="width80">
+   // Return true if this card outranks the argument, that is,
+   // its rank is higher than the argument's rank, or the two 
+   // ranks are the same and this card's suit is higher than
+   // the argument's suit.
+   public boolean outranks (Card c) ...
+</pre>
+<p audio="node8_2">
+Two card objects will be involved in the comparison.
+</p>
+<ul>
+<li audio="node8_3">
+One of them is the argument <tt>c</tt>. We can find out the suit
+and the rank of <tt>c</tt> by saying <tt>c.suit ( )</tt> and <tt>c.rank ( )</tt>.
+</li>
+<li audio="node8_4">
+The other is "this card", the object whose methods we use when we don't specify a dot: <tt>suit ( )</tt> and <tt>rank ( )</tt>.
+The word <tt>this</tt> is used in Java to refer to the current object.
+We can optionally use <tt>this</tt> with methods or instance variables to make explicit what object we want:
+<tt>this.suit ( )</tt> and <tt>this.rank ( )</tt>.
+</li>
+</ul>
+<p audio="node8_5">
+Here's how the <tt>Card</tt> constructor would appear
+if we use <tt>this</tt> everywhere it applies.
+</p>
+<pre class="width80">
+   public Card (int rank, int suit) {
+      if (this.isLegalRank (rank)) {
+         this.myRank = rank;
+      } else {
+         System.out.println ("Illegal rank: " + rank);
+      }
+      if (this.isLegalSuit (suit)) {
+         this.mySuit = suit;
+      } else {
+         System.out.println ("Illegal suit: " + suit);
+      }
+   }
+</pre>
+
+</body>
+</html>

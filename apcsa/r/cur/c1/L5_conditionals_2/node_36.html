@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+        vocabClass = "top25";
+	</script>
+	<script type="text/javascript" src="/apcsa/llab/loader.js">
+	        
+		</script>
+
+<title>Relation of "and", "or", and "not"</title>
+</head>
+<body>
+<p>
+There is a nice relationship between <tt>&amp;&amp;</tt>, <tt>||</tt>, and <tt>!</tt>. Suppose <tt>b1</tt> and <tt>b2</tt> are boolean variables. Then
+</p>
+<table>
+<tr><td><tt>!(b1 &amp;&amp; b2)</td>
+<td>is equal to</td>
+<td><tt>!b1 || !b2</tt></td></tr>
+
+<tr><td><tt>!(b1 || b2)</td>
+<td>is equal to</td>
+<td><tt>!b1 &amp;&amp; !b2</tt></td></tr>
+</table>
+<p>
+That is, negating an "and" gives an "or" with the arguments negated.
+Similarly, negating an "or" gives an "and" with the arguments negated.
+</p>
+<p>
+These are called "DeMorgan's Laws", named after a 19th-century mathematician.  You may wish to verify them using an example or a truth table.
+</p>
+
+</body>
+</html>

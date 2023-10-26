@@ -1,0 +1,77 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top500";
+	  </script>
+      <title>Exercise: handling mouse <i>motion</i> events</title>
+   </head>
+   <body>
+      <p audio="2">
+         The original xeyes program made the eye pupils follow the mouse 
+         as it was moved, not just when it was clicked.  This makes things much
+         cooler, so lets do it.
+      </p>
+      <p audio="3" class="quoteBrown">
+         Make the pupil follow every move of the mouse, rather then just 
+         the position at which it is clicked.  Save your work in the  
+         BlueJ project titled <tt>XEyes_motion</tt>.
+      </p>
+      <p audio="4">
+         If you think a bit about this, you should realize that there is no 
+         possible way to do it.  When implementing <tt>mouseListener</tt>, 
+         you only get click events (and enter/exit events, which won't help).  
+         You are right! 
+      </p>
+      <div audio="5">
+         <p>
+         What you need is a new kind of listener.  Specifically, a <tt>MouseMotionListener</tt>. 
+         This is very much like the good old <tt>MouseListener</tt>, but requires different methods to be present:</p>
+         <ul>
+            <li>
+               <p>
+                  <tt>mouseMoved</tt>: this method will be called everytime the mouse
+                  is moved while over the graphical object, even if by one pixel.  Perfect!
+               </p>
+            </li>
+            <li>
+               <p>
+                  <tt>mouseDragged</tt>: this will be called after a mouse has been pressed
+                  and moved.  It will continue to be called everytime the mouse moves,
+                  until the mouse button is released.  Interesting, but not useful here.
+               </p>
+            </li>
+         </ul>
+         <p>
+            Like the <tt>MouseListener</tt>
+            methods, these two are called with a <tt>MouseEvent</tt>
+            object. 
+         </p>
+      </div>
+      <p audio="5b">A class can implement two different <span class="vocab" term="interface">interfaces</span> at once.  Simply
+      list each interface, separated by commas, after the <tt>implements</tt> keyword. It should look like this:
+      <pre>public class XEyes extends JPanel implements MouseListener,MouseMotionListener{
+      </pre>
+      <p audio="5c">
+      You will also need to be sure to add the mouse motion listener to the object in the <tt>XEyes</tt> constructor:
+	  </p>
+	  <pre>public XEyes(){
+	...
+	addMouseMotionListener(this);
+	...
+}
+      </pre>
+      
+     <p audio="5d">
+      And finally, implement the mouse motion listener contracted methods in the XEyes class:</p>
+	  <pre>public void mouseMoved(MouseEvent e){ ... }
+public void mouseDragged(MouseEvent e){ ... }
+</pre>
+      
+	  
+      <p audio="5e">
+      So, consider integrating the laser vision with this exercise.
+	  </p>
+   </body>
+</html>

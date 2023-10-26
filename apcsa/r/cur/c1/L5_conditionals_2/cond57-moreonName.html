@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Specifications for the <tt>Name</tt> class</title>
+      <!-- Layout reference  http://pact.eecs.berkeley.edu/UCWISE/index.php/Layout_style
+      Note: base location gets put in via php, sigh. -->
+   </head>
+<body>
+
+    <img class="imageRight" src="/apcsa/r/static/art/scenes/strings_nametag.png"
+          alt="A nametag"/>
+<p audio="cond57_1"> 
+Our updated <tt>Name</tt> class will be able to handle names of one (e.g. Madonna or Sting), 
+two, or three components.
+Here's how.
+</p> 
+<ul class="width70"> 
+<li audio="cond57_2"> 
+Every <tt>Name</tt> object will have a non-empty first name.
+</li> 
+
+<li audio="cond57_3"> 
+Each missing word in the name will be represented by an empty string.
+</li> 
+ 
+</ul> 
+<p audio="cond57_4"> 
+Here are some examples.
+</p> 
+<table id="tableBlue"> 
+<tr><td><i>Name</i></td> 
+    <td><tt>myFirst</tt></td> 
+    <td align="center"><tt>myMiddle</tt></td> 
+    <td align="center"><tt>myLast</tt></td></tr> 
+<tr><td>Sting</td> 
+    <td><tt>"Sting"</tt></td> 
+    <td align="center"><tt>""</tt></td> 
+    <td align="center"><tt>""</tt></td></tr> 
+<tr><td>George Washington</td> 
+    <td><tt>"George"</tt></td> 
+    <td align="center"><tt>""</tt></td> 
+    <td><tt>"Washington"</tt></td></tr> 
+<tr><td>Edgar Allan Poe</td> 
+    <td><tt>"Edgar"</tt></td> 
+    <td><tt>"Allan"</tt></td> 
+    <td align="center"><tt>"Poe"</tt></td></tr> 
+</table> 
+<p audio="cond57_5"> 
+The result returned by the <tt>fullName</tt> method should only include non-empty words,
+with no blanks around a one-word name and a single blank between the first and last names
+in a two-word name.
+</p> 
+<p audio="cond57_6"> 
+For a one-word name, <tt>lastFirst</tt> should return only the first name, without a comma.
+For a two-word name, <tt>lastFirst</tt> should return the last name, followed by a comma
+and a blank, and then followed by the first name.
+</p> 
+</body>
+</html>

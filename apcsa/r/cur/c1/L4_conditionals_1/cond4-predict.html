@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Solidifying understanding of the <tt>if</tt> statement</title>
+
+   </head>
+<body> 
+<p> 
+Consider the <tt>Refillable</tt> method below.
+</p> 
+<pre>void useUp (int amount) {
+   if (myAmount &lt; amount) {
+      System.out.println ("not enough left");
+      amount = 0;
+   }
+   myAmount = myAmount - amount;
+}
+</pre> 
+<ol> 
+	<li><p> 
+Suppose that <tt>myAmount</tt> contains the value <tt>14</tt> at the start of <tt>useUp</tt>,
+and <tt>amount</tt> contains 4.
+What is the next statement to be executed?
+</p> 
+</li> 
+	<li><p> 
+Suppose that <tt>myAmount</tt> contains the value <tt>14</tt> at the start of <tt>useUp</tt>,
+and <tt>amount</tt> contains 24.
+What is the next statement to be executed?
+</p> 
+</li> 
+</ol> 
+</body>
+</html>

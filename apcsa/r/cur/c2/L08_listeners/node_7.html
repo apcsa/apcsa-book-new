@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Clicking information</title>
+   </head>
+   <body>
+      <p audio="2">
+         In the previous example, you'll have noticed 
+         that the red circles started to build up in the window.  
+         This might give you pause, because the <tt>paintComponent</tt>
+         method was drawing only a single circle each time.  You saw 
+         a similar effect in the original <tt>Clicker</tt>
+         class: 
+         the "you tickled me" messages we building up on the screen,  
+         even though the <tt>paintComponent</tt>
+         method was calling <tt>drawString</tt>
+         only once.
+      </p>
+      <p audio="3" class="quoteBrown">
+         The reason for this is that the graphics 
+         window isn't getting <i>erased</i>
+         between clicks. 
+         Java is being  
+         efficient, and won't redraw the whole 
+         window unless it has to.  (In fact, it is hard to get 
+         Java to redraw the whole screen.  On most computers, dragging 
+         the window off the screen and then back onto it won't do it. 
+         One way that is often successful is to 'maximize' the window,  
+         or resize it in some way). 
+      </p>
+      <p audio="4">
+         A guaranteed way to clear the screen is to draw a rectangle 
+         that is the size of the window at the beginning of your <tt>paintComponent</tt>
+         method, and follow it by whatever 
+         drawing you originally wanted to do.  Use <tt>fillRect</tt>, 
+         with an upper left corner at <tt>0,0</tt>
+         and a lower right 
+         corner that is the same as the size of the window. 
+      </p>
+      <div class="tryit">
+         <p class="5">
+         Make a new class called <tt>ClearClicker</tt>, copying from 
+         one of your other classes. In this class, draw a string  
+         at a fixed spot each time the mouse is clicked that says
+		 <br /><br/>
+         <tt>"You tickled me at (X,Y)"</tt>
+         <br /><br />
+		 
+         where <tt>X</tt>
+         and <tt>Y</tt>
+         are replaced with the coordinates
+         of the click.  Make sure you erase the screen between clicks.
+      </p>
+	  </div>
+   </body>
+</html>

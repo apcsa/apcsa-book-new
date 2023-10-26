@@ -1,0 +1,53 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <script>
+         vocabClass = "top50";
+         helpClass = "top25";
+      </script>
+      <title>The canvas, or drawing area</title>
+   </head>
+   <body>
+      <p audio="2">The canvas that you draw on is a lot like 
+         graphs used in Algebra classes.  The drawing area is made up  
+         of a bunch of cells, and a cell is refered to by a <i>x</i> (horizontal) and <i>y</i> (vertical) coordinates.</p>
+      <p audio="3" class="quoteOrange">These cells are commonly referred to as 
+      <span class="vocab" term="pixel">pixels</span> (short for "picture elements"). </p>
+      <p audio="4">In Java, coordinates are two <tt>ints</tt>; the first is the 
+         column number (the <i>x</i>, width, or horizontal coordinate), the second is the 
+         row (the <i>y</i>, height, or vertical coordinate). 
+         Unlike typical mathematical graphs, however, the <i>upper left</i> corner is 
+         pointed to by coordinate <tt>0,0</tt>.  As coordinates get bigger, the
+         cells they point to are found <i>down</i> and to the right.  Thus, x = 200
+         and y = 300 would refer to the point that is 200 pixels to the right of 
+         the upper left corner of the frame and 300 pixels down from the upper 
+         left corner of the frame.</p>
+         
+         <!-- NEED DIAGRAM HERE...  A grid with axes on the top and left,
+         a 0 at each cell at the upper left (note, number should be *between*
+         the grid lines, not on them) and maybe some more numbers.  
+         Then, an arrow pointing to 
+         cell 3,5 say (with a label of "cell 3,5").  3 is the x, 5 is the y.-->
+      
+      <p audio="5">Other differences from mathematical graphics are that 
+         there are no negative coordinates, and the drawing areas  
+         don't go on forever.  Rather, you have 
+         to provide a height and a width with the <tt>setSize</tt> method on the 
+         containing <tt>JFrame</tt> object. 
+         In our program, the window is initially 400 pixels high and  
+         300 pixels wide. </p>
+      <pre class="width80">public class Greetings extends JPanel {
+	
+   private int myWindowWidth = 300;
+   private int myWindowHeight = 400;
+	
+   public Greetings() {
+      JFrame easel = new JFrame();		
+      easel.setSize (myWindowWidth, myWindowHeight);
+      ...
+   }
+}
+</pre>
+   </body>
+</html>

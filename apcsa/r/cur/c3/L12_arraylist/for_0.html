@@ -1,0 +1,41 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>The for loop</title>
+</head>
+<body>
+<p audio="1">
+The <tt>for</tt> statement provides another way in Java to repeat a given program segment.  
+It starts with the word "for", continues with loop information inside parentheses, 
+and ends with the segment to be repeated&mdash;the <i>loop body</i>&mdash;enclosed in curly braces.
+</p>
+<pre class="width60" >
+for (<i>initializations</i> ; <i>test</i>; <i>increments</i>){
+   ...
+}
+</pre>
+<p audio="3">
+Loop execution proceeds as follows.
+</p>
+<ol>
+	<li audio="4">First, the initializations are performed.</li>
+	<li audio="5">Then the test is evaluated. 
+	    If it's false, the loop is finished and execution continues with the following statement.
+	    If the test is true, the loop body is executed.</li>
+	<li audio="6">Then the increments are performed.</li>
+	<li audio="7">The test is evaluated again; a failed test halts the loop, 
+	    while a successful test results in another execution of the loop body.</li>
+</ol>
+<p audio="8">
+The following would print the first name of every <tt>Name</tt> object in the friends list, assuming 
+the <tt>Name</tt> object has a method <tt>firstName()</tt> defined to return the first name.
+</p>
+<pre class="width60">
+// Print the initials of the names in friends.
+for (int x = 0; x < friends.size(); x++) {
+   System.out.println (friends.get(x).firstName());
+}
+</pre>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+      <script type="text/javascript">
+         vocabClass = "top25";
+         helpClass = "top25";
+      </script>
+      <title>Using the extends keyword</title>
+   </head>
+   <body>
+	<p audio="1">The <tt>import</tt> statement gives us <i>access</i> to classes in a library. The <span class="vocab"
+		term="extends"><tt>extends</tt></span> keyword is one way to <i>use</i> those classes.</p>
+	<p audio="2">By saying that one 
+         class <i>extends</i> another, we mean that an object of the 
+         second class will act <i>just like</i> an object of the first
+         class except for a few "extensions".   Generally, these 
+         extensions are additional or redefined 
+         methods.   Consider the beginning of the <tt>Greetings</tt> class from earlier:</p>
+      <pre class="width60">
+public class Greetings extends JPanel { </pre>
+      <p audio="3">This code is saying that objects from our <tt>Greetings</tt> class  will 
+         act just like <tt>JPanel</tt> objects&mdash;in particular, we can draw on 
+         them&mdash;with some minor differences. </p>
+      <p audio="4" class="quoteBlue">This technique is 
+         called <span class="vocab">inheritance</span>, and you don't need
+         to understand it fully now.  We'll get a
+         lot more practice with it later in the course.</p>
+		 
+		 <br />
+		 
+		 <div class="talkBubble" align="left" color="orange" char="twitterton1">
+		 	<p audio="5.m4">For example, I inherited the <tt>flyHigh</tt> method from my mother. In addition, I 
+			also know how to <tt>writeCode</tt>. This is something that my mother does not know how to do.</p>
+		 	</div>
+			<br />
+		<div class="talkBubble" align="right" color="green" char="float4">
+			<p audio="6.m2">Yes! Other than inheriting <tt>bowlingStrikes</tt>, I have also extended a <tt>driveCar</tt> method!</p>
+		</div>
+	
+		<div class="talkBubble" align="left" color="orange" char="twitterton3">
+			<p audio="7.m4">The more appropriate title for your method is <tt>crashCar</tt>, I should think.</p>
+		</div>
+		 
+   </body>
+</html>

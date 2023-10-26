@@ -1,0 +1,46 @@
+<html>
+<head>
+     <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+ 
+<title>An example</title>
+</head>
+<body>
+<p>Let's look at what happens when we call the <tt>Name</tt> constructor with argument strings "Grace", "Murray", and "Hopper".
+The diagram below shows three boxes for the arguments and three more for the instance variables.
+</p>
+<img src="/apcsa/r/static/art/graphics/call1.png">
+<p>
+When the first assignment in the constructor is executed, we copy the contents of <tt>first</tt>&mdash;an arrow, not a sequence of characters&mdash;into the box representing <tt>myFirst</tt>.
+The result is shown below.
+</p>
+<img src="/apcsa/r/static/art/graphics/call2.png">
+<p>
+The second and third arguments are similarly copied into <tt>myMiddle</tt> and <tt>myLast</tt>:
+</p>
+<img src="/apcsa/r/static/art/graphics/call3.png">
+<p>
+Now we call <tt>fixCase</tt>.
+It has a parameter <tt>namePart</tt> that is represented by another box:
+</p>
+<img src="/apcsa/r/static/art/graphics/call4.png">
+<p>
+The argument <tt>myFirst</tt>&mdash;another arrow!&mdash;is copied into <tt>namePart</tt>. We now have three boxes that contain an arrow pointing at "Grace": one is the parameter to the constructor, another is the instance variable <tt>myFirst</tt>, and the third is the parameter <tt>namePart</tt>.
+</p>
+<img src="/apcsa/r/static/art/graphics/call5.png">
+<p>
+Now the two assignment statements in <tt>fixCase</tt> are executed.
+After the first assignment to <tt>namePart</tt>, we have
+</p>
+<img src="/apcsa/r/static/art/graphics/call6.png">
+<p>
+After the second assignment:
+</p>
+<img src="/apcsa/r/static/art/graphics/call7.png">
+<p>
+The main thing to note from this example is that only arrows are copied, and any changes to one variable don't affect the contents of any other.
+</p>
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Processing commands</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="intro4.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt">The <tt>Command</tt> class processes the users input, after methods defined in its parent class <tt>InputGather</tt> prints the prompt and puts each word of the input the <tt>ArrayList</tt> <tt>inputWords</tt>.
+
+If the user inputs <i>go north</i>, which of the following <tt>Command</tt> methods will return <tt>true</tt>?
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"><tt>isInventory()</tt>
+        </div>
+        <div class="feedback">No, this method will only return <tt>true</tt> for input such as
+<i>inventory</i> or <i>inv</i>. The method <tt>isInventory</tt> checks
+whether the first word of the input is in the array of strings
+<tt>INVENTORY_words</tt>
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"><tt>isHelp()</tt>
+        </div>
+        <div class="feedback">No, this method will only return <tt>true</tt> for input such as <i>help
+me</i>. The method <tt>isHelp</tt> checks whether the first word of the
+input is in the array of strings <tt>HELP_words</tt>
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"><tt>isTravel()</tt>
+        </div>
+        <div class="feedback">Correct. Because the first word of the input (<i>go</i>) is in the
+array <tt>TRAVEL_words</tt>, <tt>isTravel()</tt> will return true.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"><tt>firstWordIn()</tt>
+        </div>
+        <div class="feedback">This is a utility method, and it needs to receive a array of
+<tt>String</tt>s to whether the first word of the input is in that array.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text"><tt>getDirection</tt>
+        </div>
+        <div class="feedback"><tt>getDirection</tt> doesn't return a boolean, but a string. With the
+given input, <tt>getDirection</tt> will return <tt>north</tt>
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

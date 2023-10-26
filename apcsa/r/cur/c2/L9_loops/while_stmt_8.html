@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Infinite loops</title>
+</head>
+<body>
+<p audio="2">
+Observe what happens if you omit the increment of <tt>a</tt>.
+</p>
+<pre class="width50">
+private int mystery (int a, int b) {
+   int sum;
+   sum = 0;
+   while (a &lt; b) {
+      sum = sum + a;
+      <strike>a = a + 1;</strike>
+   }
+   return sum;
+}
+</pre>
+<p audio="3">
+The modified program continues forever, since without the increment,
+nothing brings <tt>a</tt> closer to <tt>b</tt>. This is called an <span class="vocab">infinite loop</span>.
+</p>
+<p audio="4">
+When you code a loop, make sure that some statement
+in the body always makes progress in getting closer
+to where the loop should terminate.
+</p>
+<br />
+<div class="talkBubble medium_right" color="red" char="constance1">
+	<p audio="5.f1">
+		Think about it for a second. If we don't increment <tt>a</tt>, 
+		then we are just doing the same comparison over and over again.
+	</p>
+</div> 
+</body>
+</html>

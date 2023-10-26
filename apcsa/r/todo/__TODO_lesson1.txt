@@ -1,0 +1,143 @@
+// MUST FIX
+   
+	Step #28 :: didn't work in safari
+	Step 35 -- reference to parameters premature?
+	Step #36 :: punctuation in question
+	Step #50 :: - What's the outcome - reword
+	            - reword For example, a shoe in the real world doesn't tell us its size color, or style;
+				- "names and types of parameters" -- know what parameters are 
+	Step 53: In the little flash app, we invert row and column. I can show in person but just so people know.
+	
+	"Behaviors thus far" and "Interacting objects" have formatting problems.
+	"Noticing similarities among behaviors" has a font problem.
+
+
+// FIX IF THERE'S TIME
+	- Add activity where students decide what would instance variables would be
+	  appropriate for a particular class -- bad possabilities would be data values themselves as well 
+	  possibly related but superfluous attributes like
+	  type of glass for the VendingMachine
+	   - a note on this should go into the teachers manual
+	step3 -- turn to robot bubble talk
+
+	step 8 - make it purty
+	
+	
+	
+	- More robot conversations would be good.  E.G., in order to summarize the 
+	alarm clock stuff (before toasters)
+	- Step 21 could use toaster robot
+	
+/// TEACHERS' MANUAL STUFF
+
+   See above: in fix if there is time
+
+	"interacting objects"
+		- students can act out the interaction between clock and calendar
+			
+	"Classification of toaster behaviors"
+		- possible tying in public/private stuff here
+	
+/// ALMOST DONE
+	- model in the glossary
+	- Step 2.5 How do model real-life?  --> determine behaviors and attributes of the object -- It seems we need a step
+		introducing the process of modeling real-life
+    - Step 3 Robot talk like Step 5
+    - Step 6 Key Point on right about variable and then switches to behavior and state. 
+    			- name and value both refer to variable in the glossary?
+    - Step 9 I am struggling a bit with this one -- not to get rid of it but just wanting to write it down so I look again
+	
+/// DONE (MC)
+
+	//// CANNED BS RESPONSES : added(need to verify)
+	- a1s2c.bs "Other Alarm Clock Behaviors" (looks fine)
+	- node_23.bs "Examples" (two responses)
+	- 1.14.bs "Cell phone behaviors" (several responses)
+	- node_0.bs "Producing a particular display" (flushed)
+	- 3.11.bs "Representing the state of a toaster" (three responses)
+	- 2.4.bs "Supplying some instances" (three responses)
+	- 2.5.bs "Class vs instance" (three responses)
+	- 3.2.bs "Alternative to Boolean info" (three responses)
+	- 3.7.bs "Data representation" (four responses)
+	- 3.8.bs "Representing a volume" (three responses)
+	- 3.9.bs "Numeric representation of music volume" (four responses)
+	- 3.10.bs "Representing max/min volumes with a string" (three responses)
+	
+	"The tick behavior" - 'sound the alarm' needs feedback!
+	
+	Step 2 (a2s3.html) - get vocab "model" in here somewhere...
+	
+	step 23  - don't say state here, say variables.   
+		- basically, be consistent
+		- clean up vocab issues between "variable", "state variable", and
+		"instance variable" 
+	
+	step 16 - should we introduce booleans here?  general notion of types at all?
+	No, we get to booleans and other types later.
+	
+	step 17 'classification of toaster behaviors' -- add feedback.
+
+	Change the sequencing -- make more sub sequences, etc.  Right now, each 
+	group has too many steps...  
+	   - for instance, break before toasters in step 15
+	break the sequence around 19, where we start parameters
+	
+	Lesson 1 really needs a summary -- in a final sequence at the end.
+	
+	[NOT DONE since no clue what's desired] 
+	break step 20 into 4 steps.   make last redquote a talkbubble
+			
+	[NOT DONE since no clue what's desired] 
+	step 12 - make prompt a little more verbose
+	I don't know what step is referred to here--it's not step 12.
+	
+	[NOT DONE since no clue what's desired] 
+	step 19 - formatting wackiness
+			- should go in teacher manual as possible classroom activity...
+	
+	we should model two different objects that interact; a vending machine
+	might work for this [I did it with the clock and calendar instead]
+	
+	move "section wrap ups" into a final "summary", and delete them
+	
+	Summary is too long.
+	
+	add a brainstorm (after step 15) which asks whether 'pop up' and 
+	'stop toasting' can be combined.
+	One canned resp: 'my toaster pops up but still is glowing'...
+	
+	Homework, further problems, etc...
+	
+	I think I dealt with these.
+		the goal of lesson 1 are to model some real-world thing with state and behaviors
+		*   behaviors can be conditional
+		*   there are patterns of interaction between state and behaviors
+		*   behaviors can be either externally actived or internally activated
+		*   what level of abstraction is our model at?
+		
+		do we want to say anything more about parameters?
+	
+	I decided not to do this.
+		request - add a step after to have them work with possible behaviors,
+				 perhaps a list of 'good' and 'bad' ones that they can categorize?
+		response
+		*	right after "Level of modeling detail": multiple choice that asks
+			which of the following might be reasonable additions to the clock
+			model
+				whether or not the clock face glows in the dark (not reasonable)
+				whether or not Roman numerals appear on the clock face (not)
+				whether or not military time appears on the face
+			this seems a bit lame
+	
+	
+	step 24 -- move to homework.
+	step 25/26 -- move to homework.
+
+	//// MATCHING SEQUENCES : added some kind of feedback ("Try Again" or "Correct")
+	//// Need to verify.
+	- 1.13.ms "Matching Challenge" (flushed)
+	- "Fractional Candy?" -- only has 1 response (I think this is for lesson 2)
+	* Why is the feedback to a wrong answer Fantastico???!! see step 27.
+	
+   Fixed gameboard simulator -- everything is 0 based, dropdown lists are updated, etc.
+	

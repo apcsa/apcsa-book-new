@@ -1,0 +1,58 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <script>
+         vocabClass = "top75";
+      </script>
+      <title>Looking at an example: the <tt>SimpleClicker</tt> class.</title>
+   </head>
+   <body>
+      
+      <p audio="1">Let's look at a working example of the 
+      <tt>SimpleClicker</tt> class.</p>
+     <div class="openbluejproj" project="lesson8/SimpleClicker">
+         <p audio="1">Open the current project in BlueJ. 
+        
+         <p audio="2">(The project is <tt>lesson8/SimpleClicker</tt>.)</p>
+      </div>
+
+
+      <p audio="5">
+         The project consists of a single class <tt>SimpleClicker</tt>.
+         Look at the <span class="vocab">source code</span> for that class, and notice:
+      </p>
+      
+      <ul>
+         <li audio="6">
+               The class both <span class="vocab">extends</span> <tt>JPanel</tt> and 
+               <span class="vocab">implements</span> <tt>MouseListener</tt>.
+            </li>
+            <li audio="6b">
+              
+                  There is another <tt>import</tt> statement necessary for 
+                  using <tt>MouseListener</tt>:
+               <pre>import java.awt.event.*</pre>
+            <li audio="6c">
+               The last line of the <span class="vocab">constructor</span>
+               adds the mouse listener to the <tt>SimpleClicker</tt> object
+               being created.
+            </li>
+            <li audio="7">
+               It fulfills the contract of the <tt>MouseListener</tt>
+               interface, because it has the five required methods.
+            </li>
+            <li audio="8">
+               Only one of those methods, <tt>mouseClicked</tt>, actually has a <span class="vocab">method body</span>.
+               The other methods have to be there to fulfill the interface contract,
+               but they don't do anything.
+            </li>
+      </ul>
+      <p class="quoteBlue" audio="9">
+         Read the source code and predict what will happen when you
+         create a <tt>SimpleClicker</tt> object and click on it.  Now try it,
+         and test your predictions.
+      </p>
+   </body>
+</html>

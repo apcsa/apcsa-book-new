@@ -1,0 +1,30 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Access to instance variables</title>
+   </head>
+   <body>
+   	<div class="imageCenter">
+   		<img src="/apcsa/r/static/art/scenes/refillable_gauge.png" alt="A Refillable gauge" />
+   	</div>
+<p audio="2">
+	
+The inheriting class is not allowed to access any private data or private methods
+in the superclass.
+Any effect that subclass methods have on private instance variables in the superclass
+can only result from calling public superclass methods.</p>
+
+<br />
+<ul><span audio="3">For example:</span>
+
+<li audio="4">In the <tt>NewRefillable</tt> class that uses inheritance,
+none of the <tt>NewRefillable</tt> methods are allowed to use the private instance variable of <tt>Refillable</tt>, <tt>myAmount</tt> 
+directly.</li>
+
+<li audio="5">The <tt>myAmount</tt> variable is initialized and updated by a call 
+to the <tt>Refillable</tt> constructor in the <tt>NewRefillable</tt> constructor using <tt>super(amount)</tt> and within <tt>NewRefillable useUp</tt> using <tt>super.useUp</tt>.</li>
+</ul>
+
+</body>
+</html>

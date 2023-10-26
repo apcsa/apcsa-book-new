@@ -1,0 +1,34 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "5",
+         "prompt": " \n<p audio=\"1\">\nShould subclasses of <tt>Critter</tt> override\nthe <tt>getActors</tt> method?\nIf so, describe such a subclass and explain why overriding of\n<tt>getActors</tt> is appropriate.\n</p>\n        ",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [
+      {
+         "name": "StudentName1",
+         "response": " \n"
+      },
+      {
+         "name": "StudentName2",
+         "response": "\n"
+      }
+   ],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "Override getActors?",
+   "type": "Brainstorm",
+   "useServer": true
+}

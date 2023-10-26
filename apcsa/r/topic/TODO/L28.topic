@@ -1,0 +1,37 @@
+title: Lesson 28: master
+
+{
+h2: master
+
+
+heading: Introduction
+    resource: Course Review Intro [/apcsa/r/cur/cTODO/L28_sem1_review/reviewintro.html]
+    resource: Study Guide [/apcsa/r/cur/cTODO/L28_sem1_review/intro2.html]
+
+heading: Reviewing Unit 0
+    reading: Lesson 1:  Behaviors and State [/apcsa/r/cur/cTODO/L28_sem1_review/zeroone1.html]
+    reading: Classes and Instances [/apcsa/r/cur/cTODO/L28_sem1_review/zeroone4.html]
+    brainstorm: Behaviors and States [/apcsa/r/cur/cTODO/L28_sem1_review/zeroone2.html]
+    brainstorm: Linking Behaviors, States, Methods, and Variables [/apcsa/r/cur/cTODO/L28_sem1_review/zeroone3.html]
+
+heading: Reviewing Unit 1
+    reading: Lesson 2:  Beginning Programming [/apcsa/r/cur/cTODO/L28_sem1_review/L2-1.html]
+    reading: Lesson 3:  Abstraction and Strings [/apcsa/r/cur/cTODO/L28_sem1_review/L3-1.html]
+
+heading: Reviewing Unit 2
+    reading: Lesson 4:  Conditionals and Testing [/apcsa/r/cur/cTODO/L28_sem1_review/L4-1.html]
+    reading: Lesson 5:  Comparisions and Booleans [/apcsa/r/cur/cTODO/L28_sem1_review/L5-1.html]
+    reading: Lesson 6:  A Virtual Pet [/apcsa/r/cur/cTODO/L28_sem1_review/L6-1.html]
+
+heading: Reviewing Unit 3
+    reading: Lesson 7:  Java Graphics [/apcsa/r/cur/cTODO/L28_sem1_review/L7-1.html]
+    reading: Lesson 8:  Events [/apcsa/r/cur/cTODO/L28_sem1_review/L8-1.html]
+    reading: Lesson 9:  Loops [/apcsa/r/cur/cTODO/L28_sem1_review/L9-1.html]
+    reading: Lesson 10:  Randomness [/apcsa/r/cur/cTODO/L28_sem1_review/L10-1.html]
+    reading: Lesson 11:  Monty Hall [/apcsa/r/cur/cTODO/L28_sem1_review/L11-1.html]
+
+heading: Reviewing Unit 4
+    reading: Lesson 12:  ArrayList [/apcsa/r/cur/cTODO/L28_sem1_review/L12-1.html]
+    reading: Lesson 13:  Sound Manipulation [/apcsa/r/cur/cTODO/L28_sem1_review/L13-1.html]
+    reading: Lesson 14:  Sorting [/apcsa/r/cur/cTODO/L28_sem1_review/L14-1.html]
+    reading: Lesson 15:  Elevens Project [/apcsa/r/cur/cTODO/L28_sem1_review/L15-1.html]

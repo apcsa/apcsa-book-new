@@ -1,0 +1,19 @@
+title: Lesson 23: 2D arrays
+
+{
+h2: Two-dimensional arrays: storing data in a matrix
+
+
+heading: Basics: 2-D Arrays
+    resource: Two-dimensional arrays [/apcsa/r/cur/c4/L23_2D_arrays/intro0.html]
+    resource: Declaring and initializing a two-dimensional array [/apcsa/r/cur/c4/L23_2D_arrays/intro1.html]
+    resource: A pattern for two-dimensional array processing [/apcsa/r/cur/c4/L23_2D_arrays/intro2.html]
+    resource: The main diagonal [/apcsa/r/cur/c4/L23_2D_arrays/intro3.html]
+    resource: More on the main diagonal [/apcsa/r/cur/c4/L23_2D_arrays/intro4.html]
+    resource: One more main diagonal [/apcsa/r/cur/c4/L23_2D_arrays/intro5.html]
+    resource: Same diagonal? [/apcsa/r/cur/c4/L23_2D_arrays/intro6.html]
+
+heading: Exercises with 2-D Arrays
+    resource: Game board perspective [/apcsa/r/cur/c4/L23_2D_arrays/exercises0.html]
+    resource: Array rotation [/apcsa/r/cur/c4/L23_2D_arrays/exercises3.html]
+    resource: Squiral [/apcsa/r/cur/c4/L23_2D_arrays/exercises2.html]

@@ -1,0 +1,47 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Changes to <tt>Refillable</tt></title>
+   </head>
+   <body>
+      <p audio="refill18_1">
+         Here's the updated <tt>Refillable</tt> class, with new code marked.</p>
+      <pre class="width80">
+public class Refillable {
+
+	private int myAmount;
+<span class="codeHighlight1">	private int myUseUpCallCount;<span class="comment">// NEW</span>
+	private int myTotalUse;<span class="comment">// NEW</span></span> 
+	
+   // Initialize a Refillable object having initialAmount units.
+   public Refillable (int initialAmount) {
+      myAmount = initialAmount;
+<span class="codeHighlight1">      myUseUpCallCount = 0; <span class="comment">// NEW</span>
+      myTotalUse = 0; <span class="comment">// NEW</span></span>
+   }
+	
+   // Use amount units.
+   public void useUp (int amount) {
+      myAmount = myAmount - amount;
+<span class="codeHighlight1">      myUseUpCallCount = myUseUpCallCount + 1; <span class="comment">// NEW</span>
+      myTotalUse = myTotalUse + amount; <span class="comment">// NEW</span></span>
+   }
+	
+   // Add amount to the current amount.
+   public void refill (int amount) {
+      myAmount = myAmount + amount;
+   }
+	
+   // Return the current amount.
+   public int currentAmount ( ) {
+      return myAmount;
+   }
+
+<span class="codeHighlight1">   public int averageUse ( ) { <span class="comment">// NEW</span>
+      return myTotalUse / myUseUpCallCount; <span class="comment">// NEW</span>
+   } <span class="comment">// NEW</span></span>
+}
+</pre>
+   </body>
+</html>

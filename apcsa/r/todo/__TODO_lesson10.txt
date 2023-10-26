@@ -1,0 +1,83 @@
+Lesson 10 Todo
+
+=== Sean added - 10/15/2010
+- Add step on seeding the Random class -- what happens when invoked with seed or without
+Step 6: The right side code needs a return statement at bottom
+Step #11: right hand side code need r.nextInt(6) not r.nextInt(5)
+Step #13/14 -- make a step for graphic guesser
+			-- this may cause need to rewrite Step 14
+==> Add Math class subset pieces
+==> you may have to deal with casting as well
+Step 17:  - canned responses
+(NATE) - WRITE CHEATER DOT SOLUTION...
+Step 18:		
+		  - if we are going to do surges maybe board should be longer
+		  - need to write CheaterDot for Solution
+Step 19:  - need to write solution for Craps
+Exercise -- CheaterDot class should be changed to make a CheaterDot
+		 -- Fix up CheaterDot  -- make it so the CheaterDot cheats for a certain Dot
+    	 -- add some distributions made with conditionals to exercise4_graph_guesser.html
+		 -- Craps instructions -- I might show a sample set of rolls -- students confused
+
+General Notes: 
+-- They are not grasping the problem with calling nextInt multiple time in Brainstorm Step #6
+
+DONE =========================
+Step 8 : Exact same question and class as Step 7
+       - If we keep, switch class names so Dice 1 is before Dice2 -- Step 7 : Dice1 -- Step 8 : Dice2
+       - Text Edit   -- the #47 is in title of program
+(NATE) change this step so that it does two dice (summing). Make framework code that shows a histogram?
+Step 2 : Should we show how to make a Random object first -- then we can call nextInt with the reference (MJC DONE)
+Step 3 : TextEdit : &#47; get rid of
+Step 4 : BS = needs question (MJC DONE)
+	(MJC Added a step here)
+Step 5 : -- MC needs feedback 
+		 -- I am not sure I understand the answer indicated
+Step 6 : Text Edit -- "does it match the behavior of the CoinflipGenerator class in the Coin0 project" <- change to
+		 BS -- needs canned responses
+Step 7 : Text Edit 	-- the #47 is in title of program
+						-- Should say Dice2 not Digits2
+
+Step 9 :  Text Edit 	-- the #47 is in title of program
+Step 10 : - The code shown in brainstorm with parameter forbidden was not the what Step 9 asked for -- 
+			Step 9 asked to forbid 5 -- the BS shows dynamic forbidden
+		  - need canned reponses
+Step 11:  - Create new project instead of using Coins1
+ 		  - If we do create new project update link
+Step 13:  - Text Edit: ampersands in orange box to remove 
+		  - We show how to test for heads in 12 but we don't show testing the test.
+		  	The percentages are so low that you often get 0 -- should we encourage them to run the test itself a 1000000
+		    See my solution -- if so we may need more steps to lead them in
+Step 14:  - canned responses needed
+Step 15:  - Put BlueJ box
+ 		  - Seems pretty tough -- do we give template or some of the code?
+ 		  - Is my solution even right?
+ 		  Step 17:  - TextEdit : o that you too can feel the adulation of stadium --> add "adulation of a stadium"
+		  - TextEdit : BlueJ box needs closing parentheses
+		  - Open Current Project doesn't work on this one
+		  - We should specify that whoMoves is randomly chosed
+		  - Specficy that howFar is randomly chosen within what costraints
+ - Summary Needed 
+
+======= OLDER 
+
+
+s4 - BS prompt not showing. check authoring tool. "Appearing 'Random'"
+s5 - MC no feedback. "Human vs. Statistical Views of Randomness"
+s6 - BS need feedback. "Coin Flip Generator (redux)"
+s8 - Add a speechbubble for Twitterton about snake eyes
+s10 - BS need feedback. "Alternatie for forbidding rolls"
+s14 - BS need feedback. "The St.Petersburg Lottery"
+s16 - BS need feedback. "Simulation Results"
+s17 - 19 : section Exercises can use some graphics / speech bubbles.
+
+
+1) (COURTNEY): .project editing!
+2) (COURTNEY): WRITE TESTS
+3) Turn some of thoes brainstorms into fixed-choice assessments!
+   or at least add some.
+4) (NATE)- fix the exercises
+   - reactionTimer -- what should be left out for the student to finish?
+5) (NATE) finish and include exercise_3.html, the simon player.  
+   note, need to use an string to store user presses, since we don't
+   have arrays yet.>>>>>>> .r2098

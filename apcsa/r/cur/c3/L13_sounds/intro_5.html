@@ -1,0 +1,64 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Sounds in Java</title>
+   </head>
+   <body>
+      <p audio="2">
+         Let's check out some sounds in Java. 
+      </p>
+      <div class="openbluejproj" project="lesson13/Sound">
+         <p audio="1">
+            Open the current project in BlueJ (<b>lesson13/Sound</b>).
+         </p>
+      </div>
+      <p audio="3">
+         The project in BlueJ contains several classes, but you only need 
+         to pay attention to the <tt>Sound</tt>
+         class.  This is where 
+         you will add your methods to transform the sound (methods 
+         like <tt>addReverb</tt>
+         and<tt>increaseVolume</tt>, for example). 
+      </p>
+      <p audio="4">
+         Before looking at the code for the <tt>Sound</tt>
+         class, let's 
+         look at a sound:
+      </p>
+      <div class="imageRight">
+         <img src="/apcsa/r/static/art/screenshots/sound_viewer.png"
+              alt="A picture of a sound waveform">
+      </div>
+      <p audio="5" class="step">
+         Right-click on the <tt>Sound</tt>
+         class to create a new instance. 
+         You will see three different constructors.  For now, choose the 
+         one with the <tt>String filename</tt>
+         argument&mdash;use this 
+         one any time you know the name of the file you want to open 
+         and can type it as a string.
+      </p>
+      <p audio="5b" class="step">
+         Type in, exactly, <tt>"sounds/birdcall.wav"</tt> when BlueJ
+         asks you for the argument.  Note: you need to include those double
+         quotation marks at the beginning and the end.  You are making a 
+         Java <tt>String</tt> object.
+      </p>
+
+      <p audio="6">
+         You new window will pop up containing a very jagged image, something like
+         the image to the right.  This is the 
+         sound viewer, and shows the pressure waves  for the sound.
+         You can think of it as a viewer of ArrayLists&mdash;very large ArrayLists 
+         containing integers&mdash;because that is the same thing as
+         pressure waves, as far as we are concerned!
+      </p>
+      <p audio="7">
+         Click the play button.  You should hear a bird call.  If you don't,
+         make sure the volume setting in your computer is loud enough.
+      </p>
+   </body>
+</html>
+

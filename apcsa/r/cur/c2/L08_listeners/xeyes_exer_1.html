@@ -1,0 +1,52 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Exercise: Albert Einstein always needed laser beams eyes...</title>
+   </head>
+   <body>
+      <p audio="2" class="quoteBlue">
+         Let's make a quick change to the Eye class by giving Albert Einstein 
+         laser beams that shoot out of his eyes.  We'll do this by drawing a red line 
+         from the center of each pupil to the location of the mouse click.  Save your work 
+         in a project titled <tt>XEyes_laser</tt>.
+      </p>
+      <div class="imageRight">
+         <img src="/apcsa/r/static/art/lessons7_8/einstein_laserEyes.png" alt="Lasereyes Einstein" />
+      </div>
+      <p audio="3">
+         It is clear that we'll use the <tt>mouseClicked</tt>
+         method to find out
+         both when and where the mouse was clicked.  The drawing will happen, however, 
+         in the <tt>Eye</tt>
+         classes's <tt>draw</tt>
+         method. 
+      </p>
+      <p audio="4">
+         We can't pass in the 
+         click coordinates directly into the <tt>draw</tt>
+         method, however; the <tt>draw</tt>
+         method gets 
+         triggered by the callback method <tt>paintComponent</tt>
+         in the XEyes class.
+      </p>
+      <p audio="5">
+         The right approach is the store the last mouse click location into some 
+         instance variables, and modify the draw method to use those instance 
+         variables to draw a line.  Something like:
+      </p>
+      <pre class="width30">private int clickedX;
+private int clickedY;</pre>
+      
+      <p audio="6">
+         A hint: the center of the pupil is stored in the <tt>Eye</tt>s <tt>pupilX</tt>
+         and <tt>pupilY</tt>
+         instance variables.
+      </p>
+      <br/>
+      
+      <div class="talkBubble small_right" char="bolt5" color="blue" align="left">
+         <p audio="7.m3">Nice...</p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Statement counting</title>
+</head>
+<body>
+<p audio="1">
+A better measure is <i>statement counting</i>.
+The number of times a given statement in a program gets executed 
+is independent of the computer on which the program is run 
+and is probably the same for programs coded in closely related languages.
+</p>
+<div audio="2" class="quoteBrown">
+Rather than count all statements in a method, we can usually pick out a few 
+that represent the main work that the method is doing.
+</div>
+
+<p audio="3">
+
+For a sorting method, the important aspects of efficiency
+are the comparisons between <tt>ArrayList</tt> elements and the number of data movements
+(assignments to <tt>ArrayList</tt> elements).
+For the next couple of steps, you will add a private instance variable named
+<tt>comparisonCount</tt> to the <tt>Deck</tt> class.
+This variable should be set to 0 at the start of each sorting method,
+incremented by 1 at each call to <tt>outranks</tt>,
+and printed at the end of each sorting method.
+</p>
+</body>
+</html>

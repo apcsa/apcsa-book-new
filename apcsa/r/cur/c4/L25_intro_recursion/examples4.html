@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Analyzing the buggy method</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title">Analyzing the buggy method</div>
+
+    <div class="prompt">
+     
+<p audio="1">
+Again consider the buggy <tt>sumHelper</tt>.
+</p>
+
+<table>
+<tr>
+<td>
+<pre>
+public int sum ( ) {
+ return sumHelper (myLeft, myRight);
+}
+
+private int sumHelper (int left, int right) {
+ if (left > right) {
+ return 0;
+ } else {
+ return left + right + sumHelper (left+1, right-1);
+ }
+}
+</pre>
+</td>
+</tr>
+</table>
+
+<p audio="2">
+Describe, as completely as possible,
+the collection of intervals for which the incorrect <tt>sumHelper</tt>
+produces the <i>correct</i> answer.
+</p>
+
+ 
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="StudentName1"> 
+
+    
+        </div>
+        
+        <div name="StudentName2">
+
+    
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

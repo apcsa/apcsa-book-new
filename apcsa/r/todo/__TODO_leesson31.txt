@@ -1,0 +1,20 @@
+TODO lesson 31 -- final projects
+
+========  SOMEDAY ===========
+
+-- replace all instances of "ConnectFour" and "Connect Four" with "Connect4" and
+"Connect 4" respectively.  
+
+-- image in intro_0 is a leetle to wide.
+
+-- describe framework code better: classes, what they do, etc.
+
+
+
+-- Aces up project needs to use different images for cards --those are
+probably copyrighted
+
+-- acesup requirements document is completely bad, and needs serious rewriting.
+
+
+

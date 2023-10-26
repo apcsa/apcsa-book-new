@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Omitting import?</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_36.mc"
+    hasinlinefeedback="true"
+    maxchoices="0"
+    responseIdentifier="MultipleChoice"
+    shuffle="false">
+
+    <div class="prompt"><p>
+Suppose the <tt>import</tt> statements were omitted from the program, leaving the following code;
+</p>
+<pre>
+public class Greetings extends JPanel{ // 1
+ 
+ private int myWindowWidth = 300; // 2
+ private int myWindowHeight = 400; // 3
+ 
+ public Greetings() { // 4
+ JFrame easel = new JFrame(); // 5 
+ easel.setSize(myWindowWidth, myWindowHeight);
+ easel.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
+ easel.add(this);
+ easel.setVisible(true);
+ }
+ 
+ public void paintComponent(Graphics g) { // 6
+ g.drawString ("Hi there!", 150, 200); 
+ }
+}
+</pre>
+<p>
+The declarations in this program are accompanied by line numbers (on the right).
+Indicate which of the declarations would be made illegal by omitting the <tt>import</tt> statements.
+</p>
+    </div>
+
+    
+    <div class="choice" identifier="coWhYRHBk2">
+        <div class="text">1
+        </div>
+        <div class="feedback">This line would be illegal, because the <tt>JPanel</tt> class would not
+be locatable.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="6SIRnrUsWR">
+        <div class="text">2
+        </div>
+        <div class="feedback">Incorrect. Omitting the import statements would have no effect on a
+declaration of an int instance variable.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="eyRULsfTck">
+        <div class="text">3
+        </div>
+        <div class="feedback">Incorrect. Omitting the import statements would have no effect on a
+declaration of an int instance variable
+        </div>
+    </div>
+    
+    <div class="choice" identifier="V1LVUsz2Sh">
+        <div class="text">4
+        </div>
+        <div class="feedback">Incorrect. Omitting the import statements would have no effect on a
+declaration of a class.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="LzyPTkyD71">
+        <div class="text">5
+        </div>
+        <div class="feedback">This line would be illegal, because the <tt>JFrame</tt> class would not
+be locatable.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="218jzuJcZv">
+        <div class="text">6
+        </div>
+        <div class="feedback">This line would be illegal, because the <tt>Graphics</tt> class would
+not be locatable.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="coWhYRHBk2"></div>
+        
+        <div class="correctResponse" identifier="LzyPTkyD71"></div>
+        
+        <div class="correctResponse" identifier="218jzuJcZv"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

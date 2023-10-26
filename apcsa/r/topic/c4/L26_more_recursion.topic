@@ -1,0 +1,24 @@
+title: Lesson 26: More Recursion
+
+{
+h2: Additional complexities in recursive algorithims
+
+
+heading: Interval summing
+    resource: More complex recursions [/apcsa/r/cur/c4/L26_more_recursion/intro0.html]
+    resource: A more complex interval sum [/apcsa/r/cur/c4/L26_more_recursion/intro1.html]
+    resource: How it works [/apcsa/r/cur/c4/L26_more_recursion/intro2.html]
+    resource: A diagram [/apcsa/r/cur/c4/L26_more_recursion/intro3.html]
+    brainstorm: sumHelper in your own words [/apcsa/r/cur/c4/L26_more_recursion/intro4.html]
+    brainstorm: sumHelper analysis [/apcsa/r/cur/c4/L26_more_recursion/intro5.html]
+    brainstorm: another sumHelper analysis [/apcsa/r/cur/c4/L26_more_recursion/intro6.html]
+
+heading: Path counting
+    resource: Path counting [/apcsa/r/cur/c4/L26_more_recursion/pathcount0.html]
+    resource: Base cases [/apcsa/r/cur/c4/L26_more_recursion/pathcount1.html]
+    brainstorm: Return value when n and k are both 0? [/apcsa/r/cur/c4/L26_more_recursion/pathcount2.html]
+    resource: What we have so far [/apcsa/r/cur/c4/L26_more_recursion/pathcount3.html]
+    resource: A key insight [/apcsa/r/cur/c4/L26_more_recursion/pathcount4.html]
+    resource: The code [/apcsa/r/cur/c4/L26_more_recursion/pathcount5.html]
+    resource: What if n and k are both 0? [/apcsa/r/cur/c4/L26_more_recursion/pathcount6.html]
+    brainstorm: Code analysis [/apcsa/r/cur/c4/L26_more_recursion/pathcount7.html]

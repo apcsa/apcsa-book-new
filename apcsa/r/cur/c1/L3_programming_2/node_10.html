@@ -1,0 +1,51 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>A class for testing other classes</title>
+
+</head>
+<body>
+<p>
+So far, you've tested your programs by instantiating an object&mdash;thereby
+adding the object to the Object Bench&mdash;then control-clicking on the object 
+to select a method.
+A somewhat more convenient way to test a program is to define a 
+<span class="vocab">tester class</span>.
+This approach exchanges mouse clicking for typing,
+but requires less work when a program is being modified repeatedly
+and run with the same set of tests.
+</p>
+<p>
+One way to organize a tester class is to have its constructor
+make calls to the methods of the class being tested.
+Here, for example, is a tester class for the original version
+of <tt>Refillable</tt>, available online as <tt>lesson3/RefillableTester</tt>.
+</p>
+<pre>
+public class Tester {
+
+   public Tester ( ) {
+      Refillable rtest = new Refillable (100);
+      rtest.useUp (10);
+      System.out.println ("current contents = " 
+                          + rtest.currentAmount ( )
+                          + "; should be 90");
+      rtest.useUp (20);
+      System.out.println ("current contents = " 
+                          + rtest.currentAmount ( )
+                          + "; should be 70");
+      rtest.refill (40);
+      System.out.println ("current contents = " 
+                          + rtest.currentAmount ( )
+                          + "; should be 110");
+      rtest.refill (5);
+      System.out.println ("current contents = " 
+                          + rtest.currentAmount ( )
+                          + "; should be 115");
+   }
+}
+</pre>
+
+</body>
+</html>

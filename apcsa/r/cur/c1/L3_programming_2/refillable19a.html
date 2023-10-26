@@ -1,0 +1,32 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Methods with more than one statement</title>
+   </head>
+   <body>
+ 
+ <div class="talkBubble" char="twitterton1" color="blue" align="left">
+    <p audio="refill19a_1.m4">
+       Let's take a closer look<br/>at the new <tt>useUp</tt> method.
+    </p>
+    </div>
+ <pre class="width60">
+public void useUp (int amount) {
+   myAmount = myAmount - amount;
+   myUseUpCallCount = myUseUpCallCount + 1; // NEW
+   myTotalUse = myTotalUse + amount; // NEW
+}
+</pre>
+      <div class="talkBubble" align="right" color="blue" char="twitterton2">
+         <p audio="refill19a_2.m4">Note that a method may contain more than one statement.  In fact,
+         most methods you write will do so.</p>
+
+      <p audio="refill19a_3.m4">When you have a method with more than one statement:</p>
+      <p class="step" audio="refill19a_4.m4">Each statement ends with a semicolon.</p>
+      <p class="step" audio="refill19a_5.m4">The statements in the method are executed in order,
+         from top to bottom.</p>
+         </div>
+
+   </body>
+</html>

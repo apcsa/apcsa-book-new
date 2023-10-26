@@ -1,0 +1,30 @@
+<html>
+<head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+
+<title>What we've done (2)</title>
+</head>
+<body>
+<p>
+We also considered the <i>efficiency</i> of the two sorting algorithms.
+There are various ways to measure efficiency. Some measurements may vary, depending on the type of computer or version of Java we're using. A quantity that will be the same no matter what computer we use is <i>statement counts</i>.
+</p>
+<p>
+The most interesting kind of statement to count in a sorting algorithm is the number of comparisons made to sort the collection of values.
+We produced this count by adding an instance variable to the <tt>outranks</tt> method in the sorting code, and found two items of interest:
+</p>
+<ul>
+<li>
+<p>
+For a given collection size, selection sort always involves the same number of comparisons, no matter what the arrangement of the elements of the collection.
+</p>
+</li>
+<li>
+<p>
+For a given collection size, insertion sort does the same number of comparisons as selection sort <i>when the elements are in reverse order</i>. However, when the elements <i>are already in order</i>, insertion sort does substantially fewer comparisons.
+</p>
+</li>
+</ul>
+</body>
+</html>

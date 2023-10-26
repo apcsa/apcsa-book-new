@@ -1,0 +1,62 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>drawOval, fillRect, and fillOval</title>
+   </head>
+   <body>
+      <p audio="2">The <tt>drawRect</tt> method draws an outline of a rectangle. 
+         The <tt>fillRect</tt> method takes the same arguments as <tt>drawRect</tt>, 
+         but produces a <i>filled</i> (solid) rectangle.</p>
+      <p audio="3">To draw a circle or ellipse, use the <tt>drawOval</tt> method. 
+         For a filled circle or ellipse, use <tt>fillOval</tt>. 
+         Both take the same arguments as <tt>drawRect</tt>. 
+         The first two arguments specify the upper left corner of 
+         the <i>bounding rectangle</i> of the ellipse, and the next 
+         two arguments specify the bounding rectangle's width and 
+         height.</p>
+
+      <p audio="4">The default color in which lines and fills are drawn is black. 
+         This can be changed, however, using the <tt>Graphics</tt> method named <tt>setColor</tt>. The argument is one of the following: </p>
+      <table id="tableBlue">
+      <tr>
+         <td>
+            <pre>
+Color.black
+Color.blue
+Color.cyan
+Color.darkGray
+Color.gray
+</pre>
+         </td>
+         <td>
+            <pre>
+Color.green
+Color.lightGray
+Color.magenta
+Color.orange
+</pre>
+         </td>
+         <td>
+            <pre>
+Color.pink
+Color.red
+Color.white
+Color.yellow
+</pre>
+         </td>
+      </tr>
+      </table>
+      <p audio="5">For example, the following code 
+</p>
+<pre>
+   public void paintComponent(Graphics g) {
+      g.setColor (Color.pink);
+      g.drawString ("Hi there!", 150, 200); 
+   }
+</pre>
+<p>will print our greeting in pink!  A call to the <tt>getColor</tt> method, which takes no arguments, 
+      returns the current drawing color. 
+Click on the <span class="help" topic="graphics_methods">Graphics</span> link to the right for a summary of commonly used <tt>Graphics</tt> methods.</p>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<project autoStep="true" stepLevelNum="false" stepTerm="Step">
+	<nodes>
+		<HtmlNode identifier="intro" title="Practicing AP Test Questions"
+			class="intro">
+			<ref filename="intro.html" />
+		</HtmlNode>
+		<HtmlNode identifier="multi" title="Multiple-Choice Questions"
+			class="intro">
+			<ref filename="multi.html" />
+		</HtmlNode>
+		
+		<HtmlNode identifier="free" title="Free-Response Questions"
+			class="curriculum">
+			<ref filename="free.html" />
+		</HtmlNode>
+		<HtmlNode identifier="panic" title="Don't Panic!"
+			class="curriculum">
+			<ref filename="panic.html" />
+		</HtmlNode>
+		<HtmlNode identifier="study" title="Study Hard!"
+			class="curriculum">
+			<ref filename="study.html" />
+		</HtmlNode>
+		<HtmlNode identifier="practice" title="Practice Makes Perfect"
+			class="curriculum">
+			<ref filename="practice.html" />
+		</HtmlNode>
+		<HtmlNode identifier="goodluck" title="Good Luck!"
+			class="curriculum">
+			<ref filename="goodluck.html" />
+		</HtmlNode>
+		<BrainstormNode identifier="practiceexam"
+			title="Practice Exam Reflection" class="brainstorm">
+			<ref filename="practiceexam.bs" />			
+		</BrainstormNode>		
+	</nodes>
+
+	<sequences>
+		<sequence identifier="master" title="master" view="">
+			<sequence-ref ref="seq_0" />			
+		</sequence>
+		<sequence identifier="seq_0" title="Practicing for the AP Exam" view="">
+			<node-ref ref="intro" />
+			<node-ref ref="practice" />
+			<node-ref ref="practiceexam" />
+			<node-ref ref="multi" />
+			<node-ref ref="free" />
+			<node-ref ref="panic" />
+			<node-ref ref="study" />
+			<node-ref ref="goodluck" />
+		</sequence>
+		
+		
+	</sequences>
+	<method>
+		<startpoint>
+			<sequence-ref ref="master" />
+		</startpoint>
+	</method>
+</project>

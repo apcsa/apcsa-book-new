@@ -1,0 +1,81 @@
+# monty (topic/section/week/chapter)
+
+title: The Monty Hall Dilemma
+content-root: '/cur/c2/monty'
+sequence:         # list of subsections/sequentials
+
+   - title: Introduction      
+     sequence:    # list of page/unit/vertical
+      - type: intro
+        title: A larger program
+        loc: intro-a-larger-program.html
+       
+   - title: "The 'Monty Hall' problem"
+     sequence:
+        - title: The Monty Hall problem
+          loc: monty-the-problem.html
+          type: intro
+        - type: intro
+          title: A program to model the Monty Hall problem
+          loc: monty-the-program.html
+        - type: bs
+          title: Your results
+          loc: monty-tally-results.bs
+        - type: bs
+          title: The best strategy
+          loc: monty-best-strategy.bs
+   
+   - title: Exploring the program
+     sequence:
+        - type: bs 
+          title: Sequence of calls
+          loc: exp-sequence-of-calls.bs
+        - type: match
+          title: Relation of values
+          loc: exp-true-expressions.ms
+        - type: mc
+          title: Mouse click handling
+          loc: exp-mouse-clicks.mc
+        - type: mc
+          title: Calls to <tt>Stage</tt> methods
+          loc: exp-stage-method-calls.mc
+        - type: mc
+          title: Clicks vs. <tt>doorWithCar</tt>  
+          loc: exp-possible-vals.mc
+        - type: curriculum
+          title: The <tt>goatDoorToShow</tt> method
+          loc: exp-goatdoortoshow.html
+        - type: codeit
+          title: Desired results when contestant has guessed the car
+          loc: exp-goatdoortoshow-table-car.html
+        - type: bs
+          title: How it works
+          loc: exp-goatdoortoshow-when-equal.bs
+        - type: curriculum
+          title: Suppose the contestant has chosen a goat
+          loc: exp-goatdoortoshow-table-goat.html
+        - type: bs
+          title: How it works
+          loc: exp-goatdoortoshow-when-diff.bs
+        - type: bs
+          title: Alternative <tt>goatDoorToShow</tt> method
+          loc: exp-goatdoortoshow-non-random.bs
+        - type: bs 
+          title: A different algorithm
+          loc: exp-goatdoortoshow-recode.bs
+          
+   - title: Simulating the Monty Hall problem
+     sequence:
+        - type: codeit
+          title: Lots of trials!
+          loc: sim-doit.html
+        - type: bs
+          title: The best strategy  
+          loc: sim-explain.bs
+          locedx: sim-explain.html  #followed by a discussion, category monty, with the html coming before it
+          
+   - title: Exercises
+     sequence:
+      - type: homework
+        title: Exercises: Monty
+        loc: task-monty.html

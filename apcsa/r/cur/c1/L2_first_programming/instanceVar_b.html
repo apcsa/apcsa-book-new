@@ -1,0 +1,40 @@
+<html>
+   <head>
+   	<script>
+            vocabClass = "top25";
+            helpClass = "top0";
+        </script>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>More information about instance variables</title>
+   </head>
+   <body>
+      <pre class="width80">   private int myCandyCount;  //the instance variable</pre>
+      <div class="talkBubble" align="left" color="blue" char="constance1">
+         <p audio="instancevar3_1.f1">The above line, the <span class="vocab">declaration</span> for the <tt>myCandyCount</tt> instance variable, contains 
+            two other pieces of information. </p>
+      </div> <br />
+      <div class="talkBubble" align="right" color="green" char="bolt5">
+         <p audio="instancevar3_2.m3">First is its <span class="vocab">accessibility</span>. 
+            The <tt>myCandyCount</tt> variable shouldn't be accessed directly by outsiders, 
+            so it has <span class="vocab">private</span> accessibility. 
+            This will be the case for almost every instance variable we encounter. 
+         </p>
+		 <p audio="instancevar3_3.m3">
+            (Classes also have accessibility. 
+            The <tt>CandyJar</tt> class is <span class="vocab">public</span>, 
+            which means that outsiders can work with <tt>CandyJar</tt> objects.)
+         </p> 
+      </div> <br />
+      <div class="talkBubble" align="left" color="red" char="raster4">
+         <p audio="instancevar3_4.m1">The other information in the declaration is the <i>type</i> of the variable. 
+            Here, that's <tt>int</tt>, meaning that we are representing the contents of 
+            the <tt>CandyJar</tt> object as a whole number, or an <span class="vocab">integer</span>. 
+          </p>
+		<p audio="instancevar3_5.m1">
+            This was a design decision.  A <tt>CandyJar</tt> object will be able to hold
+            27 units, but not 27.3.
+         </p>
+      </div>
+   </body>
+</html>

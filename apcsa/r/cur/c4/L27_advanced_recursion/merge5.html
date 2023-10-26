@@ -1,0 +1,31 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>The main loop</title>
+   </head>
+   <body>
+<p audio="2">
+Here is the code for the main loop.
+</p>
+<pre style="letter-spacing:-.6px;">
+public static void merge (int [ ] source1, int [ ] source2, int [ ] destination) {
+   // Indexes into source1 and source2.
+   int ks1 = 0, ks2 = 0;
+   // Index into destination.
+   int kd = 0;
+   while (ks1&lt;source1.length &amp;&amp; ks2&lt;source2.length) {
+      if (source1[ks1] &lt; source2[ks2]) {
+         destination[kd] = source1[ks1];
+         ks1++;
+      } else {
+         destination[kd] = source2[ks2];
+         ks2++;
+      }
+      kd++;
+   }
+      ...
+}
+</pre>
+   </body>
+</html>

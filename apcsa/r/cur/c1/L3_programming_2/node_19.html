@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assigning variables</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="node_19.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt"><p>
+Suppose <tt>rtest1</tt> and <tt>rtest2</tt> have been initialized as follows:
+</p>
+<pre>
+ Refillable rtest1 = new Refillable (20);
+ Refillable rtest2 = new Refillable (10);
+</pre>
+<p>
+Which of the following represents the result of executing the statement
+</p>
+<pre>
+ rtest1 = rtest2;
+</pre>
+
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"><img src="/apcsa/r/static/art/graphics/rtestab choice1.png">
+        </div>
+        <div class="feedback">No, the assignment statement will change where the variables are pointing (referring) to.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"><img src="/apcsa/r/static/art/graphics/rtestab choice2.png">
+        </div>
+        <div class="feedback">No, but close. Make sure you double check which instance the variables should be pointing to.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"><img src="/apcsa/r/static/art/graphics/rtestab choice3.png">
+        </div>
+        <div class="feedback">Correct! The variables will both point to the same object instance, the one that contains the value 10.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"><img src="/apcsa/r/static/art/graphics/rtestab choice4.png">
+        </div>
+        <div class="feedback">No, the values in the object instances won't change! And, the variables won't be pointing to two different object instances.
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 5">
+        <div class="text"><img src="/apcsa/r/static/art/graphics/rtestab choice5.png">
+        </div>
+        <div class="feedback">No, the values in the object instances won't change! And, the variables won't be pointing to two different object instances.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 3"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

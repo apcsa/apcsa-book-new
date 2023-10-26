@@ -1,0 +1,25 @@
+{
+   "assessmentItem":{
+      "adaptive":false,
+      "identifier":"Brainstorm",
+      "interaction":{
+         "expectedLines":"5",
+         "prompt":"<p>\u000aThe <tt>Rock</tt> and <tt>Flower</tt> classes both extend <tt>Actor</tt>, and override exactly one of its methods, namely <tt>act</tt>. A student suggests that it would \"work\" to have <tt>Flower</tt> extend <tt>Rock</tt> instead of <tt>Actor</tt>. What do you think of this suggestion?\u000a</p>",
+         "responseIdentifier":"Brainstorm"
+      },
+      "timeDependent":false
+   },
+   "cannedResponses":[],
+   "displayName":"0",
+   "isGated":true,
+   "isInstantPollActive":false,
+   "isPollEnded":false,
+   "isRichTextEditorAllowed":true,
+   "starterSentence":{
+      "display":"0",
+      "sentence":""
+   },
+   "title":"Inheritance choices",
+   "type":"Brainstorm",
+   "useServer":true
+}

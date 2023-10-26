@@ -1,0 +1,85 @@
+# monty (topic/section/week/chapter)
+
+title: Modeling "random" processes
+content-root: '/cur/c2/random'
+sequence:         # list of subsections/sequentials
+
+   - title: Introduction      
+     sequence:    # list of page/unit/vertical
+      - type: intro
+        title: Modeling random processes
+        loc: intro_random.html
+       
+   - title: Generating randomness
+     sequence:
+        - title: The Random class
+          type: intro
+          loc: ran_random_class.html
+        - title: A test of the Random class
+          type: codeit
+          loc: ran_runit.html
+        - title: Appearing 'random'
+          type: bs
+          loc: ran_look_random.bs
+        - title: A human's view of randomness
+          type: bs
+          loc: ran_human_randomness.bs
+        - title: A different coin flipper
+          type: prob
+          loc: ran_different_coin_flipper.prob
+        - title: A die roll generator
+          type: codeit
+          loc: ran_die_roll_gen.html
+        - title: Graphing a random distribution
+          type: sim
+          loc: ran_graphing_random.html
+        - title: A pair of dice
+          type: prob
+          loc: ran_pair_of_dice_two_ways.prob
+        - title: Forbidden rolls
+          type: codeit
+          loc: ran_forbidden_rolls.html
+        - title: Alternative for forbidding rolls
+          type: bs
+          loc: ran_forbidden_two_ways.bs
+        - title: Magic coins
+          type: codeit
+          loc: ran_magic_coin.html
+        - title: Alternative for forbidding rolls
+          type: bs
+          loc: ran_forbidden_two_ways.bs    # this is an edx discussion
+          
+   
+   - title: Simulations
+     sequence:
+        - type: info 
+          title: Simulation
+          loc: sim_intro.html
+        - type: codeit 
+          title: Simulation
+          loc: sim_die_roll_generator.html          
+        - type: bs
+          title: The St. Petersburg lottery
+          loc: sim_st_petersburg_lottery.bs   #edx video
+        - type: codeit 
+          title: Simulation of the lottery
+          loc: sim_lottery_sim.html          
+        - type: bs                          # discussion in edx
+          title: The St. Petersburg lottery
+          loc: sim_lottery_results.bs
+          
+          
+   - title: Review and Exercises
+     sequence:
+        - type: intro
+          title: What we've done
+          loc: rev_summary.html
+        - type: homework
+          title: Exercise: Dot racing  
+          loc: rev_dot_racing.html
+        - type: homework
+          title: Exercise: Craps
+          loc: rev_craps.html
+        - type: homework
+          title: Exercise: Graph guessing
+          loc: rev_graph_guesser.html

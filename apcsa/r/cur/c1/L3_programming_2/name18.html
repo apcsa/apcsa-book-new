@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice with substring</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="name18.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">
+ <p audio="1">
+ Suppose <tt>str</tt> is a <tt>String</tt> 
+ containing <tt>"computer games"</tt>.
+ What is <tt>str.substring (3, 6)</tt>?</p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> "computer games" 
+        </div>
+        <div class="feedback"> No, substring will return a portion of the string, from
+ the starting index 3 to one less than the ending index 6. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> "mpu" 
+        </div>
+        <div class="feedback"> No. Remember, strings start at index 0, not index 1. 
+The "m" is at index 2 in the string. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> "pute" 
+        </div>
+        <div class="feedback"> No, substring subtracts one from the second argument so
+the substring(3,6) would be the string from index 3 to index 5
+inclusive. 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 4">
+        <div class="text"> "put" 
+        </div>
+        <div class="feedback"> Right! The "p" is at index 3 and the"t" is at index 5
+and "put" is the substring between index 3 and 5 inclusive.
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 4"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

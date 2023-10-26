@@ -1,0 +1,40 @@
+<html><head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Lots of trials</title></head>
+<body>
+
+<!-- COMMENT IS WHAT THIS STEP USED TO BE.
+<p audio="2">
+The <tt>Simulation.java</tt> file contains a framework for running the game many times, 
+to gather data on which strategy is the best.</p>
+<p audio="3">
+Complete the framework, and run the program 1000 times 
+with the player always switching
+and another 1000 times with the player always staying with her initial choice.
+</p>
+-->
+
+<p>This activity involves two simulations of the Monty game, one in which the contestant always sticks with her current choice, the other in which she always switches. Here's how to do this.
+</p>
+<ol>
+<li>
+First, change the <tt>guess2</tt> method to <i>always stick</i> with the current choice.  
+</li>
+<li>
+Next, supply a version of the <tt>Controller.java</tt> program that 
+replaces the bodies of the constructor and the <tt>say</tt>, <tt>picture</tt>, <tt>open</tt>, and <tt>close</tt> methods by empty bodies and the <tt>doorSelected</tt> method by <tt>return 0</tt>.
+</li>
+<li>
+Then provide a class named <tt>SimulateMonty</tt> that contains a method <tt>simulate</tt>. The <tt>simulate</tt> method takes one argument, the number of games to simulate. For each game, it will call the <tt>Monty</tt> constructor, then repeatedly call <tt>playGame</tt>, keeping track of the number of wins. </li>
+<li>After playing all the games, it should print the percentage of wins with the "always stick" strategy.
+</li>
+</ol>
+<p>
+Now change the <tt>guess2</tt> method to <i>always switch</i>,
+and rerun the simulation.
+</p>
+
+
+</body>
+</html>

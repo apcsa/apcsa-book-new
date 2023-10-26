@@ -1,0 +1,33 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>How 'perfect' is it?</title>
+</head>
+<body>
+<p>
+How good is the "perfect" shuffle?
+To analyze its behavior, let's assume that we have a deck of four cards, A, B, C, and D.
+We split the deck in half: A B and C D. Then we interleave the two halves to get A C B D.
+Doing this one more time get us back to the original deck!
+</p>
+<p audio="2">
+Perhaps it works better with a bigger deck? 
+Trying a deck of size 8 results in equally disappointing behavior:<br />
+<table id="tableCenter">
+	<tr>
+		<td>After the first shuffle:</td> <td>A  E  B  F  C  G  D  H</td>
+	</tr>
+	<tr>
+		<td>After the second shuffle:</td> <td>A  C  E  G  B  D  F  H</td>
+	</tr>
+	<tr>
+		<td>After the third shuffle:</td> <td>A  B  C  D  E  F  G  H</td>
+	</tr>
+</table>
+<p audio="3">
+We conclude that a perfect shuffle is too predictable to satisfy the problem specifications, 
+so we move on to alternative solutions.
+</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "Brainstorm",
+      "interaction": {
+         "expectedLines": "0",
+         "prompt": "<p audio=\"1\">\nDescribe two different environments in which,\nafter hitting Step, a bug is facing southwest (225&deg;).\nAlso explain how you figured them out.</p>",
+         "responseIdentifier": "Brainstorm"
+      },
+      "timeDependent": false
+   },
+   "cannedResponses": [],
+   "displayName": "0",
+   "isGated": true,
+   "isInstantPollActive": false,
+   "isPollEnded": false,
+   "isRichTextEditorAllowed": false,
+   "starterSentence": {
+      "display": "0",
+      "sentence": ""
+   },
+   "title": "",
+   "type": "Brainstorm",
+   "useServer": true
+}

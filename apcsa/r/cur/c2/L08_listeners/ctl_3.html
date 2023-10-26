@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top200";
+	  </script>
+      <title>A two-digit counter</title>
+   </head>
+   <body>
+      <p audio="2">
+         Simulate the clicking of a two-digit counter.
+         The drawing window should appear as follows:
+      </p>
+      <table id="tableBlue">
+         <tr>
+            <td>
+               7
+            </td>
+            <td>
+               9
+            </td>
+            <td>
+               ^
+            </td>
+            <td>
+               V
+            </td>
+         </tr>
+      </table>
+      <p audio="3">
+         Clicking on the "^" should increase the displayed value by 1. 
+         For instance, if the current counter was as shown above, clicking on 
+         the "^" would change the counter to <tt>8 0</tt>.
+      </p>
+      <p audio="4">
+         Conversely, clicking on "V" should decrease the displayed value by 1.
+         The displayed value should "wrap around": incrementing 99 should produce 00,
+         and decrementing 00 should produce 99.
+      </p>
+            <p audio="5">
+         A tip: keep track of the current counter value in an
+         <tt>int</tt> instance variable. You can determine the left
+         digit by dividing by 10, and the right digit by using the 
+         remainder, or <span class="vocab">modulus</span>, operator: <tt>%</tt>.
+      </p>
+   </body>
+</html>

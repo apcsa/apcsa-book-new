@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alternative for forbidding rolls</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="8"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title"></div>
+
+    <div class="prompt">
+    
+<p audio="2">
+Your solution to the previous exercise should have resembled one of the following.
+</p>
+
+<table id="tableClear">
+<tr><td>
+<pre>
+public int nextRoll (int forbidden) {
+  int r = randGen.nextInt (6) + 1;
+  while (r == forbidden) {
+    r = randGen.nextInt (6) + 1;
+  }
+  return r;
+}
+</pre>
+</td><td>
+<pre>
+public int nextRoll (int forbidden) {
+  int r = randGen.nextInt (5) + 1;
+  if (r &gt;= forbidden) {
+    r = r + 1;
+  }
+  return r;
+}
+</pre>
+</td></tr>
+</table>
+<br/>
+<p audio="3">
+Which version is better? Defend your choice.
+</p>
+
+
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">I think the first version is easier to understand.
+        </div>
+        
+        <div name="Sherry">The first version might have an infinite loop, so the second version might be better, but I'm having trouble understanding it. Why have an argument of 5 instead of 6?
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>

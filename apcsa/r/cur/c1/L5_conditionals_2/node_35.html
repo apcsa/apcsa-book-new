@@ -1,0 +1,186 @@
+<html>
+<head>
+<script>
+	vocabClass = "top0";
+	helpClass = "top0";
+</script>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+	
+</script>
+
+<title>Exercises</title>
+</head>
+<body>
+<ol>
+
+<li>
+<p>
+Write a <tt>boolean</tt> method named <tt>hasSameParity</tt> that, given two <tt>int</tt> arguments, returns <tt>true</tt> if both are odd or both or even; otherwise, it returns <tt>false</tt>.
+</p>
+</li>
+
+<li>
+<p>
+Assume <tt>n</tt> is an <tt>int</tt> variable that contains some value between 1 and 10,
+inclusive. 
+</p>
+<ol type="a">
+<li>
+<p>
+List the integer values for <tt>n</tt> that satisfy the following boolean expression.
+</p>
+<pre>
+   (n &lt;= 3) || (n &gt; 6)
+</pre>
+</li>
+<li>
+<p>
+Do the same for the following.
+</p>
+<pre>
+   ! ((n &gt;= 4) || (n &gt; 7))
+</pre>
+</li>
+<li>
+<p>
+Do the same for the following.
+</p>
+<pre>
+   ! ((n &lt;= 5) &amp;&amp; (n &gt;= 8))
+</pre>
+</li>
+</ol>
+</li>
+
+<li>
+<p>
+Again assume that <tt>n</tt> is an <tt>int</tt> variable that contains some value between 1 and 10,
+inclusive.  
+</p>
+<ol type="a">
+<li>
+<p>
+Which values of <tt>n</tt> satisfy the statement
+</p>
+<blockquote>
+<tt>n</tt> is neither greater than 8 nor less than 3.
+</blockquote>
+</li>
+<li>
+<p>
+Translate the statement in part a to Java.
+</p>
+</li>
+<li>
+<p>
+Consider the following method.
+</p>
+<pre>
+   // Assume that n is between 1 and 10, inclusive.
+   // Return true if n is legal (neither greater than 8
+   // nor less than 3) and return false otherwise.
+   public boolean isLegal (int n) {
+      return <u><i>your answer to part b</i></u>;
+   }
+</pre>
+<p>
+Give a tester class that calls <tt>isLegal</tt> five times.
+Which five arguments will collectively produce the best evidence that <tt>isLegal</tt> works correctly?
+</li>
+</ol>
+
+<li>
+<p>
+Fill in the blanks in the program segment on the right
+so that it has exactly the same effect as the one on the left.
+</p>
+<table border=1>
+<tr>
+<td>
+<pre> 
+if (n == -1) {
+   icode = icode + 2;
+}
+if (n == -2) {
+   icode = icode + 3;
+}
+</pre>
+</td>
+<td>
+<pre>
+if ( __________ ) {
+   icode = icode + _______________ ;
+}
+</pre>
+</td></tr>
+</table>
+</li>
+
+<li>
+<p>
+Write a <tt>boolean</tt> method named <tt>areOnSameDiagonal</tt> that, given <tt>int</tt> arguments <tt>row1</tt>, <tt>col1</tt>, <tt>row2</tt>, and <tt>col2</tt>, returns <tt>true</tt> if the position on a chessboard represented by <tt>row1</tt> and <tt>col1</tt> is on the same diagonal as the position represented by <tt>row2</tt> and <tt>col2</tt>. Otherwise, it should return <tt>false</tt>.
+</p>
+</li>
+
+<li>
+<p>
+Background: the <tt>%</tt> operator produces <i>the integer remainder</i> that results from dividing the first operand by the second. If the second operand is a factor of the first, the division remainder will be 0.
+</p>
+<p>
+The following program segment is intended to print information about which of 2, 3, and 5 are factors of a value named <tt>n</tt>.
+For example, if <tt>n</tt> contains 11, then nothing should be printed; if <tt>n</tt> contains an even number, "2 is a factor" should be printed; if <tt>n</tt> is divisible by 6, "2 is a factor" and "3 is a factor" should both be printed.
+</p>
+<pre>
+   if (n%2==0) {
+      System.out.println ("2 is a factor");
+   } else if (n%3==0) {
+      System.out.println ("3 is a factor");
+   } else if (n%5==0) {
+      System.out.println ("5 is a factor");
+   }
+</pre>
+<p>
+It doesn't work correctly.
+</p>
+<ol type="a">
+<li>
+<p>
+As completely as possible, describe the values of <tt>n</tt> for which the program segment <i>does not</i> produce the correct output.
+</p>
+</li>
+
+<li>
+<p>
+Making as few changes as possible, fix the bugs.
+</p>
+</li>
+
+<li>
+<p>
+If the code were to be modified by adding more cases by filling in the blanks shown below, how many more cases would have to be added to produce correct behavior?
+</p>
+<pre>
+   if (n%2==0) {
+      System.out.println ("2 is a factor");
+   } else if (n%3==0) {
+      System.out.println ("3 is a factor");
+   } else if (n%5==0) {
+      System.out.println ("5 is a factor");
+   } else if ( ___ ) {
+      System.out.println ("___ is a factor");
+   } else if ( ___ ) {
+      System.out.println ("___ is a factor");
+   } else if ( ___ ) {
+      System.out.println ("___ is a factor");
+   } ...
+</pre>
+</li>
+
+</ol>
+
+</li>
+
+
+</ol>
+</body>
+</html>

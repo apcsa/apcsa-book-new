@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <script type="text/javascript" src= "/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top100";
+	  </script>
+      <title>How is the <tt>paintComponent</tt> method used?</title>
+   </head>
+   <body>
+      <pre class="width70">   public void paintComponent (Graphics g) {
+      g.drawString ("Hi there!", 150, 200);	
+   }
+</pre>   
+<br />
+   <div class="talkBubble" char="float2" align="right" color="red">
+        <p audio="2.m2"> What is the <tt>Graphics g</tt>
+         <span class="vocab">parameter</span> of 
+          the <tt>paintComponent</tt>
+         method?</p>
+      </div>
+
+      <div class="talkBubble" char="bolt2" align="left" color="blue">
+         <p audio="3.m3"> It's just an object from another class (the class <tt>Graphics</tt>) defined 
+         inside one of the Java libraries.  It  
+         needs to be used with the <tt>paintComponent</tt>
+         method.  When Java 
+         decides that <tt>paintComponent</tt>
+         should be called, it will 
+         make the <tt>Graphics</tt>
+         object for you. </p>
+      </div>
+	  <br /><br />
+      <div class="talkBubble" char="float1" align="right" color="red">
+         <p audio="4.m2">What is the <tt>Graphics</tt> object used for? <br /></p>
+      </div>
+      <div class="talkBubble" char="bolt5" align="left" color="blue">
+         <p audio="5.m3">The <tt>Graphics</tt>
+         object is what knows how to do the actual drawing (that is, has the <tt>drawString</tt>
+         method, among others).</p>
+      </div>
+   </body>
+</html>

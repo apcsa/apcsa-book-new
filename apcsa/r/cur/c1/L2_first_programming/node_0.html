@@ -1,0 +1,34 @@
+<html>
+<head>
+<script>
+ vocabClass = "top200";
+ helpClass = "top0";
+</script>
+<script type="text/javascript" src="/apcsa/llab/loader.js">
+</script>
+<script type="text/javascript" src="../../../script/jquery.cycle.all.min.js">
+</script>
+<script type="text/javascript">
+    var WinRef;
+    function openChild(url){
+         WinRef = window.open(url, "WindName", "width=800,height=600,resizable=yes,scrollbars=yes");
+         return false;
+          }
+ </script>
+<title>Creating a New GameBoard object</title>
+</head>
+<body>
+    <p audio="instantiate4">
+        Let's examine the process in a little more detail. 
+        When you selected the <tt>new GameBoard()</tt>option from the menu, 
+        you are actually calling a special method  
+        in the <tt>GameBoard</tt> class referred to as a <span class="vocab">constructor</span>. <a class="slideshowLink" href="slideshow3.html" onClick="return openChild(this.href);">1</a>
+        This call makes a new instance of the <tt>GameBoard</tt> class with the default name of "gameBoar1", which is why 
+        it is labeled as it is.
+    </p>
+    <p class="quoteBrown" audio="instantiate5">
+        The area at the bottom of the BlueJ screen shows all the objects created in BlueJ. 
+        This area is called the <span class="vocab">object bench</span>. 
+    </p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Equivalent loops</title>
+        <!--  webjava could follow this step, in another step.  See for_2.html, where we think it would be a good idea... -->
+</head>
+<body>
+<p audio="1">
+Here are several equivalent uses of loops to compute <tt>n</tt> factorial 
+(the product of all the positive integers up through <tt>n</tt>).
+</p>
+<table id="tableBlue">
+<tr><td><pre>
+for (int k=n, product=1; k&gt;0; k=k-1) {
+    product = product * k;
+}
+</pre></td></tr>
+<tr><td><pre>
+product = 1;
+for (int k=n; k&gt;0; k=k-1) { // product initialized outside loop
+    product = product * k;
+}
+</pre></td></tr>
+<tr><td><pre>
+product = 1;
+for (int k=n; k&gt;0; ) { // test performed inside loop
+    product = product * k;
+    k=k-1;
+}
+</pre></td></tr>
+<tr><td><pre>
+product = 1;
+int k;
+while (k&gt;0) { // the while equivalent
+    product = product * k;
+    k=k-1;
+}
+</pre></td></tr>
+</table>
+<p audio="2">
+The <tt>for</tt> loop is basically a repackaged <tt>while</tt> loop 
+that puts all the information about how long the loop should continue in one place.
+Thus a <tt>for</tt> loop is generally easier to understand than an equivalent <tt>while</tt> loop.
+</p>
+</body>
+</html>

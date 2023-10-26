@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What average use returns</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        
+<div class="assessment-data" type="multiplechoice"
+    identifier="refillable16a.mc"
+    hasinlinefeedback="true"
+    maxchoices="1"
+    responseIdentifier="MultipleChoice"
+    shuffle="true">
+
+    <div class="prompt">
+ <p audio="1">
+ As a first step of writing the <tt>averageUse</tt>
+ method, think about how other parts of the program will
+ use it.
+ </p>
+ <p audio="2">
+ Of the following choices, which is the best return type
+ for the <tt>averageUse</tt> method?
+ </p>
+ 
+    </div>
+
+    
+    <div class="choice" identifier="choice 1">
+        <div class="text"> <tt audio="3">void</tt> 
+        </div>
+        <div class="feedback"> No. Remember, the "type" of method is the type of the 
+variable that it returns. <tt>void</tt> types don't return anything,
+but <tt>averageUse</tt> needs to return the average amount that was used
+in each call to useUp 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 2">
+        <div class="text"> <tt audio="4">int</tt> 
+        </div>
+        <div class="feedback"> Yes, the "type" of method is the type of the 
+variable that it returns, and <tt>averageUse</tt> is going
+to return a number. You may have noticed that <tt>int</tt>
+can't return a number with a decimal point (such
+as <tt>3.4</tt>). That is correct! And, that makes
+<tt>int</tt> not the perfect choice. Later in the course,
+we'll explore types in Java that do allow decimal points. 
+ 
+        </div>
+    </div>
+    
+    <div class="choice" identifier="choice 3">
+        <div class="text"> <tt audio="5">Refillable</tt> 
+        </div>
+        <div class="feedback"> No! Remember, the "type" of method is the type of the
+variable that it returns. <tt>Refillable</tt> is a class. This method
+isn't going to return an entire <tt>Refillable</tt> instance! 
+        </div>
+    </div>
+    
+
+    <div class="responseDeclaration"
+        identifier="MultipleChoice">
+        
+        <div class="correctResponse" identifier="choice 2"></div>
+        
+    </div>
+</div>
+    </body>
+</html>

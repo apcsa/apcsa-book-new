@@ -1,0 +1,136 @@
+LESSON 8
+
+Steps:
+	Step 5: Spelling : (i.e -- sitting in third line
+	Step 8: -- reduce spacing btw bullets
+			- Add "Try It" box at bottom to demarcate programming exercise
+      -- NATE --
+	Step 9: "Runs, but incorrectly(causes runtime error)" -- should we remove the
+			causes runtime error portion -- this class would run with no errors.
+			It just doesn't work right
+	Step 10 : Grammar: "if we want to use something know about in the mouse event"
+	Step 11: "Classify each name in the list below according to whether
+				the name is arbitraryÑthat is, we can change all occurrences 
+				of the name to something elseÑor it is specifically required 
+				by the Java language."
+			--> How about this intro instead of the above on Step 11:
+			"The Clicker class contains lots of words to define method and field names, Constructors and so on(eg. setSize, Clicker, this). 
+			Which ones are required to be named as they are and which ones could be changed to your preference."
+	Step 12 BS : needed canned answers
+	    -- MIKE --
+	Step 13/14:  
+			 - I think we need to show them how to look up MouseEvent and find the methods getX and getY
+			   as well as Graphics class to see how to figure out what is needed to draw circle and change the color of the object
+			 - Maybe even an activity of some sort that asks them to find methods of a class and tell us 
+			 	the parameters and return type? -- MJC: I mentioned this in step 3.
+			 - Grammar: getY method -- forgot to put method
+      --NATHAN --  we thought it would be good to have a help page that spec'ed te commong
+         graphics commands (drawOval, etc).  And, move your string one into te help pages as ewll.
+         talk to nate if you need instructions on how to make a help file...  
+         then, make a reference to the help page on these steps
+	Step 15: Graphic seems like it should show the rectangle starting at first mouse press
+	   -- NATE -- make a single image with both mouse clicks (with numbers?) ?  slideshow?
+	Step 16: Remind user to look at Virtual Pets for how to read in an image
+	Step 18: - What was meant by set to empty -- the string or display 
+			 - Image should show the phone number displayed?
+		-- SEAN WILL DEAL, making framework code w/ bugs and holes, NATE WILL LOOK --
+   Step 21.5: Add a submenu and a Summary.html here (before xeyes case study, why not)
+      --MIKE-- we don't need exercises, since there are so many in the 3rd and 4th sequence
+	Step 23: Try It box?
+	   -- NATE -- add this
+	Step 24: Add that is has mouseListener implemented as well as all the contracted methods
+	Step 25: First bullet point needs to be erased
+	Step 28: Grammar : - "Let's make a quick change to the Eye class: when give Albert Einstein some laser beams"
+					   - EyespupilX 
+	Step 29 : "All you need to do is to add a case to the conditional that is in movePupil, 
+				leaving the actions in the other cases unchanged. Add your test 
+				as the first one, because it doesn't matter what else happens if the 
+				click is inside the eye."
+	           ==> how about
+	           "All you need to do is add an "else if" case to the if-else chain that tests if the mouse click was
+	           inside the eye and if so, sets pupilX and pupilY appropriately." 
+	Step 30 : - Grammar fix: "After removing the calls the new Eye in the constructor,"
+			  - First Bullet: If we are going to set the coordinates of the eye by clicking our mouse
+			  				we need to remove the "hard-coded" coordinates passed arguments to the Eye constructor in 
+			  				the XEyes constructor.
+			  				
+			  				public XEyes()
+			  				{
+			  					...
+			  					eye_1 = new Eye(...);  <= remove this and the next line
+			  				}
+			  				
+			  				You can test for eye_1 or eye_2 being null in the paintComponent method
+			  				by setting up this conditional:
+			  				
+			  				if(eye_1 != null)
+			  				 	...
+
+			  				if(eye_2 != null)
+			  				 	...
+			  - Remove last bullet now that we changed implementation of Eyes and XEyes	
+			  - I would say this is pretty difficult exercise. We are going to need to set up either in class or 
+			  	in the lesson.
+			  	 	 	
+	Step 31: - Show the class header with both interfaces listed
+			 - Glossary link is at bottom of bar
+			 - Remind the user to addMouseMotionListener(this) in constructor
+	  --NATE -- put actual code in here... 
+			 
+    ** I think I would switch Step 30 and 31 -- Step 30 is much harder to do
+			 
+	- Add Summary?
+	  --MIKE -- (see step 21.5 above)
+	  
+	  
+   - NATHAN -- check over xeyes code.
+   
+   - MIKE -- maybe look over xeyes...  there are way too many 'do this' and not enough
+       predict, test, debug...  Look at the 'older notes' below.  
+	
+	
+BlueJ exercises:
+	- SimpleClicker -- the addMouseListener in constructor is commented out	
+	- make Sure all instance variables are declared as private in xeyes and others(?)
+	- review changes including comments in xeyes
+	- I added the solutions to teacher info programs -- those should be reviewed
+	- remove extra "uses" arrow in UML panel for all xeyes projects and solutions			
+Glossary: 
+ - Grammar: event --> initiated by the user (rather than the programmer) does - re-word
+ - Grammar: interface --> delete the "x" at top 
+
+----- OLDER notes -------
+
+S9 - MS - provide better feedback than 'nope', 'wrong'? "What happens if..."
+S12 - BS need feedback. "Bugs"
+S16 - Remove comment. Need content
+S29 - Copyright issues, use free pic of Einstein
+
+1) The bluej steps won't work, because the proper bluej project didn't
+   get stuck in the .bluej file, in the xml at the bottom.  (See the html for the 
+   correct project).  There are several bluejnode files, i.e., node_3.bluej
+   (I fixed that one, though)
+2) ptr_1.html(step 15) Mike is getting back to us on what this means. 
+    maybe delete for now?
+3) the xeyes step icons (class=intro) need mixing up.
+4) art 
+      - xeyes intro picture -- a robot with big oval eyes, maybe blinking?  
+          Looking down to the left
+      - lots more in xeyes? , perhaps, to spec things up.
+5) node_3.html is boring.  image?  
+6) xeyes needs work.  Lots more exercises, etc
+     - need to explain about multiple mouse listeners (espeically when dragging)
+     - need exercise -- work with a square eye, ask how they would 
+     set X, Y of pupil.  (over several exercises).
+     - how would you keep an eye from being too small (after exer3)
+
+7) node xeyes_3d.html needs writing.  Nate got burned out!  He took
+    it out of the .project file, at least.
+8) motivation for step 1, why we are doing events
+9) reaction timer curriculum has to be  written.
+       the reaction timer code is in the repo (lesson8/ReactionTimer).
+         also see exercise ideas text file in the bluej project.
+       stuff is in the project.xml file now, needs to be put in the 
+       sequence...
+       
+-- for step 29, have we introduced "double" before this?  yikes if not. 

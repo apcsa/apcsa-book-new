@@ -1,0 +1,21 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>What if n and k are both 0?</title>
+   </head>
+   <body>
+<p audio="2">
+To settle the case where <tt>n</tt> and <tt>k</tt> are both 0&mdash;how many paths
+are there from a point to itself&mdash;we consider <tt>pathCount (0, 1)</tt>.
+The return value for this call should be 1.
+In the code just designed, we treated this as a base case,
+but suppose we hadn't done that.
+We would then compute <tt>pathCount(-1,1) + pathCount(0,0)</tt>.
+<tt>pathCount(-1,1)</tt> returns 0 because of the other base case.
+Thus <tt>pathCount(0,0)</tt> should be 1.
+</p>
+
+
+   </body>
+</html>

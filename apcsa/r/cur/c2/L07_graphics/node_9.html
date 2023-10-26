@@ -1,0 +1,42 @@
+
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Experimenting with the <tt>Greetings</tt> class</title>
+   </head>
+   <body>
+      <p audio="2">Let's inspect the <tt>Greetings</tt> class in BlueJ.</p>
+      <div class="openbluejproj" project="lesson7/Greetings">
+         <p audio="4">
+         Open the current project in BlueJ. <p audio="5">
+            (The project is <tt>lesson7/Greetings</tt>)</p>
+      </div>
+      <p audio="6">After you've opened the project, and looked at the source 
+         code of the <tt>Greetings</tt> class, make a new <tt>Greetings</tt> object 
+         in the usual way.  Notice as you do, however, that there are a <i>large</i> number 
+         of <span class="vocab" term="static method">static methods</span> that you can run on the <tt>Greetings</tt>  class.
+         Certainly, this is different than any class you've seen before, if only because none of those methods
+         are included in the source code!
+         </p>
+         <p audio="sd" class="quoteBlue">
+                 These methods are showing up because of the <tt>extends</tt> keyword in the class header. 
+                 We'll talk a bit more about what this means in a few pages, and a <i>lot</i> more starting in 
+                 lesson 16.  For now, just realize that it is doing something pretty powerful: letting this simple bit
+                 of source code borrow methods from the <tt>JPanel</tt> class as if they were its own.
+ 
+         </p>
+         <p audio="kdsf">
+         When you make the object, another window will immediately pop up.  This window is the object itself, or at 
+         least a direct representation of it, and the contents of the 
+         window are drawn based on the <tt>paintComponent</tt> method.  The <Tt>extends</Tt> keyword is even more powerful,
+         then; this simple bit of source code is creating a window and drawing to it.
+         </p>
+
+      <p class="quoteBlue" audio="7">Try changing your <tt>Greetings</tt> class.
+      <br/><br/> 
+         Change the arguments to the <tt>g.drawString</tt> invocation in the <tt>paintComponent</tt> method.  Experiment with different output strings, 
+         and different positions for the string.</p>
+   </body>
+</html>
+

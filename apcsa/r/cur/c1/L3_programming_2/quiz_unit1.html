@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Unit 1 Quiz</title>
+   </head>
+   <body>
+      <br>
+      <h3 audio="u1quiz_1">Question A</h3>
+      <p audio="u1quiz_2"> Given below is a class that represents amounts of money in dollars and cents.</p>
+      <pre class="width70">
+public class Money {
+
+   private int myDollars;
+   private int myCents;
+   
+   public Money (int dollars, int cents) {
+      myDollars = dollars;
+      myCents = cents;
+      fix ( );
+   }
+   
+   private void fix ( ) {
+      int totalCents;
+      totalCents = myDollars * 100 + myCents;
+      myDollars = totalCents / 100;
+      myCents = totalCents - (myDollars * 100);
+   }
+   
+   public String toString ( ) {
+      String centString;
+      centString = "" + (100 + myCents);
+      return "" + myDollars + "." + centString.substring (1);
+   }
+</pre>
+      <ol>
+         <li audio="u1quiz_3">
+             Identify each of the following as either an instance variable, a local variable, a parameter,
+               an argument, or an object. (There may be more than one answer.)
+            <pre class="width30">
+myDollars
+dollars
+totalCents
+</pre>
+         </li>
+         <li audio="u1quiz_4">
+             Give an example of values one could supply to the constructor 
+               that would result in <tt>myDollars</tt> and <tt>myCents</tt> containing different 
+               values before and after <tt>fix</tt> is called.
+         </li>
+         <li audio="u1quiz_5">
+            Describe the effect of interchanging the assignments to <tt>myDollars</tt> and <tt>myCents</tt> in <tt>fix</tt>, 
+			by describing as completely as possible the values of <tt>dollars</tt> and<tt>cents</tt> for which the 
+			modified <tt>fix</tt> would assign different values to <tt>myDollars</tt> and <tt>myCents</tt>.
+         </li>
+         <li audio="u1quiz_6">
+         What values are assigned to <tt>centString</tt> when <tt>myCents</tt> contains:
+         <ul>
+            <li>
+               0
+            </li>
+            <li>
+               5
+            </li>
+            <li>
+               10
+            </li>
+            <li>
+               99
+            </li>
+         </ul>
+		 </li>
+      </ol>
+   </body>
+</html>

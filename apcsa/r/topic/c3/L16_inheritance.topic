@@ -1,0 +1,60 @@
+title: Lesson 16: Inheritance
+
+{
+h2: Introduction to inheritance
+
+
+heading: Welcome
+    resource: Welcome back [/apcsa/r/cur/c3/L16_inheritance/welcome0.html]
+    resource: Looking ahead [/apcsa/r/cur/c3/L16_inheritance/welcome1.html]
+
+//heading: Survey, 5 pages
+//    display: Mid Survey (part 1 of 5) [/apcsa/r/cur/c3/L16_inheritance/welcome2.html]
+//    openresponse: Mid Survey (part 2 of 5) [/apcsa/r/cur/c3/L16_inheritance/welcome2a.html]
+//    openresponse: Mid Survey (part 3 of 5) [/apcsa/r/cur/c3/L16_inheritance/welcome2b.html]
+//    openresponse: Mid Survey (part 4 of 5) [/apcsa/r/cur/c3/L16_inheritance/welcome2c.html]
+//   openresponse: Mid Survey (part 5 of 5) [/apcsa/r/cur/c3/L16_inheritance/welcome2d.html]
+
+heading: Inheritance in specifics
+    resource: Introduction to inheritance [/apcsa/r/cur/c3/L16_inheritance/intro0.html]
+    reading: The Refillable class, revisited [/apcsa/r/cur/c3/L16_inheritance/refillable0.html]
+    reading: Extending the Refillable class [/apcsa/r/cur/c3/L16_inheritance/refillable1.html]
+    reading: Overriding methods [/apcsa/r/cur/c3/L16_inheritance/refillable2.html]
+    reading: Inheritance saves work [/apcsa/r/cur/c3/L16_inheritance/refillable3a.html]
+    reading: Extending library classes [/apcsa/r/cur/c3/L16_inheritance/refillable3.html]
+    reading: Access to instance variables [/apcsa/r/cur/c3/L16_inheritance/refillable4.html]
+    brainstorm: Thoughts on access [/apcsa/r/cur/c3/L16_inheritance/refillable5.html]
+    quiz: Class design [/apcsa/r/cur/c3/L16_inheritance/refillable6.html]
+
+heading: Inheritance in general
+    resource: Inheritance elsewhere in Java [/apcsa/r/cur/c3/L16_inheritance/general0.html]
+    reading: Real-life inheritance hierarchies [/apcsa/r/cur/c3/L16_inheritance/general1.html]
+    brainstorm: More real-life inheritance hierarchies [/apcsa/r/cur/c3/L16_inheritance/general2.html]
+    resource: Possible confusion [/apcsa/r/cur/c3/L16_inheritance/general3.html]
+    resource: Places where we might use inheritance [/apcsa/r/cur/c3/L16_inheritance/general5.html]
+
+heading: Practicing Inheritance
+    codeit: Counters [/apcsa/r/cur/c3/L16_inheritance/exercises0.html]
+    brainstorm: Not reinventing the wheel [/apcsa/r/cur/c3/L16_inheritance/exercises0b.html]
+    codeit: Using inheritance to trace assignments to objects [/apcsa/r/cur/c3/L16_inheritance/exercises1.html]
+    brainstorm: Not reinventing the wheel, again [/apcsa/r/cur/c3/L16_inheritance/exercises1b.html]
+    codeit: The prisoner's dilemma [/apcsa/r/cur/c3/L16_inheritance/exercises2.html]
+    codeit: A player that always competes [/apcsa/r/cur/c3/L16_inheritance/exercises3.html]
+    codeit: A random player [/apcsa/r/cur/c3/L16_inheritance/exercises4.html]
+    codeit: An unforgiving player [/apcsa/r/cur/c3/L16_inheritance/exercises5.html]
+    codeit: A tit-for-tat player [/apcsa/r/cur/c3/L16_inheritance/exercises6.html]
+
+heading: Polymorphism
+    reading: Polymorphism(1) [/apcsa/r/cur/c3/L16_inheritance/polymorphism0.html]
+    reading: Polymorphism(2) [/apcsa/r/cur/c3/L16_inheritance/polymorphism0b.html]
+    brainstorm: A proposed variation [/apcsa/r/cur/c3/L16_inheritance/polymorphism1.html]
+    resource: toString [/apcsa/r/cur/c3/L16_inheritance/polymorphism2.html]
+    codeit: toString experiments [/apcsa/r/cur/c3/L16_inheritance/polymorphism3.html]
+    reading: Polymorphic data structures [/apcsa/r/cur/c3/L16_inheritance/polymorphism4.html]
+    reading: A problem [/apcsa/r/cur/c3/L16_inheritance/polymorphism5.html]
+    brainstorm: A proposed solution [/apcsa/r/cur/c3/L16_inheritance/polymorphism6.html]
+    reading: Polymorphic method selection [/apcsa/r/cur/c3/L16_inheritance/polymorphism7.html]
+    reading: What the compiler does [/apcsa/r/cur/c3/L16_inheritance/polymorphism8.html]
+    reading: Accommodating the compiler [/apcsa/r/cur/c3/L16_inheritance/polymorphism9.html]
+    reading: What happens at run time [/apcsa/r/cur/c3/L16_inheritance/polymorphism10.html]
+    matchsequence: Polymorphism puzzles [/apcsa/r/cur/c3/L16_inheritance/node_0.html]

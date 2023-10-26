@@ -1,0 +1,19 @@
+title: Lesson 21: master
+
+{
+h2: master
+
+
+heading: Interacting classes
+    resource: Critters [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter0.html]
+    resource: Critter processing [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter1.html]
+    brainstorm: Override getActors? [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter2.html]
+    brainstorm: Processing actors? [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter3.html]
+    resource: Extending Critter [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter4.html]
+    matchsequence: ChameleonCritter overrides [/apcsa/r/cur/cTODO/L21_advanced_gridworld/node_0.html]
+    brainstorm: ChameleonCritter makeMove method [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter6.html]
+    brainstorm: ChameleonCritter flower scatterer [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter7.html]
+    quiz: Actor locations [/apcsa/r/cur/cTODO/L21_advanced_gridworld/node_1.html]
+    brainstorm: Critterly love [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter10.html]
+    brainstorm: Tracing an act call [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter11.html]
+    resource: Critter extension [/apcsa/r/cur/cTODO/L21_advanced_gridworld/critter12.html]

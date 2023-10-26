@@ -1,0 +1,76 @@
+
+
+
+LESSON 2 TODO:
+===========================================================================================
+- Fix font
+- Fix indenting at end
+- Set up BlueJ Exercise file CandyJar
+- Step #5: Sean pictures of arrows			   
+- Merge in CandyJarXX files  [DONE MJC] 
+- Bluej Gaemboard no reset function
+- BlueJ Preferences set to display line numbers automatically?
+- Step 35 --> Second lightening bolt - Right-Click on CandyJar, choose new CandyJar()
+- CandyJar --> distributed file needs to have code reset to defualt
+- Step 45 : CanyJar+doubling?  it is named CandyJar in projects, so lets fix the html   
+- Step 53 : No questions     
+- Review Exercises
+	- Summary
+	- Exercises -- we need exercises!
+	- Quiz
+
+===========================================================================  DONE ====
+
+//  Teachers manual TODO
+
+
+
+
+// 
+
+- Glossary needs executed defined (smm)
+
+- Slide shows need fixed (Nate will do this). (nlm)
+
+- Step 1 : A diagram of Source -> JVM -> byte code -> platform independence discussion? This can be fairly engaging when 
+         students realize that you can program once and run anywhere; as well as this used to not be the case
+		 - maybe in glossary  (smm)
+		 
+- Step #2: The configure BlueJ reference in the right menu bar is pointing to a non-existant entry in the glossary. This should probably point to instructions for configuration (ssm) (confirmed by nlm)
+- Step #2: The configure BlueJ reference in the right menu bar is pointing to a non-existent entry in the glossary. This should probably point to instructions for configuration
+						 
+- Step #7: Glossary -- I haven't figured out where to edit but I would like to make some small changes -- hypens etc. (smm)
+
+
+ - As you remove the last item from the list columns are shrinking --> make static width in css for these types of activities?
+				 
+- Step #9: The Glossary definition for void needs work		 				
+
+Step 10: Why doesn't piece1 show up in the drop down box in blueJ method parameter dialog- SMM
+
+         I don't know the answer to this question.  It may just be a BlueJ thing that we have no control over.
+		 Nate?  Mike?  (nlm)
+		 
+Step 12 Per group discussion, add a glossary for integer some time in the future
+- Step 26: comma around convention
+           For class names that you would like to use two or more words
+- Step 34 : method header or method signature           	
+            - shrink spaces between bullet points (I don't know how to do this.)
+            - method header glossary : header and signature are the same thing
+		   (I don't see the problem here.  It says they are the same thing.)
+- Step 36, Step 38: Sean verify this by calling the candyCount method on the object			 
+- Step 42: Sean canned responses 2 more
+- Step 43/Step 44: I like the metaphor of boxes for variables but we haven't introduced that before now -- maybe OK?
+c
+- Step 44: Step 2: Sean reword the : The result of adding in Step 1 is assigned to ...
+	- Step 45: Put CandyJar in project open
+           Add lightenbolt -- find the method signature, doubleCandy...
+	 
+ - At the end, the indenting is screwed up.
+	 
+General comments:		 
+				 
+A home button that links back to the syllabus would be nice.				 
+		  
+On the Match & Sequence would it be possible to have a reset button.   
+

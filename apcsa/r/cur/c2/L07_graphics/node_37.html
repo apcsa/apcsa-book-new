@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>When paintComponent is called</title>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+
+</head>
+<body>
+      <p audio="3">One way to use <tt>getSize</tt> is to change our <tt>Greetings</tt> program to put the "Hi there!" 
+         message in the middle of the window, however big it is.  
+         Here's the code for the modified <tt>paintComponent</tt>:</p>
+      <pre class="width80">
+public void paintComponent (Graphics g) {
+   g.drawString ("Hi there!", getSize().width/2, getSize().height/2);
+}
+</pre>
+      <p audio="4">Copy the code above into the <tt>Greetings</tt> class <tt>paintComponent</tt> method. Run the program and test
+      that it works by resizing the window by hand.</p>
+
+</body>
+</html>

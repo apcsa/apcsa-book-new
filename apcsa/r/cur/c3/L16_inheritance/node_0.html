@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Polymorphism puzzles</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="matchsequence-data">
+    <script class="llab_msdata" type="application/json">
+        {
+   "assessmentItem": {
+      "adaptive": false,
+      "identifier": "MatchSequence",
+      "interaction": {
+         "choices": [
+            {
+               "identifier": "gapText_0",
+               "matchMax": "1",
+               "value": "<tt>Parent obj = new Child ( );<br />obj.print ( );</tt>"
+            },
+            {
+               "identifier": "gapText_1",
+               "matchMax": "1",
+               "value": "<tt>Child obj = new Child ( );<br />((Parent) obj).print ( );</tt>"
+            },
+            {
+               "identifier": "gapText_2",
+               "matchMax": "1",
+               "value": "<tt>Child obj = new Parent ( );<br />obj.print ( );</tt>"
+            },
+            {
+               "identifier": "gapText_3",
+               "matchMax": "1",
+               "value": "<tt>Parent obj = new Parent ( );<br />((Child) obj).print ( );</tt>"
+            }
+         ],
+         "fields": [
+            {
+               "identifier": "gapMultiple_0",
+               "name": "Prints \"I am the parent.\"",
+               "numberOfEntries": "0",
+               "ordinal": "false"
+            },
+            {
+               "identifier": "gapMultiple_1",
+               "name": "Prints \"I am the child,\"",
+               "numberOfEntries": "0",
+               "ordinal": "false"
+            },
+            {
+               "identifier": "gapMultiple_2",
+               "name": "Results in a compile-time error",
+               "numberOfEntries": "0",
+               "ordinal": "false"
+            },
+            {
+               "identifier": "gapMultiple_3",
+               "name": "Results in a run-time error",
+               "numberOfEntries": "0",
+               "ordinal": "false"
+            }
+         ],
+         "hasInlineFeedback": true,
+         "ordered": false,
+         "prompt": "\n\n\n\n<br />\n\n<br />\n\n\n\n<br />\n\n<p audio=\"1\">\n\n\n\nConsider the class definitions below.\n\n\n\n</p>\n\n\n\n\n\n\n\n<table id=\"tableBlue\">\n\n\n\n<tr><td>\n\n\n\n<pre>\npublic class Parent {\n\n   public void print ( ) {\n      System.out.println (\"I am the parent.\");\n   }\n}\n</pre></td>\n\n\n\n\n\n\n\n\n<td><pre>\npublic class Child extends Parent {\n\n   public void print ( ) {\n      System.out.println (\"I am the child.\");\n   }\n}\n</pre></td></tr></table>\n\n\n\n<br />\n\n\n\n<p audio=\"2\">\n\n\n\nDetermine, for each of the following, whether it prints \"super\", it prints \"sub\", it results in a compile-time error, or it results in a run-time error.\n\n\n\n</p>",
+         "responseIdentifier": "MatchSequence",
+         "shuffle": true
+      },
+      "responseDeclaration": {
+         "correctResponses": [
+            {
+               "choiceIdentifier": "gapText_0",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_0",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_0",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_2",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_0",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_3",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_0",
+               "feedback": "Correct.",
+               "fieldIdentifier": "gapMultiple_1",
+               "isCorrect": true,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_1",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_0",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_1",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_2",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_1",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_3",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_1",
+               "feedback": "Correct.",
+               "fieldIdentifier": "gapMultiple_1",
+               "isCorrect": true,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_2",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_0",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_2",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_1",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_2",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_3",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_2",
+               "feedback": "Correct.",
+               "fieldIdentifier": "gapMultiple_2",
+               "isCorrect": true,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_3",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_0",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_3",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_1",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_3",
+               "feedback": "Incorrect",
+               "fieldIdentifier": "gapMultiple_2",
+               "isCorrect": false,
+               "isDefault": false,
+               "order": "0"
+            },
+            {
+               "choiceIdentifier": "gapText_3",
+               "feedback": "Correct.",
+               "fieldIdentifier": "gapMultiple_3",
+               "isCorrect": true,
+               "isDefault": false,
+               "order": "0"
+            }
+         ],
+         "identifier": "MatchSequence"
+      },
+      "timeDependent": false
+   },
+   "type": "MatchSequence"
+}
+    </script>
+</div>
+    </body>
+</html>

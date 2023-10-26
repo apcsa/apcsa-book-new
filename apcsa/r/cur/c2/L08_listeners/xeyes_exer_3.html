@@ -1,0 +1,77 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top325";
+	  </script>
+      <title>Exercise: creating eyes by dragging</title>
+   </head>
+   <body>
+      <p audio="2" class="quoteBrown">
+         Putting the exact dimensions of each eye into the <tt>XEyes</tt>
+         constructor 
+         is a hassle, especially when you use a different image.  Let's make it so  
+         you can place an eye by clicking and dragging the mouse.  Save your work in a 
+         BlueJ project titled <tt>XEyes_drag</tt>.
+      </p>
+      <p audio="3">
+         This will take several changes to the <tt>XEyes</tt>
+         class, but none to the <tt>Eye</tt>
+         class.  Here are some hints on how to proceed:
+      </p>
+      <ul>
+         <li audio = "4">
+            <p>If we are going to set the coordinates of the eye by clicking our mouse
+			  we need to remove the "hard-coded" coordinates passed arguments to the Eye constructor in 
+			  the XEyes constructor.
+			  
+			  <pre>public XEyes()
+{
+   ...
+   <span class="strike">eye_1 = new Eye(...);</span>  //remove this line
+   <span class="strike">eye_2 = new Eye(...);</span>  //remove this line too!
+   ...	
+}
+			  </pre>
+			   You will need to put a conditional in 
+               <tt>draw</tt> to only draw the eye if it has been created. 
+               			  			
+               But, how do you test for that?
+            </p>
+            <p>
+               The easiest way is to set each instance variable to <span class="vocab" term="null"><tt>null</tt></span>
+               initially.
+            </p>
+            <pre>Eye eye_1 = null;</pre>
+            <p>
+               <tt>null</tt>
+               is, essentially, the "empty" object. 
+            </p>
+            <p>   
+               You can test for eye_1 or eye_2 being null in the paintComponent method
+			   by setting up these conditional:
+            </p>
+            <pre>if (eye_1 == null) {
+   ...
+   }</pre>
+        	 <pre>if (eye_2 == null) {
+   ...
+   }</pre>
+         </li>
+         <li audio="5">
+            You can specify the size of the eye by checking the difference 
+            between the events of the <tt>mousePressed</tt>
+            and <tt>mouseReleased</tt>
+            methods.  You did this in this lesson in an earlier step.</p>
+         </li>
+        
+      </ul>
+      <p audio="10" class="quoteBrown">Two things you might want to add.  First,
+      you might want to ensure that there is a minimum size for an eye.  Use a 
+      conditional just before you create the eye.
+      <br /><br />
+         Second, you might create more eyes.  Why stop at 2?
+      </p>
+   </body>
+</html>

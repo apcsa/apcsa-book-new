@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+      <title>Hangman</title>
+   </head>
+   <body>
+      <h3>Background</h3>
+      <p audio="2">
+         The game of Hangman is played by two people, a "chooser" and a "guesser".
+         The chooser thinks of a word, and write a row of dashes, one per character in the word:
+      </p>
+      <pre>
+   _ _ _ _ _ _ _
+</pre>
+      <p audio="3">
+         The guesser tries to guess the word by asking if it contains a particular character:
+      </p>
+      <div class="quoteBlue"  audio="4">
+         "Does it have an R?"
+      </div>
+      <p  audio="5">
+         If the guesser asked about a letter contained in the word,
+         the chooser writes it in the corresponding positions in the row of dashes:
+      </p>
+      <pre>
+   R _ _ _ _ R _
+</pre>
+      <p  audio="6">
+         The guesser wins by guessing all the characters in the word with fewer than a predetermined number of wrong guesses.
+      </p>
+      <p>
+         The game is called "Hangman" because the chooser draws a portion of a diagram of a hanging person at each incorrect guess made by the guesser.
+      </p>
+      <h3>Problem</h3>
+      <p>
+         Code and test a version of the Hangman game. 
+         Your solution will involve a <tt>Hangman</tt> class
+         whose constructor chooses a word, and whose <tt>guess</tt>
+         method processes each guessed character.
+      </p>
+   </body>
+</html>

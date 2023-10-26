@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <script type="text/javascript" src="../../../script/jquery.cycle.all.js">
+        </script>
+        <title>Classes in projects SCREENSHOT</title>
+        <style type="text/css">
+            #nav {
+                margin: 20px 0 10px 0
+            } #nav a {
+                margin: 0 5px;
+                padding: 3px 5px;
+                border: 1px solid #ccc;
+                background: #FFE6C6;
+                text-decoration: none
+            } #nav a.activeSlide {
+                background: #FF9D1E
+            } #nav a:hover {
+                background: #FFFF00;
+            } #nav a:focus {
+                outline: none;
+            } #output {
+                text-align: center;
+                margin: 0 auto;
+                font-weight: bold;
+                margin: 20px 0 0 0;
+            }
+        </style>
+        <script type="text/javascript">
+            $.fn.cycle.defaults.timeout = 6000;
+            $(function(){
+                $('#s2').before('<div id="nav">').cycle({
+                    fx: 'fadeZoom',
+                    speed: 'fast',
+                    timeout: 0,
+                    after: onAfter,
+                    pager: '#nav'
+                });
+            });
+            
+            function onAfter(){
+                $('#output').html(this.alt);
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div id="s2" style="position: relative;">
+                <img height="428" width="588" src="/apcsa/r/static/art/introToBlueJ/openproject-8.png" alt="The GameBoard class as shown in BlueJ" />
+            </div>
+        </center>
+        <div id="output">
+            The GameBoard class as shown in BlueJ
+        </div>
+        <div id="buttonClose">
+			<a href="javascript:window.close();">close</a>
+        </div>
+    </body>
+</html>

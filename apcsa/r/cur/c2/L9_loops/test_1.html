@@ -1,0 +1,32 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+       <script type="text/javascript" src="/apcsa/llab/loader.js">
+        </script>
+        <title>Testing</title>
+</head>
+<body>
+	
+	<div class="imageRight">
+		<img src="/apcsa/r/static/art/scenes/testing_loops.png" alt="Bugs in a loop" />
+	</div>
+<p audio="2">
+A <tt>while</tt> loop may execute 0 times if its condition
+is not satisfied the first time it's evaluated.
+Such loops are common, for example, when empty strings are involved.
+A programmer must make certain that appropriate initializations have been made in such cases, 
+and also to verify correct behavior by testing the code on inputs that result
+in loops whose bodies are not executed.
+</p>
+<p audio="3">
+We of course need tests of more typical cases, e.g. loops that execute once
+and loops that execute more than once.
+If there is a maximum number of iterations of the loop, we should test that too.
+Finally, we also make certain to include among our tests all possible ways 
+to terminate the loop.
+</p>
+<p audio="4">
+Keep in mind that successful tests don't necessarily mean that the tested code
+is correct.  Tests only reveal the existence of bugs, not the absence of bugs.
+</p>
+</body>
+</html>

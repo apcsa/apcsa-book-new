@@ -1,0 +1,75 @@
+<html>
+<head>
+<script>
+        vocabClass = "top25";
+	</script>
+	<script type="text/javascript" src="/apcsa/llab/loader.js">
+	        
+		</script>
+
+<title>The indexOf method</title>
+</head>
+<body>
+<p>
+The <tt>substring</tt> method provides a way to take a string apart.
+Another method named <tt>indexOf</tt> allows us to search a string.
+The <tt>indexOf</tt> method takes a <tt>String</tt> object&mdash;we'll call it <tt>strToSearchFor</tt>&mdash;as an argument, and returns the index in this string of the start of the first occurrence of <tt>strToSearchFor</tt>.
+If the search fails, <tt>indexOf</tt> returns &ndash;1.
+</p>
+<p>
+Here are some examples.  They all assume that <tt>String s</tt> is "december".
+</p>
+
+<table border="1">
+<tr>
+<td>call</td><td>return value</td>
+</tr>
+
+<tr>
+<td>
+<tt>s.indexOf ("ember");</tt>
+</td>
+<td>
+3
+</td>
+</tr>
+
+<tr>
+<td>
+<tt>s.indexOf ("deb");</tt>
+</td>
+<td>
+&ndash;1
+</td>
+</tr>
+
+<tr>
+<td>
+<tt>s.indexOf ("e");</tt>
+</td>
+<td>
+1
+</td>
+</tr>
+
+<tr>
+<td>
+<tt>s.indexOf ("");</tt>
+</td>
+<td>
+0
+</td>
+</tr>
+
+<tr>
+<td>
+<tt>s.indexOf ("erf");</tt>
+</td>
+<td>
+&ndash;1
+</td>
+</tr>
+</table>
+
+</body>
+</html>

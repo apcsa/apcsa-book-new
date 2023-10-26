@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <script type="text/javascript" src="/apcsa/llab/loader.js">
+      </script>
+	  <script>
+	  	vocabClass="top100";
+	  </script>
+      <title>Sampling sound is a way to keep a record of it</title>
+   </head>
+   <body>
+      <p audio="2">
+         What a sound is, then, is characterized by 
+         the quickly varying pressure in the air.  To keep a  
+         record of a sound is keep a record of the pressure. 
+      </p>
+      <p audio="3">
+         The most common way to keep a record of the pressure is 
+         to take many, many individual measurements in rapid 
+         succession.  As typically stored on compact 
+         discs, for instance, each measurement is stored as 
+         an integer, varying between &ndash;32768 and 32767.  This 
+         number is called an <span class="vocab">individual sample</span>.  
+         The size
+         of this number is directly related to the amount of pressure 
+         in the air: the bigger the value of the sample, 
+         the higher the pressure
+         that's recorded.  Java could measure the pressure with much 
+         more precision than this, but experience shows that 
+         this range is usually good enough.
+      </p>
+      <p audio="4">
+         How quickly are samples taken?  For compact discs, there
+         are 44,100 samples taken every second.  This is called the <span class="vocab">sampling rate</span>, and the quality
+         of the recorded sound is quite dependent on it.  In this lesson,
+         we'll use a sampling rate of 22,050, exactly half that used
+         on compact discs.  (Your teacher, or you, may change this default
+         depending on how fast your computer is.)
+      </p>
+      <p audio="5" class="quoteBrown">
+         So, one second of sampled sound is, as far as your computer is 
+         concerned, a collection of about 22,000 integers. We'll use 
+         <tt>ArrayList</tt>s to store this.
+      </p>
+   </body>
+</html>

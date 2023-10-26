@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Properties</title>
+        <script src="/apcsa/llab/loader.js"></script>
+    </head>
+    <body>
+        <div class="brainstorm-data" id="" isgated="true"
+    expected-lines="5"
+    display-name="0" use-server="true"
+    server="default">
+
+
+    <div class="title"></div>
+
+    <div class="prompt">
+    <p>
+Here is the pseudocode from before, translated to work with a deck of cards.
+</p>
+<ol>
+ <li audio="2">Initialize <tt>sortedSoFar</tt> to empty.</li>
+<li>If <tt>myCards</tt> is nonempty, perform the sorting.</li>
+<ol type="a"><li>Choose the lowest-ranking card in <tt>myCards</tt>.</li>
+ <li audio="3">Remove it from <tt>myCards</tt> 
+ and add it to the end of <tt>sortedSoFar</tt>.</li>
+ <li audio="4">Repeat this process until no more elements remain in <tt>myCards</tt>.</li></ol></ol>
+<p>
+Suppose that the deck contains five cards, and consider the contents of <tt>myCards</tt> and <tt>sortedSoFar</tt> immediately after the <u>second</u> execution of step 2b. If the code is working correctly, several logical properties will be true at this point:
+</p>
+<ul>
+<li><tt>sortedSoFar</tt> contains two cards, and <tt>myCards</tt> contains three cards.</li>
+<li>The cards in <tt>sortedSoFar</tt> are arranged in order from lowest-ranking to highest-ranking.</li>
+<li>All the cards in the original <tt>myCards</tt> are in either the current <tt>myCards</tt> or in <tt>sortedSoFar</tt>, and all the cards in <tt>sortedSoFar</tt> and <tt>myCards</tt> are in the original <tt>myCards</tt>.</li>
+</ul>
+<p>
+Give another property, different from those just listed, that relates the contents of <tt>sortedSoFar</tt> and the current <tt>myCards</tt>, and will be true if the algorithm is running correctly.
+</p>
+    </div>
+
+
+    <div class="starter">
+    </div>
+
+
+    <div class="canned-responses">
+        
+        <div name="Joe">There aren't any cards that are in both sortedSoFar and myCards.
+        </div>
+        
+        <div name="Sherry">All the cards in sortedSoFar are lower-ranking than any of the cards in myCards.
+        </div>
+        
+    </div>
+
+</div>
+    </body>
+</html>
