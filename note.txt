@@ -11,3 +11,4 @@ Update 26.Oct.2023:
 - the git repo broke because I put the repo .git inside itself because it was like that on the vm, then it did some submodule thing and got confused
 - made a new repo, using vercel for deployment
 - made /index.html redirect to syllabus
+- (see commits named "uncomplexify 10000%" (though some are named "uncomplexify 1000%" (by accident)))
