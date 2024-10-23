@@ -30,7 +30,7 @@
       </p>
       <p audio="6">Use the following method to test if a point is inside 
       the eye (derived from the formula of an ellipse):</p>
-      <pre class="width70">public boolean inEye () {
+      <pre class="width70">public boolean inEye (int mouseX, int mouseY) {
         double dist = square(mouseX - eyeCenterX) / square(eyeWidth/2-pupilRadius) 
                  + square(mouseY - eyeCenterY) / square(eyeHeight/2-pupilRadius);
         return (dist <= 1);    
